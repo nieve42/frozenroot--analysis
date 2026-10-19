@@ -1,0 +1,45 @@
+name: Frozen Root NFL schedule
+
+on:
+  schedule:
+    - cron: '1 0 * * *'
+      timezone: 'America/Los_Angeles'
+    - cron: '23 14 * * *'
+      timezone: 'America/Los_Angeles'
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/daily-nfl-schedule.yml'
+      - 'scripts/update_nfl_schedule.py'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: frozen-root-nfl-schedule
+  cancel-in-progress: false
+
+jobs:
+  update-nfl-schedule:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the website
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch NFL game schedule (no predictions)
+        run: python scripts/update_nfl_schedule.py
+      - name: Publish NFL slate only
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add nfl-schedule.json
+          if git diff --cached --quiet; then
+            echo "No changes to NFL schedule"
+            exit 0
+          fi
+          git commit -m "Refresh NFL games — pick pending (NFL only)"
+          git pull --rebase origin main
+          git push origin main
