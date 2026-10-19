@@ -1,9 +1,19 @@
 {
   "source": "ESPN NFL public scoreboard",
-  "generatedAt": "2026-10-19T00:56:21Z",
-  "startDate": "2026-10-18",
-  "endDate": "2026-10-24",
+  "generatedAt": "2026-10-19T00:59:57Z",
+  "startDate": "2026-10-13",
+  "endDate": "2026-10-19",
+  "weekReset": "Tuesday 12:01 AM America/Los_Angeles",
   "games": [
+    {
+      "id": "401872995",
+      "dateUTC": "2026-10-16T00:15Z",
+      "away": "Seattle Seahawks",
+      "home": "Denver Broncos",
+      "status": "Final",
+      "awayScore": "14",
+      "homeScore": "17"
+    },
     {
       "id": "401872996",
       "dateUTC": "2026-10-18T13:30Z",
@@ -117,15 +127,6 @@
       "dateUTC": "2026-10-20T00:15Z",
       "away": "Washington Commanders",
       "home": "San Francisco 49ers",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
-    },
-    {
-      "id": "401873010",
-      "dateUTC": "2026-10-23T00:15Z",
-      "away": "New England Patriots",
-      "home": "Chicago Bears",
       "status": "Scheduled",
       "awayScore": null,
       "homeScore": null
