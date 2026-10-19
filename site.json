@@ -41,7 +41,25 @@
       "finalScore": "Tampa Bay Rays 3, Cleveland Guardians 1",
       "resultVerifiedOn": "2026-10-18",
       "resultSource": "https://www.coveringthecorner.com/cleveland-guardians-scores-standings/76174/guardians-drop-game-5-now-face-elimination"
+    },
+    {
+      "id": "2026-10-19-alcs-g6",
+      "date": "2026-10-19",
+      "series": "ALCS · Game 6",
+      "team": "Tampa Bay Rays",
+      "opponent": "Cleveland Guardians",
+      "stake": 1,
+      "status": "pending",
+      "locked": true,
+      "projectedScore": {
+        "teamRuns": 4,
+        "opponentRuns": 2
+      },
+      "analysis": "Root's official October 19 moneyline selection, locked at the owner's request before Game 6. Pregame forecast: Tampa Bay Rays 4, Cleveland Guardians 2 (6 total runs); estimated Rays win probability 63% (judgment-based, not a validated model probability). Independent factors reviewed: pitching matchups, bullpen usage, recent offense, and home-field context. This projection is not the actual final score.",
+      "risk": "Lineups were not yet confirmed when the pick was locked. Moderate confidence only. Remains fixed; do not switch for odds movement or second thoughts. Only substantial verified new pregame evidence could justify an exceptional, fully explained reconsideration.",
+      "odds": null,
+      "createdBy": "Root + user"
     }
   ],
-  "lastUpdated": "2026-10-18"
+  "lastUpdated": "2026-10-19"
 }
