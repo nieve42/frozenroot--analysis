@@ -29,12 +29,15 @@
       "team": "Tampa Bay Rays",
       "opponent": "Cleveland Guardians",
       "stake": 1,
-      "status": "pending",
+      "status": "win",
       "locked": true,
-      "analysis": "User-confirmed official October 18 moneyline selection. Remains fixed while awaiting final result verification.",
+      "analysis": "User-confirmed official October 18 moneyline selection. Remains fixed while awaiting final result verification. Final result confirmed: Rays defeated Guardians 3-1 in ALCS Game 5.",
       "risk": "Do not switch without substantial newly verified pregame information",
       "odds": null,
-      "createdBy": "Root + user"
+      "createdBy": "Root + user",
+      "finalScore": "Tampa Bay Rays 3, Cleveland Guardians 1",
+      "resultVerifiedOn": "2026-10-18",
+      "resultSource": "https://www.coveringthecorner.com/cleveland-guardians-scores-standings/76174/guardians-drop-game-5-now-face-elimination"
     }
   ],
   "lastUpdated": "2026-10-18"
