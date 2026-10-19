@@ -17,8 +17,22 @@
     return [val('year'),val('month'),val('day')].join('-');
   };
   const nowDay = () => pacificDay(new Date());
+  const shiftUTC = (day, offset) => {
+    const d = new Date(day + 'T12:00:00Z');
+    d.setUTCDate(d.getUTCDate() + offset);
+    return d.toISOString().slice(0,10);
+  };
+  const currentWeek = () => {
+    const today = nowDay();
+    const weekday = new Date(today + 'T12:00:00Z').getUTCDay();
+    const start = shiftUTC(today, -((weekday - 2 + 7) % 7));
+    return {start, end:shiftUTC(start,6)};
+  };
   const dateLabel = day => new Date(day + 'T12:00:00').toLocaleDateString('en-US', {
     weekday:'short',month:'short',day:'numeric'
+  });
+  const shortDay = day => new Date(day + 'T12:00:00').toLocaleDateString('en-US', {
+    month:'short',day:'numeric'
   });
   const kickoff = utc => {
     if (!utc || isNaN(Date.parse(utc))) return 'TIME TBD';
@@ -58,15 +72,24 @@
   }
   function render(slate,picks) {
     const today = nowDay();
+    const week = currentWeek();
     const refreshed = slate.generatedAt ? new Date(slate.generatedAt) : null;
     const ageHours = refreshed && !isNaN(refreshed.getTime())
       ? (Date.now()-refreshed.getTime())/36e5 : Infinity;
-    const stale = ageHours > 26 || slate.startDate !== today;
+    const wrongWeek = slate.startDate !== week.start || slate.endDate !== week.end;
+    const stale = ageHours > 26;
     meta.textContent = 'SOURCE: ESPN NFL SCHEDULE' +
       (refreshed && !isNaN(refreshed.getTime()) ? ' · Last updated ' +
         refreshed.toLocaleString('en-US',{timeZone:'America/Los_Angeles',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})+' PT' : '') +
-      (stale ? ' · SCHEDULE MAY BE OUTDATED' : '');
-    dates.textContent = 'NEXT 7 DAYS';
+      (stale ? ' · FEED MAY BE OUTDATED' : '');
+    dates.textContent = shortDay(week.start).toUpperCase()+' – '+shortDay(week.end).toUpperCase()+' · RESETS TUESDAY';
+    // Never display games from last week after the Tuesday rollover, even if
+    // GitHub Actions has not yet finished its new-week refresh.
+    if (wrongWeek) {
+      meta.textContent = 'NEW NFL WEEK · Awaiting updated schedule';
+      grid.innerHTML = '<div class="panel schedule-empty">Last week’s schedule has cleared. The new Tuesday–Monday NFL slate is updating; please check back shortly.</div>';
+      return;
+    }
     if (picks) {
       const locked = picks.filter(p => p.locked);
       const w=locked.filter(p=>p.status==='win').length, l=locked.filter(p=>p.status==='loss').length,
@@ -76,17 +99,18 @@
     } else {
       summary.textContent = 'NFL official picks could not be verified. Football games listed here are not predictions.';
     }
-    const future = slate.games.filter(g => {
+    const weeklyGames = slate.games.filter(g => {
       if (!g.dateUTC || isNaN(Date.parse(g.dateUTC))) return false;
       const day=pacificDay(new Date(g.dateUTC));
-      return day>=today && day<=slate.endDate;
+      return day>=week.start && day<=week.end;
     }).sort((a,b)=>a.dateUTC.localeCompare(b.dateUTC));
-    if (!future.length) {
-      grid.innerHTML='<div class="panel schedule-empty">No NFL games currently listed for the upcoming week. Check back for new matchups.</div>';
+    if (!weeklyGames.length) {
+      grid.innerHTML='<div class="panel schedule-empty">No NFL games are currently listed for this Tuesday–Monday week.</div>';
       return;
     }
+    // Keep completed games visible through Monday, then clear the entire week on Tuesday.
     const sections = new Map();
-    future.forEach(g => {
+    weeklyGames.forEach(g => {
       const day=pacificDay(new Date(g.dateUTC));
       if (!sections.has(day)) sections.set(day,[]);
       sections.get(day).push(g);
@@ -118,4 +142,21 @@
   window.addEventListener('hashchange',()=>{if(location.hash==='#football') reload();});
   document.addEventListener('visibilitychange',()=>{if(!document.hidden && location.hash==='#football') reload();});
   setInterval(()=>{if(location.hash==='#football') reload();},15*60*1000);
+  let displayedWeek = currentWeek().start;
+  // Already-open browser tabs must clear the previous slate after Tuesday 12:01 PT.
+  // Timers may be throttled while the tab is backgrounded; visibilitychange retries.
+  setInterval(() => {
+    const parts = new Intl.DateTimeFormat('en-US', {
+      timeZone:'America/Los_Angeles',hour:'2-digit',minute:'2-digit',hourCycle:'h23'
+    }).formatToParts(new Date());
+    const hour = Number(parts.find(p=>p.type==='hour')?.value ?? '0');
+    const minute = Number(parts.find(p=>p.type==='minute')?.value ?? '0');
+    const weekStart = currentWeek().start;
+    if (weekStart !== displayedWeek && hour*60+minute >= 1) {
+      displayedWeek=weekStart;
+      dates.textContent = 'NEW NFL WEEK';
+      grid.innerHTML = '<div class="panel schedule-empty">Loading the new week’s football games...</div>';
+      reload();
+    }
+  }, 30000);
 })();
