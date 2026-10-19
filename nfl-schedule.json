@@ -1,6 +1,6 @@
 {
   "source": "ESPN NFL public scoreboard",
-  "generatedAt": "2026-10-19T00:59:57Z",
+  "generatedAt": "2026-10-19T07:37:36Z",
   "startDate": "2026-10-13",
   "endDate": "2026-10-19",
   "weekReset": "Tuesday 12:01 AM America/Los_Angeles",
@@ -118,9 +118,9 @@
       "dateUTC": "2026-10-19T00:20Z",
       "away": "Dallas Cowboys",
       "home": "Green Bay Packers",
-      "status": "In Progress",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Final",
+      "awayScore": "13",
+      "homeScore": "23"
     },
     {
       "id": "401873008",
