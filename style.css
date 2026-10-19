@@ -50,3 +50,27 @@
   .navlink{justify-content:center;min-width:0;padding:9px 3px}
   .navlink span{width:auto;font-size:18px}
 }
+
+
+/* MLB projected team runs are a forecast, never the actual game result. */
+.run-projection{margin:0 0 23px;padding:18px 19px 20px;background:linear-gradient(145deg,#0a1b2d,#113854);border:1px solid #2d7296;border-radius:9px}
+.run-projection-heading{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;margin:0 0 17px;color:#88dfff;font-size:10px;letter-spacing:1.1px;font-weight:900}
+.run-projection-heading small{font-size:9px;letter-spacing:.55px;color:#87a3b8;font-weight:750}
+.run-projection-scores{display:grid;grid-template-columns:minmax(0,1fr) 24px minmax(0,1fr) minmax(125px,.75fr);gap:14px;align-items:center}
+.run-team{display:flex;flex-direction:column;justify-content:center;min-width:0;gap:6px}
+.run-team-name{color:#a8c7dc;font-size:11px;font-weight:700;line-height:1.5}
+.run-team strong{font-family:'Barlow Condensed',Impact,sans-serif;color:#f0fbff;font-size:43px;font-weight:900;line-height:1}
+.run-score-separator{font-size:24px;color:#548eb3;text-align:center;font-weight:700}
+.run-total{display:flex;flex-direction:column;gap:5px;border-left:1px solid #376786;padding-left:15px}
+.run-total span{color:#77bee3;font-size:9px;letter-spacing:1px;font-weight:900;line-height:1.6}
+.run-total strong{font-family:'Barlow Condensed',Impact,sans-serif;color:#52d2ff;font-size:43px;line-height:1;font-weight:900}
+.run-projection.missing{border-color:#2b485e;background:#0c2538}
+.run-projection.missing p{font-size:11px;color:#8fabc0;margin:0;line-height:1.7}
+.projection-history-score{font-family:'Barlow Condensed',Impact,sans-serif!important;font-size:18px!important;letter-spacing:.4px;color:#86ddff!important}
+.projection-unavailable{font-size:11px;color:#6b8aa3;white-space:nowrap}
+@media(max-width:580px){
+  .run-projection{padding:15px 13px}
+  .run-projection-scores{grid-template-columns:minmax(0,1fr) 16px minmax(0,1fr);gap:8px}
+  .run-team strong,.run-total strong{font-size:36px}
+  .run-total{grid-column:1/-1;flex-direction:row;justify-content:space-between;align-items:center;border-left:0;border-top:1px solid #376786;padding:13px 0 0;margin-top:6px}
+}
