@@ -47,7 +47,7 @@ The navigation menu contains **Football games** directly beneath **Update the we
 - `nfl-schedule.json` contains the current **Tuesday-through-Monday NFL week** from ESPN's public scoreboard feed, displayed with kickoff times in Pacific time. The entire displayed week is replaced every Tuesday.
 - `scripts/update_nfl_schedule.py` refreshes the NFL slate only; it never edits the MLB `site.json` or any official pick.
 - `.github/workflows/daily-nfl-schedule.yml` updates game statuses daily at approximately **12:01 AM Pacific** and refreshes them in the afternoon. **Tuesday at 12:01 AM Pacific** begins a new NFL week: the previous week's visible games are cleared and replaced with Tuesday–Monday matchups. If the job is delayed, the site hides the old week instead of displaying it as current. Scheduled GitHub Actions can be delayed and may be paused by GitHub.
-- `nfl-picks.json` is the separate NFL official pick ledger, initially empty. Upcoming games display **PICK PENDING** until an official NFL selection is deliberately locked. No football pick is assumed from the posted schedule.
+- `nfl-picks.json` is the separate NFL official pick ledger, containing our October 19 locked 49ers selection and its pregame projected score. Upcoming games display **PICK PENDING** until an official NFL selection is deliberately locked. No football pick is assumed from the posted schedule.
 - Canceled or postponed games are labeled as such. Schedule entries and placeholders never increment either sport's win/loss totals or Awaiting Results.
 
 GitHub Pages remains free for this static site. Automatic *winner* predictions and verified settlement are not enabled here; only schedule publishing is automated.
@@ -75,3 +75,24 @@ When locking a **new** MLB moneyline pick, store an optional pregame score proje
 - Forecast runs are **not the actual final score** and do **not** affect moneyline wins, losses, voids, or Awaiting Results. Settlements remain independent (`status` and verified `finalScore`).
 - Historical entries with no recorded pregame score forecast display **Not recorded**.
 
+
+
+## NFL score forecasts — projected points and total
+
+When we publish an official NFL winner pick, it can include a **pregame estimated final score** in the separate `nfl-picks.json` ledger:
+
+```json
+{
+  "team": "San Francisco 49ers",
+  "opponent": "Washington Commanders",
+  "projectedScore": { "teamPoints": 27, "opponentPoints": 20 }
+}
+```
+
+The example above is the **published pregame prediction for October 19, 2026** (forecast added October 18 before kickoff). It predicts **49ers 27 – Commanders 20**, for **47 projected total points**. The moneyline winner remains locked as San Francisco.
+
+- `projectedScore.teamPoints` is the forecast for `team` (our NFL pick), and `projectedScore.opponentPoints` is for `opponent`. Both must be nonnegative whole numbers; the website calculates total points.
+- Forecasts appear on **Latest official NFL pick**, **NFL pick history**, and the weekly NFL schedule card when the matchup remains in the displayed week.
+- Future NFL score forecasts should be saved before kickoff, ideally when the winner is locked. Do not fabricate forecasts for finished games or silently revise historical projections.
+- **PREGAME FORECAST** and **ACTUAL SCORE** are different. Projections have no effect on wins, losses, voids, or Awaiting Results in either NFL or MLB.
+- Weekly NFL schedule refreshes never modify `nfl-picks.json`, and locked picks stay in history after Tuesday resets.
