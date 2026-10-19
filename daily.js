@@ -95,5 +95,27 @@
   }
   refresh();
   setInterval(refresh, 15 * 60 * 1000);
-  document.addEventListener('visibilitychange', () => {if (!document.hidden) refresh();});
+  // Refresh an already-open page when the date changes at 12:01 AM Pacific.
+  // Browser timers may be throttled in background tabs; visibilitychange covers that case.
+  let watchedDay = localDate();
+  const clock = new Intl.DateTimeFormat('en-US', {
+    timeZone:'America/Los_Angeles', hour:'2-digit', minute:'2-digit', hourCycle:'h23'
+  });
+  setInterval(() => {
+    const day = localDate();
+    if (day === watchedDay) return;
+    const parts = clock.formatToParts(new Date());
+    const hour = Number(parts.find(p => p.type === 'hour')?.value ?? '0');
+    const minute = Number(parts.find(p => p.type === 'minute')?.value ?? '0');
+    if (hour * 60 + minute >= 1) {
+      watchedDay = day;
+      refresh();
+    }
+  }, 15000);
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) {
+      watchedDay = localDate();
+      refresh();
+    }
+  });
 })();
