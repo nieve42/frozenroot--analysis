@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070e1a">
+  <title>ROOT FROZEN | Official MLB Predictions</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="ambient"></div>
+<div class="shell">
+  <aside class="sidebar">
+    <a href="#dashboard" class="identity" aria-label="Root Frozen home"><span class="snowmark">✳</span><span>ROOT<span class="brandblue">FROZEN</span><small>PREDICTION SYSTEM</small></span></a>
+    <div class="side-label">COMMAND CENTER</div>
+    <nav class="nav" aria-label="Site navigation">
+      <a class="navlink active" href="#dashboard" data-page="dashboard"><span>▦</span> Overview</a>
+      <a class="navlink" href="#history" data-page="history"><span>▤</span> Pick history</a>
+      <a class="navlink" href="#method" data-page="method"><span>◇</span> The system</a>
+      <a class="navlink" href="#control" data-page="control"><span>⚙</span> Update the website</a>
+    </nav>
+    <div class="side-bottom"><div class="live-indicator"><span class="pulse"></span> OFFICIAL PICK ARCHIVE</div><p>Frozen picks. Independent analysis. No following the crowd.</p><span class="vtag">ROOT / VERSION 1.0</span></div>
+  </aside>
+  <main class="main" id="dashboard">
+    <header class="topbar"><div class="bread">ROOT FROZEN <span>/</span> <strong id="pageName">OVERVIEW</strong></div><div class="topright"><span class="small-pill"><span class="tiny-blue-dot"></span> BASEBALL INTELLIGENCE</span><span class="round-avatar">R</span></div></header>
+    <div class="content">
+      <section class="page active" id="page-dashboard">
+        <div class="eyebrow"><span class="line"></span> POSTSEASON / MONEYLINE ANALYSIS</div>
+        <div class="hero"><div><h1>FROZEN PICKS.<br><em>REAL RECORDS.</em></h1><p>Independent moneyline picks, a transparent record, and no changes after a lock.</p><div class="hero-tags"><span>❄ ROOT'S OFFICIAL PICKS</span><span>● MONEYLINE ONLY</span></div></div><div class="hero-glyph" aria-hidden="true">❄</div></div>
+        <div class="sectionhead"><h2>Latest locked pick</h2><span id="lastUpdated">SYNCED —</span></div>
+        <div class="feature" id="featuredPick"><div class="loading">Loading official selection...</div></div>
+        <div class="sectionhead"><h2>System performance</h2><span>HISTORICAL + VERIFIED SETTLEMENTS</span></div>
+        <div class="stats"><div class="stat"><div class="stathead">TOTAL WINS <span>↗</span></div><strong id="wins">—</strong><small>Settled moneyline picks</small></div><div class="stat"><div class="stathead">TOTAL LOSSES <span>↘</span></div><strong id="losses">—</strong><small>Settled moneyline picks</small></div><div class="stat"><div class="stathead">WIN RATE <span>◎</span></div><strong id="rate">—</strong><small>Win percentage, excluding voids</small></div><div class="stat"><div class="stathead">AWAITING RESULTS <span>◷</span></div><strong id="pending">—</strong><small>Locked and pending</small></div></div>
+        <div class="bottom-grid"><div class="panel"><div class="panel-title"><h3>Official protocol</h3><span>NO SHORTCUTS</span></div><div class="checks"><div><span>01</span> Verified pitchers & advanced metrics</div><div><span>02</span> Confirmed lineups & opponent splits</div><div><span>03</span> Bullpen usage, last 2–3 days</div><div><span>04</span> Park, weather & independent call</div></div></div><div class="panel frostpanel"><div class="panel-title"><h3>The Root rule</h3><span>LOCKED SYSTEM</span></div><blockquote>"We don't chase odds. We study the game, make the call, and stand by it."</blockquote><p>Official picks stay fixed. Changes require substantial verified pregame evidence and an explanation.</p></div></div>
+      </section>
+      <section class="page" id="page-history"><div class="eyebrow"><span class="line"></span> OFFICIAL LEDGER</div><h1 class="subhero">PICK <em>ARCHIVE.</em></h1><p class="muted">A transparent log of locked selections. Results are not assumed until verified.</p><div class="panel hpanel"><div class="panel-title"><h3>Moneyline history</h3><span id="historyCount">0 PICKS</span></div><div class="table-wrap"><table><thead><tr><th>DATE</th><th>ROOT'S PICK</th><th>MATCHUP</th><th>RESULT</th><th>UNIT</th></tr></thead><tbody id="historyRows"></tbody></table></div><div class="historyfoot" id="historyFoot"></div></div></section>
+      <section class="page" id="page-method"><div class="eyebrow"><span class="line"></span> UNDER THE ICE</div><h1 class="subhero">THE <em>SYSTEM.</em></h1><p class="muted">Independent baseball analysis. Not betting-app consensus. A disciplined process before every lock.</p><div class="method-grid"><div class="panel method-card"><b>01 / STARTERS</b><h3>Pitching foundation</h3><p>SIERA, xFIP, ERA, WHIP, strikeouts, walks, workload, matchup, and expected innings.</p></div><div class="panel method-card"><b>02 / OFFENSE</b><h3>Real lineups</h3><p>Confirmed batting orders, wRC+, platoon splits, injuries, current form, and hitter matchups.</p></div><div class="panel method-card"><b>03 / BULLPEN</b><h3>The final outs</h3><p>Relief strength, high-leverage options, individual workloads from the last 2–3 days, and postseason form.</p></div><div class="panel method-card"><b>04 / CONTEXT</b><h3>Everything else</h3><p>Park factors, wind direction, weather, defense, and risk assessment before locking the winner.</p></div></div><div class="protocol panel"><h3>Frozen means frozen.</h3><p>Once an official pick is announced, the team cannot be casually changed. Newly verified material news must be documented before any exceptional switch. This site currently preserves official selection identity once added.</p></div></section>
+      <section class="page" id="page-control">
+  <div class="eyebrow"><span class="line"></span> OWNER WORKFLOW</div>
+  <h1 class="subhero">ROOT <em>CONTROL.</em></h1>
+  <p class="muted">Publish changes through your GitHub account. No password, admin token, or secret key belongs in a public website.</p>
+  <div class="admin-grid">
+    <div class="panel admin-access"><div class="panel-title"><h3>Publish a new official pick</h3><span>GITHUB MANAGED</span></div>
+      <p>Ask Root in ChatGPT to prepare a new MLB pick. After confirming and locking it, have Root update the website's <strong>site.json</strong> through the connected GitHub account.</p>
+      <p class="small-note">Locked teams stay fixed. A change to the public record requires a deliberate source-data edit and a new GitHub commit.</p>
+    </div>
+    <div class="panel admin-info"><div class="panel-title"><h3>Settle a completed game</h3><span>VERIFY FIRST</span></div>
+      <p>Once a final result is verified, update the corresponding pick's status in <strong>site.json</strong> to <strong>win</strong>, <strong>loss</strong>, <strong>push</strong>, or <strong>void</strong>. The win/loss totals recalculate on the site.</p>
+      <p class="small-note">GitHub Pages updates the public website after you commit changes to the hosting branch.</p>
+    </div>
+  </div>
+  <div class="panel protocol"><h3>What's automatic today?</h3><p>The public site automatically displays the current published picks and recalculates the tracker from the data file. It does not automatically generate picks, fetch lineups, or verify results yet; those require a separately configured data source and scheduled analysis.</p></div>
+</section>
+    </div>
+    <footer><span>© 2026 ROOT FROZEN — THE CALL IS FINAL.</span><span>For entertainment; $1 units are hypothetical. No real-money transactions.</span></footer>
+  </main>
+</div>
+<script src="./app.js"></script>
+</body>
+</html>

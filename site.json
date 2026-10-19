@@ -1,0 +1,41 @@
+{
+  "brand": "ROOT FROZEN",
+  "baseline": {
+    "wins": 3,
+    "losses": 5,
+    "pushes": 0,
+    "asOf": "2026-10-15",
+    "note": "Historical settled aggregate through October 15, from the existing tracker. Later games remain pending until their results are verified."
+  },
+  "picks": [
+    {
+      "id": "2026-10-16-alcs-g4",
+      "date": "2026-10-16",
+      "series": "ALCS · Game 4",
+      "team": "Cleveland Guardians",
+      "opponent": "Tampa Bay Rays",
+      "stake": 1,
+      "status": "pending",
+      "locked": true,
+      "analysis": "Previously locked official moneyline pick. Result not reconciled in this site yet.",
+      "risk": "Result verification required",
+      "odds": "Reference -102 (unverified)",
+      "createdBy": "Root + user"
+    },
+    {
+      "id": "2026-10-18-alcs-g5",
+      "date": "2026-10-18",
+      "series": "ALCS · Game 5",
+      "team": "Tampa Bay Rays",
+      "opponent": "Cleveland Guardians",
+      "stake": 1,
+      "status": "pending",
+      "locked": true,
+      "analysis": "User-confirmed official October 18 moneyline selection. Remains fixed while awaiting final result verification.",
+      "risk": "Do not switch without substantial newly verified pregame information",
+      "odds": null,
+      "createdBy": "Root + user"
+    }
+  ],
+  "lastUpdated": "2026-10-18"
+}
