@@ -1,8 +1,8 @@
-name: Daily MLB schedule — Frozen Root
+name: Frozen Root — Daily slate at 12:01 AM PT
 
 on:
   schedule:
-    - cron: '17 7 * * *'
+    - cron: '1 0 * * *'
       timezone: 'America/Los_Angeles'
     - cron: '23 14 * * *'
       timezone: 'America/Los_Angeles'
