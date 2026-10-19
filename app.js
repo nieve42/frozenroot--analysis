@@ -15,15 +15,15 @@ function projectedRuns(p){
 }
 function projectionMarkup(p){
   const projected=projectedRuns(p);
-  if(!projected) return '<div class="run-projection missing"><div class="run-projection-heading"><span>❄ PREDICTED FINAL SCORE</span><small>PREGAME FORECAST</small></div><p>Not recorded for this older pick. New official MLB picks will include projected runs for both teams.</p></div>';
-  return '<div class="run-projection">'+
-    '<div class="run-projection-heading"><span>❄ PREDICTED FINAL SCORE</span><small>PREGAME FORECAST · NOT ACTUAL RESULTS</small></div>'+
+  if(!projected) return '<div class="run-projection missing"><div class="run-projection-heading"><span>❄ PROJECTED FINAL SCORE</span><small>PREGAME FORECAST</small></div><p>No score forecast was saved for this older pick.</p></div>';
+  return '<section class="run-projection" aria-label="Projected final score: '+escapeHtml(p.team)+' '+projected.teamRuns+', '+escapeHtml(p.opponent)+' '+projected.opponentRuns+'">'+
+    '<div class="run-projection-heading"><span>❄ PROJECTED FINAL SCORE</span><small>ROOT\'S PREGAME PREDICTION · NOT THE ACTUAL RESULT</small></div>'+
     '<div class="run-projection-scores">'+
     '<div class="run-team"><span class="run-team-name">'+escapeHtml(p.team)+'</span><strong>'+projected.teamRuns+'</strong></div>'+
     '<div class="run-score-separator">–</div>'+
     '<div class="run-team"><span class="run-team-name">'+escapeHtml(p.opponent)+'</span><strong>'+projected.opponentRuns+'</strong></div>'+
     '<div class="run-total"><span>PROJECTED TOTAL RUNS</span><strong>'+projected.totalRuns+'</strong></div>'+
-    '</div></div>';
+    '</div></section>';
 }
 function projectionHistory(p){
   const x=projectedRuns(p);
@@ -46,7 +46,7 @@ function render(){
   $('wins').textContent=s.wins;$('losses').textContent=s.losses;$('rate').textContent=s.rate;$('pending').textContent=s.pending;
   $('lastUpdated').textContent='DATA UPDATED '+formatDate(state.lastUpdated);
   const p=featured();
-  if (p) $('featuredPick').innerHTML=`<div class="picktop"><span class="labelcyan">✳ OFFICIAL ROOT SELECTION</span><span class="pickdate">${formatDate(p.date)} &nbsp; / &nbsp; ${escapeHtml(p.series)}</span></div><div class="pickbody"><span class="labelcyan">MONEYLINE WINNER</span><div class="picktitle">${escapeHtml(p.team.toUpperCase())}</div><div class="opp">VERSUS ${escapeHtml(p.opponent.toUpperCase())}</div><div class="pickchips"><span class="chip locked">❄ OFFICIALLY LOCKED</span><span class="chip ${escapeHtml(p.status)}">${p.status.toUpperCase()}</span><span class="chip">HYPOTHETICAL ${p.stake} UNIT</span></div>${projectionMarkup(p)}<div class="opp">${escapeHtml(p.analysis)}</div></div><div class="feature-note"><strong>RISK / PROCESS</strong><span>${escapeHtml(p.risk)}</span></div>`;
+  if (p) $('featuredPick').innerHTML=`<div class="picktop"><span class="labelcyan">✳ OFFICIAL ROOT SELECTION</span><span class="pickdate">${formatDate(p.date)} &nbsp; / &nbsp; ${escapeHtml(p.series)}</span></div><div class="pickbody"><span class="labelcyan">MONEYLINE WINNER</span><div class="picktitle">${escapeHtml(p.team.toUpperCase())}</div><div class="opp">VERSUS ${escapeHtml(p.opponent.toUpperCase())}</div>${projectionMarkup(p)}<div class="pickchips"><span class="chip locked">❄ OFFICIALLY LOCKED</span><span class="chip ${escapeHtml(p.status)}">${p.status.toUpperCase()}</span><span class="chip">HYPOTHETICAL ${p.stake} UNIT</span></div><div class="opp">${escapeHtml(p.analysis)}</div></div><div class="feature-note"><strong>RISK / PROCESS</strong><span>${escapeHtml(p.risk)}</span></div>`;
   const sorted=[...state.picks].sort((a,b)=>b.date.localeCompare(a.date));
   $('historyRows').innerHTML=sorted.map(p=>`<tr><td>${formatDate(p.date)}</td><td><strong>${escapeHtml(p.team)}</strong><small>OFFICIAL · LOCKED</small></td><td>${escapeHtml(p.opponent)}<br><small>${escapeHtml(p.series)}</small></td><td>${projectionHistory(p)}</td><td><span class="status ${escapeHtml(p.status)}">${escapeHtml(p.status)}</span></td><td>${p.stake}</td></tr>`).join('');
   $('historyCount').textContent=sorted.length+' TRACKED PICKS';
