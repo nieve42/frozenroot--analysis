@@ -32,6 +32,7 @@ function showPage(page){
   document.querySelectorAll('.page').forEach(el=>el.classList.toggle('active',el.id===`page-${page}`));
   document.querySelectorAll('.navlink').forEach(el=>el.classList.toggle('active',el.dataset.page===page));
   $('pageName').textContent=({dashboard:'OVERVIEW',history:'PICK HISTORY',method:'THE SYSTEM',control:'PUBLISHING',football:'NFL / FOOTBALL'})[page];
+  if($('sportIndicator')) $('sportIndicator').textContent=page==='football'?'FOOTBALL / NFL':'BASEBALL INTELLIGENCE';
   if(page==='dashboard')window.scrollTo({top:0,behavior:'instant'});
 }
 async function getState(){const r=await fetch('./site.json',{cache:'no-store'});if(!r.ok)throw Error('Cannot load the published predictions');state=await r.json();render();}
