@@ -86,3 +86,33 @@
 #page-football .run-projection .run-total strong{font-size:43px}
 #page-football .projection-history-score{font-size:18px}
 @media(max-width:580px){#page-football .run-projection .run-total strong{font-size:36px}}
+
+/* MLB predicted-score spotlight: prominent pregame scores on desktop and mobile. */
+#page-dashboard .run-projection{margin:18px 0 18px;padding:23px 25px;background:linear-gradient(125deg,#103755,#0b2138 72%);border:1px solid #4ca8d8;box-shadow:0 8px 34px #01152466}
+#page-dashboard .run-projection-heading{font-size:12px;color:#a7ecff;margin-bottom:21px}
+#page-dashboard .run-projection-scores{grid-template-columns:minmax(0,1fr) 34px minmax(0,1fr) minmax(125px,.75fr);gap:18px}
+#page-dashboard .run-team-name{font-size:13px;color:#d0eafd;font-weight:800}
+#page-dashboard .run-team strong{font-size:clamp(58px,6vw,78px);color:#fff;text-shadow:0 0 24px #3abfff45}
+#page-dashboard .run-score-separator{font-size:36px}
+#page-dashboard .run-total strong{font-size:58px}
+#page-dashboard .pickchips{margin:16px 0 22px}
+.mlb-slate-score{margin-top:14px;padding:16px;background:linear-gradient(120deg,#0c344f,#0b2138);border:1px solid #347eaa;border-radius:8px}
+.mlb-slate-score-heading{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;color:#9ae7ff;font-size:11px;font-weight:900;letter-spacing:.7px}
+.mlb-slate-score-heading small{font-size:9px;color:#86a9c4}
+.mlb-slate-score-matchup{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:10px;align-items:center;margin:13px 0;color:#d4edff;font-size:11px;font-weight:800;line-height:1.35}
+.mlb-slate-score-matchup>span:last-child{text-align:right}
+.mlb-slate-score-matchup strong{color:#fff;font-family:'Barlow Condensed',Impact,sans-serif;font-size:34px;white-space:nowrap}
+.mlb-slate-score-total{border-top:1px solid #2c5876;padding-top:9px;color:#8ccce9;font-size:10px;font-weight:850;letter-spacing:.7px}
+@media(max-width:580px){
+  #page-dashboard .run-projection{padding:16px}
+  #page-dashboard .run-projection-heading{font-size:11px}
+  #page-dashboard .run-projection-scores{grid-template-columns:minmax(0,1fr) 18px minmax(0,1fr);gap:7px}
+  #page-dashboard .run-team-name{font-size:11px}
+  #page-dashboard .run-team strong{font-size:56px}
+  #page-dashboard .run-score-separator{font-size:25px}
+  #page-dashboard .run-total{grid-column:1/-1;border-left:0;border-top:1px solid #376786;padding:13px 0 0;flex-direction:row;justify-content:space-between;align-items:center}
+  #page-dashboard .run-total strong{font-size:39px}
+  .mlb-slate-score{padding:12px}
+  .mlb-slate-score-matchup{gap:7px}
+  .mlb-slate-score-matchup strong{font-size:27px}
+}
