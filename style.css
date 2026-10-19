@@ -26,3 +26,17 @@
 .schedule-bottom a:hover{text-decoration:underline}
 @media(max-width:780px){.schedule-grid{grid-template-columns:1fr}}
 @media(max-width:580px){.schedule-game{padding:16px}.schedule-bottom{flex-direction:column;align-items:flex-start}}
+
+
+/* Dedicated football page (not part of the MLB official ledger) */
+.football-banner{position:relative;display:flex;justify-content:space-between;align-items:center;overflow:hidden;min-height:200px;padding:30px 32px;margin:10px 0 30px;border-radius:11px;background:linear-gradient(110deg,#0f243c,#112d43 65%,#082032);border:1px solid #235475}
+.football-banner h1{font-family:'Barlow Condensed',Impact,sans-serif;font-weight:900;font-size:clamp(43px,5vw,68px);line-height:1;margin:13px 0 9px;color:#fff}
+.football-banner h1 em{color:var(--ice);font-style:normal}
+.football-banner p{color:#9ab9d1;line-height:1.7;font-size:12px;max-width:570px;margin:0}
+.football-tag{display:inline-block;color:#8fddff;border:1px solid #2f7195;background:#0c3954;border-radius:4px;padding:7px 10px;letter-spacing:1px;font-size:10px;font-weight:900}
+.football-mark{font-size:110px;transform:rotate(-22deg);opacity:.43;margin:0 18px}
+.nfl-grid .schedule-game{background:linear-gradient(140deg,#10243b,#0a1a2b);border-color:#23577d}
+.nfl-day-heading{grid-column:1/-1;color:#bdeeff;border-left:3px solid #30bfff;padding:7px 10px 8px;background:#0f2a43;font-size:11px;font-weight:800;letter-spacing:1px;border-radius:4px}
+.nfl-info{color:#9db6cb;font-size:12px;line-height:1.8;margin:0}
+.football-score{font-size:12px;font-weight:900;color:#75d8ff;margin:12px 0 0}
+@media(max-width:580px){.football-banner{padding:23px 19px;min-height:auto}.football-mark{display:none}.football-banner h1{font-size:50px}.nfl-grid{grid-template-columns:1fr}}
