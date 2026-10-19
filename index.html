@@ -4,7 +4,7 @@
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#070e1a">
   <title>FROZEN ROOT PREDICTION SYSTEM | MLB & NFL</title>
-  <link rel="stylesheet" href="./style.css?v=mlb-scores-v1">
+  <link rel="stylesheet" href="./style.css?v=nfl-scores-v1">
 </head>
 <body>
 <div class="ambient"></div>
@@ -54,6 +54,7 @@
       <p class="small-note">GitHub Pages updates the public website after you commit changes to the hosting branch.</p>
     </div>
   </div>
+  <div class="panel protocol"><h3>NFL score forecasts</h3><p>When Root locks a football moneyline pick, we can also publish the estimated final points for each team and projected combined total in <strong>nfl-picks.json</strong>. These are independent pregame forecasts, never automatic final scores.</p></div>
   <div class="panel protocol"><h3>What's automatic today?</h3><p>The public site automatically displays the current published picks and recalculates the tracker from the data file. It does not automatically generate picks, fetch lineups, or verify results yet; those require a separately configured data source and scheduled analysis.</p></div>
 </section>
       <section class="page" id="page-football" aria-label="NFL football games">
@@ -64,14 +65,14 @@
           <div class="football-mark" aria-hidden="true">🏈</div>
         </div>
         <div class="sectionhead"><h2>This week’s NFL schedule</h2><span id="nflDateRange">LOADING WEEK</span></div>
-        <p class="schedule-intro">Every Tuesday at <strong>12:01 AM Pacific</strong>, the previous week’s games are cleared and the new Tuesday–Monday schedule appears. Unselected upcoming games show <strong>PICK PENDING</strong>. Schedule listings are not official picks.</p>
+        <p class="schedule-intro">Every Tuesday at <strong>12:01 AM Pacific</strong>, the previous week’s games are cleared and the new Tuesday–Monday schedule appears. Unselected upcoming games show <strong>PICK PENDING</strong>. Locked NFL picks show estimated points for <strong>both teams</strong> and a <strong>projected total</strong>. These pregame forecasts are separate from actual scores.</p>
         <div id="nflMeta" class="schedule-meta" aria-live="polite">Loading verified football schedule...</div>
         <div id="nflGames" class="schedule-grid nfl-grid" aria-live="polite"><div class="panel schedule-empty">Loading football games...</div></div>
         <div class="schedule-bottom"><a href="https://www.espn.com/nfl/schedule" target="_blank" rel="noopener noreferrer">NFL schedule source ↗</a><span>NFL entries never affect MLB picks, wins, losses, or pending results.</span></div>
         <div class="sectionhead"><h2>Latest official NFL pick</h2><span>FROZEN · LOCKED</span></div>
         <div class="feature" id="nflOfficialPick"><div class="loading">Loading the official NFL pick...</div></div>
         <div class="sectionhead"><h2>NFL pick history</h2><span id="nflHistoryCount">0 LOCKED PICKS</span></div>
-        <div class="panel hpanel"><div class="table-wrap"><table><thead><tr><th>DATE</th><th>WINNER PICK</th><th>OPPONENT</th><th>STATUS</th></tr></thead><tbody id="nflHistoryRows"><tr><td colspan="4">Checking official NFL pick history...</td></tr></tbody></table></div></div>
+        <div class="panel hpanel"><div class="table-wrap"><table><thead><tr><th>DATE</th><th>WINNER PICK</th><th>OPPONENT</th><th>PROJECTED POINTS</th><th>STATUS</th></tr></thead><tbody id="nflHistoryRows"><tr><td colspan="5">Checking official NFL pick history...</td></tr></tbody></table></div></div>
         <div class="bottom-grid">
           <div class="panel"><div class="panel-title"><h3>Football picks</h3><span>SEPARATE TRACKER</span></div>
             <p class="nfl-info" id="nflPickSummary">No football picks have been locked yet.</p>
@@ -87,6 +88,6 @@
 </div>
 <script src="./app.js?v=mlb-scores-v1"></script>
 <script src="./daily.js?v=mlb-scores-v1"></script>
-<script src="./nfl.js?v=20261018-loadfix"></script>
+<script src="./nfl.js?v=nfl-scores-v1"></script>
 </body>
 </html>
