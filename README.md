@@ -27,14 +27,14 @@ All published data lives in `site.json` at the root of this repository. Edit tha
 
 ## Automatic daily MLB game schedule — no subscription
 
-Frozen Root now has a **Today’s MLB schedule** section on the homepage. Every morning at approximately **7:17 AM Pacific**, the public GitHub Actions workflow `.github/workflows/daily-mlb-schedule.yml` fetches that day's official MLB game slate and writes `schedule.json`; it also refreshes around **2:23 PM Pacific** for schedule changes. It uses MLB's public Stats API and GitHub Actions with no paid API key. Scheduled GitHub Actions jobs are best-effort and can be delayed, skipped, or disabled after 60 days of repository inactivity.
+Frozen Root now has a **Today’s MLB schedule** section on the homepage. Every day at approximately **12:01 AM Pacific**, the public GitHub Actions workflow `.github/workflows/daily-mlb-schedule.yml` fetches that day's official MLB game slate and writes `schedule.json`; it also refreshes around **2:23 PM Pacific** for changes to postponements and game status for schedule changes. It uses MLB's public Stats API and GitHub Actions with no paid API key. Scheduled GitHub Actions jobs are best-effort and can be delayed, skipped, or disabled after 60 days of repository inactivity.
 
 - New matchups display **PICK PENDING**. This **does not** mean that a team has been selected, and these placeholders do **not** enter the official ledger, win rate, or **Awaiting Results** number.
 - When an official pick for the exact matchup and date has already been locked in `site.json`, the schedule card shows the locked team instead. This workflow **never edits `site.json`**.
 - Cancelled or postponed games are labeled **GAME CANCELED / POSTPONED — NO PENDING PICK** in the schedule. Official pick settlements/voiding are a **separate verified record update**.
 - Finished games without a locked official pick show **FINAL — NO OFFICIAL PICK**.
 - If GitHub's daily refresh is late, the website attempts a direct live MLB schedule request in the browser. If that is unavailable, it explicitly shows **Schedule unavailable** rather than pretending there were no games.
-- You can manually run the feed from **GitHub → Actions → Daily MLB schedule — Frozen Root → Run workflow**, if the first scheduled run hasn't occurred yet and GitHub Actions are enabled.
+- You can manually run the feed from **GitHub → Actions → Frozen Root — Daily slate at 12:01 AM PT → Run workflow**, if the first scheduled run hasn't occurred yet and GitHub Actions are enabled.
 
 **This feature automatically posts the games and pending placeholders, not model-selected winners.** Genuine automatic winner predictions would require a separate data-validation and analysis service, and they must never silently override locked official picks.
 
