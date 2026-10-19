@@ -1,6 +1,6 @@
-# ROOT FROZEN — Free GitHub Pages edition
+# FROZEN ROOT PREDICTION SYSTEM — Free GitHub Pages edition
 
-This version of Root Frozen is a static website built for **GitHub Pages Free**: dark blue-and-black design, desktop/mobile layout, official locked picks, a historical performance tracker, and methodology. No hosting subscription or Node.js server is required.
+This version of Frozen Root Prediction System is a static website built for **GitHub Pages Free**: dark blue-and-black design, desktop/mobile layout, official locked picks, a historical performance tracker, and methodology. No hosting subscription or Node.js server is required.
 
 ## Publish for free
 
