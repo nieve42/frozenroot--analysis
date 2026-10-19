@@ -74,3 +74,6 @@
   .run-team strong,.run-total strong{font-size:36px}
   .run-total{grid-column:1/-1;flex-direction:row;justify-content:space-between;align-items:center;border-left:0;border-top:1px solid #376786;padding:13px 0 0;margin-top:6px}
 }
+
+
+.mlb-slate-forecast{margin:12px 0 0;padding:10px 11px;border-left:2px solid #53c6ff;background:#0b3048;border-radius:3px;color:#b4e9ff;font-size:10px;line-height:1.7;font-weight:750}
