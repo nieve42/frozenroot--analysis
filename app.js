@@ -31,7 +31,7 @@ function showPage(page){
   if(!allowed.includes(page))page='dashboard';
   document.querySelectorAll('.page').forEach(el=>el.classList.toggle('active',el.id===`page-${page}`));
   document.querySelectorAll('.navlink').forEach(el=>el.classList.toggle('active',el.dataset.page===page));
-  $('pageName').textContent=({dashboard:'OVERVIEW',history:'PICK HISTORY',method:'THE SYSTEM',control:'PUBLISHING',football:'NFL / FOOTBALL'})[page];
+  $('pageName').textContent=({dashboard:'MLB PREDICTIONS AND RECORD',history:'PICK HISTORY',method:'THE SYSTEM',control:'PUBLISHING',football:'NFL / FOOTBALL'})[page];
   if($('sportIndicator')) $('sportIndicator').textContent=page==='football'?'FOOTBALL / NFL':'BASEBALL INTELLIGENCE';
   if(page==='dashboard')window.scrollTo({top:0,behavior:'instant'});
 }
