@@ -51,3 +51,27 @@ The navigation menu contains **Football games** directly beneath **Update the we
 - Canceled or postponed games are labeled as such. Schedule entries and placeholders never increment either sport's win/loss totals or Awaiting Results.
 
 GitHub Pages remains free for this static site. Automatic *winner* predictions and verified settlement are not enabled here; only schedule publishing is automated.
+
+
+## MLB score forecasts — team runs and total
+
+When locking a **new** MLB moneyline pick, store an optional pregame score projection in its entry in `site.json`. The official pick should include this field when the independent prediction is made **before first pitch**:
+
+```json
+{
+  "team": "Tampa Bay Rays",
+  "opponent": "Cleveland Guardians",
+  "projectedScore": {
+    "teamRuns": 4,
+    "opponentRuns": 2
+  }
+}
+```
+
+**Example only; not a historical forecast or a new official game selection.** The website displays this as **Rays 4 – Guardians 2, projected total 6 runs** on the latest locked MLB pick and in Pick History, and also on the day's schedule card if the locked game is scheduled that day. The total is calculated, so do not manually enter an inconsistent total.
+
+- `projectedScore.teamRuns` is the projected run total for **`team`**, Root's official winner pick; `projectedScore.opponentRuns` is for **`opponent`**.
+- Use nonnegative whole numbers for each field. Publish the forecast **at the time the new pick is locked**; don't retroactively invent it for old entries or silently revise it after the game.
+- Forecast runs are **not the actual final score** and do **not** affect moneyline wins, losses, voids, or Awaiting Results. Settlements remain independent (`status` and verified `finalScore`).
+- Historical entries with no recorded pregame score forecast display **Not recorded**.
+
