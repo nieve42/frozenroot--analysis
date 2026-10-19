@@ -68,10 +68,17 @@
       else if (!Array.isArray(picks)) { badge='PICK STATUS UNAVAILABLE'; badgeClass='off'; }
       const label = safe(g.away) + ' <span class="game-versus">@</span> ' + safe(g.home);
       const series = g.series ? '<span>' + safe(g.series) + '</span>' : '';
+      const projected = existing?.projectedScore;
+      const valid = projected && Number.isInteger(projected.teamRuns) && Number.isInteger(projected.opponentRuns) &&
+        projected.teamRuns >= 0 && projected.opponentRuns >= 0;
+      const forecast = valid ?
+        '<p class="mlb-slate-forecast">PREGAME RUNS FORECAST: ' +
+        safe(existing.team) + ' ' + projected.teamRuns + ' · ' + safe(existing.opponent) + ' ' +
+        projected.opponentRuns + ' · TOTAL ' + (projected.teamRuns + projected.opponentRuns) + '</p>' : '';
       return '<article class="schedule-game">' +
         '<div class="schedule-game-head"><span>GAME ' + safe(g.gamePk || 'TBD') + '</span><span>' + safe(gameTime(g.startUTC)) + '</span></div>' +
         '<h3>' + label + '</h3><p class="schedule-game-state">' + safe(g.status) + (series ? ' · ' + series : '') + '</p>' +
-        '<div class="schedule-status ' + badgeClass + '">' + safe(badge) + '</div></article>';
+        '<div class="schedule-status ' + badgeClass + '">' + safe(badge) + '</div>' + forecast + '</article>';
     }).join('');
   }
   let busy = false;
