@@ -1,17 +1,17 @@
 {
-  "date": "2026-10-18",
-  "fetchedAt": "2026-10-19T00:45:45Z",
+  "date": "2026-10-19",
+  "fetchedAt": "2026-10-19T07:38:21Z",
   "source": "MLB Stats API",
   "games": [
     {
-      "gamePk": 849817,
-      "away": "Tampa Bay Rays",
-      "home": "Cleveland Guardians",
-      "startUTC": "2026-10-18T21:08:00Z",
-      "status": "Final",
+      "gamePk": 849815,
+      "away": "Cleveland Guardians",
+      "home": "Tampa Bay Rays",
+      "startUTC": "2026-10-20T00:08:00Z",
+      "status": "Scheduled",
       "series": "AL Championship Series",
       "gameType": "L",
-      "gameNumber": 5
+      "gameNumber": 6
     }
   ]
 }
