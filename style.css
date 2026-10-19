@@ -40,3 +40,13 @@
 .nfl-info{color:#9db6cb;font-size:12px;line-height:1.8;margin:0}
 .football-score{font-size:12px;font-weight:900;color:#75d8ff;margin:12px 0 0}
 @media(max-width:580px){.football-banner{padding:23px 19px;min-height:auto}.football-mark{display:none}.football-banner h1{font-size:50px}.nfl-grid{grid-template-columns:1fr}}
+
+
+/* Five-tab mobile navigation: keep football visible without horizontal overflow. */
+@media(max-width:580px){
+  .sidebar{flex-wrap:wrap;justify-content:space-between;gap:10px}
+  .identity{flex:1 1 100%}
+  .nav{width:100%;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:3px}
+  .navlink{justify-content:center;min-width:0;padding:9px 3px}
+  .navlink span{width:auto;font-size:18px}
+}
