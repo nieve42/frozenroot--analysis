@@ -15,12 +15,15 @@
       "team": "Cleveland Guardians",
       "opponent": "Tampa Bay Rays",
       "stake": 1,
-      "status": "pending",
+      "status": "void",
       "locked": true,
-      "analysis": "Previously locked official moneyline pick. Result not reconciled in this site yet.",
-      "risk": "Result verification required",
+      "analysis": "Official October 16 Cleveland Guardians moneyline pick remains historically locked. The originally scheduled October 16 ALCS Game 4 was postponed due to rain to October 17. Marked void for the original dated pick per owner request; no win or loss assigned to this entry.",
+      "risk": "October 16 scheduled game postponed; original dated pick voided (not a win or loss).",
       "odds": "Reference -102 (unverified)",
-      "createdBy": "Root + user"
+      "createdBy": "Root + user",
+      "settlementReason": "Scheduled October 16 game postponed to October 17. Original dated entry voided by tracker owner.",
+      "resultSource": "https://www.mlb.com/guardians/news/alcs-game-4-moved-from-friday",
+      "resultVerifiedOn": "2026-10-18"
     },
     {
       "id": "2026-10-18-alcs-g5",
