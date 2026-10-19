@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#070e1a">
-  <title>FROZEN ROOT PREDICTION SYSTEM | Official MLB Predictions</title>
+  <title>FROZEN ROOT PREDICTION SYSTEM | MLB & NFL</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -17,6 +17,7 @@
       <a class="navlink" href="#history" data-page="history"><span>▤</span> Pick history</a>
       <a class="navlink" href="#method" data-page="method"><span>◇</span> The system</a>
       <a class="navlink" href="#control" data-page="control"><span>⚙</span> Update the website</a>
+      <a class="navlink" href="#football" data-page="football"><span>◈</span> Football games</a>
     </nav>
     <div class="side-bottom"><div class="live-indicator"><span class="pulse"></span> OFFICIAL PICK ARCHIVE</div><p>Frozen picks. Independent analysis. No following the crowd.</p><span class="vtag">FROZEN ROOT / VERSION 1.1</span></div>
   </aside>
@@ -55,11 +56,33 @@
   </div>
   <div class="panel protocol"><h3>What's automatic today?</h3><p>The public site automatically displays the current published picks and recalculates the tracker from the data file. It does not automatically generate picks, fetch lineups, or verify results yet; those require a separately configured data source and scheduled analysis.</p></div>
 </section>
+      <section class="page" id="page-football" aria-label="NFL football games">
+        <div class="eyebrow"><span class="line"></span> NFL / FOOTBALL COMMAND CENTER</div>
+        <div class="football-banner">
+          <div><span class="football-tag">🏈 FROZEN ROOT FOOTBALL</span><h1>FOOTBALL <em>GAMES.</em></h1>
+          <p>An NFL-only schedule and separate pick board. Baseball picks and records stay in their own section.</p></div>
+          <div class="football-mark" aria-hidden="true">🏈</div>
+        </div>
+        <div class="sectionhead"><h2>NFL schedule</h2><span id="nflDateRange">LOADING SCHEDULE</span></div>
+        <p class="schedule-intro">Upcoming NFL matchups are labeled <strong>PICK PENDING</strong> until we officially select a team. Schedule listings are <strong>not</strong> predictions or bets.</p>
+        <div id="nflMeta" class="schedule-meta" aria-live="polite">Loading verified football schedule...</div>
+        <div id="nflGames" class="schedule-grid nfl-grid" aria-live="polite"><div class="panel schedule-empty">Loading football games...</div></div>
+        <div class="schedule-bottom"><a href="https://www.espn.com/nfl/schedule" target="_blank" rel="noopener noreferrer">NFL schedule source ↗</a><span>NFL entries never affect MLB picks, wins, losses, or pending results.</span></div>
+        <div class="bottom-grid">
+          <div class="panel"><div class="panel-title"><h3>Football picks</h3><span>SEPARATE TRACKER</span></div>
+            <p class="nfl-info" id="nflPickSummary">No football picks have been locked yet.</p>
+          </div>
+          <div class="panel frostpanel"><div class="panel-title"><h3>Frozen Root rule</h3><span>NFL ONLY</span></div>
+            <p class="nfl-info">Predictions are provisional until locked. Once officially locked, the pick stays fixed; canceled games do not count as wins or losses.</p>
+          </div>
+        </div>
+      </section>
     </div>
     <footer><span>© 2026 FROZEN ROOT PREDICTION SYSTEM — THE CALL IS FINAL.</span><span>For entertainment; $1 units are hypothetical. No real-money transactions.</span></footer>
   </main>
 </div>
 <script src="./app.js"></script>
 <script src="./daily.js"></script>
+<script src="./nfl.js"></script>
 </body>
 </html>
