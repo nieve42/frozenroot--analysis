@@ -48,11 +48,36 @@
     if (!response.ok) throw new Error('Unable to fetch '+file+' ('+response.status+')');
     return response.json();
   };
+  // Forecast is pregame only and never changes a locked moneyline pick or actual final score.
+  function projectedPoints(p) {
+    const s=p && p.projectedScore;
+    if(!s || !Number.isInteger(s.teamPoints) || !Number.isInteger(s.opponentPoints) ||
+      s.teamPoints<0 || s.opponentPoints<0) return null;
+    return {teamPoints:s.teamPoints,opponentPoints:s.opponentPoints,totalPoints:s.teamPoints+s.opponentPoints};
+  }
+  function projectedPointsCard(p) {
+    const s=projectedPoints(p);
+    if(!s) return '<div class="run-projection missing"><div class="run-projection-heading"><span>🏈 PROJECTED FINAL SCORE</span><small>PREGAME FORECAST</small></div><p>Not recorded for this pick. Future locked NFL selections will include projected points for both teams.</p></div>';
+    return '<div class="run-projection nfl-score-projection">'+
+      '<div class="run-projection-heading"><span>🏈 PROJECTED FINAL SCORE</span><small>PREGAME FORECAST · NOT ACTUAL RESULTS</small></div>'+
+      '<div class="run-projection-scores">'+
+      '<div class="run-team"><span class="run-team-name">'+safe(p.team)+'</span><strong>'+s.teamPoints+'</strong></div>'+
+      '<div class="run-score-separator">–</div>'+
+      '<div class="run-team"><span class="run-team-name">'+safe(p.opponent)+'</span><strong>'+s.opponentPoints+'</strong></div>'+
+      '<div class="run-total"><span>PROJECTED TOTAL POINTS</span><strong>'+s.totalPoints+'</strong></div>'+
+      '</div></div>';
+  }
+  function projectedPointsHistory(p) {
+    const s=projectedPoints(p);
+    if (!s) return '<span class="projection-unavailable">Not recorded</span>';
+    return '<strong class="projection-history-score">'+s.teamPoints+' – '+s.opponentPoints+'</strong>'+
+      '<small>'+s.totalPoints+' total points · FORECAST</small>';
+  }
   function renderOfficial(data) {
     if (!feature || !history || !historyCount) return;
     if (!data || !Array.isArray(data.picks)) {
       feature.innerHTML = '<div class="loading">Official NFL pick data temporarily unavailable.</div>';
-      history.innerHTML = '<tr><td colspan="4">Unable to load pick history.</td></tr>';
+      history.innerHTML = '<tr><td colspan="5">Unable to load pick history.</td></tr>';
       historyCount.textContent = 'UNAVAILABLE';
       if (summary) summary.textContent = 'Official NFL record temporarily unavailable.';
       return;
@@ -67,7 +92,7 @@
     historyCount.textContent = locked.length+' LOCKED PICK'+(locked.length===1?'':'S');
     if (!locked.length) {
       feature.innerHTML = '<div class="loading">No official NFL picks have been locked yet.</div>';
-      history.innerHTML = '<tr><td colspan="4">No locked football picks yet.</td></tr>';
+      history.innerHTML = '<tr><td colspan="5">No locked football picks yet.</td></tr>';
       return;
     }
     const p = locked[0];
@@ -81,6 +106,7 @@
       '<div class="pickchips"><span class="chip locked">❄ OFFICIALLY LOCKED</span>'+
       '<span class="chip '+statusClass(status)+'">'+safe(status.toUpperCase())+'</span>'+
       '<span class="chip">HYPOTHETICAL $'+safe(p.stake??1)+' UNIT</span></div>'+
+      projectedPointsCard(p)+
       '<p class="nfl-info">'+safe(p.analysis||'Official selection locked before kickoff.')+'</p></div>'+
       '<div class="feature-note"><strong>RISK / PROCESS</strong><span>'+
       safe(p.risk||'Prediction, not a guaranteed result.')+'</span></div>';
@@ -89,6 +115,7 @@
       return '<tr><td>'+safe(labelDay(pick.date))+'</td>'+
         '<td><strong>'+safe(pick.team)+'</strong><small>OFFICIAL · LOCKED</small></td>'+
         '<td>'+safe(pick.opponent)+'</td>'+
+        '<td>'+projectedPointsHistory(pick)+'</td>'+
         '<td><span class="status '+statusClass(outcome)+'">'+safe(outcome.toUpperCase())+
         '</span></td></tr>';
     }).join('');
@@ -136,12 +163,17 @@
         else if (isLive(state)) {badge='IN PROGRESS — NO OFFICIAL PICK';kind='final';}
         else if (!Array.isArray(picks)) {badge='PICK STATUS UNAVAILABLE';kind='off';}
         const score = (isFinal(state)||isLive(state)) && g.awayScore!=null && g.homeScore!=null ?
-          '<div class="football-score">'+safe(g.awayScore)+' – '+safe(g.homeScore)+'</div>' : '';
+          '<div class="football-score">ACTUAL SCORE: '+safe(g.awayScore)+' – '+safe(g.homeScore)+'</div>' : '';
+        const projected = official ? projectedPoints(official) : null;
+        const forecast = projected ?
+          '<p class="nfl-slate-forecast">PREGAME POINTS FORECAST: '+
+          safe(official.team)+' '+projected.teamPoints+' · '+safe(official.opponent)+' '+projected.opponentPoints+
+          ' · TOTAL '+projected.totalPoints+' POINTS</p>' : '';
         html += '<article class="schedule-game">'+
           '<div class="schedule-game-head"><span>NFL · '+safe(g.id)+'</span><span>'+safe(gameTime(g.dateUTC))+'</span></div>'+
           '<h3>'+safe(g.away)+' <span class="game-versus">@</span> '+safe(g.home)+'</h3>'+
           '<p class="schedule-game-state">'+safe(state)+'</p>'+score+
-          '<div class="schedule-status '+kind+'">'+safe(badge)+'</div></article>';
+          '<div class="schedule-status '+kind+'">'+safe(badge)+'</div>'+forecast+'</article>';
       }
     }
     grid.innerHTML = html;
