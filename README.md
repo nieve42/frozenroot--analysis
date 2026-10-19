@@ -38,3 +38,16 @@ Frozen Root now has a **Today’s MLB schedule** section on the homepage. Every 
 
 **This feature automatically posts the games and pending placeholders, not model-selected winners.** Genuine automatic winner predictions would require a separate data-validation and analysis service, and they must never silently override locked official picks.
 
+
+
+## NFL football — separate game section
+
+The navigation menu contains **Football games** directly beneath **Update the website**. The NFL tab is fully separate from the MLB dashboard, pick archive, and 4–5 baseball record.
+
+- `nfl-schedule.json` contains the upcoming seven-day NFL slate from ESPN's public scoreboard feed, displayed with kickoff times in Pacific time.
+- `scripts/update_nfl_schedule.py` refreshes the NFL slate only; it never edits the MLB `site.json` or any official pick.
+- `.github/workflows/daily-nfl-schedule.yml` updates the slate at approximately **12:01 AM Pacific** and refreshes it in the afternoon. Scheduled GitHub Actions can be delayed and may be paused by GitHub.
+- `nfl-picks.json` is the separate NFL official pick ledger, initially empty. Upcoming games display **PICK PENDING** until an official NFL selection is deliberately locked. No football pick is assumed from the posted schedule.
+- Canceled or postponed games are labeled as such. Schedule entries and placeholders never increment either sport's win/loss totals or Awaiting Results.
+
+GitHub Pages remains free for this static site. Automatic *winner* predictions and verified settlement are not enabled here; only schedule publishing is automated.
