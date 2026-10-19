@@ -72,9 +72,12 @@
       const valid = projected && Number.isInteger(projected.teamRuns) && Number.isInteger(projected.opponentRuns) &&
         projected.teamRuns >= 0 && projected.opponentRuns >= 0;
       const forecast = valid ?
-        '<p class="mlb-slate-forecast">PREGAME RUNS FORECAST: ' +
-        safe(existing.team) + ' ' + projected.teamRuns + ' · ' + safe(existing.opponent) + ' ' +
-        projected.opponentRuns + ' · TOTAL ' + (projected.teamRuns + projected.opponentRuns) + '</p>' : '';
+        '<div class="mlb-slate-score" aria-label="Projected final score">' +
+        '<div class="mlb-slate-score-heading">❄ PROJECTED FINAL SCORE <small>NOT THE ACTUAL RESULT</small></div>' +
+        '<div class="mlb-slate-score-matchup"><span>' + safe(existing.team) + '</span><strong>' +
+        projected.teamRuns + ' – ' + projected.opponentRuns + '</strong><span>' +
+        safe(existing.opponent) + '</span></div>' +
+        '<div class="mlb-slate-score-total">PROJECTED TOTAL · ' + (projected.teamRuns + projected.opponentRuns) + ' RUNS</div></div>' : '';
       return '<article class="schedule-game">' +
         '<div class="schedule-game-head"><span>GAME ' + safe(g.gamePk || 'TBD') + '</span><span>' + safe(gameTime(g.startUTC)) + '</span></div>' +
         '<h3>' + label + '</h3><p class="schedule-game-state">' + safe(g.status) + (series ? ' · ' + series : '') + '</p>' +
