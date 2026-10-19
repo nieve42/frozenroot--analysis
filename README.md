@@ -42,11 +42,11 @@ Frozen Root now has a **Today’s MLB schedule** section on the homepage. Every 
 
 ## NFL football — separate game section
 
-The navigation menu contains **Football games** directly beneath **Update the website**. The NFL tab is fully separate from the MLB dashboard, pick archive, and 4–5 baseball record.
+The navigation menu contains **Football games** directly beneath **Update the website**. The NFL tab is fully separate from the MLB dashboard, pick archive, and baseball record.
 
-- `nfl-schedule.json` contains the upcoming seven-day NFL slate from ESPN's public scoreboard feed, displayed with kickoff times in Pacific time.
+- `nfl-schedule.json` contains the current **Tuesday-through-Monday NFL week** from ESPN's public scoreboard feed, displayed with kickoff times in Pacific time. The entire displayed week is replaced every Tuesday.
 - `scripts/update_nfl_schedule.py` refreshes the NFL slate only; it never edits the MLB `site.json` or any official pick.
-- `.github/workflows/daily-nfl-schedule.yml` updates the slate at approximately **12:01 AM Pacific** and refreshes it in the afternoon. Scheduled GitHub Actions can be delayed and may be paused by GitHub.
+- `.github/workflows/daily-nfl-schedule.yml` updates game statuses daily at approximately **12:01 AM Pacific** and refreshes them in the afternoon. **Tuesday at 12:01 AM Pacific** begins a new NFL week: the previous week's visible games are cleared and replaced with Tuesday–Monday matchups. If the job is delayed, the site hides the old week instead of displaying it as current. Scheduled GitHub Actions can be delayed and may be paused by GitHub.
 - `nfl-picks.json` is the separate NFL official pick ledger, initially empty. Upcoming games display **PICK PENDING** until an official NFL selection is deliberately locked. No football pick is assumed from the posted schedule.
 - Canceled or postponed games are labeled as such. Schedule entries and placeholders never increment either sport's win/loss totals or Awaiting Results.
 
