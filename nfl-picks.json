@@ -22,7 +22,13 @@
         "https://www.49ers.com/news/kyle-juszczyk-available-deebo-ruled-out-vs-commanders-in-week-6-wasvssf",
         "https://www.commanders.com/news/game-status-commanders-49ers-week-6",
         "https://www.nfl.com/games/commanders-at-49ers-2026-reg-6"
-      ]
+      ],
+      "projectedScore": {
+        "teamPoints": 27,
+        "opponentPoints": 20
+      },
+      "scoreProjectionRecordedOn": "2026-10-18",
+      "scoreProjectionNote": "Pregame estimated points added after the winner pick was initially locked, but before the October 19 kickoff; this is a forecast, not the final score. The originally locked winner was not changed."
     }
   ],
   "note": "NFL official picks are separate from MLB. Schedule placeholders do not count as selections or awaiting results. Never auto-lock any pick.",
