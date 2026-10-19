@@ -55,11 +55,14 @@ def make_game(event):
 
 def main():
     today = datetime.now(PT).date()
-    until = today + timedelta(days=6)
-    # Include a prior/next query day to cover ESPN grouping across time zones.
+    # NFL site slate runs Tuesday through Monday, not a rolling seven-day window.
+    # Tuesday 12:01 AM Pacific begins the new week, replacing last week's slate.
+    week_start = today - timedelta(days=(today.weekday() - 1) % 7)
+    week_end = week_start + timedelta(days=6)
+    # Include one padding day at both edges for ESPN's UTC/local date grouping.
     unique = {}
     for offset in range(-1, 8):
-        for event in load_day(today+timedelta(days=offset)):
+        for event in load_day(week_start + timedelta(days=offset)):
             game = make_game(event)
             if not game["id"] or not game["dateUTC"]:
                 continue
@@ -67,17 +70,20 @@ def main():
                 local_day = datetime.fromisoformat(game["dateUTC"].replace("Z","+00:00")).astimezone(PT).date()
             except ValueError:
                 continue
-            if today <= local_day <= until:
+            if week_start <= local_day <= week_end:
                 unique[game["id"]] = game
     games = sorted(unique.values(),key=lambda g:(g["dateUTC"],g["id"]))
     output={
         "source":"ESPN NFL public scoreboard",
         "generatedAt":datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00","Z"),
-        "startDate":today.isoformat(), "endDate":until.isoformat(),
+        "startDate":week_start.isoformat(), "endDate":week_end.isoformat(),
+        "weekReset":"Tuesday 12:01 AM America/Los_Angeles",
         "games":games
     }
+    # Only replace the schedule after every day has been fetched successfully.
+    # Official NFL picks live in a different file and are never removed.
     DEST.write_text(json.dumps(output,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
-    print(f"Published NFL schedule ({today} through {until}) — {len(games)} games, no picks changed.")
+    print(f"Published NFL week ({week_start} through {week_end}) — {len(games)} games, no picks changed.")
 
 
 if __name__ == "__main__":
