@@ -315,10 +315,22 @@ def main():
         if schedule.get("startDate")!=weekstart.isoformat():
             raise RuntimeError("NFL slate is out of date. Refusing to forecast an old week.")
 
-    past_days={day-timedelta(days=i) for i in range(0,config["history_days"]+1)}
-    # An opening-season prediction also uses a small slice of last spring's
-    # regular season when 2026-27 scoring form is limited; explicit low-data warning remains.
-    if config["prior_days"] and day.month in (10,11):
+    # Hourly settlements don't need weeks of historical scoring data unless
+    # this is a new slate containing a game without an official/auto selection.
+    known_now = {str(p.get("gameId")) for p in entries}
+    manual_now = {str(p.get("gameId")) for p in (official.get("picks") or [])
+                  if p.get("locked")}
+    needs_forecast = any(
+        str(g.get("id")) not in known_now | manual_now and
+        (datetime_utc(g.get("dateUTC")) or now) > now and
+        not any(word in str(g.get("status","")).lower()
+                for word in ("final","cancel","postpon","progress","quarter","period","live"))
+        for g in game_list if g.get("id")
+    )
+    history_days = config["history_days"] if needs_forecast else 1
+    past_days = {day-timedelta(days=i) for i in range(history_days+1)}
+    # Season carryover history is only needed when making new forecasts.
+    if needs_forecast and config["prior_days"] and day.month in (10,11):
         spring=date(day.year,3,15)
         past_days.update(spring+timedelta(days=i) for i in range(config["prior_days"]))
     for pick_set in (entries, official.get("picks") or []):
