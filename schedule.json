@@ -1,6 +1,6 @@
 {
   "date": "2026-10-19",
-  "fetchedAt": "2026-10-19T21:49:54Z",
+  "fetchedAt": "2026-10-20T03:39:08Z",
   "source": "MLB Stats API",
   "games": [
     {
@@ -9,12 +9,11 @@
       "home": "Tampa Bay Rays",
       "startUTC": "2026-10-20T00:08:00Z",
       "status": "Final",
+      "awayScore": 3,
+      "homeScore": 7,
       "series": "AL Championship Series",
       "gameType": "L",
-      "gameNumber": 6,
-      "awayScore": 3,
-      "homeScore": 7
+      "gameNumber": 6
     }
-  ],
-  "resultSource": "https://apnews.com/article/e727b3a485df7dbf0dd866edbff9b22a"
+  ]
 }
