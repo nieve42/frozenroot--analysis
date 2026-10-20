@@ -22,7 +22,7 @@ PT = ZoneInfo("America/Los_Angeles")
 SPORTS = {
     "nfl": dict(path="football/nfl", history_days=49, prior_days=0,
                 baseline=22.0, home_edge=2.0, score_key="Points", decay=42),
-    "nba": dict(path="basketball/nba", history_days=24, prior_days=10,
+    "nba": dict(path="basketball/nba", history_days=24, prior_days=30,
                 baseline=112.0, home_edge=2.5, score_key="Points", decay=20),
     "nhl": dict(path="hockey/nhl", history_days=24, prior_days=10,
                 baseline=3.05, home_edge=0.28, score_key="Goals", decay=21),
@@ -139,17 +139,26 @@ def expected_rates(config, outcomes, now):
         if not item or item["season_type"] not in (2,3):
             continue
         age = max(0.0,(now-item["date"]).total_seconds()/86400)
-        weight = math.exp(-age/config["decay"])
-        stats[item["home"]].append((item["home_score"],item["away_score"],weight))
-        stats[item["away"]].append((item["away_score"],item["home_score"],weight))
+        current_form = age <= 75
+        if not current_form and now.month in (10,11) and item["date"].year == now.year \
+                and item["date"].month in (3,4):
+            # A modest carryover from the prior season, weaker than fresh results.
+            spring_end = datetime(now.year,4,15,tzinfo=timezone.utc)
+            season_age = max(0.0,(spring_end-item["date"]).total_seconds()/86400)
+            weight = 0.36 * math.exp(-season_age / 40.0)
+        else:
+            weight = math.exp(-age/config["decay"])
+        stats[item["home"]].append((item["home_score"],item["away_score"],weight,current_form))
+        stats[item["away"]].append((item["away_score"],item["home_score"],weight,current_form))
     rates = {}
     baseline = config["baseline"]
     for team,rows in stats.items():
-        effective = sum(weight for _,_,weight in rows)
+        effective = sum(weight for _,_,weight,_ in rows)
         pseudo = 4.0 if baseline > 10 else 5.0
-        scored = (baseline*pseudo+sum(s*w for s,_,w in rows))/(pseudo+effective)
-        conceded = (baseline*pseudo+sum(a*w for _,a,w in rows))/(pseudo+effective)
-        rates[team] = (scored,conceded,len(rows))
+        scored = (baseline*pseudo+sum(s*w for s,_,w,_ in rows))/(pseudo+effective)
+        conceded = (baseline*pseudo+sum(a*w for _,a,w,_ in rows))/(pseudo+effective)
+        recent = sum(1 for _,_,_,current in rows if current)
+        rates[team] = (scored,conceded,recent)
     return rates
 
 
@@ -210,7 +219,7 @@ def forecast(game, config, rates, when, now, sport):
         "projectedScore":score,
         "modelVersion":"score-form-v1",
         "risk":"LOW DATA" if low_data else "MODEL ESTIMATE",
-        "analysis":f"{note} Past result samples: {away} {n_a}, {home} {n_h}. "
+        "analysis":f"{note} Recent game samples: {away} {n_a}, {home} {n_h}. "
                    "This is a simple automatic estimate, not a live ChatGPT analysis "
                    "and does not account for confirmed injuries, lineups or betting odds."
     }
@@ -273,7 +282,7 @@ def main():
     # An opening-season prediction also uses a small slice of last spring's
     # regular season when 2026-27 scoring form is limited; explicit low-data warning remains.
     if config["prior_days"] and day.month in (10,11):
-        spring=date(day.year,4,1)
+        spring=date(day.year,3,15)
         past_days.update(spring+timedelta(days=i) for i in range(config["prior_days"]))
     for p in entries:
         if p.get("status")=="pending":
