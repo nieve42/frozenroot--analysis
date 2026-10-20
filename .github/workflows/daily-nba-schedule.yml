@@ -6,6 +6,8 @@ on:
       timezone: 'America/Los_Angeles'
     - cron: '23 14 * * *'
       timezone: 'America/Los_Angeles'
+    - cron: '17 * * * *'
+      timezone: 'America/Los_Angeles'
   workflow_dispatch:
   push:
     paths:
@@ -34,11 +36,11 @@ jobs:
         run: python scripts/update_nba_schedule.py
       - name: Generate new frozen automatic NBA winners and projected scores
         run: python scripts/auto_sports_picks.py --sport nba
-      - name: Publish NBA slate only
+      - name: Publish NBA slate and completed-game win/loss results
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add nba-schedule.json auto-nba-picks.json
+          git add nba-schedule.json auto-nba-picks.json nba-picks.json
           if git diff --cached --quiet; then
             echo "NBA schedule unchanged"
             exit 0
