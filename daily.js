@@ -106,7 +106,7 @@
       return '<article class="schedule-game">' +
         '<div class="schedule-game-head"><span>GAME ' + safe(g.gamePk || 'TBD') + '</span><span>' + safe(gameTime(g.startUTC)) + '</span></div>' +
         '<h3>' + label + '</h3><p class="schedule-game-state">' + safe(g.status) + (series ? ' · ' + series : '') + '</p>' +
-        '<div class="schedule-status ' + badgeClass + '">' + safe(badge) + '</div>' + forecast + actual + '</article>';
+        '<div class="schedule-status ' + badgeClass + '">' + safe(badge) + '</div>' + (existing ? '<div class="slate-reliability">'+window.FrozenRootReliability.badge(existing,'mlb',false)+'</div>' : '') + forecast + actual + '</article>';
     }).join('');
   }
   let busy = false;
