@@ -1,0 +1,7 @@
+{
+  "sport": "NHL",
+  "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
+  "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
+  "lastUpdated": null,
+  "picks": []
+}
