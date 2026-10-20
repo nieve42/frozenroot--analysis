@@ -122,3 +122,40 @@ The **NHL hockey** tab sits directly beneath NBA Basketball on the navigation me
 - Completed games display **actual goals and the winner**, without silently rewriting a locked pregame forecast. Official picks are settled as wins/losses/voids only after verification.
 - NHL picks, win/loss records and history are **independent** from baseball, football, and basketball. Game schedules update automatically, but winner predictions are **not generated or locked automatically**.
 
+
+## Automatically generated NFL, NBA and NHL winner picks + projected scores (free)
+
+When the schedule workflow posts its next slate, `scripts/auto_sports_picks.py`
+runs immediately afterward, gathers recent **completed games from ESPN**, estimates
+each team's scoring and scoring allowed, applies a modest home adjustment,
+and publishes one **predicted moneyline winner with projected scores for both teams**
+and the projected total. No OpenAI API key, paid subscription or sportsbook data
+is required. Automatic forecasts are a basic statistical model, **not a live
+ChatGPT judgment**; they do not incorporate verified gameday injuries or lineups.
+Early-season picks with little usable game history are especially uncertain.
+
+Schedules and automatic forecasts refresh as follows:
+- NFL: every Tuesday around **12:01 AM Pacific** for the Tuesday–Monday slate,
+  plus daily scheduled refreshes for score/status updates.
+- NBA and NHL: **daily at approximately 12:01 AM Pacific**, plus an afternoon
+  update for scores and status. GitHub schedules are best-effort and can run late.
+
+Each sport keeps a **separate automatic pick record** in
+`auto-nfl-picks.json`, `auto-nba-picks.json`, or `auto-nhl-picks.json`.
+Every selection and pregame score is saved with a timestamp and **never changed
+to match later results**. Once ESPN confirms a final, the auto pick is
+automatically marked win/loss, with the actual score saved separately. Canceled
+or postponed games can be marked void. New picks are made **only before kickoff,
+tipoff or puck drop**; the model skips games already in progress or completed.
+
+The website displays the auto winner and score forecast **on the schedule game
+card**, and also displays a separate auto model record, win rate, latest forecast
+and history on each sport's page. Independently reviewed and owner-confirmed
+official Root selections in `nfl-picks.json`, `nba-picks.json`,
+`nhl-picks.json` take priority over auto cards and **are never overwritten or
+silently switched**. Baseball is unchanged.
+
+If source data or the schedule publishing job fails, a pick may temporarily
+remain `PICK PENDING`. The site does not fabricate completed games, live
+ChatGPT analysis, a win probability, or guarantees of winning.
+
