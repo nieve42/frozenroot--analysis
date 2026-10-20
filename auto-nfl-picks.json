@@ -2,7 +2,7 @@
   "sport": "NFL",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-10-20T07:01:51Z",
+  "lastUpdated": "2026-10-20T07:04:05Z",
   "picks": [
     {
       "id": "nfl-auto-401873010",
