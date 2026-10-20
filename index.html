@@ -4,30 +4,52 @@
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#070e1a">
   <title>FROZEN ROOT PREDICTION SYSTEM | MLB, NFL, NBA & NHL</title>
-  <link rel="stylesheet" href="./style.css?v=seasons-v2">
+  <link rel="stylesheet" href="./style.css?v=all-sports-v1">
 </head>
 <body>
 <div class="ambient"></div>
 <div class="shell">
   <aside class="sidebar">
-    <a href="#dashboard" class="identity" aria-label="Frozen Root Prediction System home"><span class="snowmark">✳</span><span>FROZEN<span class="brandblue">ROOT</span><small>PREDICTION SYSTEM</small></span></a>
+    <a href="#overview" class="identity" aria-label="Frozen Root Prediction System home"><span class="snowmark">✳</span><span>FROZEN<span class="brandblue">ROOT</span><small>PREDICTION SYSTEM</small></span></a>
     <div class="side-label">COMMAND CENTER</div>
     <nav class="nav" aria-label="Site navigation">
-      <a class="navlink active" href="#dashboard" data-page="dashboard"><span>⚾</span> MLB Predictions and Record</a>
-      <a class="navlink" href="#football" data-page="football" title="Football games"><span>🏈</span> Football games</a>
-      <a class="navlink" href="#basketball" data-page="basketball" title="NBA basketball games"><span>🏀</span> NBA basketball</a>
-      <a class="navlink" href="#hockey" data-page="hockey" title="NHL hockey games"><span>🏒</span> NHL hockey</a>
-      <a class="navlink" href="#seasons" data-page="seasons" title="Completed season records"><span>🏆</span> Season archives</a>
-      <a class="navlink" href="#history" data-page="history"><span>▤</span> Pick history</a>
-      <a class="navlink" href="#method" data-page="method"><span>◇</span> The system</a>
-      <a class="navlink" href="#control" data-page="control"><span>⚙</span> Update the website</a>
+      <a class="navlink active" href="#overview" data-page="overview" aria-label="All sports home"><span>▦</span><span class="nav-caption">Home</span> All-Sports Dashboard</a>
+      <a class="navlink" href="#dashboard" data-page="dashboard" aria-label="MLB predictions and record"><span>⚾</span><span class="nav-caption">MLB</span> MLB Predictions and Record</a>
+      <a class="navlink" href="#football" data-page="football" title="Football games"><span>🏈</span><span class="nav-caption">NFL</span> Football games</a>
+      <a class="navlink" href="#basketball" data-page="basketball" title="NBA basketball games"><span>🏀</span><span class="nav-caption">NBA</span> NBA basketball</a>
+      <a class="navlink" href="#hockey" data-page="hockey" title="NHL hockey games"><span>🏒</span><span class="nav-caption">NHL</span> NHL hockey</a>
+      <a class="navlink" href="#seasons" data-page="seasons" title="Completed season records"><span>🏆</span><span class="nav-caption">Seasons</span> Season archives</a>
+      <a class="navlink" href="#history" data-page="history"><span>▤</span><span class="nav-caption">History</span> Pick history</a>
+      <a class="navlink" href="#method" data-page="method"><span>◇</span><span class="nav-caption">System</span> The system</a>
+      <a class="navlink" href="#control" data-page="control"><span>⚙</span><span class="nav-caption">Update</span> Update the website</a>
     </nav>
+    <div class="mobile-nav-scroll-note">Swipe to see more sections →</div>
     <div class="side-bottom"><div class="live-indicator"><span class="pulse"></span> OFFICIAL PICK ARCHIVE</div><p>Frozen picks. Independent analysis. No following the crowd.</p><span class="vtag">FROZEN ROOT / VERSION 1.1</span></div>
   </aside>
   <main class="main" id="dashboard">
-    <header class="topbar"><div class="bread">FROZEN ROOT PREDICTION SYSTEM <span>/</span> <strong id="pageName">MLB PREDICTIONS AND RECORD</strong></div><div class="topright"><span class="small-pill"><span class="tiny-blue-dot"></span> <span id="sportIndicator">BASEBALL INTELLIGENCE</span></span><span class="round-avatar">R</span></div></header>
+    <header class="topbar"><div class="bread">FROZEN ROOT PREDICTION SYSTEM <span>/</span> <strong id="pageName">ALL-SPORTS DASHBOARD</strong></div><div class="topright"><span class="small-pill"><span class="tiny-blue-dot"></span> <span id="sportIndicator">FOUR-SPORT COMMAND CENTER</span></span><span class="round-avatar">R</span></div></header>
     <div class="content">
-      <section class="page active" id="page-dashboard">
+      <section class="page active" id="page-overview" aria-label="All sports dashboard">
+        <div class="eyebrow"><span class="line"></span> FROZEN ROOT / ALL-SPORTS COMMAND CENTER</div>
+        <div class="overview-hero">
+          <div><span class="overview-kicker">❄ FROZEN PICKS. VERIFIED RECORDS.</span>
+            <h1>ONE HOME.<br><em>FOUR SPORTS.</em></h1>
+            <p>MLB, NFL, NBA and NHL in one place. See our published picks, pregame score forecasts, and current season accuracy without mixing automatic predictions with official Root selections.</p>
+          </div>
+          <div class="overview-hero-icons" aria-hidden="true">⚾ 🏈<br>🏀 🏒</div>
+        </div>
+        <div class="sectionhead"><h2>Season prediction records</h2><span id="overviewDate">PACIFIC DATE</span></div>
+        <p class="overview-help">Win/loss counts measure correct winner predictions, not team standings. MLB uses the official Root ledger; NFL, NBA and NHL show their separately tracked automatic-model records. Pending and void games are excluded.</p>
+        <div class="overview-records" id="overviewRecords" aria-live="polite"><div class="overview-empty">Loading published season records…</div></div>
+        <div class="sectionhead overview-games-heading"><h2>Games and pregame picks</h2><span>CURRENT PUBLISHED SCHEDULES</span></div>
+        <p class="overview-help">A preview of today's matchups and the next NFL games. Officially locked picks take priority over automated projections. Open any sport to see its full schedule, actual final scores and history.</p>
+        <div id="overviewFeed" class="overview-feed" aria-live="polite"><div class="overview-empty">Loading game previews…</div></div>
+        <div class="overview-disclaimer"><strong>◈ ABOUT RELIABILITY</strong>
+          <p>LOW and MODERATE model signals reflect only the published predicted-score margin and past-game sample size. They are <strong>not calibrated win probabilities</strong>. The automatic model does not use confirmed lineups, injury reports or sportsbook odds. Manual picks receive a confidence label only when their saved pregame note explicitly contains one.</p>
+          <span id="overviewDataNote">Checking published data…</span>
+        </div>
+      </section>
+      <section class="page" id="page-dashboard">
         <div class="eyebrow"><span class="line"></span> POSTSEASON / MONEYLINE ANALYSIS</div>
         <div class="hero"><div><h1>FROZEN PICKS.<br><em>REAL RECORDS.</em></h1><p>Independent moneyline picks, projected team scores, and a transparent record. No changes after a lock.</p><div class="hero-tags"><span>❄ ROOT'S OFFICIAL PICKS</span><span>● MONEYLINE ONLY</span></div></div><div class="hero-glyph" aria-hidden="true">❄</div></div>
         <div class="sectionhead"><h2>Today's MLB schedule</h2><span id="scheduleDate">CHECKING SCHEDULE</span></div>
@@ -209,7 +231,8 @@
   </main>
 </div>
 <script src="./season-records.js?v=seasons-v2"></script>
-<script src="./app.js?v=seasons-v2"></script>
+<script src="./reliability.js?v=all-sports-v1"></script>
+<script src="./app.js?v=all-sports-v1"></script>
 <script src="./daily.js?v=actual-final-results-v1"></script>
 <script src="./sport-results.js?v=final-results-v1"></script>
 <script src="./nfl.js?v=seasons-v2"></script>
@@ -217,5 +240,6 @@
 <script src="./nhl.js?v=seasons-v2"></script>
 <script src="./auto-picks.js?v=seasons-v2"></script>
 <script src="./season-archive.js?v=seasons-v2"></script>
+<script src="./overview.js?v=all-sports-v1"></script>
 </body>
 </html>
