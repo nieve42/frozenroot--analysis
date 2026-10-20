@@ -122,3 +122,26 @@
   .feature::after{opacity:.12;z-index:0}
   .feature-note{position:relative;z-index:1}
 }
+
+/* Finished-game result: a distinct section directly below the pregame score projection. */
+.actual-final{position:relative;z-index:1;margin:12px 0 20px;padding:18px 19px;border:1px solid #2c876e;border-radius:9px;background:linear-gradient(130deg,#0e302e,#102839 75%);box-shadow:0 8px 25px #03131a55}
+.actual-final-heading{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:14px;color:#86f0cf;font-size:11px;font-weight:900;letter-spacing:1.1px}
+.actual-final-heading small{color:#9fc5be;font-size:9px;letter-spacing:.7px;font-weight:750}
+.actual-final-score{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:12px;align-items:center;color:#d8f7f1;font-size:12px;font-weight:800;line-height:1.45}
+.actual-final-score span{min-width:0;overflow-wrap:anywhere}
+.actual-final-score span:last-child{text-align:right}
+.actual-final-score strong{font-family:'Barlow Condensed',Impact,sans-serif;color:#fff;font-size:44px;line-height:1;white-space:nowrap;text-align:center}
+.actual-final-winner{margin-top:14px;padding-top:12px;border-top:1px solid #3a816961;color:#86f0cf;font-size:12px;font-weight:900;letter-spacing:.5px}
+.actual-history-score{display:block!important;color:#ddfff6!important;font-size:17px!important}
+.actual-history-winner{display:block;margin-top:6px;color:#70e5c4;font-size:10px;line-height:1.4;white-space:normal}
+.actual-unavailable{color:#869daf;white-space:nowrap}
+.schedule-game .actual-final{margin:14px 0 0;padding:14px}
+.schedule-game .actual-final-score strong{font-size:32px}
+@media(max-width:580px){
+  .actual-final{padding:15px 13px}
+  .actual-final-score{gap:7px;font-size:10px}
+  .actual-final-score strong{font-size:33px}
+  .actual-final-winner{font-size:11px}
+  .actual-final-heading{font-size:10px}
+  .schedule-game .actual-final-score strong{font-size:29px}
+}
