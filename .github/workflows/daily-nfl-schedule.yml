@@ -44,5 +44,14 @@ jobs:
             exit 0
           fi
           git commit -m "Refresh NFL games and frozen automatic pregame score predictions"
-          git pull --rebase origin main
-          git push origin main
+          for attempt in 1 2 3 4 5; do
+            git pull --rebase origin main
+            if git push origin main; then
+              echo "Published NFL schedule + frozen forecasts"
+              exit 0
+            fi
+            echo "Concurrent update; retrying push (attempt $attempt)"
+            sleep $((attempt * 4))
+          done
+          echo "Could not publish after retrying" >&2
+          exit 1
