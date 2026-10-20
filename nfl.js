@@ -73,7 +73,48 @@
     return '<strong class="projection-history-score">'+s.teamPoints+' – '+s.opponentPoints+'</strong>'+
       '<small>'+s.totalPoints+' total points · FORECAST</small>';
   }
-  function renderOfficial(data) {
+
+  // Show actual scores only after a verified final, never replace the locked forecast.
+  function nflFinalData(p,schedule) {
+    const saved=p?.actualScore;
+    if(['win','loss','push'].includes(p?.status) &&
+      Number.isInteger(saved?.teamPoints) && Number.isInteger(saved?.opponentPoints) &&
+      saved.teamPoints>=0 && saved.opponentPoints>=0)
+      return {teamPoints:saved.teamPoints,opponentPoints:saved.opponentPoints};
+    const game=schedule?.games?.find(g=>String(g.id)===String(p.gameId));
+    if(!game || !isFinal(String(game.status||'')))return null;
+    const away=game.awayScore,home=game.homeScore;
+    const a=Number(away),b=Number(home);
+    if(away==null||home==null||!Number.isInteger(a)||!Number.isInteger(b)||a<0||b<0)return null;
+    if(String(p.team).toLowerCase()===String(game.away).toLowerCase() &&
+       String(p.opponent).toLowerCase()===String(game.home).toLowerCase())
+      return {teamPoints:a,opponentPoints:b};
+    if(String(p.team).toLowerCase()===String(game.home).toLowerCase() &&
+       String(p.opponent).toLowerCase()===String(game.away).toLowerCase())
+      return {teamPoints:b,opponentPoints:a};
+    return null;
+  }
+  function nflWinner(p,score){
+    return score.teamPoints===score.opponentPoints?'TIE GAME':
+      (score.teamPoints>score.opponentPoints?p.team:p.opponent);
+  }
+  function nflActualCard(p,schedule){
+    const score=nflFinalData(p,schedule);
+    if(!score)return '';
+    const winner=nflWinner(p,score);
+    return '<section class="actual-final" aria-label="Actual final score">'+
+      '<div class="actual-final-heading"><span>✓ ACTUAL FINAL SCORE</span><small>GAME COMPLETE</small></div>'+
+      '<div class="actual-final-score"><span>'+safe(p.team)+'</span><strong>'+score.teamPoints+' – '+score.opponentPoints+'</strong><span>'+safe(p.opponent)+'</span></div>'+
+      '<div class="actual-final-winner">'+(winner==='TIE GAME'?'TIE GAME':'🏆 WINNER: '+safe(winner))+'</div></section>';
+  }
+  function nflActualHistory(p,schedule){
+    const score=nflFinalData(p,schedule);
+    if(!score)return '<small class="actual-unavailable">'+(p.status==='void'?'Canceled / void':'Not final')+'</small>';
+    return '<strong class="actual-history-score">'+score.teamPoints+' – '+score.opponentPoints+'</strong>'+
+      '<small class="actual-history-winner">'+(score.teamPoints===score.opponentPoints?'TIE GAME':'WINNER: '+safe(nflWinner(p,score)))+'</small>';
+  }
+
+  function renderOfficial(data,schedule) {
     if (!feature || !history || !historyCount) return;
     if (!data || !Array.isArray(data.picks)) {
       feature.innerHTML = '<div class="loading">Official NFL pick data temporarily unavailable.</div>';
@@ -106,7 +147,7 @@
       '<div class="pickchips"><span class="chip locked">❄ OFFICIALLY LOCKED</span>'+
       '<span class="chip '+statusClass(status)+'">'+safe(status.toUpperCase())+'</span>'+
       '<span class="chip">HYPOTHETICAL $'+safe(p.stake??1)+' UNIT</span></div>'+
-      projectedPointsCard(p)+
+      projectedPointsCard(p)+nflActualCard(p,schedule)+
       '<p class="nfl-info">'+safe(p.analysis||'Official selection locked before kickoff.')+'</p></div>'+
       '<div class="feature-note"><strong>RISK / PROCESS</strong><span>'+
       safe(p.risk||'Prediction, not a guaranteed result.')+'</span></div>';
@@ -115,7 +156,8 @@
       return '<tr><td>'+safe(labelDay(pick.date))+'</td>'+
         '<td><strong>'+safe(pick.team)+'</strong><small>OFFICIAL · LOCKED</small></td>'+
         '<td>'+safe(pick.opponent)+'</td>'+
-        '<td>'+projectedPointsHistory(pick)+'</td>'+
+        '<td>'+projectedPointsHistory(pick)+'</td>'+ 
+        '<td>'+nflActualHistory(pick,schedule)+'</td>'+
         '<td><span class="status '+statusClass(outcome)+'">'+safe(outcome.toUpperCase())+
         '</span></td></tr>';
     }).join('');
@@ -162,8 +204,17 @@
         else if (isFinal(state)) {badge='FINAL — NO OFFICIAL PICK';kind='final';}
         else if (isLive(state)) {badge='IN PROGRESS — NO OFFICIAL PICK';kind='final';}
         else if (!Array.isArray(picks)) {badge='PICK STATUS UNAVAILABLE';kind='off';}
-        const score = (isFinal(state)||isLive(state)) && g.awayScore!=null && g.homeScore!=null ?
-          '<div class="football-score">ACTUAL SCORE: '+safe(g.awayScore)+' – '+safe(g.homeScore)+'</div>' : '';
+        const hasFinalScores=isFinal(state) && g.awayScore!=null && g.homeScore!=null &&
+          Number.isInteger(Number(g.awayScore)) && Number.isInteger(Number(g.homeScore));
+        const a=Number(g.awayScore),b=Number(g.homeScore);
+        const winner=a===b?'TIE GAME':(a>b?g.away:g.home);
+        const finalCard=hasFinalScores ?
+          '<section class="actual-final" aria-label="Actual final score">'+
+          '<div class="actual-final-heading"><span>✓ ACTUAL FINAL SCORE</span><small>GAME COMPLETE</small></div>'+
+          '<div class="actual-final-score"><span>'+safe(g.away)+'</span><strong>'+a+' – '+b+'</strong><span>'+safe(g.home)+'</span></div>'+
+          '<div class="actual-final-winner">'+(winner==='TIE GAME'?'TIE GAME':'🏆 WINNER: '+safe(winner))+'</div></section>' : '';
+        const liveScore=!isFinal(state) && isLive(state) && g.awayScore!=null && g.homeScore!=null ?
+          '<div class="football-score">LIVE SCORE: '+safe(g.away)+' '+safe(g.awayScore)+' – '+safe(g.homeScore)+' '+safe(g.home)+'</div>' : '';
         const projected = official ? projectedPoints(official) : null;
         const forecast = projected ?
           '<p class="nfl-slate-forecast">PREGAME POINTS FORECAST: '+
@@ -172,8 +223,8 @@
         html += '<article class="schedule-game">'+
           '<div class="schedule-game-head"><span>NFL · '+safe(g.id)+'</span><span>'+safe(gameTime(g.dateUTC))+'</span></div>'+
           '<h3>'+safe(g.away)+' <span class="game-versus">@</span> '+safe(g.home)+'</h3>'+
-          '<p class="schedule-game-state">'+safe(state)+'</p>'+score+
-          '<div class="schedule-status '+kind+'">'+safe(badge)+'</div>'+forecast+'</article>';
+          '<p class="schedule-game-state">'+safe(state)+'</p>'+liveScore+
+          '<div class="schedule-status '+kind+'">'+safe(badge)+'</div>'+forecast+finalCard+'</article>';
       }
     }
     grid.innerHTML = html;
@@ -185,7 +236,7 @@
     try {
       const results = await Promise.allSettled([readJson('nfl-schedule.json'),readJson('nfl-picks.json')]);
       const picksData = results[1].status==='fulfilled' ? results[1].value : null;
-      renderOfficial(picksData);
+      renderOfficial(picksData,results[0].status==='fulfilled'?results[0].value:null);
       if (results[0].status==='rejected') throw results[0].reason;
       renderSchedule(results[0].value, Array.isArray(picksData?.picks)?picksData.picks:null);
     } catch (error) {
