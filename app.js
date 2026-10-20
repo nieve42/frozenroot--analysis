@@ -26,7 +26,7 @@ function finalScoreData(p){
   const getRuns=name=>{
     const start=p.finalScore.toLowerCase().indexOf(String(name).toLowerCase());
     if(start<0)return null;
-    const following=p.finalScore.slice(start+String(name).length).match(/^\\s*(\\d+)/);
+    const following=p.finalScore.slice(start+String(name).length).match(/^\s*(\d+)/);
     return following ? Number(following[1]) : null;
   };
   const teamRuns=getRuns(p.team),opponentRuns=getRuns(p.opponent);
