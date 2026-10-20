@@ -50,7 +50,7 @@ The navigation menu contains **Football games** directly beneath **Update the we
 - `nfl-picks.json` is the separate NFL official pick ledger, containing our October 19 locked 49ers selection and its pregame projected score. Upcoming games display **PICK PENDING** until an official NFL selection is deliberately locked. No football pick is assumed from the posted schedule.
 - Canceled or postponed games are labeled as such. Schedule entries and placeholders never increment either sport's win/loss totals or Awaiting Results.
 
-GitHub Pages remains free for this static site. Automatic *winner* predictions and verified settlement are not enabled here; only schedule publishing is automated.
+GitHub Pages remains free. As of October 20, 2026, the site also publishes separate **automatic statistical predictions** for NFL, NBA and NHL via GitHub Actions; manual Root + owner picks remain separate. See the updated automatic sports forecast section below.
 
 
 ## MLB score forecasts — team runs and total
