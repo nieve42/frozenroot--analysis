@@ -118,7 +118,7 @@
     if (!feature || !history || !historyCount) return;
     if (!data || !Array.isArray(data.picks)) {
       feature.innerHTML = '<div class="loading">Official NFL pick data temporarily unavailable.</div>';
-      history.innerHTML = '<tr><td colspan="5">Unable to load pick history.</td></tr>';
+      history.innerHTML = '<tr><td colspan="6">Unable to load pick history.</td></tr>';
       historyCount.textContent = 'UNAVAILABLE';
       if (summary) summary.textContent = 'Official NFL record temporarily unavailable.';
       return;
@@ -133,7 +133,7 @@
     historyCount.textContent = locked.length+' LOCKED PICK'+(locked.length===1?'':'S');
     if (!locked.length) {
       feature.innerHTML = '<div class="loading">No official NFL picks have been locked yet.</div>';
-      history.innerHTML = '<tr><td colspan="5">No locked football picks yet.</td></tr>';
+      history.innerHTML = '<tr><td colspan="6">No locked football picks yet.</td></tr>';
       return;
     }
     const p = locked[0];
