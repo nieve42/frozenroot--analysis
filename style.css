@@ -185,3 +185,18 @@
   .navlink{padding:9px 1px}
   .navlink span{font-size:17px}
 }
+
+/* The automatic forecast ledger is separate from Root + owner's official picks. */
+.schedule-status.automated{background:#112e4f;border:1px solid #2585ba;color:#9fddff}
+.auto-feature{border-color:#26678d}
+.auto-feature .chip.locked{background:#112d48;color:#91ddff;border-color:#26678d}
+.auto-history{margin-bottom:36px}
+#page-football .auto-feature .run-projection,
+#page-basketball .auto-feature .run-projection,
+#page-hockey .auto-feature .run-projection{margin-top:15px}
+@media(max-width:580px){
+  .auto-feature .run-projection{padding:14px 11px}
+  .auto-feature .run-projection-scores{gap:6px}
+  .auto-feature .run-team-name{font-size:10px}
+  .auto-history{margin-bottom:25px}
+}
