@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-10-20T18:56:50Z",
+  "generatedAt": "2026-10-20T19:48:47Z",
   "date": "2026-10-20",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,9 +9,9 @@
       "dateUTC": "2026-10-20T19:00Z",
       "away": "Boston Celtics",
       "home": "Detroit Pistons",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "37",
+      "homeScore": "39"
     },
     {
       "id": "401909089",
