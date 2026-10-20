@@ -96,3 +96,17 @@ The example above is the **published pregame prediction for October 19, 2026** (
 - Future NFL score forecasts should be saved before kickoff, ideally when the winner is locked. Do not fabricate forecasts for finished games or silently revise historical projections.
 - **PREGAME FORECAST** and **ACTUAL SCORE** are different. Projections have no effect on wins, losses, voids, or Awaiting Results in either NFL or MLB.
 - Weekly NFL schedule refreshes never modify `nfl-picks.json`, and locked picks stay in history after Tuesday resets.
+
+
+## NBA basketball — separate daily schedule and pick ledger
+
+Frozen Root now has an **NBA basketball** tab beneath Football. It matches the site's black-and-ice-blue styling and is designed for desktop and mobile.
+
+- The **daily NBA slate** comes from ESPN's public NBA scoreboard feed and is stored in `nba-schedule.json`.
+- `scripts/update_nba_schedule.py` runs via `.github/workflows/daily-nba-schedule.yml` at approximately **12:01 AM Pacific** every day, with an afternoon refresh. GitHub scheduled jobs are best effort and may be delayed. The site hides yesterday's slate if today's feed has not yet published.
+- Upcoming games appear as **PICK PENDING** until an official NBA winner is intentionally locked. Games not played, cancelled, or postponed do not become pending official predictions.
+- Final games show the **actual score and winning team**. This does not automatically mark an official locked prediction as won or lost; official settlement is a separate verified edit.
+- Official basketball picks live only in `nba-picks.json`. NBA wins/losses, picks, and forecasts **never** affect either the NFL or MLB trackers.
+- New locked NBA picks can include `projectedScore: {"teamPoints": 116, "opponentPoints": 109}` (example values only). The website calculates the predicted total, preserves the original projection, and shows actual results separately if they become available. No historical or future winner has been assumed.
+- Games and status displays are automated; **winner predictions are not**. Root and the user must deliberately lock NBA moneyline picks before tipoff.
+
