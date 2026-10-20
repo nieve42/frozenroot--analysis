@@ -38,12 +38,16 @@ def game_record(game: dict) -> dict:
     away = (teams.get("away") or {}).get("team") or {}
     home = (teams.get("home") or {}).get("team") or {}
     status = game.get("status") or {}
+    state = status.get("detailedState", "Scheduled")
+    completed = str(state).lower() in ("final", "completed", "game over")
     return {
         "gamePk": game.get("gamePk"),
         "away": away.get("name", "Away TBD"),
         "home": home.get("name", "Home TBD"),
         "startUTC": game.get("gameDate"),
-        "status": status.get("detailedState", "Scheduled"),
+        "status": state,
+        "awayScore": (teams.get("away") or {}).get("score") if completed else None,
+        "homeScore": (teams.get("home") or {}).get("score") if completed else None,
         "series": game.get("seriesDescription", ""),
         "gameType": game.get("gameType", ""),
         "gameNumber": game.get("seriesGameNumber"),
