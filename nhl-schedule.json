@@ -1,7 +1,44 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-19T00:00:00Z",
+  "generatedAt": "2026-10-20T06:56:21Z",
   "date": "2026-10-19",
   "dailyReset": "12:01 AM America/Los_Angeles",
-  "games": []
+  "games": [
+    {
+      "id": "401892535",
+      "dateUTC": "2026-10-19T23:00Z",
+      "away": "Anaheim Ducks",
+      "home": "New York Rangers",
+      "status": "Final",
+      "awayScore": "2",
+      "homeScore": "5"
+    },
+    {
+      "id": "401892536",
+      "dateUTC": "2026-10-19T23:00Z",
+      "away": "Colorado Avalanche",
+      "home": "Philadelphia Flyers",
+      "status": "Final",
+      "awayScore": "2",
+      "homeScore": "3"
+    },
+    {
+      "id": "401892537",
+      "dateUTC": "2026-10-19T23:30Z",
+      "away": "San Jose Sharks",
+      "home": "Toronto Maple Leafs",
+      "status": "Final",
+      "awayScore": "1",
+      "homeScore": "3"
+    },
+    {
+      "id": "401892538",
+      "dateUTC": "2026-10-20T01:00Z",
+      "away": "Pittsburgh Penguins",
+      "home": "Utah Mammoth",
+      "status": "Final",
+      "awayScore": "4",
+      "homeScore": "5"
+    }
+  ]
 }
