@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#070e1a">
-  <title>FROZEN ROOT PREDICTION SYSTEM | MLB & NFL</title>
-  <link rel="stylesheet" href="./style.css?v=actual-final-results-v1">
+  <title>FROZEN ROOT PREDICTION SYSTEM | MLB, NFL & NBA</title>
+  <link rel="stylesheet" href="./style.css?v=nba-section-v1">
 </head>
 <body>
 <div class="ambient"></div>
@@ -18,6 +18,7 @@
       <a class="navlink" href="#method" data-page="method"><span>◇</span> The system</a>
       <a class="navlink" href="#control" data-page="control"><span>⚙</span> Update the website</a>
       <a class="navlink" href="#football" data-page="football" title="Football games"><span>🏈</span> Football games</a>
+      <a class="navlink" href="#basketball" data-page="basketball" title="NBA basketball games"><span>🏀</span> NBA basketball</a>
     </nav>
     <div class="side-bottom"><div class="live-indicator"><span class="pulse"></span> OFFICIAL PICK ARCHIVE</div><p>Frozen picks. Independent analysis. No following the crowd.</p><span class="vtag">FROZEN ROOT / VERSION 1.1</span></div>
   </aside>
@@ -82,12 +83,40 @@
           </div>
         </div>
       </section>
+      <section class="page" id="page-basketball" aria-label="NBA basketball games">
+        <div class="eyebrow"><span class="line"></span> NBA / BASKETBALL COMMAND CENTER</div>
+        <div class="football-banner basketball-banner">
+          <div><span class="football-tag">🏀 FROZEN ROOT BASKETBALL</span>
+            <h1>BASKETBALL <em>GAMES.</em></h1>
+            <p>Daily NBA matchups, independent winner picks, projected points and the real final scores. Your basketball record stays separate from football and baseball.</p>
+          </div>
+          <div class="football-mark basketball-mark" aria-hidden="true">🏀</div>
+        </div>
+        <div class="sectionhead"><h2>Today’s NBA schedule</h2><span id="nbaDateLabel">LOADING DAY</span></div>
+        <p class="schedule-intro">Every day at <strong>12:01 AM Pacific</strong>, the previous day’s slate is cleared and today’s NBA games appear. Upcoming games begin as <strong>PICK PENDING</strong> until Root and the owner lock an official moneyline prediction. Locked picks can include a predicted score for <strong>both teams</strong> and projected total points. Finished games display the actual score and winner.</p>
+        <div id="nbaMeta" class="schedule-meta" aria-live="polite">Loading NBA schedule...</div>
+        <div id="nbaGames" class="schedule-grid nba-grid" aria-live="polite"><div class="panel schedule-empty">Loading basketball games...</div></div>
+        <div class="schedule-bottom"><a href="https://www.espn.com/nba/schedule" target="_blank" rel="noopener noreferrer">NBA schedule source ↗</a><span>Schedule placeholders never count as official picks.</span></div>
+        <div class="sectionhead"><h2>Latest official NBA pick</h2><span>FROZEN · LOCKED</span></div>
+        <div class="feature" id="nbaOfficialPick"><div class="loading">Checking official NBA selections...</div></div>
+        <div class="sectionhead"><h2>NBA pick history</h2><span id="nbaHistoryCount">0 LOCKED PICKS</span></div>
+        <div class="panel hpanel"><div class="table-wrap"><table><thead><tr><th>DATE</th><th>WINNER PICK</th><th>OPPONENT</th><th>PROJECTED POINTS</th><th>ACTUAL SCORE / WINNER</th><th>STATUS</th></tr></thead><tbody id="nbaHistoryRows"><tr><td colspan="6">Checking official NBA pick history...</td></tr></tbody></table></div></div>
+        <div class="bottom-grid">
+          <div class="panel"><div class="panel-title"><h3>Basketball picks</h3><span>NBA TRACKER ONLY</span></div>
+            <p class="nfl-info" id="nbaPickSummary">No NBA selections have been locked yet.</p>
+          </div>
+          <div class="panel frostpanel"><div class="panel-title"><h3>Frozen Root rule</h3><span>NBA ONLY</span></div>
+            <p class="nfl-info">We analyze the matchup before locking an NBA pick, then preserve that winner and the original pregame forecast. Canceled games do not become wins or losses.</p>
+          </div>
+        </div>
+      </section>
     </div>
     <footer><span>© 2026 FROZEN ROOT PREDICTION SYSTEM — THE CALL IS FINAL.</span><span>For entertainment; $1 units are hypothetical. No real-money transactions.</span></footer>
   </main>
 </div>
-<script src="./app.js?v=actual-final-results-v1"></script>
+<script src="./app.js?v=nba-section-v1"></script>
 <script src="./daily.js?v=actual-final-results-v1"></script>
 <script src="./nfl.js?v=actual-final-results-v1"></script>
+<script src="./nba.js?v=nba-section-v1"></script>
 </body>
 </html>
