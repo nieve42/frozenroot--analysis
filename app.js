@@ -93,12 +93,12 @@ function render(){
   const pending=sorted.filter(p=>p.status==='pending');
 }
 function showPage(page){
-  const allowed=['dashboard','history','method','control','football'];
+  const allowed=['dashboard','history','method','control','football','basketball'];
   if(!allowed.includes(page))page='dashboard';
   document.querySelectorAll('.page').forEach(el=>el.classList.toggle('active',el.id===`page-${page}`));
   document.querySelectorAll('.navlink').forEach(el=>el.classList.toggle('active',el.dataset.page===page));
-  $('pageName').textContent=({dashboard:'MLB PREDICTIONS AND RECORD',history:'PICK HISTORY',method:'THE SYSTEM',control:'PUBLISHING',football:'NFL / FOOTBALL'})[page];
-  if($('sportIndicator')) $('sportIndicator').textContent=page==='football'?'FOOTBALL / NFL':'BASEBALL INTELLIGENCE';
+  $('pageName').textContent=({dashboard:'MLB PREDICTIONS AND RECORD',history:'PICK HISTORY',method:'THE SYSTEM',control:'PUBLISHING',football:'NFL / FOOTBALL',basketball:'NBA / BASKETBALL'})[page];
+  if($('sportIndicator')) $('sportIndicator').textContent=page==='football'?'FOOTBALL / NFL':page==='basketball'?'BASKETBALL / NBA':'BASEBALL INTELLIGENCE';
   if(page==='dashboard')window.scrollTo({top:0,behavior:'instant'});
 }
 async function getState(){const r=await fetch('./site.json',{cache:'no-store'});if(!r.ok)throw Error('Cannot load the published predictions');state=await r.json();render();}
