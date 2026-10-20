@@ -4,7 +4,7 @@
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#070e1a">
   <title>FROZEN ROOT PREDICTION SYSTEM | MLB, NFL, NBA & NHL</title>
-  <link rel="stylesheet" href="./style.css?v=accuracy-tracker-v1">
+  <link rel="stylesheet" href="./style.css?v=seasons-v2">
 </head>
 <body>
 <div class="ambient"></div>
@@ -17,6 +17,7 @@
       <a class="navlink" href="#football" data-page="football" title="Football games"><span>🏈</span> Football games</a>
       <a class="navlink" href="#basketball" data-page="basketball" title="NBA basketball games"><span>🏀</span> NBA basketball</a>
       <a class="navlink" href="#hockey" data-page="hockey" title="NHL hockey games"><span>🏒</span> NHL hockey</a>
+      <a class="navlink" href="#seasons" data-page="seasons" title="Completed season records"><span>🏆</span> Season archives</a>
       <a class="navlink" href="#history" data-page="history"><span>▤</span> Pick history</a>
       <a class="navlink" href="#method" data-page="method"><span>◇</span> The system</a>
       <a class="navlink" href="#control" data-page="control"><span>⚙</span> Update the website</a>
@@ -36,8 +37,9 @@
         <div class="schedule-bottom"><a href="https://www.mlb.com/schedule" target="_blank" rel="noopener noreferrer">MLB schedule source ↗</a><span>Schedule entries are not official picks.</span></div>
         <div class="sectionhead"><h2>Latest locked pick</h2><span id="lastUpdated">SYNCED —</span></div>
         <div class="feature" id="featuredPick"><div class="loading">Loading official selection...</div></div>
-        <div class="sectionhead"><h2>System performance</h2><span>HISTORICAL + VERIFIED SETTLEMENTS</span></div>
-        <div class="stats"><div class="stat"><div class="stathead">TOTAL WINS <span>↗</span></div><strong id="wins">—</strong><small>Settled moneyline picks</small></div><div class="stat"><div class="stathead">TOTAL LOSSES <span>↘</span></div><strong id="losses">—</strong><small>Settled moneyline picks</small></div><div class="stat"><div class="stathead">WIN RATE <span>◎</span></div><strong id="rate">—</strong><small>Win percentage, excluding voids</small></div><div class="stat"><div class="stathead">AWAITING RESULTS <span>◷</span></div><strong id="pending">—</strong><small>Locked and pending</small></div></div>
+        <div class="sectionhead"><h2>Current MLB season record</h2><span id="mlbSeasonLabel">CURRENT SEASON · OFFICIAL PICKS</span></div>
+        <p class="schedule-intro" id="mlbSeasonNote">The MLB season record resets after the postseason; past results remain in Season Archives.</p>
+        <div class="stats"><div class="stat"><div class="stathead">SEASON WINS <span>↗</span></div><strong id="wins">—</strong><small>Settled moneyline picks</small></div><div class="stat"><div class="stathead">SEASON LOSSES <span>↘</span></div><strong id="losses">—</strong><small>Settled moneyline picks</small></div><div class="stat"><div class="stathead">WIN RATE <span>◎</span></div><strong id="rate">—</strong><small>Win percentage, excluding voids</small></div><div class="stat"><div class="stathead">AWAITING RESULTS <span>◷</span></div><strong id="pending">—</strong><small>Locked and pending</small></div></div>
         <div class="bottom-grid"><div class="panel"><div class="panel-title"><h3>Official protocol</h3><span>NO SHORTCUTS</span></div><div class="checks"><div><span>01</span> Verified pitchers & advanced metrics</div><div><span>02</span> Confirmed lineups & opponent splits</div><div><span>03</span> Bullpen usage, last 2–3 days</div><div><span>04</span> Park, weather & independent call</div></div></div><div class="panel frostpanel"><div class="panel-title"><h3>The Root rule</h3><span>LOCKED SYSTEM</span></div><blockquote>"We don't chase odds. We study the game, make the call, and stand by it."</blockquote><p>Official picks stay fixed. Changes require substantial verified pregame evidence and an explanation.</p></div></div>
       </section>
       <section class="page" id="page-history"><div class="eyebrow"><span class="line"></span> OFFICIAL LEDGER</div><h1 class="subhero">PICK <em>ARCHIVE.</em></h1><p class="muted">A transparent log of locked selections, predicted runs for each team, and verified outcomes. Forecasts are always separate from actual final scores.</p><div class="panel hpanel"><div class="panel-title"><h3>Moneyline history</h3><span id="historyCount">0 PICKS</span></div><div class="table-wrap"><table><thead><tr><th>DATE</th><th>ROOT'S PICK</th><th>MATCHUP</th><th>PROJECTED RUNS</th><th>ACTUAL SCORE / WINNER</th><th>RESULT</th><th>UNIT</th></tr></thead><tbody id="historyRows"></tbody></table></div><div class="historyfoot" id="historyFoot"></div></div></section>
@@ -64,7 +66,7 @@
       <section class="page" id="page-football" aria-label="NFL football games">
         <div class="eyebrow"><span class="line"></span> NFL / FOOTBALL COMMAND CENTER</div>
         <section class="auto-record-panel" aria-label="NFL automatic prediction accuracy">
-          <div class="auto-record-top"><span>🤖 NFL AUTO-PREDICTION RECORD</span><span>ALL-TIME · WINNER ACCURACY</span></div>
+          <div class="auto-record-top"><span>🤖 NFL AUTO-PREDICTION RECORD</span><span id="nflAutoRecordSeason">CURRENT SEASON · WINNER ACCURACY</span></div>
           <div class="auto-record-numbers">
             <div class="auto-record-metric"><strong id="nflAutoRecordWins" class="auto-record-wins">—</strong><span>CORRECT PICKS · WINS</span></div>
             <div class="auto-record-divider" aria-hidden="true">/</div>
@@ -106,7 +108,7 @@
       <section class="page" id="page-basketball" aria-label="NBA basketball games">
         <div class="eyebrow"><span class="line"></span> NBA / BASKETBALL COMMAND CENTER</div>
         <section class="auto-record-panel" aria-label="NBA automatic prediction accuracy">
-          <div class="auto-record-top"><span>🤖 NBA AUTO-PREDICTION RECORD</span><span>ALL-TIME · WINNER ACCURACY</span></div>
+          <div class="auto-record-top"><span>🤖 NBA AUTO-PREDICTION RECORD</span><span id="nbaAutoRecordSeason">CURRENT SEASON · WINNER ACCURACY</span></div>
           <div class="auto-record-numbers">
             <div class="auto-record-metric"><strong id="nbaAutoRecordWins" class="auto-record-wins">—</strong><span>CORRECT PICKS · WINS</span></div>
             <div class="auto-record-divider" aria-hidden="true">/</div>
@@ -149,7 +151,7 @@
       <section class="page" id="page-hockey" aria-label="NHL hockey games">
         <div class="eyebrow"><span class="line"></span> NHL / HOCKEY COMMAND CENTER</div>
         <section class="auto-record-panel" aria-label="NHL automatic prediction accuracy">
-          <div class="auto-record-top"><span>🤖 NHL AUTO-PREDICTION RECORD</span><span>ALL-TIME · WINNER ACCURACY</span></div>
+          <div class="auto-record-top"><span>🤖 NHL AUTO-PREDICTION RECORD</span><span id="nhlAutoRecordSeason">CURRENT SEASON · WINNER ACCURACY</span></div>
           <div class="auto-record-numbers">
             <div class="auto-record-metric"><strong id="nhlAutoRecordWins" class="auto-record-wins">—</strong><span>CORRECT PICKS · WINS</span></div>
             <div class="auto-record-divider" aria-hidden="true">/</div>
@@ -189,16 +191,31 @@
           </div>
         </div>
       </section>
+      <section class="page" id="page-seasons" aria-label="Completed MLB NFL NBA and NHL season records">
+        <div class="eyebrow"><span class="line"></span> THE FROZEN RECORD BOOK</div>
+        <h1 class="subhero">SEASON <em>ARCHIVES.</em></h1>
+        <p class="muted">Each sport's prediction record resets to 0–0 at the new-season rollover. Finished seasons stay here with their complete results. Records reflect Frozen Root's correct and incorrect winner predictions, not team standings.</p>
+        <div class="season-archive-heading"><strong>FOUR SPORTS · INDIVIDUAL RECORDS</strong><span id="seasonArchiveLastChecked">LOADING RECORDS</span></div>
+        <div class="season-archive-grid">
+          <article class="panel season-sport-panel" id="seasonArchiveMlb"><div class="loading">Loading MLB season records...</div></article>
+          <article class="panel season-sport-panel" id="seasonArchiveNfl"><div class="loading">Loading NFL season records...</div></article>
+          <article class="panel season-sport-panel" id="seasonArchiveNba"><div class="loading">Loading NBA season records...</div></article>
+          <article class="panel season-sport-panel" id="seasonArchiveNhl"><div class="loading">Loading NHL season records...</div></article>
+        </div>
+        <p class="season-archive-disclaimer">WIN and LOSS count only graded winner picks, not pending, void or tied games. The NFL, NBA and NHL automatic model records remain separate from manually locked Root predictions, preventing double counting. Individual game history stays accessible on its original sport page.</p>
+      </section>
     </div>
     <footer><span>© 2026 FROZEN ROOT PREDICTION SYSTEM — THE CALL IS FINAL.</span><span>For entertainment; $1 units are hypothetical. No real-money transactions.</span></footer>
   </main>
 </div>
-<script src="./app.js?v=nhl-section-v1"></script>
+<script src="./season-records.js?v=seasons-v2"></script>
+<script src="./app.js?v=seasons-v2"></script>
 <script src="./daily.js?v=actual-final-results-v1"></script>
 <script src="./sport-results.js?v=final-results-v1"></script>
-<script src="./nfl.js?v=49ers-result-v2"></script>
-<script src="./nba.js?v=final-results-v1"></script>
-<script src="./nhl.js?v=final-results-v1"></script>
-<script src="./auto-picks.js?v=accuracy-tracker-v1"></script>
+<script src="./nfl.js?v=seasons-v2"></script>
+<script src="./nba.js?v=seasons-v2"></script>
+<script src="./nhl.js?v=seasons-v2"></script>
+<script src="./auto-picks.js?v=seasons-v2"></script>
+<script src="./season-archive.js?v=seasons-v2"></script>
 </body>
 </html>
