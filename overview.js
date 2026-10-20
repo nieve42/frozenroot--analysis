@@ -10,9 +10,7 @@
     {key:'nba',label:'NBA',icon:'🏀',page:'basketball',kind:'AUTOMATIC MODEL PICKS'},
     {key:'nhl',label:'NHL',icon:'🏒',page:'hockey',kind:'AUTOMATIC MODEL PICKS'}
   ];
-  const localDay=(when=new Date())=>new Intl.DateTimeFormat('en-CA',{
-    timeZone:'America/Los_Angeles',year:'numeric',month:'2-digit',day:'2-digit'
-  }).format(when);
+  const localDay=(when=new Date())=>window.FrozenRootSeason.localDate(when);
   const fmtWhen=date=>{
     const d=new Date(date);
     return Number.isNaN(d.valueOf())?'TIME UNAVAILABLE':new Intl.DateTimeFormat('en-US',{
