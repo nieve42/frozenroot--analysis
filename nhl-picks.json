@@ -1,0 +1,6 @@
+{
+  "sport": "NHL",
+  "picks": [],
+  "note": "Separate NHL moneyline pick ledger. Upcoming schedule games are placeholders, never automatic selections. Only lock picks deliberately before puck drop; preserve predicted team goals, actual results, and canceled/void statuses independently of MLB, NFL and NBA.",
+  "lastUpdated": "2026-10-19"
+}

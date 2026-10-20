@@ -110,3 +110,15 @@ Frozen Root now has an **NBA basketball** tab beneath Football. It matches the s
 - New locked NBA picks can include `projectedScore: {"teamPoints": 116, "opponentPoints": 109}` (example values only). The website calculates the predicted total, preserves the original projection, and shows actual results separately if they become available. No historical or future winner has been assumed.
 - Games and status displays are automated; **winner predictions are not**. Root and the user must deliberately lock NBA moneyline picks before tipoff.
 
+
+## NHL hockey — separate daily games and official picks
+
+The **NHL hockey** tab sits directly beneath NBA Basketball on the navigation menu. It uses the same frozen blue-and-black theme and works on PC and mobile.
+
+- `nhl-schedule.json` lists games, times (Pacific), live statuses, and final scores from ESPN's public NHL scoreboard. Games are grouped by the current calendar date in the Pacific timezone.
+- The scheduled GitHub workflow `.github/workflows/daily-nhl-schedule.yml` runs `scripts/update_nhl_schedule.py` at approximately **12:01 AM Pacific** with an afternoon refresh. GitHub Actions are best-effort and may run late; yesterday's slate clears automatically in the page until today's update arrives.
+- Upcoming games show **PICK PENDING**, which does not count as a locked selection or an "awaiting results" entry. Canceled or postponed games are clearly marked.
+- Official NHL moneyline picks belong in `nhl-picks.json` only. A locked pick can contain `projectedScore: {"teamGoals": 3, "opponentGoals": 2}` (illustration, not a real prediction). Predicted total goals are computed from the two teams' goal forecasts.
+- Completed games display **actual goals and the winner**, without silently rewriting a locked pregame forecast. Official picks are settled as wins/losses/voids only after verification.
+- NHL picks, win/loss records and history are **independent** from baseball, football, and basketball. Game schedules update automatically, but winner predictions are **not generated or locked automatically**.
+

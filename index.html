@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#070e1a">
-  <title>FROZEN ROOT PREDICTION SYSTEM | MLB, NFL & NBA</title>
-  <link rel="stylesheet" href="./style.css?v=mobile-mlb-nfl-nba-v2">
+  <title>FROZEN ROOT PREDICTION SYSTEM | MLB, NFL, NBA & NHL</title>
+  <link rel="stylesheet" href="./style.css?v=nhl-section-v1">
 </head>
 <body>
 <div class="ambient"></div>
@@ -16,6 +16,7 @@
       <a class="navlink active" href="#dashboard" data-page="dashboard"><span>▦</span> MLB Predictions and Record</a>
       <a class="navlink" href="#football" data-page="football" title="Football games"><span>🏈</span> Football games</a>
       <a class="navlink" href="#basketball" data-page="basketball" title="NBA basketball games"><span>🏀</span> NBA basketball</a>
+      <a class="navlink" href="#hockey" data-page="hockey" title="NHL hockey games"><span>🏒</span> NHL hockey</a>
       <a class="navlink" href="#history" data-page="history"><span>▤</span> Pick history</a>
       <a class="navlink" href="#method" data-page="method"><span>◇</span> The system</a>
       <a class="navlink" href="#control" data-page="control"><span>⚙</span> Update the website</a>
@@ -57,6 +58,7 @@
   </div>
   <div class="panel protocol"><h3>NFL score forecasts</h3><p>When Root locks a football moneyline pick, we can also publish the estimated final points for each team and projected combined total in <strong>nfl-picks.json</strong>. These are independent pregame forecasts, never automatic final scores.</p></div>
   <div class="panel protocol"><h3>NBA score forecasts</h3><p>Root’s official NBA moneyline picks and predicted scores are published separately in <strong>nba-picks.json</strong>. Each pick can show projected points for both teams and a projected total. Today’s basketball schedule is generated separately and never locks picks automatically.</p></div>
+  <div class="panel protocol"><h3>NHL goal forecasts</h3><p>NHL winner picks and projected team goals are saved separately in <strong>nhl-picks.json</strong>. Today's hockey schedule is refreshed independently; it never creates or locks official predictions automatically. Final scores do not overwrite pregame forecasts.</p></div>
   <div class="panel protocol"><h3>What's automatic today?</h3><p>The public site automatically displays the current published picks and recalculates the tracker from the data file. It does not automatically generate picks, fetch lineups, or verify results yet; those require a separately configured data source and scheduled analysis.</p></div>
 </section>
       <section class="page" id="page-football" aria-label="NFL football games">
@@ -111,13 +113,41 @@
           </div>
         </div>
       </section>
+      <section class="page" id="page-hockey" aria-label="NHL hockey games">
+        <div class="eyebrow"><span class="line"></span> NHL / HOCKEY COMMAND CENTER</div>
+        <div class="football-banner hockey-banner">
+          <div><span class="football-tag">🏒 FROZEN ROOT HOCKEY</span>
+            <h1>HOCKEY <em>GAMES.</em></h1>
+            <p>Daily NHL matchups, independent winner picks, projected goals, and actual final scores. Your hockey record stays separate from MLB, NFL, and NBA.</p>
+          </div>
+          <div class="football-mark hockey-mark" aria-hidden="true">🏒</div>
+        </div>
+        <div class="sectionhead"><h2>Today's NHL schedule</h2><span id="nhlDateLabel">LOADING DAY</span></div>
+        <p class="schedule-intro">At approximately <strong>12:01 AM Pacific</strong>, yesterday's slate clears and today's NHL schedule is published. Upcoming games show <strong>PICK PENDING</strong> until we officially lock a moneyline winner. An official NHL pick can include projected <strong>goals for both teams</strong> and a projected combined total. Finished games show their <strong>actual final score and winner</strong>, separately from the forecast.</p>
+        <div id="nhlMeta" class="schedule-meta" aria-live="polite">Loading NHL schedule...</div>
+        <div id="nhlGames" class="schedule-grid nhl-grid" aria-live="polite"><div class="panel schedule-empty">Loading hockey games...</div></div>
+        <div class="schedule-bottom"><a href="https://www.espn.com/nhl/schedule" target="_blank" rel="noopener noreferrer">NHL schedule source ↗</a><span>Schedule entries are not official picks.</span></div>
+        <div class="sectionhead"><h2>Latest official NHL pick</h2><span>FROZEN · LOCKED</span></div>
+        <div class="feature" id="nhlOfficialPick"><div class="loading">Checking official NHL selections...</div></div>
+        <div class="sectionhead"><h2>NHL pick history</h2><span id="nhlHistoryCount">0 LOCKED PICKS</span></div>
+        <div class="panel hpanel"><div class="table-wrap"><table><thead><tr><th>DATE</th><th>WINNER PICK</th><th>OPPONENT</th><th>PROJECTED GOALS</th><th>ACTUAL SCORE / WINNER</th><th>STATUS</th></tr></thead><tbody id="nhlHistoryRows"><tr><td colspan="6">Checking official NHL pick history...</td></tr></tbody></table></div></div>
+        <div class="bottom-grid">
+          <div class="panel"><div class="panel-title"><h3>Hockey picks</h3><span>NHL TRACKER ONLY</span></div>
+            <p class="nfl-info" id="nhlPickSummary">No NHL selections have been locked yet.</p>
+          </div>
+          <div class="panel frostpanel"><div class="panel-title"><h3>Frozen Root rule</h3><span>NHL ONLY</span></div>
+            <p class="nfl-info">We analyze the game before locking an NHL moneyline winner and its original projected goals. Canceled or postponed games aren't counted as wins or losses. No picks are generated automatically.</p>
+          </div>
+        </div>
+      </section>
     </div>
     <footer><span>© 2026 FROZEN ROOT PREDICTION SYSTEM — THE CALL IS FINAL.</span><span>For entertainment; $1 units are hypothetical. No real-money transactions.</span></footer>
   </main>
 </div>
-<script src="./app.js?v=nba-section-v1"></script>
+<script src="./app.js?v=nhl-section-v1"></script>
 <script src="./daily.js?v=actual-final-results-v1"></script>
 <script src="./nfl.js?v=actual-final-results-v1"></script>
 <script src="./nba.js?v=nba-section-v1"></script>
+<script src="./nhl.js?v=nhl-section-v1"></script>
 </body>
 </html>
