@@ -159,3 +159,9 @@ If source data or the schedule publishing job fails, a pick may temporarily
 remain `PICK PENDING`. The site does not fabricate completed games, live
 ChatGPT analysis, a win probability, or guarantees of winning.
 
+
+## Top-of-page automated prediction accuracy records
+
+The NFL, NBA and NHL pages each show a top-of-page automatic winner prediction accuracy tracker. It calculates **correct winner picks (wins), incorrect winner picks (losses), and wins / (wins + losses)** from that sport's own full automatic prediction history. The counters are not manually entered, do not represent the teams' season W–L standings, and do not include MLB or manually locked Root picks.
+
+An example display like "1 win / 2 losses" is illustrative only. Actual counters always reflect completed, verified automatic predictions in the saved per-sport pick ledger plus any freshly verified final scores already visible in the current schedule. Pending, void, and tied/push games do not count as wins or losses. When no picks have been graded, the record is 0 wins / 0 losses and the accuracy percentage shows a dash. If data can't be loaded, the record displays unavailable rather than falsely showing zero. The numbers refresh on site visits and periodically while the section is open.

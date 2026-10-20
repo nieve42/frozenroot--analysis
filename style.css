@@ -204,3 +204,28 @@
 /* Prior locked NFL results are shown above the new weekly slate. */
 #page-football #nflOfficialPick{margin-bottom:26px}
 #page-football .schedule-status.automated{line-height:1.5}
+
+/* Prediction accuracy counters: true automated winner picks, never team W/L standings. */
+.auto-record-panel{background:linear-gradient(120deg,#0d243a,#0a1728 72%);border:1px solid #28658c;border-left:3px solid #4bc6ff;border-radius:10px;padding:19px 24px 18px;margin:21px 0 25px;box-shadow:0 12px 36px #03152344}
+.auto-record-top{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:#8edfff;font-size:10px;font-weight:900;letter-spacing:1.15px}
+.auto-record-top span:last-child{color:#789ab4}
+.auto-record-numbers{display:flex;align-items:center;gap:17px;margin-top:12px}
+.auto-record-metric{display:flex;align-items:center;gap:9px;min-width:0}
+.auto-record-metric strong,.auto-record-accuracy strong{font-family:'Barlow Condensed',Impact,sans-serif;font-size:52px;font-weight:900;line-height:1;color:#e6f9ff;font-variant-numeric:tabular-nums}
+.auto-record-metric .auto-record-wins{color:#7eebca}
+.auto-record-metric .auto-record-losses{color:#ff9eb2}
+.auto-record-metric span,.auto-record-accuracy span{font-size:9px;font-weight:800;letter-spacing:.6px;line-height:1.4;color:#91b1c9}
+.auto-record-divider{font-family:'Barlow Condensed',Impact,sans-serif;color:#486b85;font-size:36px}
+.auto-record-accuracy{border-left:1px solid #2a4b65;margin-left:auto;padding-left:22px;display:flex;align-items:center;gap:10px}
+.auto-record-accuracy strong{color:#8edfff;font-size:39px}
+.auto-record-note{margin:14px 0 0;color:#8dabbd;font-size:10px;line-height:1.65}
+@media(max-width:640px){
+  .auto-record-panel{padding:16px 15px;margin:15px 0 19px}
+  .auto-record-numbers{gap:9px;flex-wrap:wrap}
+  .auto-record-metric{flex-direction:column;align-items:flex-start;gap:3px}
+  .auto-record-metric strong{font-size:43px}
+  .auto-record-divider{font-size:25px;margin-bottom:13px}
+  .auto-record-accuracy{padding-left:11px;gap:4px;flex-direction:column;align-items:flex-start}
+  .auto-record-accuracy strong{font-size:30px}
+  .auto-record-metric span,.auto-record-accuracy span{font-size:8px}
+}

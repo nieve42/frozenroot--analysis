@@ -75,6 +75,10 @@
   async function refresh(s){
     const summary=byId(s.sport+'AutoSummary'),feature=byId(s.sport+'AutoLatest'),
           history=byId(s.sport+'AutoHistoryRows'),count=byId(s.sport+'AutoHistoryCount');
+    const recordWins=byId(s.sport+'AutoRecordWins');
+    const recordLosses=byId(s.sport+'AutoRecordLosses');
+    const recordAccuracy=byId(s.sport+'AutoRecordAccuracy');
+    const recordNote=byId(s.sport+'AutoRecordNote');
     if(!summary||!feature||!history||!count||busy[s.sport])return;
     busy[s.sport]=true;
     try {
@@ -101,7 +105,19 @@
       const losses=ordered.filter(p=>p.status==='loss').length;
       const pending=ordered.filter(p=>p.status==='pending').length;
       const voids=ordered.filter(p=>p.status==='void').length;
-      const percentage=wins+losses?(100*wins/(wins+losses)).toFixed(1)+'%':'—';
+      // Model accuracy counts how often the automated predicted winner was right.
+      // Games still pending or void, and ties/pushes, never count as wins or losses.
+      const graded=wins+losses;
+      const percentage=graded?(100*wins/graded).toFixed(1)+'%':'—';
+      if(recordWins)recordWins.textContent=String(wins);
+      if(recordLosses)recordLosses.textContent=String(losses);
+      if(recordAccuracy)recordAccuracy.textContent=percentage;
+      if(recordNote)recordNote.textContent=graded
+        ? graded+' graded automatic winner pick'+(graded===1?'':'s')+
+          ' · '+pending+' pending · '+voids+' void'+(voids===1?'':'s')+
+          '. Only verified WIN and LOSS outcomes affect the record.'
+        : 'No completed automatic predictions graded yet · '+pending+
+          ' awaiting results. Pending, void and tied games do not count.';
       summary.textContent='AUTO MODEL ONLY · '+wins+' wins · '+losses+' losses · '+percentage+
         ' win rate · '+pending+' awaiting results'+(voids?' · '+voids+' void':'')+
         '. Separate from official Root + owner selections.';
@@ -109,6 +125,11 @@
       feature.innerHTML=latestCard(s,ordered[0]);
       history.innerHTML=historyRows(s,ordered);
     } catch(e) {
+      // Never show a fictitious 0-0 record when files are unavailable.
+      if(recordWins)recordWins.textContent='—';
+      if(recordLosses)recordLosses.textContent='—';
+      if(recordAccuracy)recordAccuracy.textContent='—';
+      if(recordNote)recordNote.textContent='Auto-pick results are temporarily unavailable.';
       summary.textContent='Automatic predictions temporarily unavailable.';
       feature.innerHTML='<div class="loading">Automatic '+s.label+' forecasts are unavailable; no winner or score has been assumed.</div>';
       history.innerHTML='<tr><td colspan="6">Automatic prediction archive unavailable.</td></tr>';
