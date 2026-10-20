@@ -116,3 +116,9 @@
   .mlb-slate-score-matchup{gap:7px}
   .mlb-slate-score-matchup strong{font-size:27px}
 }
+
+/* Mobile readability: retain the decorative snowflake, but keep it subtle and behind the copy. Emoji glyphs may ignore alpha in the `color` property, so use element opacity. */
+@media(max-width:580px){
+  .feature::after{opacity:.12;z-index:0}
+  .feature-note{position:relative;z-index:1}
+}
