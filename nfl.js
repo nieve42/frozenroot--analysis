@@ -162,7 +162,7 @@
         '</span></td></tr>';
     }).join('');
   }
-  function renderSchedule(data, picks) {
+  function renderSchedule(data, picks, autos) {
     if (!data || !Array.isArray(data.games)) throw new Error('Invalid schedule data');
     const week = thisWeek();
     range.textContent = shortDay(week.start).toUpperCase()+' – '+shortDay(week.end).toUpperCase()+' · RESETS TUESDAY';
@@ -197,10 +197,12 @@
       html += '<div class="nfl-day-heading">'+safe(labelDay(day).toUpperCase())+(day===week.today?' · TODAY':'')+'</div>';
       for (const g of items) {
         const official = Array.isArray(picks) && picks.find(p => p.locked===true && String(p.gameId)===String(g.id));
+        const automatic = !official && Array.isArray(autos) && autos.find(p => p.automated===true && String(p.gameId)===String(g.id));
         const state = String(g.status||'Scheduled');
         let badge='❄ PICK PENDING', kind='await-pick';
         if (isOff(state)) {badge='CANCELED / POSTPONED — NO PENDING PICK';kind='off';}
         else if (official) {badge='❄ OFFICIAL NFL PICK: '+official.team+' ('+official.status+')';kind='official';}
+        else if (automatic) {badge='🤖 AUTOMATIC NFL PICK: '+automatic.team+' ('+automatic.status+')';kind='automated';}
         else if (isFinal(state)) {badge='FINAL — NO OFFICIAL PICK';kind='final';}
         else if (isLive(state)) {badge='IN PROGRESS — NO OFFICIAL PICK';kind='final';}
         else if (!Array.isArray(picks)) {badge='PICK STATUS UNAVAILABLE';kind='off';}
@@ -215,10 +217,11 @@
           '<div class="actual-final-winner">'+(winner==='TIE GAME'?'TIE GAME':'🏆 WINNER: '+safe(winner))+'</div></section>' : '';
         const liveScore=!isFinal(state) && isLive(state) && g.awayScore!=null && g.homeScore!=null ?
           '<div class="football-score">LIVE SCORE: '+safe(g.away)+' '+safe(g.awayScore)+' – '+safe(g.homeScore)+' '+safe(g.home)+'</div>' : '';
-        const projected = official ? projectedPoints(official) : null;
+        const forecastPick = official || automatic;
+        const projected = forecastPick ? projectedPoints(forecastPick) : null;
         const forecast = projected ?
           '<p class="nfl-slate-forecast">PREGAME POINTS FORECAST: '+
-          safe(official.team)+' '+projected.teamPoints+' · '+safe(official.opponent)+' '+projected.opponentPoints+
+          safe(forecastPick.team)+' '+projected.teamPoints+' · '+safe(forecastPick.opponent)+' '+projected.opponentPoints+
           ' · TOTAL '+projected.totalPoints+' POINTS</p>' : '';
         html += '<article class="schedule-game">'+
           '<div class="schedule-game-head"><span>NFL · '+safe(g.id)+'</span><span>'+safe(gameTime(g.dateUTC))+'</span></div>'+
@@ -234,11 +237,11 @@
     if (busy) return;
     busy = true;
     try {
-      const results = await Promise.allSettled([readJson('nfl-schedule.json'),readJson('nfl-picks.json')]);
+      const results = await Promise.allSettled([readJson('nfl-schedule.json'),readJson('nfl-picks.json'),readJson('auto-nfl-picks.json')]);
       const picksData = results[1].status==='fulfilled' ? results[1].value : null;
       renderOfficial(picksData,results[0].status==='fulfilled'?results[0].value:null);
       if (results[0].status==='rejected') throw results[0].reason;
-      renderSchedule(results[0].value, Array.isArray(picksData?.picks)?picksData.picks:null);
+      renderSchedule(results[0].value, Array.isArray(picksData?.picks)?picksData.picks:null, results[2].status==='fulfilled' ? results[2].value?.picks : null);
     } catch (error) {
       meta.textContent = 'NFL schedule is temporarily unavailable';
       grid.innerHTML = '<div class="panel schedule-empty">Could not load the schedule right now. <a href="https://www.espn.com/nfl/schedule" target="_blank" rel="noopener noreferrer">See NFL schedule ↗</a></div>';
