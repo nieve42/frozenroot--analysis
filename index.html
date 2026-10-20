@@ -59,7 +59,7 @@
   <div class="panel protocol"><h3>NFL score forecasts</h3><p>When Root locks a football moneyline pick, we can also publish the estimated final points for each team and projected combined total in <strong>nfl-picks.json</strong>. These are independent pregame forecasts, never automatic final scores.</p></div>
   <div class="panel protocol"><h3>NBA score forecasts</h3><p>Root’s official NBA moneyline picks and predicted scores are published separately in <strong>nba-picks.json</strong>. Each pick can show projected points for both teams and a projected total. Today’s basketball schedule is generated separately and never locks picks automatically.</p></div>
   <div class="panel protocol"><h3>NHL goal forecasts</h3><p>NHL winner picks and projected team goals are saved separately in <strong>nhl-picks.json</strong>. Today's hockey schedule is refreshed independently; it never creates or locks official predictions automatically. Final scores do not overwrite pregame forecasts.</p></div>
-  <div class="panel protocol"><h3>What's automatic today?</h3><p>The public site automatically displays the current published picks and recalculates the tracker from the data file. It does not automatically generate picks, fetch lineups, or verify results yet; those require a separately configured data source and scheduled analysis.</p></div>
+  <div class="panel protocol"><h3>What's automatic today?</h3><p>For <strong>NFL, NBA, and NHL</strong>, new schedules trigger independent, automatic pregame winner and team-score predictions. Their score-based model uses verified past game results and is <strong>not a live ChatGPT analysis</strong>. The published predictions are frozen, and the system checks final scores to settle automatic picks. <strong>MLB</strong> and Root + owner official locks remain separate. Injuries, lineup changes and bookmaker odds are not inputs to this free model.</p></div>
 </section>
       <section class="page" id="page-football" aria-label="NFL football games">
         <div class="eyebrow"><span class="line"></span> NFL / FOOTBALL COMMAND CENTER</div>
@@ -69,7 +69,7 @@
           <div class="football-mark" aria-hidden="true">🏈</div>
         </div>
         <div class="sectionhead"><h2>This week’s NFL schedule</h2><span id="nflDateRange">LOADING WEEK</span></div>
-        <p class="schedule-intro">Every Tuesday at <strong>12:01 AM Pacific</strong>, the previous week’s games are cleared and the new Tuesday–Monday schedule appears. Unselected upcoming games show <strong>PICK PENDING</strong>. Locked NFL picks show estimated points for <strong>both teams</strong> and a <strong>projected total</strong>. These pregame forecasts are separate from actual scores.</p>
+        <p class="schedule-intro">Every Tuesday at approximately <strong>12:01 AM Pacific</strong>, the previous NFL week clears and the next Tuesday–Monday schedule appears. Each eligible upcoming game receives an <strong>AUTOMATIC WINNER PICK</strong>, predicted points for both teams, and a projected total. Until the model finishes, it shows <strong>PICK PENDING</strong>. Individually reviewed official picks override the automatic prediction on game cards.</p>
         <div id="nflMeta" class="schedule-meta" aria-live="polite">Loading verified football schedule...</div>
         <div id="nflGames" class="schedule-grid nfl-grid" aria-live="polite"><div class="panel schedule-empty">Loading football games...</div></div>
         <div class="schedule-bottom"><a href="https://www.espn.com/nfl/schedule" target="_blank" rel="noopener noreferrer">NFL schedule source ↗</a><span>NFL entries never affect MLB picks, wins, losses, or pending results.</span></div>
@@ -102,7 +102,7 @@
           <div class="football-mark basketball-mark" aria-hidden="true">🏀</div>
         </div>
         <div class="sectionhead"><h2>Today’s NBA schedule</h2><span id="nbaDateLabel">LOADING DAY</span></div>
-        <p class="schedule-intro">Every day at <strong>12:01 AM Pacific</strong>, the previous day’s slate is cleared and today’s NBA games appear. Upcoming games begin as <strong>PICK PENDING</strong> until Root and the owner lock an official moneyline prediction. Locked picks can include a predicted score for <strong>both teams</strong> and projected total points. Finished games display the actual score and winner.</p>
+        <p class="schedule-intro">Every day at approximately <strong>12:01 AM Pacific</strong>, the previous NBA slate clears and today's games are posted. Each eligible upcoming game receives an <strong>AUTOMATIC WINNER PICK</strong> with projected team scores and total points. A temporary <strong>PICK PENDING</strong> appears if the model has not finished. Manual Root + owner selections take priority; final scores display separately.</p>
         <div id="nbaMeta" class="schedule-meta" aria-live="polite">Loading NBA schedule...</div>
         <div id="nbaGames" class="schedule-grid nba-grid" aria-live="polite"><div class="panel schedule-empty">Loading basketball games...</div></div>
         <div class="schedule-bottom"><a href="https://www.espn.com/nba/schedule" target="_blank" rel="noopener noreferrer">NBA schedule source ↗</a><span>Schedule placeholders never count as official picks.</span></div>
@@ -135,7 +135,7 @@
           <div class="football-mark hockey-mark" aria-hidden="true">🏒</div>
         </div>
         <div class="sectionhead"><h2>Today's NHL schedule</h2><span id="nhlDateLabel">LOADING DAY</span></div>
-        <p class="schedule-intro">At approximately <strong>12:01 AM Pacific</strong>, yesterday's slate clears and today's NHL schedule is published. Upcoming games show <strong>PICK PENDING</strong> until we officially lock a moneyline winner. An official NHL pick can include projected <strong>goals for both teams</strong> and a projected combined total. Finished games show their <strong>actual final score and winner</strong>, separately from the forecast.</p>
+        <p class="schedule-intro">At approximately <strong>12:01 AM Pacific</strong>, yesterday's NHL slate clears and today's schedule is published. Each eligible upcoming game receives an <strong>AUTOMATIC WINNER PICK</strong>, forecast goals for both teams, and a projected goal total. It shows <strong>PICK PENDING</strong> until the model runs. Manually locked picks take priority; actual final scores and winners appear separately.</p>
         <div id="nhlMeta" class="schedule-meta" aria-live="polite">Loading NHL schedule...</div>
         <div id="nhlGames" class="schedule-grid nhl-grid" aria-live="polite"><div class="panel schedule-empty">Loading hockey games...</div></div>
         <div class="schedule-bottom"><a href="https://www.espn.com/nhl/schedule" target="_blank" rel="noopener noreferrer">NHL schedule source ↗</a><span>Schedule entries are not official picks.</span></div>
