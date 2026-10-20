@@ -11,6 +11,7 @@ on:
     paths:
       - '.github/workflows/daily-nba-schedule.yml'
       - 'scripts/update_nba_schedule.py'
+      - 'scripts/auto_sports_picks.py'
 
 permissions:
   contents: write
@@ -31,15 +32,17 @@ jobs:
           python-version: '3.12'
       - name: Fetch today's NBA games, without generating picks
         run: python scripts/update_nba_schedule.py
+      - name: Generate new frozen automatic NBA winners and projected scores
+        run: python scripts/auto_sports_picks.py --sport nba
       - name: Publish NBA slate only
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add nba-schedule.json
+          git add nba-schedule.json auto-nba-picks.json
           if git diff --cached --quiet; then
             echo "NBA schedule unchanged"
             exit 0
           fi
-          git commit -m "Refresh NBA daily games — pick pending (NBA only)"
+          git commit -m "Refresh NBA games and frozen automatic pregame score predictions"
           git pull --rebase origin main
           git push origin main
