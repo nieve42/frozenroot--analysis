@@ -101,10 +101,14 @@
       const ordered=data.picks.map(p => ({
         ...p,...window.FrozenRootSportResult.get(p,schedule,s.field)
       })).sort((a,b)=>String(b.createdAt||b.date).localeCompare(String(a.createdAt||a.date)));
-      const wins=ordered.filter(p=>p.status==='win').length;
-      const losses=ordered.filter(p=>p.status==='loss').length;
-      const pending=ordered.filter(p=>p.status==='pending').length;
-      const voids=ordered.filter(p=>p.status==='void').length;
+      const activeSeason=window.FrozenRootSeason.current(s.sport);
+      const activePicks=ordered.filter(p=>window.FrozenRootSeason.matches(s.sport,p.date));
+      const wins=activePicks.filter(p=>p.status==='win').length;
+      const losses=activePicks.filter(p=>p.status==='loss').length;
+      const pending=activePicks.filter(p=>p.status==='pending').length;
+      const voids=activePicks.filter(p=>p.status==='void').length;
+      const seasonTitle=byId(s.sport+'AutoRecordSeason');
+      if(seasonTitle)seasonTitle.textContent=activeSeason.label+' SEASON · WINNER ACCURACY';
       // Model accuracy counts how often the automated predicted winner was right.
       // Games still pending or void, and ties/pushes, never count as wins or losses.
       const graded=wins+losses;
@@ -113,16 +117,15 @@
       if(recordLosses)recordLosses.textContent=String(losses);
       if(recordAccuracy)recordAccuracy.textContent=percentage;
       if(recordNote)recordNote.textContent=graded
-        ? graded+' graded automatic winner pick'+(graded===1?'':'s')+
-          ' · '+pending+' pending · '+voids+' void'+(voids===1?'':'s')+
-          '. Only verified WIN and LOSS outcomes affect the record.'
-        : 'No completed automatic predictions graded yet · '+pending+
-          ' awaiting results. Pending, void and tied games do not count.';
-      summary.textContent='AUTO MODEL ONLY · '+wins+' wins · '+losses+' losses · '+percentage+
+        ? activeSeason.label+' season · '+graded+' graded automatic pick'+(graded===1?'':'s')+
+          ' · '+pending+' pending · '+voids+' void. Previous seasons: Season Archives.'
+        : activeSeason.label+' season · no graded predictions yet · '+pending+
+          ' awaiting results. Past seasons: Season Archives.';
+      summary.textContent=activeSeason.label+' SEASON AUTO MODEL · '+wins+' wins · '+losses+' losses · '+percentage+
         ' win rate · '+pending+' awaiting results'+(voids?' · '+voids+' void':'')+
         '. Separate from official Root + owner selections.';
-      count.textContent=ordered.length+' FROZEN FORECAST'+(ordered.length===1?'':'S')+' · LATEST 40';
-      feature.innerHTML=latestCard(s,ordered[0]);
+      count.textContent=ordered.length+' FROZEN FORECAST'+(ordered.length===1?'':'S')+' ALL SEASONS · LATEST 40';
+      feature.innerHTML=latestCard(s,activePicks[0]);
       history.innerHTML=historyRows(s,ordered);
     } catch(e) {
       // Never show a fictitious 0-0 record when files are unavailable.
