@@ -2,8 +2,9 @@
 """Frozen Root free automated sports forecasts (no ChatGPT API / no sportsbook odds).
 
 Run AFTER the daily/weekly ESPN schedule has been updated. Creates a frozen,
-pregame-only auto pick per upcoming game, and settles older auto picks only
-from completed ESPN scoreboards. Does not touch official manual pick ledgers.
+pregame-only auto pick per upcoming game, and settles older automatic and
+manually locked NFL/NBA/NHL picks from verified completed ESPN scoreboards.
+Never changes selected winners, pregame projections, or the MLB ledger.
 """
 import argparse
 import json
@@ -225,33 +226,69 @@ def forecast(game, config, rates, when, now, sport):
     }
 
 
-def settle(entries, outcomes, now, config):
-    changed=0
-    key=config["score_key"]
+def final_schedule_game(game, now):
+    """Use an ESPN-generated schedule snapshot only for explicitly final scores."""
+    if not game or not isinstance(game, dict):
+        return None
+    state = str(game.get("status") or "").lower()
+    if not any(x in state for x in ("final", "completed", "closed")):
+        return None
+    when = datetime_utc(game.get("dateUTC"))
+    if not when or when >= now:
+        return None
+    try:
+        away = int(game["awayScore"])
+        home = int(game["homeScore"])
+        if away < 0 or home < 0:
+            return None
+    except (ValueError, TypeError, KeyError):
+        return None
+    if not game.get("home") or not game.get("away"):
+        return None
+    return dict(home=str(game["home"]), away=str(game["away"]),
+                home_score=home, away_score=away)
+
+
+def settle(entries, outcomes, now, config, schedule_games):
+    """Only pending picks are resolved. Never change locked winners or forecasts."""
+    changed = 0
+    key = config["score_key"]
     for p in entries:
-        if p.get("status")!="pending":
+        if p.get("status") != "pending":
             continue
-        game = outcomes.get(str(p.get("gameId","")))
-        item = final_event(game,now) if game else None
+        game_id = str(p.get("gameId") or "")
+        if not game_id:
+            continue
+        raw = outcomes.get(game_id)
+        item = final_event(raw, now) if raw else None
+        source = "ESPN public scoreboard"
+        if not item:
+            item = final_schedule_game(schedule_games.get(game_id), now)
+            source = "ESPN verified schedule"
         if item:
-            if p.get("team")==item["home"] and p.get("opponent")==item["away"]:
-                team_score,opp_score=item["home_score"],item["away_score"]
-            elif p.get("team")==item["away"] and p.get("opponent")==item["home"]:
-                team_score,opp_score=item["away_score"],item["home_score"]
+            if p.get("team") == item["home"] and p.get("opponent") == item["away"]:
+                team_score, opp_score = item["home_score"], item["away_score"]
+            elif p.get("team") == item["away"] and p.get("opponent") == item["home"]:
+                team_score, opp_score = item["away_score"], item["home_score"]
             else:
+                print(f"Skip settlement: mismatched teams for {game_id}")
                 continue
-            p["actualScore"]={"team"+key:team_score,"opponent"+key:opp_score}
-            p["status"]="win" if team_score>opp_score else "loss" if team_score<opp_score else "push"
-            p["resultVerifiedOn"]=now.date().isoformat()
-            p["resultSource"]="ESPN public scoreboard"
-            changed+=1
-        elif game:
-            state=(game.get("status") or {}).get("type") or {}
-            code=(str(state.get("name") or "")+" "+str(state.get("description") or "")).lower()
-            if any(word in code for word in ("postpon","cancel")):
-                p["status"]="void"
-                p["settlementReason"]="Game postponed or canceled"
-                changed+=1
+            p["actualScore"] = {"team"+key: team_score, "opponent"+key: opp_score}
+            p["status"] = ("win" if team_score > opp_score else
+                           "loss" if team_score < opp_score else "push")
+            p["resultVerifiedOn"] = now.astimezone(PT).date().isoformat()
+            p["resultSource"] = source
+            changed += 1
+        else:
+            status = ((raw or {}).get("status") or {}).get("type") or {}
+            code = (str(status.get("name") or "") + " " +
+                    str(status.get("description") or "") + " " +
+                    str(schedule_games.get(game_id, {}).get("status") or "")).lower()
+            if "postpon" in code or "cancel" in code:
+                p["status"] = "void"
+                p["settlementReason"] = "Game postponed or canceled"
+                p["resultVerifiedOn"] = now.astimezone(PT).date().isoformat()
+                changed += 1
     return changed
 
 
@@ -284,18 +321,22 @@ def main():
     if config["prior_days"] and day.month in (10,11):
         spring=date(day.year,3,15)
         past_days.update(spring+timedelta(days=i) for i in range(config["prior_days"]))
-    for p in entries:
-        if p.get("status")=="pending":
-            try:
-                previous=date.fromisoformat(str(p.get("date")))
-                if previous<=day:
-                    past_days.add(previous)
-            except ValueError:
-                pass
+    for pick_set in (entries, official.get("picks") or []):
+        for p in pick_set:
+            if p.get("status") == "pending":
+                try:
+                    previous = date.fromisoformat(str(p.get("date")))
+                    if previous <= day:
+                        # ESPN uses UTC grouping, including overnight local games.
+                        past_days.update(previous + timedelta(days=x) for x in (-1, 0, 1))
+                except (ValueError, TypeError):
+                    pass
 
-    outcomes=fetch_results(config,past_days)
-    settled=settle(entries,outcomes,now,config)
-    rates=expected_rates(config,outcomes,now)
+    outcomes = fetch_results(config, past_days)
+    schedule_games = {str(g.get("id")): g for g in game_list if g.get("id")}
+    settled = settle(entries, outcomes, now, config, schedule_games)
+    official_settled = settle(official.get("picks") or [], outcomes, now, config, schedule_games)
+    rates = expected_rates(config, outcomes, now)
     known_ids={str(p.get("gameId")) for p in entries}
     manual_ids={str(p.get("gameId")) for p in official.get("picks",[]) if p.get("locked")}
     added=0
@@ -317,11 +358,16 @@ def main():
             added+=1
 
     # Saved predictions never get their teams or projected scores recomputed.
-    dataset["picks"]=entries
-    dataset["lastUpdated"]=now.isoformat(timespec="seconds").replace("+00:00","Z")
-    outfile.write_text(json.dumps(dataset,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    print(f"{sport.upper()}: new auto picks={added}, newly settled={settled}, "
-          f"total frozen={len(entries)}; official user locks left untouched.")
+    if added or settled:
+        dataset["picks"] = entries
+        dataset["lastUpdated"] = now.isoformat(timespec="seconds").replace("+00:00", "Z")
+        outfile.write_text(json.dumps(dataset, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
+    if official_settled:
+        official["lastUpdated"] = now.astimezone(PT).date().isoformat()
+        (ROOT / (sport+"-picks.json")).write_text(
+            json.dumps(official, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
+    print(f"{sport.upper()}: new auto picks={added}; auto settled={settled}; "
+          f"official settled={official_settled}; total automatic={len(entries)}.")
 
 
 if __name__=="__main__":
