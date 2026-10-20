@@ -40,7 +40,11 @@
       "createdBy": "Root + user",
       "finalScore": "Tampa Bay Rays 3, Cleveland Guardians 1",
       "resultVerifiedOn": "2026-10-18",
-      "resultSource": "https://www.coveringthecorner.com/cleveland-guardians-scores-standings/76174/guardians-drop-game-5-now-face-elimination"
+      "resultSource": "https://www.coveringthecorner.com/cleveland-guardians-scores-standings/76174/guardians-drop-game-5-now-face-elimination",
+      "actualScore": {
+        "teamRuns": 3,
+        "opponentRuns": 1
+      }
     },
     {
       "id": "2026-10-19-alcs-g6",
@@ -62,7 +66,11 @@
       "finalScore": "Tampa Bay Rays 7, Cleveland Guardians 3",
       "resultVerifiedOn": "2026-10-19",
       "resultSource": "https://apnews.com/article/e727b3a485df7dbf0dd866edbff9b22a",
-      "settlementReason": "Locked Tampa Bay Rays moneyline selection won ALCS Game 6, 7–3. The original pregame score projection (4–2) is retained without changing it."
+      "settlementReason": "Locked Tampa Bay Rays moneyline selection won ALCS Game 6, 7–3. The original pregame score projection (4–2) is retained without changing it.",
+      "actualScore": {
+        "teamRuns": 7,
+        "opponentRuns": 3
+      }
     }
   ],
   "lastUpdated": "2026-10-19"
