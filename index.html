@@ -4,7 +4,7 @@
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#070e1a">
   <title>FROZEN ROOT PREDICTION SYSTEM | MLB, NFL, NBA & NHL</title>
-  <link rel="stylesheet" href="./style.css?v=nhl-section-v1">
+  <link rel="stylesheet" href="./style.css?v=auto-forecast-v1">
 </head>
 <body>
 <div class="ambient"></div>
@@ -73,6 +73,12 @@
         <div id="nflMeta" class="schedule-meta" aria-live="polite">Loading verified football schedule...</div>
         <div id="nflGames" class="schedule-grid nfl-grid" aria-live="polite"><div class="panel schedule-empty">Loading football games...</div></div>
         <div class="schedule-bottom"><a href="https://www.espn.com/nfl/schedule" target="_blank" rel="noopener noreferrer">NFL schedule source ↗</a><span>NFL entries never affect MLB picks, wins, losses, or pending results.</span></div>
+        <div class="sectionhead"><h2>Automatic NFL predictions</h2><span>FROZEN PREGAME MODEL</span></div>
+        <p class="schedule-intro">New schedule entries automatically receive a winner forecast, each team's projected score, and a predicted total before the game begins. Predictions use recent game scoring data, <strong>not a live ChatGPT judgment</strong>. Published projections are frozen and tracked separately from official manual picks.</p>
+        <div id="nflAutoSummary" class="schedule-meta" aria-live="polite">Checking automatically generated NFL picks...</div>
+        <div class="feature auto-feature" id="nflAutoLatest"><div class="loading">Loading automatic forecast...</div></div>
+        <div class="sectionhead"><h2>Automatic NFL pick history</h2><span id="nflAutoHistoryCount">0 FORECASTS</span></div>
+        <div class="panel hpanel auto-history"><div class="table-wrap"><table><thead><tr><th>DATE</th><th>AUTO WINNER PICK</th><th>OPPONENT</th><th>PROJECTED POINTS</th><th>ACTUAL SCORE / WINNER</th><th>RESULT</th></tr></thead><tbody id="nflAutoHistoryRows"><tr><td colspan="6">Loading automatic prediction archive...</td></tr></tbody></table></div></div>
         <div class="sectionhead"><h2>Latest official NFL pick</h2><span>FROZEN · LOCKED</span></div>
         <div class="feature" id="nflOfficialPick"><div class="loading">Loading the official NFL pick...</div></div>
         <div class="sectionhead"><h2>NFL pick history</h2><span id="nflHistoryCount">0 LOCKED PICKS</span></div>
@@ -100,6 +106,12 @@
         <div id="nbaMeta" class="schedule-meta" aria-live="polite">Loading NBA schedule...</div>
         <div id="nbaGames" class="schedule-grid nba-grid" aria-live="polite"><div class="panel schedule-empty">Loading basketball games...</div></div>
         <div class="schedule-bottom"><a href="https://www.espn.com/nba/schedule" target="_blank" rel="noopener noreferrer">NBA schedule source ↗</a><span>Schedule placeholders never count as official picks.</span></div>
+        <div class="sectionhead"><h2>Automatic NBA predictions</h2><span>FROZEN PREGAME MODEL</span></div>
+        <p class="schedule-intro">New schedule entries automatically receive a winner forecast, each team's projected score, and a predicted total before the game begins. Predictions use recent game scoring data, <strong>not a live ChatGPT judgment</strong>. Published projections are frozen and tracked separately from official manual picks.</p>
+        <div id="nbaAutoSummary" class="schedule-meta" aria-live="polite">Checking automatically generated NBA picks...</div>
+        <div class="feature auto-feature" id="nbaAutoLatest"><div class="loading">Loading automatic forecast...</div></div>
+        <div class="sectionhead"><h2>Automatic NBA pick history</h2><span id="nbaAutoHistoryCount">0 FORECASTS</span></div>
+        <div class="panel hpanel auto-history"><div class="table-wrap"><table><thead><tr><th>DATE</th><th>AUTO WINNER PICK</th><th>OPPONENT</th><th>PROJECTED POINTS</th><th>ACTUAL SCORE / WINNER</th><th>RESULT</th></tr></thead><tbody id="nbaAutoHistoryRows"><tr><td colspan="6">Loading automatic prediction archive...</td></tr></tbody></table></div></div>
         <div class="sectionhead"><h2>Latest official NBA pick</h2><span>FROZEN · LOCKED</span></div>
         <div class="feature" id="nbaOfficialPick"><div class="loading">Checking official NBA selections...</div></div>
         <div class="sectionhead"><h2>NBA pick history</h2><span id="nbaHistoryCount">0 LOCKED PICKS</span></div>
@@ -127,6 +139,12 @@
         <div id="nhlMeta" class="schedule-meta" aria-live="polite">Loading NHL schedule...</div>
         <div id="nhlGames" class="schedule-grid nhl-grid" aria-live="polite"><div class="panel schedule-empty">Loading hockey games...</div></div>
         <div class="schedule-bottom"><a href="https://www.espn.com/nhl/schedule" target="_blank" rel="noopener noreferrer">NHL schedule source ↗</a><span>Schedule entries are not official picks.</span></div>
+        <div class="sectionhead"><h2>Automatic NHL predictions</h2><span>FROZEN PREGAME MODEL</span></div>
+        <p class="schedule-intro">New schedule entries automatically receive a winner forecast, each team's projected score, and a predicted total before the game begins. Predictions use recent game scoring data, <strong>not a live ChatGPT judgment</strong>. Published projections are frozen and tracked separately from official manual picks.</p>
+        <div id="nhlAutoSummary" class="schedule-meta" aria-live="polite">Checking automatically generated NHL picks...</div>
+        <div class="feature auto-feature" id="nhlAutoLatest"><div class="loading">Loading automatic forecast...</div></div>
+        <div class="sectionhead"><h2>Automatic NHL pick history</h2><span id="nhlAutoHistoryCount">0 FORECASTS</span></div>
+        <div class="panel hpanel auto-history"><div class="table-wrap"><table><thead><tr><th>DATE</th><th>AUTO WINNER PICK</th><th>OPPONENT</th><th>PROJECTED GOALS</th><th>ACTUAL SCORE / WINNER</th><th>RESULT</th></tr></thead><tbody id="nhlAutoHistoryRows"><tr><td colspan="6">Loading automatic prediction archive...</td></tr></tbody></table></div></div>
         <div class="sectionhead"><h2>Latest official NHL pick</h2><span>FROZEN · LOCKED</span></div>
         <div class="feature" id="nhlOfficialPick"><div class="loading">Checking official NHL selections...</div></div>
         <div class="sectionhead"><h2>NHL pick history</h2><span id="nhlHistoryCount">0 LOCKED PICKS</span></div>
@@ -146,8 +164,9 @@
 </div>
 <script src="./app.js?v=nhl-section-v1"></script>
 <script src="./daily.js?v=actual-final-results-v1"></script>
-<script src="./nfl.js?v=actual-final-results-v1"></script>
-<script src="./nba.js?v=nba-section-v1"></script>
-<script src="./nhl.js?v=nhl-section-v1"></script>
+<script src="./nfl.js?v=auto-forecast-v1"></script>
+<script src="./nba.js?v=auto-forecast-v1"></script>
+<script src="./nhl.js?v=auto-forecast-v1"></script>
+<script src="./auto-picks.js?v=auto-forecast-v1"></script>
 </body>
 </html>
