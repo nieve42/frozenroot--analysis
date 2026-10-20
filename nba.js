@@ -104,6 +104,7 @@
       return;
     }
     const locked = ledger.picks.filter(p => p.locked === true)
+      .map(p => ({...p,...window.FrozenRootSportResult.get(p,schedule,'Points')}))
       .sort((a,b) => String(b.date).localeCompare(String(a.date)));
     const wins = locked.filter(p => p.status==='win').length;
     const losses = locked.filter(p => p.status==='loss').length;
@@ -170,8 +171,8 @@
       const pick = official || automatic;
       let label='❄ PICK PENDING', cls='await-pick';
       if (isOff(state)) { label='CANCELED / POSTPONED — NO PENDING PICK';cls='off'; }
-      else if (official) { label='❄ OFFICIAL NBA PICK: '+official.team+' ('+official.status+')';cls='official'; }
-      else if (automatic) { label='🤖 AUTOMATIC NBA PICK: '+automatic.team+' ('+automatic.status+')';cls='automated'; }
+      else if (official) { label='❄ OFFICIAL NBA PICK: '+official.team+' ('+window.FrozenRootSportResult.get(official,slate,'Points').status.toUpperCase()+')';cls='official'; }
+      else if (automatic) { label='🤖 AUTOMATIC NBA PICK: '+automatic.team+' ('+window.FrozenRootSportResult.get(automatic,slate,'Points').status.toUpperCase()+')';cls='automated'; }
       else if (isFinal(state)) {label='FINAL — NO OFFICIAL PICK';cls='final';}
       else if (isLive(state)) {label='IN PROGRESS — NO OFFICIAL PICK';cls='final';}
       else if (!ledger || !Array.isArray(ledger.picks)) {label='PICK STATUS UNAVAILABLE';cls='off';}

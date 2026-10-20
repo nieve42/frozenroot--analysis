@@ -78,11 +78,25 @@
     if(!summary||!feature||!history||!count||busy[s.sport])return;
     busy[s.sport]=true;
     try {
-      const res=await fetch('./auto-'+s.sport+'-picks.json?t='+Date.now(),{cache:'no-store'});
-      if(!res.ok)throw Error('Automatic forecasts not available');
-      const data=await res.json();
+      const results = await Promise.allSettled([
+        fetch('./auto-'+s.sport+'-picks.json?t='+Date.now(),{cache:'no-store'}).then(r=>{
+          if(!r.ok)throw Error('Automatic forecast unavailable');
+          return r.json();
+        }),
+        fetch('./'+s.sport+'-schedule.json?t='+Date.now(),{cache:'no-store'}).then(r=>{
+          if(!r.ok)throw Error('Schedule unavailable');
+          return r.json();
+        })
+      ]);
+      if(results[0].status!=='fulfilled')throw Error('Automatic forecasts not available');
+      const data=results[0].value;
+      const schedule=results[1].status==='fulfilled'?results[1].value:null;
       if(!Array.isArray(data.picks))throw Error('Unexpected prediction data');
-      const ordered=[...data.picks].sort((a,b)=>String(b.createdAt||b.date).localeCompare(String(a.createdAt||a.date)));
+      // Show a confirmed final result immediately if the new schedule has it,
+      // even before the hourly workflow persists the pick's WIN or LOSS.
+      const ordered=data.picks.map(p => ({
+        ...p,...window.FrozenRootSportResult.get(p,schedule,s.field)
+      })).sort((a,b)=>String(b.createdAt||b.date).localeCompare(String(a.createdAt||a.date)));
       const wins=ordered.filter(p=>p.status==='win').length;
       const losses=ordered.filter(p=>p.status==='loss').length;
       const pending=ordered.filter(p=>p.status==='pending').length;
