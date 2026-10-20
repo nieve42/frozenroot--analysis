@@ -105,13 +105,13 @@ function render(){
   const pending=sorted.filter(p=>p.status==='pending');
 }
 function showPage(page){
-  const allowed=['dashboard','history','method','control','football','basketball','hockey','seasons'];
-  if(!allowed.includes(page))page='dashboard';
+  const allowed=['overview','dashboard','history','method','control','football','basketball','hockey','seasons'];
+  if(!allowed.includes(page))page='overview';
   document.querySelectorAll('.page').forEach(el=>el.classList.toggle('active',el.id===`page-${page}`));
   document.querySelectorAll('.navlink').forEach(el=>el.classList.toggle('active',el.dataset.page===page));
-  $('pageName').textContent=({dashboard:'MLB PREDICTIONS AND RECORD',history:'PICK HISTORY',method:'THE SYSTEM',control:'PUBLISHING',football:'NFL / FOOTBALL',basketball:'NBA / BASKETBALL',hockey:'NHL / HOCKEY',seasons:'SEASON ARCHIVES'})[page];
-  if($('sportIndicator')) $('sportIndicator').textContent=page==='football'?'FOOTBALL / NFL':page==='basketball'?'BASKETBALL / NBA':page==='hockey'?'HOCKEY / NHL':page==='seasons'?'HISTORICAL RECORD BOOK':'BASEBALL INTELLIGENCE';
-  if(page==='dashboard')window.scrollTo({top:0,behavior:'instant'});
+  $('pageName').textContent=({overview:'ALL-SPORTS DASHBOARD',dashboard:'MLB PREDICTIONS AND RECORD',history:'PICK HISTORY',method:'THE SYSTEM',control:'PUBLISHING',football:'NFL / FOOTBALL',basketball:'NBA / BASKETBALL',hockey:'NHL / HOCKEY',seasons:'SEASON ARCHIVES'})[page];
+  if($('sportIndicator')) $('sportIndicator').textContent=page==='overview'?'FOUR-SPORT COMMAND CENTER':page==='football'?'FOOTBALL / NFL':page==='basketball'?'BASKETBALL / NBA':page==='hockey'?'HOCKEY / NHL':page==='seasons'?'HISTORICAL RECORD BOOK':'BASEBALL INTELLIGENCE';
+  if(page==='dashboard'||page==='overview')window.scrollTo({top:0,behavior:'instant'});
 }
 async function getState(){const r=await fetch('./site.json',{cache:'no-store'});if(!r.ok)throw Error('Cannot load the published predictions');state=await r.json();render();}
 window.addEventListener('hashchange',()=>showPage(location.hash.replace('#','')));
