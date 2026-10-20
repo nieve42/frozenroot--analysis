@@ -12,7 +12,7 @@
       "pickType": "moneyline",
       "stake": 1,
       "locked": true,
-      "status": "pending",
+      "status": "win",
       "createdBy": "Root + user",
       "lockedOn": "2026-10-18",
       "analysis": "Pick: San Francisco 49ers to win. The 49ers enter 5-0 overall and are hosting Washington at Levi's Stadium, with Brock Purdy recording 1,196 passing yards, 13 touchdown passes and 2 interceptions across five games. Washington is 1-3-1 and has struggled defensively, while its leading running back Jacory Croskey-Merritt is ruled out. The decision is based on team performance, quarterback efficiency, and available injury evidence—not sportsbook odds.",
@@ -28,9 +28,15 @@
         "opponentPoints": 20
       },
       "scoreProjectionRecordedOn": "2026-10-18",
-      "scoreProjectionNote": "Pregame estimated points added after the winner pick was initially locked, but before the October 19 kickoff; this is a forecast, not the final score. The originally locked winner was not changed."
+      "scoreProjectionNote": "Pregame estimated points added after the winner pick was initially locked, but before the October 19 kickoff; this is a forecast, not the final score. The originally locked winner was not changed.",
+      "actualScore": {
+        "teamPoints": 23,
+        "opponentPoints": 17
+      },
+      "resultVerifiedOn": "2026-10-20",
+      "resultSource": "ESPN public scoreboard"
     }
   ],
   "note": "NFL official picks are separate from MLB. Schedule placeholders do not count as selections or awaiting results. Never auto-lock any pick.",
-  "lastUpdated": "2026-10-18"
+  "lastUpdated": "2026-10-20"
 }
