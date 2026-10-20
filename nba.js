@@ -128,7 +128,101 @@
       '<div class="opp">VERSUS '+safe(p.opponent)+'</div>'+
       '<div class="pickchips"><span class="chip locked">❄ OFFICIALLY LOCKED</span>'+
       '<span class="chip '+statusClass(status)+'">'+safe(status.toUpperCase())+'</span>'+
-      '<span class="chip">HYPOTHETICAL $'+safe(p.stake??1)+' UNIT</span></div>'+
+      '<span class="chip">HYPOTHETICAL 
+      pregameCard(p)+(actual?finalCard(p.team,p.opponent,actual.team,actual.opponent):'')+
+      '<p class="nfl-info">'+safe(p.analysis||'Locked before tipoff.')+'</p></div>'+
+      '<div class="feature-note"><strong>RISK / PROCESS</strong><span>'+
+      safe(p.risk||'Pregame prediction, not a guarantee.')+'</span></div>';
+    history.innerHTML = locked.map(p => {
+      const status = String(p.status||'pending').toLowerCase();
+      return '<tr><td>'+safe(prettyDay(p.date))+'</td>'+
+        '<td><strong>'+safe(p.team)+'</strong><small>OFFICIAL · LOCKED</small></td>'+
+        '<td>'+safe(p.opponent)+'</td><td>'+pregameHistory(p)+'</td>'+
+        '<td>'+finalHistory(p,schedule)+'</td>'+
+        '<td><span class="status '+statusClass(status)+'">'+safe(status.toUpperCase())+
+        '</span></td></tr>';
+    }).join('');
+  }
+  function renderSlate(slate,ledger,automaticLedger) {
+    if (!slate || !Array.isArray(slate.games)) throw new Error('Invalid NBA slate');
+    const today = pacificDay(new Date());
+    dayLabel.textContent = prettyDay(today).toUpperCase()+' · DAILY RESET';
+    if (slate.date !== today) {
+      meta.textContent = 'TODAY\'S NBA SCHEDULE IS UPDATING';
+      grid.innerHTML = '<div class="panel schedule-empty">The previous day’s NBA games have cleared. The current slate is awaiting its scheduled refresh; no picks are assumed.</div>';
+      return;
+    }
+    const updated = new Date(slate.generatedAt);
+    const stale = !validDate(updated) || Date.now()-updated.getTime()>26*3600000;
+    meta.textContent = 'SOURCE: ESPN NBA SCOREBOARD'+
+      (validDate(updated)?' · UPDATED '+new Intl.DateTimeFormat('en-US',{
+        timeZone:'America/Los_Angeles',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'
+      }).format(updated)+' PT':'')+(stale?' · FEED MAY BE OUTDATED':'');
+    const games = slate.games.filter(g => {
+      const date = new Date(g.dateUTC);
+      return validDate(date) && pacificDay(date) === today;
+    }).sort((a,b) => String(a.dateUTC).localeCompare(String(b.dateUTC)));
+    if (!games.length) {
+      grid.innerHTML = '<div class="panel schedule-empty">No NBA games are scheduled for today. The next daily slate will appear after midnight Pacific.</div>';
+      return;
+    }
+    grid.innerHTML = games.map(g => {
+      const state = String(g.status||'Scheduled');
+      const official = ledger?.picks?.find(p => p.locked===true && String(p.gameId)===String(g.id));
+      const automatic = !official && automaticLedger?.picks?.find(p => p.automated===true && String(p.gameId)===String(g.id));
+      const pick = official || automatic;
+      let label='❄ PICK PENDING', cls='await-pick';
+      if (isOff(state)) { label='CANCELED / POSTPONED — NO PENDING PICK';cls='off'; }
+      else if (official) { label='❄ OFFICIAL NBA PICK: '+official.team+' ('+window.FrozenRootSportResult.get(official,slate,'Points').status.toUpperCase()+')';cls='official'; }
+      else if (automatic) { label='🤖 AUTOMATIC NBA PICK: '+automatic.team+' ('+window.FrozenRootSportResult.get(automatic,slate,'Points').status.toUpperCase()+')';cls='automated'; }
+      else if (isFinal(state)) {label='FINAL — NO OFFICIAL PICK';cls='final';}
+      else if (isLive(state)) {label='IN PROGRESS — NO OFFICIAL PICK';cls='final';}
+      else if (!ledger || !Array.isArray(ledger.picks)) {label='PICK STATUS UNAVAILABLE';cls='off';}
+      const away = scoreValue(g.awayScore),home = scoreValue(g.homeScore);
+      const final = isFinal(state) && away !== null && home !== null ?
+        finalCard(g.away,g.home,away,home) : '';
+      const live = isLive(state) && !isFinal(state) && away!==null && home!==null ?
+        '<p class="football-score">LIVE: '+safe(g.away)+' '+away+' – '+home+' '+safe(g.home)+'</p>' : '';
+      const forecast = pick ? pregameScore(pick) : null;
+      const forecastHtml = forecast ?
+        '<p class="nfl-slate-forecast">PREGAME POINTS FORECAST: '+safe(pick.team)+' '+
+        forecast.team+' · '+safe(pick.opponent)+' '+forecast.opponent+
+        ' · TOTAL '+forecast.total+' POINTS</p>' : '';
+      return '<article class="schedule-game">'+
+        '<div class="schedule-game-head"><span>NBA · '+safe(g.id)+'</span><span>'+
+        safe(gameTime(g.dateUTC))+'</span></div>'+
+        '<h3>'+safe(g.away)+' <span class="game-versus">@</span> '+safe(g.home)+'</h3>'+
+        '<p class="schedule-game-state">'+safe(state)+'</p>'+live+
+        '<div class="schedule-status '+cls+'">'+safe(label)+'</div>'+(pick?'<div class="slate-reliability">'+window.FrozenRootReliability.badge(pick,'nba',!!automatic)+'</div>':'')+forecastHtml+final+
+        '</article>';
+    }).join('');
+  }
+  let busy = false;
+  async function refresh() {
+    if (busy) return;
+    busy=true;
+    try {
+      const outcomes = await Promise.allSettled([
+        readJson('nba-schedule.json'),readJson('nba-picks.json'),readJson('auto-nba-picks.json')
+      ]);
+      const ledger = outcomes[1].status==='fulfilled' ? outcomes[1].value : null;
+      const slate = outcomes[0].status==='fulfilled' ? outcomes[0].value : null;
+      renderOfficial(ledger,slate);
+      if (!slate) throw new Error('NBA schedule unavailable');
+      renderSlate(slate,ledger, outcomes[2].status==='fulfilled'?outcomes[2].value:null);
+    } catch (error) {
+      dayLabel.textContent = prettyDay(pacificDay(new Date())).toUpperCase();
+      meta.textContent = 'NBA SCHEDULE TEMPORARILY UNAVAILABLE';
+      grid.innerHTML = '<div class="panel schedule-empty">Could not verify today’s NBA games. '+
+        '<a href="https://www.espn.com/nba/schedule" target="_blank" rel="noopener noreferrer">See ESPN NBA schedule ↗</a></div>';
+    } finally { busy=false; }
+  }
+  refresh();
+  window.addEventListener('hashchange',()=>{if(location.hash==='#basketball') refresh();});
+  document.addEventListener('visibilitychange',()=>{if(!document.hidden && location.hash==='#basketball') refresh();});
+  setInterval(()=>{if(location.hash==='#basketball')refresh();},60000);
+})();
++safe(p.stake??1)+' UNIT</span>'+window.FrozenRootReliability.badge(p,'nba',false)+'</div>'+
       pregameCard(p)+(actual?finalCard(p.team,p.opponent,actual.team,actual.opponent):'')+
       '<p class="nfl-info">'+safe(p.analysis||'Locked before tipoff.')+'</p></div>'+
       '<div class="feature-note"><strong>RISK / PROCESS</strong><span>'+
