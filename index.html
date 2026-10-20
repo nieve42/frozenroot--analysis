@@ -4,7 +4,7 @@
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#070e1a">
   <title>FROZEN ROOT PREDICTION SYSTEM | MLB & NFL</title>
-  <link rel="stylesheet" href="./style.css?v=mlb-projected-score-v2">
+  <link rel="stylesheet" href="./style.css?v=actual-final-results-v1">
 </head>
 <body>
 <div class="ambient"></div>
@@ -38,7 +38,7 @@
         <div class="stats"><div class="stat"><div class="stathead">TOTAL WINS <span>↗</span></div><strong id="wins">—</strong><small>Settled moneyline picks</small></div><div class="stat"><div class="stathead">TOTAL LOSSES <span>↘</span></div><strong id="losses">—</strong><small>Settled moneyline picks</small></div><div class="stat"><div class="stathead">WIN RATE <span>◎</span></div><strong id="rate">—</strong><small>Win percentage, excluding voids</small></div><div class="stat"><div class="stathead">AWAITING RESULTS <span>◷</span></div><strong id="pending">—</strong><small>Locked and pending</small></div></div>
         <div class="bottom-grid"><div class="panel"><div class="panel-title"><h3>Official protocol</h3><span>NO SHORTCUTS</span></div><div class="checks"><div><span>01</span> Verified pitchers & advanced metrics</div><div><span>02</span> Confirmed lineups & opponent splits</div><div><span>03</span> Bullpen usage, last 2–3 days</div><div><span>04</span> Park, weather & independent call</div></div></div><div class="panel frostpanel"><div class="panel-title"><h3>The Root rule</h3><span>LOCKED SYSTEM</span></div><blockquote>"We don't chase odds. We study the game, make the call, and stand by it."</blockquote><p>Official picks stay fixed. Changes require substantial verified pregame evidence and an explanation.</p></div></div>
       </section>
-      <section class="page" id="page-history"><div class="eyebrow"><span class="line"></span> OFFICIAL LEDGER</div><h1 class="subhero">PICK <em>ARCHIVE.</em></h1><p class="muted">A transparent log of locked selections, predicted runs for each team, and verified outcomes. Forecasts are always separate from actual final scores.</p><div class="panel hpanel"><div class="panel-title"><h3>Moneyline history</h3><span id="historyCount">0 PICKS</span></div><div class="table-wrap"><table><thead><tr><th>DATE</th><th>ROOT'S PICK</th><th>MATCHUP</th><th>PROJECTED RUNS</th><th>RESULT</th><th>UNIT</th></tr></thead><tbody id="historyRows"></tbody></table></div><div class="historyfoot" id="historyFoot"></div></div></section>
+      <section class="page" id="page-history"><div class="eyebrow"><span class="line"></span> OFFICIAL LEDGER</div><h1 class="subhero">PICK <em>ARCHIVE.</em></h1><p class="muted">A transparent log of locked selections, predicted runs for each team, and verified outcomes. Forecasts are always separate from actual final scores.</p><div class="panel hpanel"><div class="panel-title"><h3>Moneyline history</h3><span id="historyCount">0 PICKS</span></div><div class="table-wrap"><table><thead><tr><th>DATE</th><th>ROOT'S PICK</th><th>MATCHUP</th><th>PROJECTED RUNS</th><th>ACTUAL SCORE / WINNER</th><th>RESULT</th><th>UNIT</th></tr></thead><tbody id="historyRows"></tbody></table></div><div class="historyfoot" id="historyFoot"></div></div></section>
       <section class="page" id="page-method"><div class="eyebrow"><span class="line"></span> UNDER THE ICE</div><h1 class="subhero">THE <em>SYSTEM.</em></h1><p class="muted">Independent baseball analysis. Not betting-app consensus. A disciplined process before every lock.</p><div class="method-grid"><div class="panel method-card"><b>01 / STARTERS</b><h3>Pitching foundation</h3><p>SIERA, xFIP, ERA, WHIP, strikeouts, walks, workload, matchup, and expected innings.</p></div><div class="panel method-card"><b>02 / OFFENSE</b><h3>Real lineups</h3><p>Confirmed batting orders, wRC+, platoon splits, injuries, current form, and hitter matchups.</p></div><div class="panel method-card"><b>03 / BULLPEN</b><h3>The final outs</h3><p>Relief strength, high-leverage options, individual workloads from the last 2–3 days, and postseason form.</p></div><div class="panel method-card"><b>04 / CONTEXT</b><h3>Everything else</h3><p>Park factors, wind direction, weather, defense, and risk assessment before locking the winner.</p></div></div><div class="protocol panel"><h3>Frozen means frozen.</h3><p>Once an official pick is announced, the team cannot be casually changed. Newly verified material news must be documented before any exceptional switch. This site currently preserves official selection identity once added.</p></div></section>
       <section class="page" id="page-control">
   <div class="eyebrow"><span class="line"></span> OWNER WORKFLOW</div>
@@ -72,7 +72,7 @@
         <div class="sectionhead"><h2>Latest official NFL pick</h2><span>FROZEN · LOCKED</span></div>
         <div class="feature" id="nflOfficialPick"><div class="loading">Loading the official NFL pick...</div></div>
         <div class="sectionhead"><h2>NFL pick history</h2><span id="nflHistoryCount">0 LOCKED PICKS</span></div>
-        <div class="panel hpanel"><div class="table-wrap"><table><thead><tr><th>DATE</th><th>WINNER PICK</th><th>OPPONENT</th><th>PROJECTED POINTS</th><th>STATUS</th></tr></thead><tbody id="nflHistoryRows"><tr><td colspan="5">Checking official NFL pick history...</td></tr></tbody></table></div></div>
+        <div class="panel hpanel"><div class="table-wrap"><table><thead><tr><th>DATE</th><th>WINNER PICK</th><th>OPPONENT</th><th>PROJECTED POINTS</th><th>ACTUAL SCORE / WINNER</th><th>STATUS</th></tr></thead><tbody id="nflHistoryRows"><tr><td colspan="5">Checking official NFL pick history...</td></tr></tbody></table></div></div>
         <div class="bottom-grid">
           <div class="panel"><div class="panel-title"><h3>Football picks</h3><span>SEPARATE TRACKER</span></div>
             <p class="nfl-info" id="nflPickSummary">No football picks have been locked yet.</p>
@@ -86,8 +86,8 @@
     <footer><span>© 2026 FROZEN ROOT PREDICTION SYSTEM — THE CALL IS FINAL.</span><span>For entertainment; $1 units are hypothetical. No real-money transactions.</span></footer>
   </main>
 </div>
-<script src="./app.js?v=mlb-projected-score-v2"></script>
-<script src="./daily.js?v=mlb-projected-score-v2"></script>
-<script src="./nfl.js?v=nfl-scores-v1"></script>
+<script src="./app.js?v=actual-final-results-v1"></script>
+<script src="./daily.js?v=actual-final-results-v1"></script>
+<script src="./nfl.js?v=actual-final-results-v1"></script>
 </body>
 </html>
