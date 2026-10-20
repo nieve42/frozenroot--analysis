@@ -8,10 +8,13 @@
       "away": "Cleveland Guardians",
       "home": "Tampa Bay Rays",
       "startUTC": "2026-10-20T00:08:00Z",
-      "status": "Pre-Game",
+      "status": "Final",
       "series": "AL Championship Series",
       "gameType": "L",
-      "gameNumber": 6
+      "gameNumber": 6,
+      "awayScore": 3,
+      "homeScore": 7
     }
-  ]
+  ],
+  "resultSource": "https://apnews.com/article/e727b3a485df7dbf0dd866edbff9b22a"
 }
