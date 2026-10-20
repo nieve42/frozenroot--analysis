@@ -200,3 +200,7 @@
   .auto-feature .run-team-name{font-size:10px}
   .auto-history{margin-bottom:25px}
 }
+
+/* Prior locked NFL results are shown above the new weekly slate. */
+#page-football #nflOfficialPick{margin-bottom:26px}
+#page-football .schedule-status.automated{line-height:1.5}

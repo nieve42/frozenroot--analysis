@@ -203,7 +203,11 @@
         let badge='❄ PICK PENDING', kind='await-pick';
         if (isOff(state)) {badge='CANCELED / POSTPONED — NO PENDING PICK';kind='off';}
         else if (official) {badge='❄ OFFICIAL NFL PICK: '+official.team+' ('+window.FrozenRootSportResult.get(official,data,'Points').status.toUpperCase()+')';kind='official';}
-        else if (automatic) {badge='🤖 AUTOMATIC NFL PICK: '+automatic.team+' ('+window.FrozenRootSportResult.get(automatic,data,'Points').status.toUpperCase()+')';kind='automated';}
+        else if (automatic) {
+          const result=window.FrozenRootSportResult.get(automatic,data,'Points').status.toUpperCase();
+          badge='🤖 '+(result==='PENDING'?'UPCOMING · ':'')+'AUTOMATIC NFL PICK: '+automatic.team+' ('+result+')';
+          kind='automated';
+        }
         else if (isFinal(state)) {badge='FINAL — NO OFFICIAL PICK';kind='final';}
         else if (isLive(state)) {badge='IN PROGRESS — NO OFFICIAL PICK';kind='final';}
         else if (!Array.isArray(picks)) {badge='PICK STATUS UNAVAILABLE';kind='off';}
@@ -227,7 +231,7 @@
         html += '<article class="schedule-game">'+
           '<div class="schedule-game-head"><span>NFL · '+safe(g.id)+'</span><span>'+safe(gameTime(g.dateUTC))+'</span></div>'+
           '<h3>'+safe(g.away)+' <span class="game-versus">@</span> '+safe(g.home)+'</h3>'+
-          '<p class="schedule-game-state">'+safe(state)+'</p>'+liveScore+
+          '<p class="schedule-game-state">'+safe(state)+(state==='Scheduled'?' · NOT PLAYED YET':'')+'</p>'+liveScore+
           '<div class="schedule-status '+kind+'">'+safe(badge)+'</div>'+forecast+finalCard+'</article>';
       }
     }
