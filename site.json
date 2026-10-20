@@ -49,16 +49,20 @@
       "team": "Tampa Bay Rays",
       "opponent": "Cleveland Guardians",
       "stake": 1,
-      "status": "pending",
+      "status": "win",
       "locked": true,
       "projectedScore": {
         "teamRuns": 4,
         "opponentRuns": 2
       },
-      "analysis": "Root's official October 19 moneyline selection, locked at the owner's request before Game 6. Pregame forecast: Tampa Bay Rays 4, Cleveland Guardians 2 (6 total runs); estimated Rays win probability 63% (judgment-based, not a validated model probability). Independent factors reviewed: pitching matchups, bullpen usage, recent offense, and home-field context. This projection is not the actual final score.",
+      "analysis": "Root's official October 19 moneyline selection, locked at the owner's request before Game 6. Pregame forecast: Tampa Bay Rays 4, Cleveland Guardians 2 (6 total runs); estimated Rays win probability 63% (judgment-based, not a validated model probability). Independent factors reviewed: pitching matchups, bullpen usage, recent offense, and home-field context. This projection is not the actual final score. Confirmed final: Tampa Bay Rays 7, Cleveland Guardians 3. Moneyline selection WIN; original projected score unchanged.",
       "risk": "Lineups were not yet confirmed when the pick was locked. Moderate confidence only. Remains fixed; do not switch for odds movement or second thoughts. Only substantial verified new pregame evidence could justify an exceptional, fully explained reconsideration.",
       "odds": null,
-      "createdBy": "Root + user"
+      "createdBy": "Root + user",
+      "finalScore": "Tampa Bay Rays 7, Cleveland Guardians 3",
+      "resultVerifiedOn": "2026-10-19",
+      "resultSource": "https://apnews.com/article/e727b3a485df7dbf0dd866edbff9b22a",
+      "settlementReason": "Locked Tampa Bay Rays moneyline selection won ALCS Game 6, 7–3. The original pregame score projection (4–2) is retained without changing it."
     }
   ],
   "lastUpdated": "2026-10-19"
