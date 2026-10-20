@@ -1,0 +1,45 @@
+name: Frozen Root NBA schedule
+
+on:
+  schedule:
+    - cron: '1 0 * * *'
+      timezone: 'America/Los_Angeles'
+    - cron: '23 14 * * *'
+      timezone: 'America/Los_Angeles'
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/daily-nba-schedule.yml'
+      - 'scripts/update_nba_schedule.py'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: frozen-root-nba-schedule
+  cancel-in-progress: false
+
+jobs:
+  update-nba-schedule:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out Frozen Root site
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch today's NBA games, without generating picks
+        run: python scripts/update_nba_schedule.py
+      - name: Publish NBA slate only
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add nba-schedule.json
+          if git diff --cached --quiet; then
+            echo "NBA schedule unchanged"
+            exit 0
+          fi
+          git commit -m "Refresh NBA daily games — pick pending (NBA only)"
+          git pull --rebase origin main
+          git push origin main
