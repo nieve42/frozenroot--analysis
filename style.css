@@ -422,3 +422,23 @@
 @media(prefers-reduced-motion:reduce){
   .snow-decor span{animation:none}
 }
+
+
+/* The public site contains only a gateway to GitHub's private owner reports. */
+.owner-report-entry{
+  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:18px;
+  border:1px solid #255c80;border-radius:10px;
+  background:linear-gradient(120deg,#102d45,#0a1828);padding:19px 22px;margin:20px 0 12px
+}
+.owner-report-entry strong{color:#a3e7ff;font-size:11px;font-weight:900;letter-spacing:1px}
+.owner-report-entry p{color:#90b0c7;font-size:11px;line-height:1.7;margin:8px 0 0;max-width:560px}
+.owner-report-entry a{
+  flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;
+  color:#c8efff;border:1px solid #3284b3;background:#123c5b;
+  padding:11px 14px;text-decoration:none;font-weight:850;font-size:11px;border-radius:6px
+}
+.owner-report-entry a:hover,.owner-report-entry a:focus-visible{background:#15527a;border-color:#5cc5f6}
+@media(max-width:580px){
+  .owner-report-entry{padding:16px}
+  .owner-report-entry a{width:100%;min-height:42px}
+}
