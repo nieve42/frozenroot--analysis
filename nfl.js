@@ -126,10 +126,12 @@
     const locked = data.picks.filter(p => p.locked === true)
       .map(p => ({...p,...window.FrozenRootSportResult.get(p,schedule,'Points')}))
       .sort((a,b) => String(b.date).localeCompare(String(a.date)));
-    const wins = locked.filter(p => p.status === 'win').length;
-    const losses = locked.filter(p => p.status === 'loss').length;
-    const pending = locked.filter(p => p.status === 'pending').length;
-    if (summary) summary.textContent = 'NFL ONLY · '+wins+' wins · '+losses+' losses · '+pending+
+    const season=window.FrozenRootSeason.current('nfl');
+    const currentLocked=locked.filter(p=>window.FrozenRootSeason.matches('nfl',p.date));
+    const wins=currentLocked.filter(p=>p.status==='win').length;
+    const losses=currentLocked.filter(p=>p.status==='loss').length;
+    const pending=currentLocked.filter(p=>p.status==='pending').length;
+    if (summary) summary.textContent = 'NFL '+season.label+' SEASON · '+wins+' wins · '+losses+' losses · '+pending+
       ' awaiting results. Separate from the MLB record.';
     historyCount.textContent = locked.length+' LOCKED PICK'+(locked.length===1?'':'S');
     if (!locked.length) {
