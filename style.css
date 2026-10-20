@@ -42,11 +42,11 @@
 @media(max-width:580px){.football-banner{padding:23px 19px;min-height:auto}.football-mark{display:none}.football-banner h1{font-size:50px}.nfl-grid{grid-template-columns:1fr}}
 
 
-/* Five-tab mobile navigation: keep football visible without horizontal overflow. */
+/* Six-tab mobile navigation: keep football and NBA visible without horizontal overflow. */
 @media(max-width:580px){
   .sidebar{flex-wrap:wrap;justify-content:space-between;gap:10px}
   .identity{flex:1 1 100%}
-  .nav{width:100%;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:3px}
+  .nav{width:100%;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:3px}
   .navlink{justify-content:center;min-width:0;padding:9px 3px}
   .navlink span{width:auto;font-size:18px}
 }
@@ -144,4 +144,17 @@
   .actual-final-winner{font-size:11px}
   .actual-final-heading{font-size:10px}
   .schedule-game .actual-final-score strong{font-size:29px}
+}
+
+/* Dedicated NBA basketball page — inherits the Frozen Root black and ice-blue theme. */
+.basketball-banner{background:linear-gradient(115deg,#0a2036,#13354e 63%,#081e33)}
+.basketball-mark{transform:rotate(-14deg);opacity:.38}
+.nba-grid .schedule-game{background:linear-gradient(140deg,#10243b,#0a1a2b);border-color:#23577d}
+#page-basketball .run-team-name{font-size:12px}
+#page-basketball .run-projection .run-total strong{font-size:43px}
+#page-basketball .projection-history-score{font-size:18px}
+@media(max-width:580px){
+  #page-basketball .run-projection .run-total strong{font-size:36px}
+  .basketball-mark{display:none}
+  .nba-grid{grid-template-columns:1fr}
 }
