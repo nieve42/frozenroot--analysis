@@ -140,7 +140,7 @@
         '</span></td></tr>';
     }).join('');
   }
-  function renderSlate(slate,ledger) {
+  function renderSlate(slate,ledger,automaticLedger) {
     if (!slate || !Array.isArray(slate.games)) throw new Error('Invalid NHL slate');
     const today = pacificDay(new Date());
     dayLabel.textContent = prettyDay(today).toUpperCase()+' · DAILY RESET';
@@ -165,10 +165,13 @@
     }
     grid.innerHTML = games.map(g => {
       const state = String(g.status||'Scheduled');
-      const pick = ledger?.picks?.find(p => p.locked===true && String(p.gameId)===String(g.id));
+      const official = ledger?.picks?.find(p => p.locked===true && String(p.gameId)===String(g.id));
+      const automatic = !official && automaticLedger?.picks?.find(p => p.automated===true && String(p.gameId)===String(g.id));
+      const pick = official || automatic;
       let label='❄ PICK PENDING', cls='await-pick';
       if (isOff(state)) { label='CANCELED / POSTPONED — NO PENDING PICK';cls='off'; }
-      else if (pick) { label='❄ OFFICIAL NHL PICK: '+pick.team+' ('+pick.status+')';cls='official'; }
+      else if (official) { label='❄ OFFICIAL NHL PICK: '+official.team+' ('+official.status+')';cls='official'; }
+      else if (automatic) { label='🤖 AUTOMATIC NHL PICK: '+automatic.team+' ('+automatic.status+')';cls='automated'; }
       else if (isFinal(state)) {label='FINAL — NO OFFICIAL PICK';cls='final';}
       else if (isLive(state)) {label='IN PROGRESS — NO OFFICIAL PICK';cls='final';}
       else if (!ledger || !Array.isArray(ledger.picks)) {label='PICK STATUS UNAVAILABLE';cls='off';}
@@ -197,13 +200,13 @@
     busy=true;
     try {
       const outcomes = await Promise.allSettled([
-        readJson('nhl-schedule.json'),readJson('nhl-picks.json')
+        readJson('nhl-schedule.json'),readJson('nhl-picks.json'),readJson('auto-nhl-picks.json')
       ]);
       const ledger = outcomes[1].status==='fulfilled' ? outcomes[1].value : null;
       const slate = outcomes[0].status==='fulfilled' ? outcomes[0].value : null;
       renderOfficial(ledger,slate);
       if (!slate) throw new Error('NHL schedule unavailable');
-      renderSlate(slate,ledger);
+      renderSlate(slate,ledger, outcomes[2].status==='fulfilled'?outcomes[2].value:null);
     } catch (error) {
       dayLabel.textContent = prettyDay(pacificDay(new Date())).toUpperCase();
       meta.textContent = 'NHL SCHEDULE TEMPORARILY UNAVAILABLE';
