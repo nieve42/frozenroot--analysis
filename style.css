@@ -354,3 +354,71 @@
   .overview-game{padding:13px}
   .overview-disclaimer{padding:16px}
 }
+
+
+/* Frost ambience: faint flakes visible in empty space, behind all text/cards.
+   Animates slowly for people who permit motion, never blocks touch or clicks. */
+.snow-decor{
+  position:fixed;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+  overflow:hidden;
+  user-select:none;
+}
+.shell{position:relative;z-index:1}
+.snow-decor span{
+  position:absolute;
+  display:block;
+  line-height:1;
+  color:#c9ebff;
+  font-family:Georgia,serif;
+  font-weight:400;
+  opacity:.10;
+  text-shadow:0 0 24px rgba(104,193,255,.25);
+  animation:frost-drift 26s ease-in-out infinite alternate;
+}
+.snow-decor span:nth-child(1){left:27%;top:5%;font-size:54px;opacity:.12;animation-delay:-6s}
+.snow-decor span:nth-child(2){right:9%;top:11%;font-size:24px;animation-delay:-16s}
+.snow-decor span:nth-child(3){left:59%;top:18%;font-size:16px;opacity:.16;animation-delay:-10s}
+.snow-decor span:nth-child(4){left:23%;top:27%;font-size:32px;animation-delay:-2s}
+.snow-decor span:nth-child(5){right:3%;top:32%;font-size:64px;opacity:.08;animation-delay:-22s}
+.snow-decor span:nth-child(6){left:44%;top:39%;font-size:22px;opacity:.13;animation-delay:-7s}
+.snow-decor span:nth-child(7){left:27%;top:47%;font-size:39px;opacity:.09;animation-delay:-19s}
+.snow-decor span:nth-child(8){right:16%;top:51%;font-size:29px;animation-delay:-11s}
+.snow-decor span:nth-child(9){left:70%;top:60%;font-size:19px;opacity:.14;animation-delay:-4s}
+.snow-decor span:nth-child(10){left:36%;top:65%;font-size:52px;opacity:.085;animation-delay:-17s}
+.snow-decor span:nth-child(11){right:5%;top:71%;font-size:26px;animation-delay:-8s}
+.snow-decor span:nth-child(12){left:61%;top:76%;font-size:33px;animation-delay:-20s}
+.snow-decor span:nth-child(13){left:22%;top:84%;font-size:45px;opacity:.09;animation-delay:-13s}
+.snow-decor span:nth-child(14){right:22%;top:90%;font-size:20px;opacity:.15;animation-delay:-5s}
+.snow-decor span:nth-child(15){right:5%;top:94%;font-size:47px;opacity:.08;animation-delay:-15s}
+.snow-decor span:nth-child(16){left:77%;top:3%;font-size:18px;opacity:.14;animation-delay:-21s}
+@keyframes frost-drift {
+  from{transform:translate3d(-4px,7px,0) rotate(-8deg)}
+  to{transform:translate3d(7px,-11px,0) rotate(7deg)}
+}
+@media(max-width:820px){
+  .snow-decor span{opacity:.075;animation-duration:34s}
+  .snow-decor span:nth-child(1){left:6%;font-size:35px;opacity:.10}
+  .snow-decor span:nth-child(4){left:12%}
+  .snow-decor span:nth-child(5){right:-2%;font-size:43px}
+  .snow-decor span:nth-child(7){left:7%;font-size:28px}
+  .snow-decor span:nth-child(10){left:19%;font-size:38px}
+  .snow-decor span:nth-child(13){left:4%;font-size:30px}
+  .snow-decor span:nth-child(3),
+  .snow-decor span:nth-child(6),
+  .snow-decor span:nth-child(9),
+  .snow-decor span:nth-child(14){display:none}
+}
+@media(max-width:580px){
+  .snow-decor span{opacity:.065}
+  .snow-decor span:nth-child(2){right:4%;font-size:19px}
+  .snow-decor span:nth-child(8){right:7%;font-size:22px}
+  .snow-decor span:nth-child(11){right:4%;font-size:20px}
+  .snow-decor span:nth-child(12){left:53%;font-size:24px}
+  .snow-decor span:nth-child(15){right:0%;font-size:32px}
+}
+@media(prefers-reduced-motion:reduce){
+  .snow-decor span{animation:none}
+}
