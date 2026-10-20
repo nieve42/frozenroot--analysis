@@ -11,6 +11,7 @@ on:
     paths:
       - '.github/workflows/daily-nhl-schedule.yml'
       - 'scripts/update_nhl_schedule.py'
+      - 'scripts/auto_sports_picks.py'
 
 permissions:
   contents: write
@@ -31,15 +32,17 @@ jobs:
           python-version: '3.12'
       - name: Fetch today's NHL games, without generating picks
         run: python scripts/update_nhl_schedule.py
+      - name: Generate new frozen automatic NHL winners and projected scores
+        run: python scripts/auto_sports_picks.py --sport nhl
       - name: Publish NHL slate only
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add nhl-schedule.json
+          git add nhl-schedule.json auto-nhl-picks.json
           if git diff --cached --quiet; then
             echo "NHL schedule unchanged"
             exit 0
           fi
-          git commit -m "Refresh NHL daily games — pick pending (NHL only)"
+          git commit -m "Refresh NHL games and frozen automatic pregame score predictions"
           git pull --rebase origin main
           git push origin main
