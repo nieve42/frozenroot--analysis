@@ -48,7 +48,7 @@
       '<div class="opp">VERSUS '+safe(p.opponent)+'</div>'+
       '<div class="pickchips"><span class="chip locked">❄ FROZEN PREGAME</span>'+
       '<span class="chip '+status(p)+'">'+safe(status(p).toUpperCase())+'</span>'+
-      '<span class="chip">STATISTICAL MODEL · NOT CHATGPT</span></div>'+
+      '<span class="chip">STATISTICAL MODEL · NOT CHATGPT</span>'+window.FrozenRootReliability.badge(p,s.sport,true)+'</div>'+
       projected+final+
       '<p class="nfl-info">'+safe(p.analysis||'Automatically calculated from verified previous game scores.')+'</p></div>'+
       '<div class="feature-note"><strong>MODEL NOTE</strong><span>'+safe(p.risk||'Estimated scores are uncertain and not betting advice.')+'</span></div>';
