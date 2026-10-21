@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-21T02:40:58Z",
+  "generatedAt": "2026-10-21T03:42:24Z",
   "date": "2026-10-20",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -63,9 +63,9 @@
       "dateUTC": "2026-10-21T00:00Z",
       "away": "Boston Bruins",
       "home": "Dallas Stars",
-      "status": "In Progress",
+      "status": "Final",
       "awayScore": "2",
-      "homeScore": "2"
+      "homeScore": "3"
     },
     {
       "id": "401892546",
@@ -73,7 +73,7 @@
       "away": "Minnesota Wild",
       "home": "Edmonton Oilers",
       "status": "In Progress",
-      "awayScore": "1",
+      "awayScore": "3",
       "homeScore": "3"
     },
     {
@@ -81,9 +81,9 @@
       "dateUTC": "2026-10-21T01:40Z",
       "away": "Detroit Red Wings",
       "home": "Seattle Kraken",
-      "status": "End of Period",
+      "status": "In Progress",
       "awayScore": "0",
-      "homeScore": "0"
+      "homeScore": "3"
     },
     {
       "id": "401892548",
@@ -91,17 +91,17 @@
       "away": "Carolina Hurricanes",
       "home": "Vancouver Canucks",
       "status": "In Progress",
-      "awayScore": "2",
-      "homeScore": "1"
+      "awayScore": "3",
+      "homeScore": "3"
     },
     {
       "id": "401892549",
       "dateUTC": "2026-10-21T02:45Z",
       "away": "Tampa Bay Lightning",
       "home": "Vegas Golden Knights",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "End of Period",
+      "awayScore": "2",
+      "homeScore": "2"
     }
   ]
 }
