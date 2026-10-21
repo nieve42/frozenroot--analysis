@@ -2,7 +2,7 @@
   "sport": "NHL",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-10-20T07:06:03Z",
+  "lastUpdated": "2026-10-21T01:44:14Z",
   "picks": [
     {
       "id": "nhl-auto-401892539",
@@ -43,14 +43,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-20T07:01:58Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamGoals": 4,
         "opponentGoals": 3
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Past result samples: Colorado Avalanche 14, New Jersey Devils 13. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Past result samples: Colorado Avalanche 14, New Jersey Devils 13. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamGoals": 4,
+        "opponentGoals": 3
+      },
+      "resultVerifiedOn": "2026-10-20",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nhl-auto-401892541",
@@ -67,14 +73,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-20T07:01:58Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamGoals": 4,
         "opponentGoals": 3
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Past result samples: Anaheim Ducks 13, New York Islanders 11. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Past result samples: Anaheim Ducks 13, New York Islanders 11. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamGoals": 3,
+        "opponentGoals": 2
+      },
+      "resultVerifiedOn": "2026-10-20",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nhl-auto-401892542",
@@ -91,14 +103,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-20T07:01:58Z",
-      "status": "pending",
+      "status": "loss",
       "projectedScore": {
         "teamGoals": 4,
         "opponentGoals": 3
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Past result samples: Los Angeles Kings 11, Washington Capitals 12. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Past result samples: Los Angeles Kings 11, Washington Capitals 12. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamGoals": 2,
+        "opponentGoals": 5
+      },
+      "resultVerifiedOn": "2026-10-20",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nhl-auto-401892543",
@@ -115,14 +133,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-20T07:01:58Z",
-      "status": "pending",
+      "status": "loss",
       "projectedScore": {
         "teamGoals": 4,
         "opponentGoals": 3
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Past result samples: Toronto Maple Leafs 14, Columbus Blue Jackets 11. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Past result samples: Toronto Maple Leafs 14, Columbus Blue Jackets 11. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamGoals": 2,
+        "opponentGoals": 6
+      },
+      "resultVerifiedOn": "2026-10-20",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nhl-auto-401892544",

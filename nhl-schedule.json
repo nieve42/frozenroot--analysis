@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-21T00:53:00Z",
+  "generatedAt": "2026-10-21T01:44:14Z",
   "date": "2026-10-20",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,8 +9,8 @@
       "dateUTC": "2026-10-20T23:00Z",
       "away": "San Jose Sharks",
       "home": "Montreal Canadiens",
-      "status": "End of Period",
-      "awayScore": "1",
+      "status": "In Progress",
+      "awayScore": "3",
       "homeScore": "3"
     },
     {
@@ -18,17 +18,17 @@
       "dateUTC": "2026-10-20T23:00Z",
       "away": "Colorado Avalanche",
       "home": "New Jersey Devils",
-      "status": "End of Period",
-      "awayScore": "1",
-      "homeScore": "2"
+      "status": "Final",
+      "awayScore": "3",
+      "homeScore": "4"
     },
     {
       "id": "401892541",
       "dateUTC": "2026-10-20T23:00Z",
       "away": "Anaheim Ducks",
       "home": "New York Islanders",
-      "status": "End of Period",
-      "awayScore": "1",
+      "status": "Final",
+      "awayScore": "2",
       "homeScore": "3"
     },
     {
@@ -36,8 +36,8 @@
       "dateUTC": "2026-10-20T23:00Z",
       "away": "Los Angeles Kings",
       "home": "Washington Capitals",
-      "status": "End of Period",
-      "awayScore": "2",
+      "status": "Final",
+      "awayScore": "5",
       "homeScore": "2"
     },
     {
@@ -45,9 +45,9 @@
       "dateUTC": "2026-10-20T23:00Z",
       "away": "Toronto Maple Leafs",
       "home": "Columbus Blue Jackets",
-      "status": "End of Period",
-      "awayScore": "5",
-      "homeScore": "1"
+      "status": "Final",
+      "awayScore": "6",
+      "homeScore": "2"
     },
     {
       "id": "401892544",
@@ -64,17 +64,17 @@
       "away": "Boston Bruins",
       "home": "Dallas Stars",
       "status": "End of Period",
-      "awayScore": "1",
-      "homeScore": "0"
+      "awayScore": "2",
+      "homeScore": "1"
     },
     {
       "id": "401892546",
       "dateUTC": "2026-10-21T01:00Z",
       "away": "Minnesota Wild",
       "home": "Edmonton Oilers",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "1",
+      "homeScore": "0"
     },
     {
       "id": "401892547",
