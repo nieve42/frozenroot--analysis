@@ -38,6 +38,65 @@
     if (!response.ok) throw new Error(file+' request failed');
     return response.json();
   }
+  // GitHub Actions schedules are best-effort. If the published file is from
+  // yesterday, try ESPN in the browser so today's slate can appear immediately.
+  // This never creates, changes, or locks a pick; JSON ledgers stay authoritative.
+  async function liveTodaySlate(today) {
+    const base = new Date(today + 'T12:00:00Z');
+    const dates = [-1,0,1].map(offset => {
+      const date = new Date(base.getTime() + offset * 86400000);
+      return date.toISOString().slice(0,10).replace(/-/g,'');
+    });
+    const results = await Promise.allSettled(dates.map(async day => {
+      const url = 'https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=' +
+        encodeURIComponent(day) + '&limit=100';
+      const response = await fetch(url,{cache:'no-store'});
+      if (!response.ok) throw new Error('ESPN NHL scoreboard unavailable');
+      const data = await response.json();
+      if (!Array.isArray(data?.events)) throw new Error('Unexpected NHL scoreboard response');
+      return data.events;
+    }));
+    const successful = results.filter(r => r.status === 'fulfilled');
+    if (!successful.length) throw new Error('ESPN NHL live schedule fallback unavailable');
+    const games = new Map();
+    for (const result of successful) {
+      for (const event of result.value) {
+        const competition = event?.competitions?.[0];
+        const competitors = competition?.competitors || [];
+        const away = competitors.find(t => t.homeAway === 'away');
+        const home = competitors.find(t => t.homeAway === 'home');
+        const timestamp = event?.date || competition?.date;
+        if (!event?.id || !away || !home || !timestamp) continue;
+        const date = new Date(timestamp);
+        if (!validDate(date) || pacificDay(date) !== today) continue;
+        const kind = (competition?.status || event?.status || {}).type || {};
+        const active = Boolean(kind.completed || kind.state === 'in');
+        const value = team => {
+          if (!active) return null;
+          const raw = team?.score;
+          const score = typeof raw === 'object' && raw !== null
+            ? (raw.displayValue ?? raw.value) : raw;
+          return score === null || score === undefined ? null : String(score);
+        };
+        games.set(String(event.id),{
+          id:String(event.id),
+          dateUTC:timestamp,
+          away:away.team?.displayName || away.team?.name || 'TBD',
+          home:home.team?.displayName || home.team?.name || 'TBD',
+          status:kind.description || kind.name || 'Scheduled',
+          awayScore:value(away),homeScore:value(home)
+        });
+      }
+    }
+    return {
+      source:'ESPN NHL public scoreboard (browser fallback)',
+      generatedAt:new Date().toISOString(),date:today,
+      dailyReset:'12:01 AM America/Los_Angeles',
+      liveFallback:true,
+      games:[...games.values()].sort((a,b) =>
+        String(a.dateUTC).localeCompare(String(b.dateUTC)))
+    };
+  }
   const scoreValue = value => {
     if (value === null || value === undefined || value === '') return null;
     const number = Number(value);
@@ -155,6 +214,7 @@
     const updated = new Date(slate.generatedAt);
     const stale = !validDate(updated) || Date.now()-updated.getTime()>26*3600000;
     meta.textContent = 'SOURCE: ESPN NHL SCOREBOARD'+
+      (slate.liveFallback?' · LIVE FALLBACK WHILE NIGHTLY PUBLISH CATCHES UP':'')+
       (validDate(updated)?' · UPDATED '+new Intl.DateTimeFormat('en-US',{
         timeZone:'America/Los_Angeles',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'
       }).format(updated)+' PT':'')+(stale?' · FEED MAY BE OUTDATED':'');
@@ -206,7 +266,14 @@
         readJson('nhl-schedule.json'),readJson('nhl-picks.json'),readJson('auto-nhl-picks.json')
       ]);
       const ledger = outcomes[1].status==='fulfilled' ? outcomes[1].value : null;
-      const slate = outcomes[0].status==='fulfilled' ? outcomes[0].value : null;
+      let slate = outcomes[0].status==='fulfilled' ? outcomes[0].value : null;
+      const today = pacificDay(new Date());
+      if (!slate || slate.date !== today) {
+        try { slate = await liveTodaySlate(today); }
+        catch (error) {
+          console.warn('NHL midnight live fallback unavailable:',error);
+        }
+      }
       renderOfficial(ledger,slate);
       if (!slate) throw new Error('NHL schedule unavailable');
       renderSlate(slate,ledger, outcomes[2].status==='fulfilled'?outcomes[2].value:null);
