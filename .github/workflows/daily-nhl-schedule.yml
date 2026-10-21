@@ -2,7 +2,11 @@ name: Frozen Root NHL schedule
 
 on:
   schedule:
+    # Main daily slate reset: 12:01 AM Pacific (PST/PDT automatically).
     - cron: '1 0 * * *'
+      timezone: 'America/Los_Angeles'
+    # Backup in case GitHub delays or drops the first scheduled run.
+    - cron: '7 0 * * *'
       timezone: 'America/Los_Angeles'
     - cron: '23 14 * * *'
       timezone: 'America/Los_Angeles'
