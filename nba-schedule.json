@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-10-21T01:50:06Z",
+  "generatedAt": "2026-10-21T02:49:03Z",
   "date": "2026-10-20",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -18,18 +18,18 @@
       "dateUTC": "2026-10-20T23:00Z",
       "away": "Philadelphia 76ers",
       "home": "New York Knicks",
-      "status": "In Progress",
-      "awayScore": "104",
-      "homeScore": "98"
+      "status": "Final",
+      "awayScore": "106",
+      "homeScore": "100"
     },
     {
       "id": "401909090",
       "dateUTC": "2026-10-21T01:50Z",
       "away": "Oklahoma City Thunder",
       "home": "San Antonio Spurs",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "59",
+      "homeScore": "36"
     }
   ]
 }
