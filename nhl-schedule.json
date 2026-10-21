@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-21T04:41:23Z",
+  "generatedAt": "2026-10-21T05:40:40Z",
   "date": "2026-10-20",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -90,8 +90,8 @@
       "dateUTC": "2026-10-21T02:00Z",
       "away": "Carolina Hurricanes",
       "home": "Vancouver Canucks",
-      "status": "In Progress",
-      "awayScore": "5",
+      "status": "Final",
+      "awayScore": "6",
       "homeScore": "3"
     },
     {
@@ -99,8 +99,8 @@
       "dateUTC": "2026-10-21T02:45Z",
       "away": "Tampa Bay Lightning",
       "home": "Vegas Golden Knights",
-      "status": "In Progress",
-      "awayScore": "5",
+      "status": "Final",
+      "awayScore": "6",
       "homeScore": "2"
     }
   ]
