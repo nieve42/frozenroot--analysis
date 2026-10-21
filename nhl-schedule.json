@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-20T23:37:54Z",
+  "generatedAt": "2026-10-21T00:53:00Z",
   "date": "2026-10-20",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,44 +9,44 @@
       "dateUTC": "2026-10-20T23:00Z",
       "away": "San Jose Sharks",
       "home": "Montreal Canadiens",
-      "status": "In Progress",
+      "status": "End of Period",
       "awayScore": "1",
-      "homeScore": "0"
+      "homeScore": "3"
     },
     {
       "id": "401892540",
       "dateUTC": "2026-10-20T23:00Z",
       "away": "Colorado Avalanche",
       "home": "New Jersey Devils",
-      "status": "In Progress",
+      "status": "End of Period",
       "awayScore": "1",
-      "homeScore": "1"
+      "homeScore": "2"
     },
     {
       "id": "401892541",
       "dateUTC": "2026-10-20T23:00Z",
       "away": "Anaheim Ducks",
       "home": "New York Islanders",
-      "status": "In Progress",
-      "awayScore": "0",
-      "homeScore": "1"
+      "status": "End of Period",
+      "awayScore": "1",
+      "homeScore": "3"
     },
     {
       "id": "401892542",
       "dateUTC": "2026-10-20T23:00Z",
       "away": "Los Angeles Kings",
       "home": "Washington Capitals",
-      "status": "In Progress",
-      "awayScore": "0",
-      "homeScore": "1"
+      "status": "End of Period",
+      "awayScore": "2",
+      "homeScore": "2"
     },
     {
       "id": "401892543",
       "dateUTC": "2026-10-20T23:00Z",
       "away": "Toronto Maple Leafs",
       "home": "Columbus Blue Jackets",
-      "status": "In Progress",
-      "awayScore": "1",
+      "status": "End of Period",
+      "awayScore": "5",
       "homeScore": "1"
     },
     {
@@ -54,18 +54,18 @@
       "dateUTC": "2026-10-21T00:00Z",
       "away": "Winnipeg Jets",
       "home": "St. Louis Blues",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "End of Period",
+      "awayScore": "0",
+      "homeScore": "1"
     },
     {
       "id": "401892545",
       "dateUTC": "2026-10-21T00:00Z",
       "away": "Boston Bruins",
       "home": "Dallas Stars",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "End of Period",
+      "awayScore": "1",
+      "homeScore": "0"
     },
     {
       "id": "401892546",
