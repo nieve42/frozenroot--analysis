@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-21T22:41:27Z",
+  "generatedAt": "2026-10-21T23:40:21Z",
   "date": "2026-10-21",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,9 +9,9 @@
       "dateUTC": "2026-10-21T23:30Z",
       "away": "Philadelphia Flyers",
       "home": "Buffalo Sabres",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "0",
+      "homeScore": "0"
     },
     {
       "id": "401892551",
