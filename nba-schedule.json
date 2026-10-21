@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-10-21T03:50:51Z",
+  "generatedAt": "2026-10-21T04:49:09Z",
   "date": "2026-10-20",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -27,9 +27,9 @@
       "dateUTC": "2026-10-21T01:50Z",
       "away": "Oklahoma City Thunder",
       "home": "San Antonio Spurs",
-      "status": "End of Period",
-      "awayScore": "93",
-      "homeScore": "80"
+      "status": "Final",
+      "awayScore": "116",
+      "homeScore": "104"
     }
   ]
 }
