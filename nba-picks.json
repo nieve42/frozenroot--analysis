@@ -1,6 +1,304 @@
 {
   "sport": "NBA",
-  "picks": [],
-  "note": "Official NBA moneyline picks live here, independent of MLB and NFL. Schedule placeholders never count as picks. Only add a selection when Root and the owner lock it before tipoff; preserve its original pregame score forecast.",
-  "lastUpdated": "2026-10-19"
+  "picks": [
+    {
+      "id": "nba-official-2026-10-21-401909834",
+      "gameId": "401909834",
+      "date": "2026-10-21",
+      "series": "2026-27 NBA Regular Season · Opening Week",
+      "matchup": "Atlanta Hawks at Orlando Magic",
+      "team": "Orlando Magic",
+      "opponent": "Atlanta Hawks",
+      "pickType": "moneyline",
+      "stake": 1,
+      "locked": true,
+      "status": "pending",
+      "createdBy": "Root + user",
+      "lockedOn": "2026-10-21",
+      "projectedScore": {
+        "teamPoints": 118,
+        "opponentPoints": 114
+      },
+      "scoreProjectionRecordedOn": "2026-10-21",
+      "analysis": "Orlando has Paolo Banchero, Desmond Bane and home court against a similarly strong Atlanta team. Orlando's half-court creation gives it a narrow edge over Atlanta's high-scoring offense.",
+      "risk": "Low confidence: competitive matchup; Orlando has rotation injuries and final starting lineups are not yet confirmed.",
+      "sourceUrls": [
+        "https://official.nba.com/nba-injury-report-2026-27-season/",
+        "https://dknetwork.draftkings.com/2026/10/20/deni-avdija-headlines-todays-nba-injury-report-wednesday-10-21-26/",
+        "https://www.sportsmole.co.uk/basketball/sacramento-kings/preview-index/nba-picks-today-best-bets-and-predictions-for-every-game--october-21_607334.html"
+      ]
+    },
+    {
+      "id": "nba-official-2026-10-21-401909835",
+      "gameId": "401909835",
+      "date": "2026-10-21",
+      "series": "2026-27 NBA Regular Season · Opening Week",
+      "matchup": "Milwaukee Bucks at Washington Wizards",
+      "team": "Washington Wizards",
+      "opponent": "Milwaukee Bucks",
+      "pickType": "moneyline",
+      "stake": 1,
+      "locked": true,
+      "status": "pending",
+      "createdBy": "Root + user",
+      "lockedOn": "2026-10-21",
+      "projectedScore": {
+        "teamPoints": 121,
+        "opponentPoints": 115
+      },
+      "scoreProjectionRecordedOn": "2026-10-21",
+      "analysis": "Washington upgraded its core with Trae Young and Anthony Davis, giving it stronger creation and rim protection at home. Milwaukee must adjust to life without Giannis Antetokounmpo.",
+      "risk": "Moderate confidence: Washington rookie AJ Dybantsa is ruled out with an ankle sprain; new-roster chemistry remains uncertain.",
+      "sourceUrls": [
+        "https://official.nba.com/nba-injury-report-2026-27-season/",
+        "https://dknetwork.draftkings.com/2026/10/20/deni-avdija-headlines-todays-nba-injury-report-wednesday-10-21-26/",
+        "https://www.sportsmole.co.uk/basketball/sacramento-kings/preview-index/nba-picks-today-best-bets-and-predictions-for-every-game--october-21_607334.html"
+      ]
+    },
+    {
+      "id": "nba-official-2026-10-21-401909836",
+      "gameId": "401909836",
+      "date": "2026-10-21",
+      "series": "2026-27 NBA Regular Season · Opening Week",
+      "matchup": "Charlotte Hornets at Brooklyn Nets",
+      "team": "Charlotte Hornets",
+      "opponent": "Brooklyn Nets",
+      "pickType": "moneyline",
+      "stake": 1,
+      "locked": true,
+      "status": "pending",
+      "createdBy": "Root + user",
+      "lockedOn": "2026-10-21",
+      "projectedScore": {
+        "teamPoints": 112,
+        "opponentPoints": 108
+      },
+      "scoreProjectionRecordedOn": "2026-10-21",
+      "analysis": "Charlotte finished last season much stronger than Brooklyn and retains enough defensive and scoring depth to edge a rebuilding Nets team, but an undermanned perimeter rotation should slow the game.",
+      "risk": "Low confidence: Charlotte is missing Coby White, Kon Knueppel and Grant Williams; scoring and rotations are uncertain.",
+      "sourceUrls": [
+        "https://official.nba.com/nba-injury-report-2026-27-season/",
+        "https://dknetwork.draftkings.com/2026/10/20/deni-avdija-headlines-todays-nba-injury-report-wednesday-10-21-26/",
+        "https://www.sportsmole.co.uk/basketball/sacramento-kings/preview-index/nba-picks-today-best-bets-and-predictions-for-every-game--october-21_607334.html"
+      ]
+    },
+    {
+      "id": "nba-official-2026-10-21-401909837",
+      "gameId": "401909837",
+      "date": "2026-10-21",
+      "series": "2026-27 NBA Regular Season · Opening Week",
+      "matchup": "Chicago Bulls at Toronto Raptors",
+      "team": "Toronto Raptors",
+      "opponent": "Chicago Bulls",
+      "pickType": "moneyline",
+      "stake": 1,
+      "locked": true,
+      "status": "pending",
+      "createdBy": "Root + user",
+      "lockedOn": "2026-10-21",
+      "projectedScore": {
+        "teamPoints": 120,
+        "opponentPoints": 110
+      },
+      "scoreProjectionRecordedOn": "2026-10-21",
+      "analysis": "Toronto's stronger prior-season performance, home-court edge and addition of Kawhi Leonard create a two-way advantage over Chicago.",
+      "risk": "Moderate confidence: early-season chemistry is uncertain; Chicago can push the pace and make this higher scoring.",
+      "sourceUrls": [
+        "https://official.nba.com/nba-injury-report-2026-27-season/",
+        "https://dknetwork.draftkings.com/2026/10/20/deni-avdija-headlines-todays-nba-injury-report-wednesday-10-21-26/",
+        "https://www.sportsmole.co.uk/basketball/sacramento-kings/preview-index/nba-picks-today-best-bets-and-predictions-for-every-game--october-21_607334.html"
+      ]
+    },
+    {
+      "id": "nba-official-2026-10-21-401909091",
+      "gameId": "401909091",
+      "date": "2026-10-21",
+      "series": "2026-27 NBA Regular Season · Opening Week",
+      "matchup": "Minnesota Timberwolves at Miami Heat",
+      "team": "Minnesota Timberwolves",
+      "opponent": "Miami Heat",
+      "pickType": "moneyline",
+      "stake": 1,
+      "locked": true,
+      "status": "pending",
+      "createdBy": "Root + user",
+      "lockedOn": "2026-10-21",
+      "projectedScore": {
+        "teamPoints": 123,
+        "opponentPoints": 119
+      },
+      "scoreProjectionRecordedOn": "2026-10-21",
+      "analysis": "Minnesota brings Anthony Edwards, LaMelo Ball and Jonathan Kuminga to a team that won 49 games last season. Miami gained Giannis Antetokounmpo but traded significant depth to acquire him.",
+      "risk": "Low confidence: Giannis adds elite scoring to Miami, and roster chemistry plus game pace are hard to gauge in the opener.",
+      "sourceUrls": [
+        "https://official.nba.com/nba-injury-report-2026-27-season/",
+        "https://dknetwork.draftkings.com/2026/10/20/deni-avdija-headlines-todays-nba-injury-report-wednesday-10-21-26/",
+        "https://www.sportsmole.co.uk/basketball/sacramento-kings/preview-index/nba-picks-today-best-bets-and-predictions-for-every-game--october-21_607334.html"
+      ]
+    },
+    {
+      "id": "nba-official-2026-10-21-401909839",
+      "gameId": "401909839",
+      "date": "2026-10-21",
+      "series": "2026-27 NBA Regular Season · Opening Week",
+      "matchup": "Indiana Pacers at New Orleans Pelicans",
+      "team": "Indiana Pacers",
+      "opponent": "New Orleans Pelicans",
+      "pickType": "moneyline",
+      "stake": 1,
+      "locked": true,
+      "status": "pending",
+      "createdBy": "Root + user",
+      "lockedOn": "2026-10-21",
+      "projectedScore": {
+        "teamPoints": 119,
+        "opponentPoints": 114
+      },
+      "scoreProjectionRecordedOn": "2026-10-21",
+      "analysis": "Tyrese Haliburton returns to run Indiana's offense alongside Pascal Siakam and new center Ivica Zubac, a substantial upgrade from its injury-hit prior season.",
+      "risk": "Low confidence: Haliburton is returning from an Achilles tear and his early workload is uncertain; Aaron Nesmith is out.",
+      "sourceUrls": [
+        "https://official.nba.com/nba-injury-report-2026-27-season/",
+        "https://dknetwork.draftkings.com/2026/10/20/deni-avdija-headlines-todays-nba-injury-report-wednesday-10-21-26/",
+        "https://www.sportsmole.co.uk/basketball/sacramento-kings/preview-index/nba-picks-today-best-bets-and-predictions-for-every-game--october-21_607334.html"
+      ]
+    },
+    {
+      "id": "nba-official-2026-10-21-401909838",
+      "gameId": "401909838",
+      "date": "2026-10-21",
+      "series": "2026-27 NBA Regular Season · Opening Week",
+      "matchup": "Utah Jazz at Memphis Grizzlies",
+      "team": "Utah Jazz",
+      "opponent": "Memphis Grizzlies",
+      "pickType": "moneyline",
+      "stake": 1,
+      "locked": true,
+      "status": "pending",
+      "createdBy": "Root + user",
+      "lockedOn": "2026-10-21",
+      "projectedScore": {
+        "teamPoints": 120,
+        "opponentPoints": 115
+      },
+      "scoreProjectionRecordedOn": "2026-10-21",
+      "analysis": "The additions and pairing of Jaren Jackson Jr., Lauri Markkanen and Keyonte George give Utah a strong offensive and interior matchup with a struggling Memphis side.",
+      "risk": "Low confidence: Utah was weak on the road last season; Jusuf Nurkic is out and Memphis may be missing Isaiah Stewart.",
+      "sourceUrls": [
+        "https://official.nba.com/nba-injury-report-2026-27-season/",
+        "https://dknetwork.draftkings.com/2026/10/20/deni-avdija-headlines-todays-nba-injury-report-wednesday-10-21-26/",
+        "https://www.sportsmole.co.uk/basketball/sacramento-kings/preview-index/nba-picks-today-best-bets-and-predictions-for-every-game--october-21_607334.html"
+      ]
+    },
+    {
+      "id": "nba-official-2026-10-21-401909840",
+      "gameId": "401909840",
+      "date": "2026-10-21",
+      "series": "2026-27 NBA Regular Season · Opening Week",
+      "matchup": "Dallas Mavericks at Houston Rockets",
+      "team": "Houston Rockets",
+      "opponent": "Dallas Mavericks",
+      "pickType": "moneyline",
+      "stake": 1,
+      "locked": true,
+      "status": "pending",
+      "createdBy": "Root + user",
+      "lockedOn": "2026-10-21",
+      "projectedScore": {
+        "teamPoints": 123,
+        "opponentPoints": 111
+      },
+      "scoreProjectionRecordedOn": "2026-10-21",
+      "analysis": "Houston's superior previous-season performance, elite rebounding, Kevin Durant scoring and strong home results offer a clear advantage against a younger Dallas team.",
+      "risk": "Moderate confidence: Dallas has rising star Cooper Flagg; Houston center Steven Adams is questionable.",
+      "sourceUrls": [
+        "https://official.nba.com/nba-injury-report-2026-27-season/",
+        "https://dknetwork.draftkings.com/2026/10/20/deni-avdija-headlines-todays-nba-injury-report-wednesday-10-21-26/",
+        "https://www.sportsmole.co.uk/basketball/sacramento-kings/preview-index/nba-picks-today-best-bets-and-predictions-for-every-game--october-21_607334.html"
+      ]
+    },
+    {
+      "id": "nba-official-2026-10-21-401909841",
+      "gameId": "401909841",
+      "date": "2026-10-21",
+      "series": "2026-27 NBA Regular Season · Opening Week",
+      "matchup": "Phoenix Suns at Portland Trail Blazers",
+      "team": "Phoenix Suns",
+      "opponent": "Portland Trail Blazers",
+      "pickType": "moneyline",
+      "stake": 1,
+      "locked": true,
+      "status": "pending",
+      "createdBy": "Root + user",
+      "lockedOn": "2026-10-21",
+      "projectedScore": {
+        "teamPoints": 115,
+        "opponentPoints": 110
+      },
+      "scoreProjectionRecordedOn": "2026-10-21",
+      "analysis": "Phoenix posted a stronger prior-season record, while Portland starts the season missing Shaedon Sharpe and with Deni Avdija's status uncertain.",
+      "risk": "Low confidence: Portland has home court; Deni Avdija's availability could materially affect this matchup.",
+      "sourceUrls": [
+        "https://official.nba.com/nba-injury-report-2026-27-season/",
+        "https://dknetwork.draftkings.com/2026/10/20/deni-avdija-headlines-todays-nba-injury-report-wednesday-10-21-26/",
+        "https://www.sportsmole.co.uk/basketball/sacramento-kings/preview-index/nba-picks-today-best-bets-and-predictions-for-every-game--october-21_607334.html"
+      ]
+    },
+    {
+      "id": "nba-official-2026-10-21-401909092",
+      "gameId": "401909092",
+      "date": "2026-10-21",
+      "series": "2026-27 NBA Regular Season · Opening Week",
+      "matchup": "Golden State Warriors at Los Angeles Lakers",
+      "team": "Los Angeles Lakers",
+      "opponent": "Golden State Warriors",
+      "pickType": "moneyline",
+      "stake": 1,
+      "locked": true,
+      "status": "pending",
+      "createdBy": "Root + user",
+      "lockedOn": "2026-10-21",
+      "projectedScore": {
+        "teamPoints": 120,
+        "opponentPoints": 108
+      },
+      "scoreProjectionRecordedOn": "2026-10-21",
+      "analysis": "Luka Doncic and Austin Reaves lead a strong Lakers home offense, while Golden State will miss Jimmy Butler, Moses Moody, Brandin Podziemski and Kristaps Porzingis.",
+      "risk": "Moderate confidence: Stephen Curry is probable and can change the game with three-point shooting; Lakers have a revamped supporting cast.",
+      "sourceUrls": [
+        "https://official.nba.com/nba-injury-report-2026-27-season/",
+        "https://dknetwork.draftkings.com/2026/10/20/deni-avdija-headlines-todays-nba-injury-report-wednesday-10-21-26/",
+        "https://www.sportsmole.co.uk/basketball/sacramento-kings/preview-index/nba-picks-today-best-bets-and-predictions-for-every-game--october-21_607334.html"
+      ]
+    },
+    {
+      "id": "nba-official-2026-10-21-401909842",
+      "gameId": "401909842",
+      "date": "2026-10-21",
+      "series": "2026-27 NBA Regular Season · Opening Week",
+      "matchup": "Sacramento Kings at LA Clippers",
+      "team": "LA Clippers",
+      "opponent": "Sacramento Kings",
+      "pickType": "moneyline",
+      "stake": 1,
+      "locked": true,
+      "status": "pending",
+      "createdBy": "Root + user",
+      "lockedOn": "2026-10-21",
+      "projectedScore": {
+        "teamPoints": 116,
+        "opponentPoints": 109
+      },
+      "scoreProjectionRecordedOn": "2026-10-21",
+      "analysis": "The Clippers have the stronger recent team record and home court against Sacramento, which is short of healthy centers entering its opener.",
+      "risk": "Low confidence: both clubs have changed major players, and Sacramento has explosive scorers despite missing frontcourt depth.",
+      "sourceUrls": [
+        "https://official.nba.com/nba-injury-report-2026-27-season/",
+        "https://dknetwork.draftkings.com/2026/10/20/deni-avdija-headlines-todays-nba-injury-report-wednesday-10-21-26/",
+        "https://www.sportsmole.co.uk/basketball/sacramento-kings/preview-index/nba-picks-today-best-bets-and-predictions-for-every-game--october-21_607334.html"
+      ]
+    }
+  ],
+  "note": "Official NBA picks are selected and locked by Root at the owner's direction before tipoff. They override automatic model previews. Do not alter locked winners or original projected scores based on later odds or results; store verified final scores separately. Automatic picks remain in auto-nba-picks.json. All records are hypothetical entertainment predictions.",
+  "lastUpdated": "2026-10-21"
 }
