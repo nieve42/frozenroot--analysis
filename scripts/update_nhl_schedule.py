@@ -65,28 +65,38 @@ def game_from_event(event):
 def main():
     today = datetime.now(PACIFIC).date()
     found = {}
-    # ESPN groups some games by UTC date; inspect neighboring dates, filter in Pacific.
-    for day_offset in (-1, 0, 1):
+    tomorrow = today + timedelta(days=1)
+    upcoming = {}
+    # Stage tomorrow's games too, so predictions are ready before midnight.
+    # West-coast evening games may fall two UTC dates after today.
+    for day_offset in (-1, 0, 1, 2):
         for event in fetch_day(today + timedelta(days=day_offset)):
             game = game_from_event(event)
             if not game["id"] or not game["dateUTC"]:
                 continue
             try:
                 when = datetime.fromisoformat(game["dateUTC"].replace("Z", "+00:00"))
-                if when.astimezone(PACIFIC).date() == today:
+                local_day = when.astimezone(PACIFIC).date()
+                if local_day == today:
                     found[game["id"]] = game
+                elif local_day == tomorrow:
+                    upcoming[game["id"]] = game
             except ValueError:
                 continue
     games = sorted(found.values(), key=lambda item: (item["dateUTC"], item["id"]))
+    next_games = sorted(upcoming.values(), key=lambda item: (item["dateUTC"], item["id"]))
     data = {
         "source": "ESPN NHL public scoreboard",
         "generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
         "date": today.isoformat(),
         "dailyReset": "12:01 AM America/Los_Angeles",
-        "games": games
+        "games": games,
+        "nextDate": tomorrow.isoformat(),
+        "upcomingGames": next_games
     }
     DEST.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"Updated NHL slate for {today}: {len(games)} games, zero official picks changed.")
+    print(f"Updated NHL slate for {today}: {len(games)} games; "
+          f"{len(next_games)} next-day games staged; zero official picks changed.")
 
 
 if __name__ == "__main__":
