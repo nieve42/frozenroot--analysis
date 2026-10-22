@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-22T01:43:45Z",
+  "generatedAt": "2026-10-22T02:41:53Z",
   "date": "2026-10-21",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,7 +9,7 @@
       "dateUTC": "2026-10-21T23:30Z",
       "away": "Philadelphia Flyers",
       "home": "Buffalo Sabres",
-      "status": "In Progress",
+      "status": "Final",
       "awayScore": "3",
       "homeScore": "1"
     },
@@ -18,9 +18,9 @@
       "dateUTC": "2026-10-21T23:30Z",
       "away": "Florida Panthers",
       "home": "Ottawa Senators",
-      "status": "In Progress",
+      "status": "Final",
       "awayScore": "1",
-      "homeScore": "3"
+      "homeScore": "5"
     }
   ]
 }
