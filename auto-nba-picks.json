@@ -2,7 +2,7 @@
   "sport": "NBA",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-10-22T05:47:37Z",
+  "lastUpdated": "2026-10-22T07:05:09Z",
   "picks": [
     {
       "id": "nba-auto-401909088",
@@ -423,6 +423,54 @@
       },
       "resultVerifiedOn": "2026-10-21",
       "resultSource": "ESPN verified schedule"
+    },
+    {
+      "id": "nba-auto-401909093",
+      "sport": "NBA",
+      "gameId": "401909093",
+      "date": "2026-10-22",
+      "dateUTC": "2026-10-22T23:00Z",
+      "team": "Philadelphia 76ers",
+      "opponent": "Cleveland Cavaliers",
+      "away": "Cleveland Cavaliers",
+      "home": "Philadelphia 76ers",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-10-22T07:05:09Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamPoints": 115,
+        "opponentPoints": 113
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "LOW DATA",
+      "analysis": "Limited current-season scoring data; baseline and home advantage play a larger role. Recent game samples: Cleveland Cavaliers 0, Philadelphia 76ers 1. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nba-auto-401909094",
+      "sport": "NBA",
+      "gameId": "401909094",
+      "date": "2026-10-22",
+      "dateUTC": "2026-10-23T01:30Z",
+      "team": "Oklahoma City Thunder",
+      "opponent": "Denver Nuggets",
+      "away": "Denver Nuggets",
+      "home": "Oklahoma City Thunder",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-10-22T07:05:09Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamPoints": 117,
+        "opponentPoints": 114
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "LOW DATA",
+      "analysis": "Limited current-season scoring data; baseline and home advantage play a larger role. Recent game samples: Denver Nuggets 0, Oklahoma City Thunder 1. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
     }
   ]
 }
