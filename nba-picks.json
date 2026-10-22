@@ -243,7 +243,7 @@
       "pickType": "moneyline",
       "stake": 1,
       "locked": true,
-      "status": "pending",
+      "status": "win",
       "createdBy": "Root + user",
       "lockedOn": "2026-10-21",
       "projectedScore": {
@@ -257,7 +257,13 @@
         "https://official.nba.com/nba-injury-report-2026-27-season/",
         "https://dknetwork.draftkings.com/2026/10/20/deni-avdija-headlines-todays-nba-injury-report-wednesday-10-21-26/",
         "https://www.sportsmole.co.uk/basketball/sacramento-kings/preview-index/nba-picks-today-best-bets-and-predictions-for-every-game--october-21_607334.html"
-      ]
+      ],
+      "actualScore": {
+        "teamPoints": 128,
+        "opponentPoints": 110
+      },
+      "resultVerifiedOn": "2026-10-21",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-official-2026-10-21-401909841",
