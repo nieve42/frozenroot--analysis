@@ -117,10 +117,10 @@ The **NHL hockey** tab sits directly beneath NBA Basketball on the navigation me
 
 - `nhl-schedule.json` lists games, times (Pacific), live statuses, and final scores from ESPN's public NHL scoreboard. Games are grouped by the current calendar date in the Pacific timezone.
 - The scheduled GitHub workflow `.github/workflows/daily-nhl-schedule.yml` runs `scripts/update_nhl_schedule.py` at approximately **12:01 AM Pacific** with an afternoon refresh. GitHub Actions are best-effort and may run late; yesterday's slate clears automatically in the page until today's update arrives.
-- Upcoming games show **PICK PENDING**, which does not count as a locked selection or an "awaiting results" entry. Canceled or postponed games are clearly marked.
+- New games show the **frozen automatic NHL winner, projected goals, and projected total goals** as soon as a pregame model forecast is published. Until one is available, they show **PICK PENDING**; placeholders are not actual picks or awaiting results. Canceled or postponed games are clearly marked.
 - Official NHL moneyline picks belong in `nhl-picks.json` only. A locked pick can contain `projectedScore: {"teamGoals": 3, "opponentGoals": 2}` (illustration, not a real prediction). Predicted total goals are computed from the two teams' goal forecasts.
 - Completed games display **actual goals and the winner**, without silently rewriting a locked pregame forecast. Official picks are settled as wins/losses/voids only after verification.
-- NHL picks, win/loss records and history are **independent** from baseball, football, and basketball. Game schedules update automatically, but winner predictions are **not generated or locked automatically**.
+- NHL picks, win/loss records and history are **independent** from baseball, football, and basketball. The automatic model records forecasts in `auto-nhl-picks.json`, while **manually confirmed official selections** remain separate in `nhl-picks.json` and cannot be changed by the model.
 
 
 ## Automatically generated NFL, NBA and NHL winner picks + projected scores (free)
@@ -137,8 +137,11 @@ Early-season picks with little usable game history are especially uncertain.
 Schedules and automatic forecasts refresh as follows:
 - NFL: every Tuesday around **12:01 AM Pacific** for the Tuesday–Monday slate,
   plus daily scheduled refreshes for score/status updates.
-- NBA and NHL: **daily at approximately 12:01 AM Pacific**, plus an afternoon
-  update for scores and status. GitHub schedules are best-effort and can run late.
+- NBA and NHL: **daily at approximately 12:01 AM Pacific**, with hourly and afternoon
+  refreshes for new games and scores. For **NHL**, each published daily file also
+  stages the **following Pacific day's games**, allowing the auto model to lock
+  pregame forecasts a day in advance so they are ready when the next slate appears.
+  GitHub schedules are best-effort and can run late.
 
 Each sport keeps a **separate automatic pick record** in
 `auto-nfl-picks.json`, `auto-nba-picks.json`, or `auto-nhl-picks.json`.
