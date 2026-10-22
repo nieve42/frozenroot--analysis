@@ -2,7 +2,7 @@
   "sport": "NHL",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-10-22T07:23:01Z",
+  "lastUpdated": "2026-10-22T07:36:38Z",
   "picks": [
     {
       "id": "nhl-auto-401892539",
@@ -681,6 +681,54 @@
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
       "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Detroit Red Wings 9, Vancouver Canucks 11. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nhl-auto-401892564",
+      "sport": "NHL",
+      "gameId": "401892564",
+      "date": "2026-10-23",
+      "dateUTC": "2026-10-24T00:00Z",
+      "team": "Montreal Canadiens",
+      "opponent": "Chicago Blackhawks",
+      "away": "Montreal Canadiens",
+      "home": "Chicago Blackhawks",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-10-22T07:36:38Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamGoals": 4,
+        "opponentGoals": 3
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Montreal Canadiens 9, Chicago Blackhawks 9. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nhl-auto-401892565",
+      "sport": "NHL",
+      "gameId": "401892565",
+      "date": "2026-10-23",
+      "dateUTC": "2026-10-24T01:00Z",
+      "team": "Colorado Avalanche",
+      "opponent": "Tampa Bay Lightning",
+      "away": "Tampa Bay Lightning",
+      "home": "Colorado Avalanche",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-10-22T07:36:38Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamGoals": 4,
+        "opponentGoals": 3
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Tampa Bay Lightning 9, Colorado Avalanche 10. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
     }
   ]
 }
