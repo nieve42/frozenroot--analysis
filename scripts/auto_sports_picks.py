@@ -306,6 +306,13 @@ def main():
     dataset=load_json(outfile)
     entries=dataset.get("picks") or []
     game_list=schedule.get("games") or []
+    # NHL auto picks are prepared for tomorrow as soon as that slate is available.
+    # Today's visible schedule stays separate, and already-locked selections remain fixed.
+    upcoming=[]
+    if sport=="nhl" and schedule.get("nextDate")== (day+timedelta(days=1)).isoformat():
+        upcoming=[g for g in (schedule.get("upcomingGames") or [])
+                  if isinstance(g,dict)]
+    forecast_games=game_list+upcoming
 
     expected_day = day.isoformat()
     if sport in ("nba","nhl") and schedule.get("date")!=expected_day:
@@ -325,7 +332,7 @@ def main():
         (datetime_utc(g.get("dateUTC")) or now) > now and
         not any(word in str(g.get("status","")).lower()
                 for word in ("final","cancel","postpon","progress","quarter","period","live"))
-        for g in game_list if g.get("id")
+        for g in forecast_games if g.get("id")
     )
     history_days = config["history_days"] if needs_forecast else 1
     past_days = {day-timedelta(days=i) for i in range(history_days+1)}
@@ -352,7 +359,7 @@ def main():
     known_ids={str(p.get("gameId")) for p in entries}
     manual_ids={str(p.get("gameId")) for p in official.get("picks",[]) if p.get("locked")}
     added=0
-    for g in sorted(game_list,key=lambda g: str(g.get("dateUTC",""))):
+    for g in sorted(forecast_games,key=lambda g: str(g.get("dateUTC",""))):
         game_id=str(g.get("id",""))
         if not game_id or game_id in known_ids or game_id in manual_ids:
             continue
