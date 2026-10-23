@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-10-22T23:43:49Z",
+  "generatedAt": "2026-10-23T01:04:24Z",
   "date": "2026-10-22",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -10,8 +10,8 @@
       "away": "Cleveland Cavaliers",
       "home": "Philadelphia 76ers",
       "status": "In Progress",
-      "awayScore": "32",
-      "homeScore": "18"
+      "awayScore": "84",
+      "homeScore": "78"
     },
     {
       "id": "401909094",
