@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-23T02:41:26Z",
+  "generatedAt": "2026-10-23T03:42:30Z",
   "date": "2026-10-22",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -72,17 +72,17 @@
       "dateUTC": "2026-10-23T00:00Z",
       "away": "Winnipeg Jets",
       "home": "Dallas Stars",
-      "status": "In Progress",
+      "status": "Final",
       "awayScore": "2",
-      "homeScore": "2"
+      "homeScore": "3"
     },
     {
       "id": "401892560",
       "dateUTC": "2026-10-23T01:00Z",
       "away": "Minnesota Wild",
       "home": "Calgary Flames",
-      "status": "End of Period",
-      "awayScore": "0",
+      "status": "Final",
+      "awayScore": "1",
       "homeScore": "2"
     },
     {
@@ -90,9 +90,9 @@
       "dateUTC": "2026-10-23T01:00Z",
       "away": "Carolina Hurricanes",
       "home": "Edmonton Oilers",
-      "status": "End of Period",
-      "awayScore": "4",
-      "homeScore": "2"
+      "status": "In Progress",
+      "awayScore": "5",
+      "homeScore": "5"
     },
     {
       "id": "401892562",
@@ -100,16 +100,16 @@
       "away": "Utah Mammoth",
       "home": "Seattle Kraken",
       "status": "In Progress",
-      "awayScore": "0",
-      "homeScore": "1"
+      "awayScore": "1",
+      "homeScore": "3"
     },
     {
       "id": "401892563",
       "dateUTC": "2026-10-23T02:00Z",
       "away": "Detroit Red Wings",
       "home": "Vancouver Canucks",
-      "status": "In Progress",
-      "awayScore": "3",
+      "status": "End of Period",
+      "awayScore": "4",
       "homeScore": "1"
     }
   ],
