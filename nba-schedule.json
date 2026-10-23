@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-10-23T01:04:24Z",
+  "generatedAt": "2026-10-23T01:52:03Z",
   "date": "2026-10-22",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -10,17 +10,17 @@
       "away": "Cleveland Cavaliers",
       "home": "Philadelphia 76ers",
       "status": "In Progress",
-      "awayScore": "84",
-      "homeScore": "78"
+      "awayScore": "104",
+      "homeScore": "110"
     },
     {
       "id": "401909094",
       "dateUTC": "2026-10-23T01:30Z",
       "away": "Denver Nuggets",
       "home": "Oklahoma City Thunder",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "0",
+      "homeScore": "3"
     }
   ]
 }
