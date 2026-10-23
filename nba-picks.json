@@ -363,8 +363,272 @@
       },
       "resultVerifiedOn": "2026-10-21",
       "resultSource": "ESPN verified schedule"
+    },
+    {
+      "id": "nba-official-2026-10-23-401909848",
+      "gameId": "401909848",
+      "date": "2026-10-23",
+      "series": "2026-27 NBA Regular Season · Opening Week",
+      "matchup": "Chicago Bulls at Milwaukee Bucks",
+      "team": "Milwaukee Bucks",
+      "opponent": "Chicago Bulls",
+      "pickType": "moneyline",
+      "stake": 1,
+      "locked": true,
+      "status": "pending",
+      "createdBy": "Root + user",
+      "lockedOn": "2026-10-23",
+      "projectedScore": {
+        "teamPoints": 121,
+        "opponentPoints": 115
+      },
+      "scoreProjectionRecordedOn": "2026-10-23",
+      "analysis": "Milwaukee at home against Chicago; comparative experience and scoring favor Bucks despite uncertainty early in season.",
+      "risk": "Moderate confidence: judgment-based pregame selection; final lineups not fully confirmed when locked. Winner and forecast stay fixed unless substantial newly verified pregame developments require an explicitly documented exception. No sportsbook-odds-based selection."
+    },
+    {
+      "id": "nba-official-2026-10-23-401909095",
+      "gameId": "401909095",
+      "date": "2026-10-23",
+      "series": "2026-27 NBA Regular Season · Opening Week",
+      "matchup": "New York Knicks at Boston Celtics",
+      "team": "New York Knicks",
+      "opponent": "Boston Celtics",
+      "pickType": "moneyline",
+      "stake": 1,
+      "locked": true,
+      "status": "pending",
+      "createdBy": "Root + user",
+      "lockedOn": "2026-10-23",
+      "projectedScore": {
+        "teamPoints": 112,
+        "opponentPoints": 109
+      },
+      "scoreProjectionRecordedOn": "2026-10-23",
+      "analysis": "Close projected matchup with Boston. New York is the slight independent pick; both sides remain capable of winning.",
+      "risk": "Low confidence: judgment-based pregame selection; final lineups not fully confirmed when locked. Winner and forecast stay fixed unless substantial newly verified pregame developments require an explicitly documented exception. No sportsbook-odds-based selection."
+    },
+    {
+      "id": "nba-official-2026-10-23-401909843",
+      "gameId": "401909843",
+      "date": "2026-10-23",
+      "series": "2026-27 NBA Regular Season · Opening Week",
+      "matchup": "Atlanta Hawks at Charlotte Hornets",
+      "team": "Atlanta Hawks",
+      "opponent": "Charlotte Hornets",
+      "pickType": "moneyline",
+      "stake": 1,
+      "locked": true,
+      "status": "pending",
+      "createdBy": "Root + user",
+      "lockedOn": "2026-10-23",
+      "projectedScore": {
+        "teamPoints": 119,
+        "opponentPoints": 112
+      },
+      "scoreProjectionRecordedOn": "2026-10-23",
+      "analysis": "Atlanta's projected scoring edge and offensive creation give the Hawks the advantage against Charlotte.",
+      "risk": "Moderate confidence: judgment-based pregame selection; final lineups not fully confirmed when locked. Winner and forecast stay fixed unless substantial newly verified pregame developments require an explicitly documented exception. No sportsbook-odds-based selection."
+    },
+    {
+      "id": "nba-official-2026-10-23-401909844",
+      "gameId": "401909844",
+      "date": "2026-10-23",
+      "series": "2026-27 NBA Regular Season · Opening Week",
+      "matchup": "Dallas Mavericks at Indiana Pacers",
+      "team": "Indiana Pacers",
+      "opponent": "Dallas Mavericks",
+      "pickType": "moneyline",
+      "stake": 1,
+      "locked": true,
+      "status": "pending",
+      "createdBy": "Root + user",
+      "lockedOn": "2026-10-23",
+      "projectedScore": {
+        "teamPoints": 122,
+        "opponentPoints": 114
+      },
+      "scoreProjectionRecordedOn": "2026-10-23",
+      "analysis": "Indiana's home-court advantage and projected offensive production favor the Pacers over Dallas.",
+      "risk": "Moderate confidence: judgment-based pregame selection; final lineups not fully confirmed when locked. Winner and forecast stay fixed unless substantial newly verified pregame developments require an explicitly documented exception. No sportsbook-odds-based selection."
+    },
+    {
+      "id": "nba-official-2026-10-23-401909845",
+      "gameId": "401909845",
+      "date": "2026-10-23",
+      "series": "2026-27 NBA Regular Season · Opening Week",
+      "matchup": "Minnesota Timberwolves at Orlando Magic",
+      "team": "Minnesota Timberwolves",
+      "opponent": "Orlando Magic",
+      "pickType": "moneyline",
+      "stake": 1,
+      "locked": true,
+      "status": "pending",
+      "createdBy": "Root + user",
+      "lockedOn": "2026-10-23",
+      "projectedScore": {
+        "teamPoints": 123,
+        "opponentPoints": 115
+      },
+      "scoreProjectionRecordedOn": "2026-10-23",
+      "analysis": "Minnesota's recent offensive production, scoring depth and matchup strengths favor the Timberwolves in Orlando.",
+      "risk": "Moderate confidence: judgment-based pregame selection; final lineups not fully confirmed when locked. Winner and forecast stay fixed unless substantial newly verified pregame developments require an explicitly documented exception. No sportsbook-odds-based selection."
+    },
+    {
+      "id": "nba-official-2026-10-23-401909846",
+      "gameId": "401909846",
+      "date": "2026-10-23",
+      "series": "2026-27 NBA Regular Season · Opening Week",
+      "matchup": "Toronto Raptors at Washington Wizards",
+      "team": "Toronto Raptors",
+      "opponent": "Washington Wizards",
+      "pickType": "moneyline",
+      "stake": 1,
+      "locked": true,
+      "status": "pending",
+      "createdBy": "Root + user",
+      "lockedOn": "2026-10-23",
+      "projectedScore": {
+        "teamPoints": 121,
+        "opponentPoints": 113
+      },
+      "scoreProjectionRecordedOn": "2026-10-23",
+      "analysis": "Toronto's strong opening performance, balanced offense and ball security favor the Raptors against Washington.",
+      "risk": "Moderate confidence: judgment-based pregame selection; final lineups not fully confirmed when locked. Winner and forecast stay fixed unless substantial newly verified pregame developments require an explicitly documented exception. No sportsbook-odds-based selection."
+    },
+    {
+      "id": "nba-official-2026-10-23-401909847",
+      "gameId": "401909847",
+      "date": "2026-10-23",
+      "series": "2026-27 NBA Regular Season · Opening Week",
+      "matchup": "Detroit Pistons at Miami Heat",
+      "team": "Detroit Pistons",
+      "opponent": "Miami Heat",
+      "pickType": "moneyline",
+      "stake": 1,
+      "locked": true,
+      "status": "pending",
+      "createdBy": "Root + user",
+      "lockedOn": "2026-10-23",
+      "projectedScore": {
+        "teamPoints": 115,
+        "opponentPoints": 112
+      },
+      "scoreProjectionRecordedOn": "2026-10-23",
+      "analysis": "Detroit's defense is given a narrow edge over Miami; Miami's star-driven offense makes this especially close.",
+      "risk": "Low confidence: judgment-based pregame selection; final lineups not fully confirmed when locked. Winner and forecast stay fixed unless substantial newly verified pregame developments require an explicitly documented exception. No sportsbook-odds-based selection."
+    },
+    {
+      "id": "nba-official-2026-10-23-401909096",
+      "gameId": "401909096",
+      "date": "2026-10-23",
+      "series": "2026-27 NBA Regular Season · Opening Week",
+      "matchup": "Houston Rockets at San Antonio Spurs",
+      "team": "San Antonio Spurs",
+      "opponent": "Houston Rockets",
+      "pickType": "moneyline",
+      "stake": 1,
+      "locked": true,
+      "status": "pending",
+      "createdBy": "Root + user",
+      "lockedOn": "2026-10-23",
+      "projectedScore": {
+        "teamPoints": 117,
+        "opponentPoints": 111
+      },
+      "scoreProjectionRecordedOn": "2026-10-23",
+      "analysis": "San Antonio's home-court edge and projected interior/offensive production slightly favor the Spurs, but player availability may materially shift the matchup.",
+      "risk": "Low confidence: judgment-based pregame selection; final lineups not fully confirmed when locked. Winner and forecast stay fixed unless substantial newly verified pregame developments require an explicitly documented exception. No sportsbook-odds-based selection."
+    },
+    {
+      "id": "nba-official-2026-10-23-401909849",
+      "gameId": "401909849",
+      "date": "2026-10-23",
+      "series": "2026-27 NBA Regular Season · Opening Week",
+      "matchup": "New Orleans Pelicans at Utah Jazz",
+      "team": "New Orleans Pelicans",
+      "opponent": "Utah Jazz",
+      "pickType": "moneyline",
+      "stake": 1,
+      "locked": true,
+      "status": "pending",
+      "createdBy": "Root + user",
+      "lockedOn": "2026-10-23",
+      "projectedScore": {
+        "teamPoints": 119,
+        "opponentPoints": 114
+      },
+      "scoreProjectionRecordedOn": "2026-10-23",
+      "analysis": "New Orleans receives a narrow projected offensive edge, but Utah has home court and outcome uncertainty is substantial.",
+      "risk": "Low confidence: judgment-based pregame selection; final lineups not fully confirmed when locked. Winner and forecast stay fixed unless substantial newly verified pregame developments require an explicitly documented exception. No sportsbook-odds-based selection."
+    },
+    {
+      "id": "nba-official-2026-10-23-401909850",
+      "gameId": "401909850",
+      "date": "2026-10-23",
+      "series": "2026-27 NBA Regular Season · Opening Week",
+      "matchup": "Memphis Grizzlies at Golden State Warriors",
+      "team": "Memphis Grizzlies",
+      "opponent": "Golden State Warriors",
+      "pickType": "moneyline",
+      "stake": 1,
+      "locked": true,
+      "status": "pending",
+      "createdBy": "Root + user",
+      "lockedOn": "2026-10-23",
+      "projectedScore": {
+        "teamPoints": 117,
+        "opponentPoints": 111
+      },
+      "scoreProjectionRecordedOn": "2026-10-23",
+      "analysis": "Memphis is projected to edge Golden State based on today's comparative offensive and roster matchup assessment.",
+      "risk": "Moderate confidence: judgment-based pregame selection; final lineups not fully confirmed when locked. Winner and forecast stay fixed unless substantial newly verified pregame developments require an explicitly documented exception. No sportsbook-odds-based selection."
+    },
+    {
+      "id": "nba-official-2026-10-23-401909852",
+      "gameId": "401909852",
+      "date": "2026-10-23",
+      "series": "2026-27 NBA Regular Season · Opening Week",
+      "matchup": "Portland Trail Blazers at Sacramento Kings",
+      "team": "Portland Trail Blazers",
+      "opponent": "Sacramento Kings",
+      "pickType": "moneyline",
+      "stake": 1,
+      "locked": true,
+      "status": "pending",
+      "createdBy": "Root + user",
+      "lockedOn": "2026-10-23",
+      "projectedScore": {
+        "teamPoints": 121,
+        "opponentPoints": 108
+      },
+      "scoreProjectionRecordedOn": "2026-10-23",
+      "analysis": "Portland's 124-83 opening win over Phoenix and Sacramento's opening offensive struggles give Portland a clear comparative edge.",
+      "risk": "High confidence: judgment-based pregame selection; final lineups not fully confirmed when locked. Winner and forecast stay fixed unless substantial newly verified pregame developments require an explicitly documented exception. No sportsbook-odds-based selection."
+    },
+    {
+      "id": "nba-official-2026-10-23-401909851",
+      "gameId": "401909851",
+      "date": "2026-10-23",
+      "series": "2026-27 NBA Regular Season · Opening Week",
+      "matchup": "LA Clippers at Los Angeles Lakers",
+      "team": "Los Angeles Lakers",
+      "opponent": "LA Clippers",
+      "pickType": "moneyline",
+      "stake": 1,
+      "locked": true,
+      "status": "pending",
+      "createdBy": "Root + user",
+      "lockedOn": "2026-10-23",
+      "projectedScore": {
+        "teamPoints": 120,
+        "opponentPoints": 109
+      },
+      "scoreProjectionRecordedOn": "2026-10-23",
+      "analysis": "The Lakers' home offense and interior support project well against a Clippers roster facing availability concerns.",
+      "risk": "High confidence: judgment-based pregame selection; final lineups not fully confirmed when locked. Winner and forecast stay fixed unless substantial newly verified pregame developments require an explicitly documented exception. No sportsbook-odds-based selection."
     }
   ],
   "note": "Official NBA picks are selected and locked by Root at the owner's direction before tipoff. They override automatic model previews. Do not alter locked winners or original projected scores based on later odds or results; store verified final scores separately. Automatic picks remain in auto-nba-picks.json. All records are hypothetical entertainment predictions.",
-  "lastUpdated": "2026-10-21"
+  "lastUpdated": "2026-10-23"
 }
