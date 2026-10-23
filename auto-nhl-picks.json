@@ -2,7 +2,7 @@
   "sport": "NHL",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-10-22T07:36:38Z",
+  "lastUpdated": "2026-10-23T01:46:29Z",
   "picks": [
     {
       "id": "nhl-auto-401892539",
@@ -409,14 +409,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-22T07:23:01Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamGoals": 4,
         "opponentGoals": 3
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Nashville Predators 8, Boston Bruins 10. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Nashville Predators 8, Boston Bruins 10. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamGoals": 6,
+        "opponentGoals": 0
+      },
+      "resultVerifiedOn": "2026-10-22",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nhl-auto-401892553",
@@ -457,14 +463,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-22T07:23:01Z",
-      "status": "pending",
+      "status": "loss",
       "projectedScore": {
         "teamGoals": 4,
         "opponentGoals": 3
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: San Jose Sharks 10, Ottawa Senators 10. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: San Jose Sharks 10, Ottawa Senators 10. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamGoals": 2,
+        "opponentGoals": 6
+      },
+      "resultVerifiedOn": "2026-10-22",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nhl-auto-401892555",
@@ -481,14 +493,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-22T07:23:01Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamGoals": 4,
         "opponentGoals": 3
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Anaheim Ducks 9, New Jersey Devils 9. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Anaheim Ducks 9, New Jersey Devils 9. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamGoals": 4,
+        "opponentGoals": 1
+      },
+      "resultVerifiedOn": "2026-10-22",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nhl-auto-401892556",
@@ -505,14 +523,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-22T07:23:01Z",
-      "status": "pending",
+      "status": "loss",
       "projectedScore": {
         "teamGoals": 4,
         "opponentGoals": 3
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Florida Panthers 10, Pittsburgh Penguins 10. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Florida Panthers 10, Pittsburgh Penguins 10. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamGoals": 0,
+        "opponentGoals": 4
+      },
+      "resultVerifiedOn": "2026-10-22",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nhl-auto-401892557",
