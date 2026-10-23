@@ -375,7 +375,7 @@
       "pickType": "moneyline",
       "stake": 1,
       "locked": true,
-      "status": "pending",
+      "status": "loss",
       "createdBy": "Root + user",
       "lockedOn": "2026-10-23",
       "projectedScore": {
@@ -384,7 +384,13 @@
       },
       "scoreProjectionRecordedOn": "2026-10-23",
       "analysis": "Milwaukee at home against Chicago; comparative experience and scoring favor Bucks despite uncertainty early in season.",
-      "risk": "Moderate confidence: judgment-based pregame selection; final lineups not fully confirmed when locked. Winner and forecast stay fixed unless substantial newly verified pregame developments require an explicitly documented exception. No sportsbook-odds-based selection."
+      "risk": "Moderate confidence: judgment-based pregame selection; final lineups not fully confirmed when locked. Winner and forecast stay fixed unless substantial newly verified pregame developments require an explicitly documented exception. No sportsbook-odds-based selection.",
+      "actualScore": {
+        "teamPoints": 125,
+        "opponentPoints": 132
+      },
+      "resultVerifiedOn": "2026-10-23",
+      "resultSource": "ESPN public scoreboard"
     },
     {
       "id": "nba-official-2026-10-23-401909095",
