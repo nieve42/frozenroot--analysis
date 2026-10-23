@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-10-23T20:49:36Z",
+  "generatedAt": "2026-10-23T21:47:54Z",
   "date": "2026-10-23",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -10,8 +10,8 @@
       "away": "Chicago Bulls",
       "home": "Milwaukee Bucks",
       "status": "In Progress",
-      "awayScore": "26",
-      "homeScore": "36"
+      "awayScore": "87",
+      "homeScore": "92"
     },
     {
       "id": "401909095",
