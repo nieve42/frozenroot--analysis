@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-23T04:41:13Z",
+  "generatedAt": "2026-10-23T05:40:47Z",
   "date": "2026-10-22",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -99,9 +99,9 @@
       "dateUTC": "2026-10-23T02:00Z",
       "away": "Utah Mammoth",
       "home": "Seattle Kraken",
-      "status": "In Progress",
+      "status": "Final",
       "awayScore": "3",
-      "homeScore": "4"
+      "homeScore": "5"
     },
     {
       "id": "401892563",
