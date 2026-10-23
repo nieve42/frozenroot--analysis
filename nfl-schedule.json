@@ -1,6 +1,6 @@
 {
   "source": "ESPN NFL public scoreboard",
-  "generatedAt": "2026-10-23T02:47:56Z",
+  "generatedAt": "2026-10-23T03:48:20Z",
   "startDate": "2026-10-20",
   "endDate": "2026-10-26",
   "weekReset": "Tuesday 12:01 AM America/Los_Angeles",
@@ -10,9 +10,9 @@
       "dateUTC": "2026-10-23T00:15Z",
       "away": "New England Patriots",
       "home": "Chicago Bears",
-      "status": "In Progress",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Final",
+      "awayScore": "24",
+      "homeScore": "30"
     },
     {
       "id": "401873011",
