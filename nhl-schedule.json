@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-23T03:42:30Z",
+  "generatedAt": "2026-10-23T04:41:13Z",
   "date": "2026-10-22",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -90,9 +90,9 @@
       "dateUTC": "2026-10-23T01:00Z",
       "away": "Carolina Hurricanes",
       "home": "Edmonton Oilers",
-      "status": "In Progress",
+      "status": "Final",
       "awayScore": "5",
-      "homeScore": "5"
+      "homeScore": "6"
     },
     {
       "id": "401892562",
@@ -100,17 +100,17 @@
       "away": "Utah Mammoth",
       "home": "Seattle Kraken",
       "status": "In Progress",
-      "awayScore": "1",
-      "homeScore": "3"
+      "awayScore": "3",
+      "homeScore": "4"
     },
     {
       "id": "401892563",
       "dateUTC": "2026-10-23T02:00Z",
       "away": "Detroit Red Wings",
       "home": "Vancouver Canucks",
-      "status": "End of Period",
-      "awayScore": "4",
-      "homeScore": "1"
+      "status": "Final",
+      "awayScore": "5",
+      "homeScore": "2"
     }
   ],
   "nextDate": "2026-10-23",
