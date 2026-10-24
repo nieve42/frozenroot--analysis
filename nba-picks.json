@@ -571,7 +571,7 @@
       "pickType": "moneyline",
       "stake": 1,
       "locked": true,
-      "status": "pending",
+      "status": "loss",
       "createdBy": "Root + user",
       "lockedOn": "2026-10-23",
       "projectedScore": {
@@ -580,7 +580,13 @@
       },
       "scoreProjectionRecordedOn": "2026-10-23",
       "analysis": "San Antonio's home-court edge and projected interior/offensive production slightly favor the Spurs, but player availability may materially shift the matchup.",
-      "risk": "Low confidence: judgment-based pregame selection; final lineups not fully confirmed when locked. Winner and forecast stay fixed unless substantial newly verified pregame developments require an explicitly documented exception. No sportsbook-odds-based selection."
+      "risk": "Low confidence: judgment-based pregame selection; final lineups not fully confirmed when locked. Winner and forecast stay fixed unless substantial newly verified pregame developments require an explicitly documented exception. No sportsbook-odds-based selection.",
+      "actualScore": {
+        "teamPoints": 110,
+        "opponentPoints": 114
+      },
+      "resultVerifiedOn": "2026-10-23",
+      "resultSource": "ESPN public scoreboard"
     },
     {
       "id": "nba-official-2026-10-23-401909849",
@@ -593,7 +599,7 @@
       "pickType": "moneyline",
       "stake": 1,
       "locked": true,
-      "status": "pending",
+      "status": "loss",
       "createdBy": "Root + user",
       "lockedOn": "2026-10-23",
       "projectedScore": {
@@ -602,7 +608,13 @@
       },
       "scoreProjectionRecordedOn": "2026-10-23",
       "analysis": "New Orleans receives a narrow projected offensive edge, but Utah has home court and outcome uncertainty is substantial.",
-      "risk": "Low confidence: judgment-based pregame selection; final lineups not fully confirmed when locked. Winner and forecast stay fixed unless substantial newly verified pregame developments require an explicitly documented exception. No sportsbook-odds-based selection."
+      "risk": "Low confidence: judgment-based pregame selection; final lineups not fully confirmed when locked. Winner and forecast stay fixed unless substantial newly verified pregame developments require an explicitly documented exception. No sportsbook-odds-based selection.",
+      "actualScore": {
+        "teamPoints": 119,
+        "opponentPoints": 120
+      },
+      "resultVerifiedOn": "2026-10-23",
+      "resultSource": "ESPN public scoreboard"
     },
     {
       "id": "nba-official-2026-10-23-401909850",
@@ -637,7 +649,7 @@
       "pickType": "moneyline",
       "stake": 1,
       "locked": true,
-      "status": "pending",
+      "status": "win",
       "createdBy": "Root + user",
       "lockedOn": "2026-10-23",
       "projectedScore": {
@@ -646,7 +658,13 @@
       },
       "scoreProjectionRecordedOn": "2026-10-23",
       "analysis": "Portland's 124-83 opening win over Phoenix and Sacramento's opening offensive struggles give Portland a clear comparative edge.",
-      "risk": "High confidence: judgment-based pregame selection; final lineups not fully confirmed when locked. Winner and forecast stay fixed unless substantial newly verified pregame developments require an explicitly documented exception. No sportsbook-odds-based selection."
+      "risk": "High confidence: judgment-based pregame selection; final lineups not fully confirmed when locked. Winner and forecast stay fixed unless substantial newly verified pregame developments require an explicitly documented exception. No sportsbook-odds-based selection.",
+      "actualScore": {
+        "teamPoints": 128,
+        "opponentPoints": 120
+      },
+      "resultVerifiedOn": "2026-10-23",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-official-2026-10-23-401909851",
@@ -659,7 +677,7 @@
       "pickType": "moneyline",
       "stake": 1,
       "locked": true,
-      "status": "pending",
+      "status": "win",
       "createdBy": "Root + user",
       "lockedOn": "2026-10-23",
       "projectedScore": {
@@ -668,7 +686,13 @@
       },
       "scoreProjectionRecordedOn": "2026-10-23",
       "analysis": "The Lakers' home offense and interior support project well against a Clippers roster facing availability concerns.",
-      "risk": "High confidence: judgment-based pregame selection; final lineups not fully confirmed when locked. Winner and forecast stay fixed unless substantial newly verified pregame developments require an explicitly documented exception. No sportsbook-odds-based selection."
+      "risk": "High confidence: judgment-based pregame selection; final lineups not fully confirmed when locked. Winner and forecast stay fixed unless substantial newly verified pregame developments require an explicitly documented exception. No sportsbook-odds-based selection.",
+      "actualScore": {
+        "teamPoints": 125,
+        "opponentPoints": 117
+      },
+      "resultVerifiedOn": "2026-10-23",
+      "resultSource": "ESPN verified schedule"
     }
   ],
   "note": "Official NBA picks are selected and locked by Root at the owner's direction before tipoff. They override automatic model previews. Do not alter locked winners or original projected scores based on later odds or results; store verified final scores separately. Automatic picks remain in auto-nba-picks.json. All records are hypothetical entertainment predictions.",

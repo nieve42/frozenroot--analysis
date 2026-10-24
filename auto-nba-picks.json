@@ -2,7 +2,7 @@
   "sport": "NBA",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-10-24T02:48:19Z",
+  "lastUpdated": "2026-10-24T04:47:29Z",
   "picks": [
     {
       "id": "nba-auto-401909088",
@@ -709,14 +709,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-23T07:02:48Z",
-      "status": "pending",
+      "status": "loss",
       "projectedScore": {
         "teamPoints": 115,
         "opponentPoints": 114
       },
       "modelVersion": "score-form-v1",
       "risk": "LOW DATA",
-      "analysis": "Limited current-season scoring data; baseline and home advantage play a larger role. Recent game samples: Houston Rockets 1, San Antonio Spurs 1. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Limited current-season scoring data; baseline and home advantage play a larger role. Recent game samples: Houston Rockets 1, San Antonio Spurs 1. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 110,
+        "opponentPoints": 114
+      },
+      "resultVerifiedOn": "2026-10-23",
+      "resultSource": "ESPN public scoreboard"
     },
     {
       "id": "nba-auto-401909849",
@@ -733,14 +739,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-23T07:02:48Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 118,
         "opponentPoints": 117
       },
       "modelVersion": "score-form-v1",
       "risk": "LOW DATA",
-      "analysis": "Limited current-season scoring data; baseline and home advantage play a larger role. Recent game samples: New Orleans Pelicans 1, Utah Jazz 1. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Limited current-season scoring data; baseline and home advantage play a larger role. Recent game samples: New Orleans Pelicans 1, Utah Jazz 1. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 120,
+        "opponentPoints": 119
+      },
+      "resultVerifiedOn": "2026-10-23",
+      "resultSource": "ESPN public scoreboard"
     },
     {
       "id": "nba-auto-401909850",
@@ -781,14 +793,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-23T07:02:48Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 114,
         "opponentPoints": 111
       },
       "modelVersion": "score-form-v1",
       "risk": "LOW DATA",
-      "analysis": "Limited current-season scoring data; baseline and home advantage play a larger role. Recent game samples: LA Clippers 1, Los Angeles Lakers 1. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Limited current-season scoring data; baseline and home advantage play a larger role. Recent game samples: LA Clippers 1, Los Angeles Lakers 1. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 125,
+        "opponentPoints": 117
+      },
+      "resultVerifiedOn": "2026-10-23",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-auto-401909852",
@@ -805,14 +823,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-23T07:02:48Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 115,
         "opponentPoints": 110
       },
       "modelVersion": "score-form-v1",
       "risk": "LOW DATA",
-      "analysis": "Limited current-season scoring data; baseline and home advantage play a larger role. Recent game samples: Portland Trail Blazers 1, Sacramento Kings 1. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Limited current-season scoring data; baseline and home advantage play a larger role. Recent game samples: Portland Trail Blazers 1, Sacramento Kings 1. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 128,
+        "opponentPoints": 120
+      },
+      "resultVerifiedOn": "2026-10-23",
+      "resultSource": "ESPN verified schedule"
     }
   ]
 }
