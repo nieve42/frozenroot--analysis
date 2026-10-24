@@ -73,5 +73,18 @@
       }
     }
   ],
-  "lastUpdated": "2026-10-19"
+  "lastUpdated": "2026-10-23",
+  "latestMlbResult": {
+    "id": "2026-10-23-ws-g1",
+    "date": "2026-10-23",
+    "series": "World Series · Game 1",
+    "homeTeam": "Milwaukee Brewers",
+    "awayTeam": "Tampa Bay Rays",
+    "homeRuns": 3,
+    "awayRuns": 2,
+    "winner": "Milwaukee Brewers",
+    "status": "final",
+    "source": "https://apnews.com/article/world-series-rays-brewers-game-1-049d8efa7d3d7c8fc8a4e4b88d8dfe77",
+    "resultVerifiedOn": "2026-10-23"
+  }
 }
