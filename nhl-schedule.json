@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-24T21:49:29Z",
+  "generatedAt": "2026-10-24T22:37:52Z",
   "date": "2026-10-24",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -18,9 +18,9 @@
       "dateUTC": "2026-10-24T19:30Z",
       "away": "Los Angeles Kings",
       "home": "New Jersey Devils",
-      "status": "In Progress",
+      "status": "Final",
       "awayScore": "1",
-      "homeScore": "2"
+      "homeScore": "3"
     },
     {
       "id": "401892568",
