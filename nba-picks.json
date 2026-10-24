@@ -543,7 +543,7 @@
       "pickType": "moneyline",
       "stake": 1,
       "locked": true,
-      "status": "pending",
+      "status": "win",
       "createdBy": "Root + user",
       "lockedOn": "2026-10-23",
       "projectedScore": {
@@ -552,7 +552,13 @@
       },
       "scoreProjectionRecordedOn": "2026-10-23",
       "analysis": "Detroit's defense is given a narrow edge over Miami; Miami's star-driven offense makes this especially close.",
-      "risk": "Low confidence: judgment-based pregame selection; final lineups not fully confirmed when locked. Winner and forecast stay fixed unless substantial newly verified pregame developments require an explicitly documented exception. No sportsbook-odds-based selection."
+      "risk": "Low confidence: judgment-based pregame selection; final lineups not fully confirmed when locked. Winner and forecast stay fixed unless substantial newly verified pregame developments require an explicitly documented exception. No sportsbook-odds-based selection.",
+      "actualScore": {
+        "teamPoints": 128,
+        "opponentPoints": 111
+      },
+      "resultVerifiedOn": "2026-10-23",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-official-2026-10-23-401909096",
