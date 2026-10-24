@@ -47,7 +47,7 @@
       '<b>'+counts.wins+' W / '+counts.losses+' L <small>· '+counts.accuracy+'</small></b></div>';
   }
   function sportRows(sport,id,data,schedule){
-    if(sport==='mlb')return recordRow('Official Root picks',mlbTotals(data.official,id));
+    if(sport==='mlb')return recordRow('Root + owner tracked picks',mlbTotals(data.official,id));
     const auto=gradedPicks(sport,data.automatic.picks,schedule);
     const official=gradedPicks(sport,data.official.picks,schedule);
     return recordRow('Automatic model',sys.totals(bySeason(sport,auto,id)))+
