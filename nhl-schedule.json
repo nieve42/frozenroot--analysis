@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-24T00:57:54Z",
+  "generatedAt": "2026-10-24T01:47:40Z",
   "date": "2026-10-23",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,8 +9,8 @@
       "dateUTC": "2026-10-24T00:00Z",
       "away": "Montreal Canadiens",
       "home": "Chicago Blackhawks",
-      "status": "End of Period",
-      "awayScore": "1",
+      "status": "In Progress",
+      "awayScore": "2",
       "homeScore": "1"
     },
     {
@@ -18,9 +18,9 @@
       "dateUTC": "2026-10-24T01:00Z",
       "away": "Tampa Bay Lightning",
       "home": "Colorado Avalanche",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "0",
+      "homeScore": "2"
     }
   ],
   "nextDate": "2026-10-24",
