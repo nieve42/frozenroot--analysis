@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-10-23T23:43:51Z",
+  "generatedAt": "2026-10-24T01:07:15Z",
   "date": "2026-10-23",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -18,18 +18,18 @@
       "dateUTC": "2026-10-23T23:00Z",
       "away": "New York Knicks",
       "home": "Boston Celtics",
-      "status": "End of Period",
-      "awayScore": "27",
-      "homeScore": "26"
+      "status": "In Progress",
+      "awayScore": "73",
+      "homeScore": "79"
     },
     {
       "id": "401909843",
       "dateUTC": "2026-10-23T23:00Z",
       "away": "Atlanta Hawks",
       "home": "Charlotte Hornets",
-      "status": "End of Period",
-      "awayScore": "33",
-      "homeScore": "20"
+      "status": "In Progress",
+      "awayScore": "108",
+      "homeScore": "69"
     },
     {
       "id": "401909844",
@@ -37,8 +37,8 @@
       "away": "Dallas Mavericks",
       "home": "Indiana Pacers",
       "status": "In Progress",
-      "awayScore": "44",
-      "homeScore": "27"
+      "awayScore": "91",
+      "homeScore": "70"
     },
     {
       "id": "401909845",
@@ -46,26 +46,26 @@
       "away": "Minnesota Timberwolves",
       "home": "Orlando Magic",
       "status": "In Progress",
-      "awayScore": "32",
-      "homeScore": "22"
+      "awayScore": "88",
+      "homeScore": "69"
     },
     {
       "id": "401909846",
       "dateUTC": "2026-10-23T23:00Z",
       "away": "Toronto Raptors",
       "home": "Washington Wizards",
-      "status": "In Progress",
-      "awayScore": "34",
-      "homeScore": "21"
+      "status": "End of Period",
+      "awayScore": "81",
+      "homeScore": "77"
     },
     {
       "id": "401909847",
       "dateUTC": "2026-10-24T00:00Z",
       "away": "Detroit Pistons",
       "home": "Miami Heat",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "54",
+      "homeScore": "39"
     },
     {
       "id": "401909096",
