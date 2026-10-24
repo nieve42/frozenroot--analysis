@@ -71,6 +71,32 @@
         "teamRuns": 7,
         "opponentRuns": 3
       }
+    },
+    {
+      "id": "2026-10-23-ws-g1",
+      "date": "2026-10-23",
+      "series": "World Series · Game 1",
+      "team": "Milwaukee Brewers",
+      "opponent": "Tampa Bay Rays",
+      "stake": 1,
+      "stakeIsHypothetical": true,
+      "status": "win",
+      "locked": false,
+      "ownerConfirmedPregameBet": true,
+      "recordedAfterGame": true,
+      "pickType": "owner_confirmed_pregame",
+      "createdBy": "Root pregame forecast + owner-reported pregame bet",
+      "analysis": "Root forecast Milwaukee Brewers moneyline before World Series Game 1. After the game, the owner confirmed they had placed a Brewers bet beforehand but had forgotten to lock the pick in ChatGPT. Entered as a WIN in the owner's main MLB tracker by explicit request. Not represented as a pregame ChatGPT lock.",
+      "risk": "Exception to standard lock workflow: user-confirmed pregame wager, reported after final; not pregame-locked in ChatGPT. Real wager amount and odds not provided.",
+      "odds": null,
+      "finalScore": "Milwaukee Brewers 3, Tampa Bay Rays 2",
+      "actualScore": {
+        "teamRuns": 3,
+        "opponentRuns": 2
+      },
+      "resultVerifiedOn": "2026-10-23",
+      "resultSource": "https://apnews.com/article/world-series-rays-brewers-game-1-049d8efa7d3d7c8fc8a4e4b88d8dfe77",
+      "settlementReason": "Brewers 3, Rays 2. Owner confirms having backed Brewers before game; recorded as win in main tracker with after-game confirmation explicitly disclosed."
     }
   ],
   "lastUpdated": "2026-10-23",
@@ -93,7 +119,7 @@
       "confidencePct": 65,
       "projectedTotalRuns": 6,
       "outcome": "correct",
-      "note": "Root forecast Milwaukee Brewers ML before the October 23 World Series Game 1. The pick was not formally locked or entered in the official MLB ledger before the game. Record separately; do not retroactively claim an official pregame lock."
+      "note": "Root predicted Brewers before the game. User later confirmed a pregame Brewers bet and requested inclusion in the main record. Recorded as a WIN after the game, transparently marked NOT LOCKED IN CHAT."
     }
   }
 }
