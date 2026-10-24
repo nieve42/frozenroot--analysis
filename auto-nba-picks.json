@@ -2,7 +2,7 @@
   "sport": "NBA",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-10-23T22:46:23Z",
+  "lastUpdated": "2026-10-24T01:52:42Z",
   "picks": [
     {
       "id": "nba-auto-401909088",
@@ -529,14 +529,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-23T07:02:48Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 113,
         "opponentPoints": 110
       },
       "modelVersion": "score-form-v1",
       "risk": "LOW DATA",
-      "analysis": "Limited current-season scoring data; baseline and home advantage play a larger role. Recent game samples: New York Knicks 1, Boston Celtics 1. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Limited current-season scoring data; baseline and home advantage play a larger role. Recent game samples: New York Knicks 1, Boston Celtics 1. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 107,
+        "opponentPoints": 103
+      },
+      "resultVerifiedOn": "2026-10-23",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-auto-401909843",
@@ -553,14 +559,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-23T07:02:48Z",
-      "status": "pending",
+      "status": "loss",
       "projectedScore": {
         "teamPoints": 115,
         "opponentPoints": 112
       },
       "modelVersion": "score-form-v1",
       "risk": "LOW DATA",
-      "analysis": "Limited current-season scoring data; baseline and home advantage play a larger role. Recent game samples: Atlanta Hawks 1, Charlotte Hornets 1. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Limited current-season scoring data; baseline and home advantage play a larger role. Recent game samples: Atlanta Hawks 1, Charlotte Hornets 1. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 81,
+        "opponentPoints": 128
+      },
+      "resultVerifiedOn": "2026-10-23",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-auto-401909844",
@@ -577,14 +589,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-23T07:02:48Z",
-      "status": "pending",
+      "status": "loss",
       "projectedScore": {
         "teamPoints": 119,
         "opponentPoints": 115
       },
       "modelVersion": "score-form-v1",
       "risk": "LOW DATA",
-      "analysis": "Limited current-season scoring data; baseline and home advantage play a larger role. Recent game samples: Dallas Mavericks 1, Indiana Pacers 1. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Limited current-season scoring data; baseline and home advantage play a larger role. Recent game samples: Dallas Mavericks 1, Indiana Pacers 1. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 105,
+        "opponentPoints": 121
+      },
+      "resultVerifiedOn": "2026-10-23",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-auto-401909845",
@@ -601,14 +619,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-23T07:02:48Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 116,
         "opponentPoints": 115
       },
       "modelVersion": "score-form-v1",
       "risk": "LOW DATA",
-      "analysis": "Limited current-season scoring data; baseline and home advantage play a larger role. Recent game samples: Minnesota Timberwolves 1, Orlando Magic 1. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Limited current-season scoring data; baseline and home advantage play a larger role. Recent game samples: Minnesota Timberwolves 1, Orlando Magic 1. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 115,
+        "opponentPoints": 93
+      },
+      "resultVerifiedOn": "2026-10-23",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-auto-401909846",
@@ -625,14 +649,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-23T07:02:48Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 118,
         "opponentPoints": 113
       },
       "modelVersion": "score-form-v1",
       "risk": "LOW DATA",
-      "analysis": "Limited current-season scoring data; baseline and home advantage play a larger role. Recent game samples: Toronto Raptors 1, Washington Wizards 1. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Limited current-season scoring data; baseline and home advantage play a larger role. Recent game samples: Toronto Raptors 1, Washington Wizards 1. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 112,
+        "opponentPoints": 102
+      },
+      "resultVerifiedOn": "2026-10-23",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-auto-401909847",

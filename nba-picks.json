@@ -403,7 +403,7 @@
       "pickType": "moneyline",
       "stake": 1,
       "locked": true,
-      "status": "pending",
+      "status": "loss",
       "createdBy": "Root + user",
       "lockedOn": "2026-10-23",
       "projectedScore": {
@@ -412,7 +412,13 @@
       },
       "scoreProjectionRecordedOn": "2026-10-23",
       "analysis": "Close projected matchup with Boston. New York is the slight independent pick; both sides remain capable of winning.",
-      "risk": "Low confidence: judgment-based pregame selection; final lineups not fully confirmed when locked. Winner and forecast stay fixed unless substantial newly verified pregame developments require an explicitly documented exception. No sportsbook-odds-based selection."
+      "risk": "Low confidence: judgment-based pregame selection; final lineups not fully confirmed when locked. Winner and forecast stay fixed unless substantial newly verified pregame developments require an explicitly documented exception. No sportsbook-odds-based selection.",
+      "actualScore": {
+        "teamPoints": 103,
+        "opponentPoints": 107
+      },
+      "resultVerifiedOn": "2026-10-23",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-official-2026-10-23-401909843",
@@ -425,7 +431,7 @@
       "pickType": "moneyline",
       "stake": 1,
       "locked": true,
-      "status": "pending",
+      "status": "win",
       "createdBy": "Root + user",
       "lockedOn": "2026-10-23",
       "projectedScore": {
@@ -434,7 +440,13 @@
       },
       "scoreProjectionRecordedOn": "2026-10-23",
       "analysis": "Atlanta's projected scoring edge and offensive creation give the Hawks the advantage against Charlotte.",
-      "risk": "Moderate confidence: judgment-based pregame selection; final lineups not fully confirmed when locked. Winner and forecast stay fixed unless substantial newly verified pregame developments require an explicitly documented exception. No sportsbook-odds-based selection."
+      "risk": "Moderate confidence: judgment-based pregame selection; final lineups not fully confirmed when locked. Winner and forecast stay fixed unless substantial newly verified pregame developments require an explicitly documented exception. No sportsbook-odds-based selection.",
+      "actualScore": {
+        "teamPoints": 128,
+        "opponentPoints": 81
+      },
+      "resultVerifiedOn": "2026-10-23",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-official-2026-10-23-401909844",
@@ -447,7 +459,7 @@
       "pickType": "moneyline",
       "stake": 1,
       "locked": true,
-      "status": "pending",
+      "status": "loss",
       "createdBy": "Root + user",
       "lockedOn": "2026-10-23",
       "projectedScore": {
@@ -456,7 +468,13 @@
       },
       "scoreProjectionRecordedOn": "2026-10-23",
       "analysis": "Indiana's home-court advantage and projected offensive production favor the Pacers over Dallas.",
-      "risk": "Moderate confidence: judgment-based pregame selection; final lineups not fully confirmed when locked. Winner and forecast stay fixed unless substantial newly verified pregame developments require an explicitly documented exception. No sportsbook-odds-based selection."
+      "risk": "Moderate confidence: judgment-based pregame selection; final lineups not fully confirmed when locked. Winner and forecast stay fixed unless substantial newly verified pregame developments require an explicitly documented exception. No sportsbook-odds-based selection.",
+      "actualScore": {
+        "teamPoints": 105,
+        "opponentPoints": 121
+      },
+      "resultVerifiedOn": "2026-10-23",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-official-2026-10-23-401909845",
@@ -469,7 +487,7 @@
       "pickType": "moneyline",
       "stake": 1,
       "locked": true,
-      "status": "pending",
+      "status": "win",
       "createdBy": "Root + user",
       "lockedOn": "2026-10-23",
       "projectedScore": {
@@ -478,7 +496,13 @@
       },
       "scoreProjectionRecordedOn": "2026-10-23",
       "analysis": "Minnesota's recent offensive production, scoring depth and matchup strengths favor the Timberwolves in Orlando.",
-      "risk": "Moderate confidence: judgment-based pregame selection; final lineups not fully confirmed when locked. Winner and forecast stay fixed unless substantial newly verified pregame developments require an explicitly documented exception. No sportsbook-odds-based selection."
+      "risk": "Moderate confidence: judgment-based pregame selection; final lineups not fully confirmed when locked. Winner and forecast stay fixed unless substantial newly verified pregame developments require an explicitly documented exception. No sportsbook-odds-based selection.",
+      "actualScore": {
+        "teamPoints": 115,
+        "opponentPoints": 93
+      },
+      "resultVerifiedOn": "2026-10-23",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-official-2026-10-23-401909846",
@@ -491,7 +515,7 @@
       "pickType": "moneyline",
       "stake": 1,
       "locked": true,
-      "status": "pending",
+      "status": "win",
       "createdBy": "Root + user",
       "lockedOn": "2026-10-23",
       "projectedScore": {
@@ -500,7 +524,13 @@
       },
       "scoreProjectionRecordedOn": "2026-10-23",
       "analysis": "Toronto's strong opening performance, balanced offense and ball security favor the Raptors against Washington.",
-      "risk": "Moderate confidence: judgment-based pregame selection; final lineups not fully confirmed when locked. Winner and forecast stay fixed unless substantial newly verified pregame developments require an explicitly documented exception. No sportsbook-odds-based selection."
+      "risk": "Moderate confidence: judgment-based pregame selection; final lineups not fully confirmed when locked. Winner and forecast stay fixed unless substantial newly verified pregame developments require an explicitly documented exception. No sportsbook-odds-based selection.",
+      "actualScore": {
+        "teamPoints": 112,
+        "opponentPoints": 102
+      },
+      "resultVerifiedOn": "2026-10-23",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-official-2026-10-23-401909847",
