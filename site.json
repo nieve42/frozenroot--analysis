@@ -85,6 +85,15 @@
     "winner": "Milwaukee Brewers",
     "status": "final",
     "source": "https://apnews.com/article/world-series-rays-brewers-game-1-049d8efa7d3d7c8fc8a4e4b88d8dfe77",
-    "resultVerifiedOn": "2026-10-23"
+    "resultVerifiedOn": "2026-10-23",
+    "rootPregameForecast": {
+      "team": "Milwaukee Brewers",
+      "madeBeforeGame": true,
+      "officiallyLocked": false,
+      "confidencePct": 65,
+      "projectedTotalRuns": 6,
+      "outcome": "correct",
+      "note": "Root forecast Milwaukee Brewers ML before the October 23 World Series Game 1. The pick was not formally locked or entered in the official MLB ledger before the game. Record separately; do not retroactively claim an official pregame lock."
+    }
   }
 }
