@@ -96,8 +96,26 @@ function renderLatestMlbResult(){
   const label='<div class="actual-final-heading"><span>✓ VERIFIED MLB FINAL · '+escapeHtml(g.series)+'</span><small>'+formatDate(g.date)+'</small></div>';
   const score='<div class="actual-final-score"><span>'+escapeHtml(g.homeTeam)+'</span><strong>'+home+' – '+away+'</strong><span>'+escapeHtml(g.awayTeam)+'</span></div>';
   const outcome='<div class="actual-final-winner">🏆 WINNER: '+escapeHtml(winner)+' · SERIES LEAD 1–0</div>';
-  const note='<p class="overview-help">Verified game result only. No World Series Game 1 official Root pick is on record, so the prediction win/loss totals are unchanged. <a href="'+escapeHtml(g.source)+'" target="_blank" rel="noopener noreferrer">Result source ↗</a></p>';
-  const markup=label+score+outcome+note;
+  // An independently documented pregame prediction can be displayed as correct,
+  // but must never be reclassified as an officially locked pick after the result.
+  const forecast=g.rootPregameForecast;
+  let extra='';
+  if(forecast && forecast.madeBeforeGame && !forecast.officiallyLocked){
+    const correct=forecast.team===winner;
+    const record=stats();
+    const active=window.FrozenRootSeason.matches('mlb',g.date);
+    const inclusiveWins=record.wins+(active&&correct?1:0);
+    const inclusiveLosses=record.losses+(active&&!correct?1:0);
+    extra='<div class="run-projection" style="margin-top:16px;padding:15px 16px">'+
+      '<div class="run-projection-heading"><span>❄ ROOT PREGAME WINNER FORECAST</span><small>NOT OFFICIALLY LOCKED</small></div>'+
+      '<p style="margin:9px 0 12px;color:#e9f8ff">Root predicted <strong>'+escapeHtml(forecast.team)+' ML</strong> before Game 1. '+
+      '<strong style="color:#85efce">'+(correct?'CORRECT ✓':'INCORRECT')+'</strong> · Estimated pregame confidence '+escapeHtml(forecast.confidencePct)+'%.</p>'+
+      '<strong style="font-size:19px;color:#e9f8ff">Combined tracked MLB predictions: '+inclusiveWins+' wins – '+inclusiveLosses+' losses</strong>'+
+      '<p style="margin:8px 0 0;color:#9ab8cb;font-size:12px">Includes this non-locked pregame forecast. Official locked-pick record remains '+record.wins+' wins – '+record.losses+' losses. No retrospective lock was created.</p>'+
+      '</div>';
+  }
+  const note='<p class="overview-help">The verified game result and pregame forecast are displayed separately from official locked-pick results. <a href="'+escapeHtml(g.source)+'" target="_blank" rel="noopener noreferrer">Result source ↗</a></p>';
+  const markup=label+score+outcome+extra+note;
   for(const [id,selector] of [['mlbLatestResult','#page-dashboard .sectionhead'],['overviewLatestMlbResult','#page-overview .overview-games-heading']]){
     const anchor=document.querySelector(selector);
     if(!anchor)continue;
