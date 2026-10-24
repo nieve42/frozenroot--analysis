@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-24T03:41:14Z",
+  "generatedAt": "2026-10-24T04:40:12Z",
   "date": "2026-10-23",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -18,9 +18,9 @@
       "dateUTC": "2026-10-24T01:00Z",
       "away": "Tampa Bay Lightning",
       "home": "Colorado Avalanche",
-      "status": "In Progress",
-      "awayScore": "2",
-      "homeScore": "5"
+      "status": "Final",
+      "awayScore": "3",
+      "homeScore": "6"
     }
   ],
   "nextDate": "2026-10-24",
