@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-23T23:38:23Z",
+  "generatedAt": "2026-10-24T00:57:54Z",
   "date": "2026-10-23",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,9 +9,9 @@
       "dateUTC": "2026-10-24T00:00Z",
       "away": "Montreal Canadiens",
       "home": "Chicago Blackhawks",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "End of Period",
+      "awayScore": "1",
+      "homeScore": "1"
     },
     {
       "id": "401892565",
