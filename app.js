@@ -96,22 +96,20 @@ function renderLatestMlbResult(){
   const label='<div class="actual-final-heading"><span>✓ VERIFIED MLB FINAL · '+escapeHtml(g.series)+'</span><small>'+formatDate(g.date)+'</small></div>';
   const score='<div class="actual-final-score"><span>'+escapeHtml(g.homeTeam)+'</span><strong>'+home+' – '+away+'</strong><span>'+escapeHtml(g.awayTeam)+'</span></div>';
   const outcome='<div class="actual-final-winner">🏆 WINNER: '+escapeHtml(winner)+' · SERIES LEAD 1–0</div>';
-  // An independently documented pregame prediction can be displayed as correct,
-  // but must never be reclassified as an officially locked pick after the result.
+  // Owner-confirmed pregame bet may be graded in the main record by owner request.
+  // Never silently count it twice or pretend it was locked in ChatGPT before first pitch.
   const forecast=g.rootPregameForecast;
+  const tracked=state.picks.some(p=>p.id===g.id&&p.status==='win'&&p.ownerConfirmedPregameBet===true);
   let extra='';
-  if(forecast && forecast.madeBeforeGame && !forecast.officiallyLocked){
+  if(forecast && forecast.madeBeforeGame){
     const correct=forecast.team===winner;
     const record=stats();
-    const active=window.FrozenRootSeason.matches('mlb',g.date);
-    const inclusiveWins=record.wins+(active&&correct?1:0);
-    const inclusiveLosses=record.losses+(active&&!correct?1:0);
     extra='<div class="run-projection" style="margin-top:16px;padding:15px 16px">'+
-      '<div class="run-projection-heading"><span>❄ ROOT PREGAME WINNER FORECAST</span><small>NOT OFFICIALLY LOCKED</small></div>'+
+      '<div class="run-projection-heading"><span>❄ ROOT PREGAME WINNER FORECAST</span><small>OWNER-CONFIRMED · NOT LOCKED IN CHAT</small></div>'+
       '<p style="margin:9px 0 12px;color:#e9f8ff">Root predicted <strong>'+escapeHtml(forecast.team)+' ML</strong> before Game 1. '+
       '<strong style="color:#85efce">'+(correct?'CORRECT ✓':'INCORRECT')+'</strong> · Estimated pregame confidence '+escapeHtml(forecast.confidencePct)+'%.</p>'+
-      '<strong style="font-size:19px;color:#e9f8ff">Combined tracked MLB predictions: '+inclusiveWins+' wins – '+inclusiveLosses+' losses</strong>'+
-      '<p style="margin:8px 0 0;color:#9ab8cb;font-size:12px">Includes this non-locked pregame forecast. Official locked-pick record remains '+record.wins+' wins – '+record.losses+' losses. No retrospective lock was created.</p>'+
+      '<strong style="font-size:19px;color:#e9f8ff">MLB tracked record: '+record.wins+' wins – '+record.losses+' losses</strong>'+
+      '<p style="margin:8px 0 0;color:#9ab8cb;font-size:12px">'+(tracked?'Includes the Brewers win after you confirmed betting on them before the game. Added after the final; not locked in ChatGPT beforehand.':'Brewers forecast is displayed separately and not counted as a locked pick.')+'</p>'+
       '</div>';
   }
   const note='<p class="overview-help">The verified game result and pregame forecast are displayed separately from official locked-pick results. <a href="'+escapeHtml(g.source)+'" target="_blank" rel="noopener noreferrer">Result source ↗</a></p>';
@@ -135,11 +133,11 @@ function render(){
   $('lastUpdated').textContent='DATA UPDATED '+formatDate(state.lastUpdated);
   const p=featured();
   if (!p) $('featuredPick').innerHTML='<div class="loading">No MLB pick has been locked for the '+s.season.label+' season yet. Past seasons are preserved in Season Archives.</div>';
-  if (p) $('featuredPick').innerHTML=`<div class="picktop"><span class="labelcyan">✳ OFFICIAL ROOT SELECTION</span><span class="pickdate">${formatDate(p.date)} &nbsp; / &nbsp; ${escapeHtml(p.series)}</span></div><div class="pickbody"><span class="labelcyan">MONEYLINE WINNER</span><div class="picktitle">${escapeHtml(p.team.toUpperCase())}</div><div class="opp">VERSUS ${escapeHtml(p.opponent.toUpperCase())}</div>${projectionMarkup(p)}${actualScoreMarkup(p)}<div class="pickchips"><span class="chip locked">❄ OFFICIALLY LOCKED</span><span class="chip ${escapeHtml(p.status)}">${p.status.toUpperCase()}</span><span class="chip">HYPOTHETICAL ${p.stake} UNIT</span>${window.FrozenRootReliability.badge(p,"mlb",false)}</div><div class="opp">${escapeHtml(p.analysis)}</div></div><div class="feature-note"><strong>RISK / PROCESS</strong><span>${escapeHtml(p.risk)}</span></div>`;
+  if (p) $('featuredPick').innerHTML=`<div class="picktop"><span class="labelcyan">${p.locked===false?"✳ OWNER-CONFIRMED PREGAME BET":"✳ OFFICIAL ROOT SELECTION"}</span><span class="pickdate">${formatDate(p.date)} &nbsp; / &nbsp; ${escapeHtml(p.series)}</span></div><div class="pickbody"><span class="labelcyan">MONEYLINE WINNER</span><div class="picktitle">${escapeHtml(p.team.toUpperCase())}</div><div class="opp">VERSUS ${escapeHtml(p.opponent.toUpperCase())}</div>${projectionMarkup(p)}${actualScoreMarkup(p)}<div class="pickchips"><span class="chip locked">${p.locked===false?"✓ USER-CONFIRMED · NOT CHAT-LOCKED":"❄ OFFICIALLY LOCKED"}</span><span class="chip ${escapeHtml(p.status)}">${p.status.toUpperCase()}</span><span class="chip">HYPOTHETICAL ${p.stake} UNIT</span>${window.FrozenRootReliability.badge(p,"mlb",false)}</div><div class="opp">${escapeHtml(p.analysis)}</div></div><div class="feature-note"><strong>RISK / PROCESS</strong><span>${escapeHtml(p.risk)}</span></div>`;
   const sorted=[...state.picks].sort((a,b)=>b.date.localeCompare(a.date));
-  $('historyRows').innerHTML=sorted.map(p=>`<tr><td>${formatDate(p.date)}</td><td><strong>${escapeHtml(p.team)}</strong><small>OFFICIAL · LOCKED</small></td><td>${escapeHtml(p.opponent)}<br><small>${escapeHtml(p.series)}</small></td><td>${projectionHistory(p)}</td><td>${actualScoreHistory(p)}</td><td><span class="status ${escapeHtml(p.status)}">${escapeHtml(p.status)}</span></td><td>${p.stake}</td></tr>`).join('');
+  $('historyRows').innerHTML=sorted.map(p=>`<tr><td>${formatDate(p.date)}</td><td><strong>${escapeHtml(p.team)}</strong><small>${p.locked===false?"OWNER CONFIRMED · REPORTED AFTER GAME":"OFFICIAL · LOCKED"}</small></td><td>${escapeHtml(p.opponent)}<br><small>${escapeHtml(p.series)}</small></td><td>${projectionHistory(p)}</td><td>${actualScoreHistory(p)}</td><td><span class="status ${escapeHtml(p.status)}">${escapeHtml(p.status)}</span></td><td>${p.stake}</td></tr>`).join('');
   $('historyCount').textContent=sorted.length+' TRACKED PICKS';
-  $('historyFoot').textContent=`Current MLB ${s.season.label} record: ${s.wins} wins / ${s.losses} losses. The verified historical baseline ${state.baseline.wins}-${state.baseline.losses}-${state.baseline.pushes} through ${formatDate(state.baseline.asOf)} stays in the original MLB season record. Older picks remain in the archive; pending results never increase wins or losses.`;
+  $('historyFoot').textContent=`Current MLB ${s.season.label} record: ${s.wins} wins / ${s.losses} losses. The verified historical baseline ${state.baseline.wins}-${state.baseline.losses}-${state.baseline.pushes} through ${formatDate(state.baseline.asOf)} stays in the original MLB season record. Owner-confirmed pregame bets reported after the result are labeled in the history; pending results never increase wins or losses.`;
   const pending=sorted.filter(p=>p.status==='pending');
 }
 function showPage(page){
