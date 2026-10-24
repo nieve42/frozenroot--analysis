@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-10-24T02:48:19Z",
+  "generatedAt": "2026-10-24T03:49:40Z",
   "date": "2026-10-23",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -73,17 +73,17 @@
       "away": "Houston Rockets",
       "home": "San Antonio Spurs",
       "status": "In Progress",
-      "awayScore": "58",
-      "homeScore": "58"
+      "awayScore": "96",
+      "homeScore": "91"
     },
     {
       "id": "401909849",
       "dateUTC": "2026-10-24T01:30Z",
       "away": "New Orleans Pelicans",
       "home": "Utah Jazz",
-      "status": "Halftime",
-      "awayScore": "52",
-      "homeScore": "62"
+      "status": "In Progress",
+      "awayScore": "102",
+      "homeScore": "109"
     },
     {
       "id": "401909850",
@@ -91,8 +91,8 @@
       "away": "Memphis Grizzlies",
       "home": "Golden State Warriors",
       "status": "In Progress",
-      "awayScore": "33",
-      "homeScore": "34"
+      "awayScore": "70",
+      "homeScore": "63"
     },
     {
       "id": "401909851",
@@ -100,8 +100,8 @@
       "away": "LA Clippers",
       "home": "Los Angeles Lakers",
       "status": "In Progress",
-      "awayScore": "44",
-      "homeScore": "36"
+      "awayScore": "81",
+      "homeScore": "93"
     },
     {
       "id": "401909852",
@@ -109,8 +109,8 @@
       "away": "Portland Trail Blazers",
       "home": "Sacramento Kings",
       "status": "In Progress",
-      "awayScore": "31",
-      "homeScore": "38"
+      "awayScore": "88",
+      "homeScore": "81"
     }
   ]
 }
