@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-10-24T04:47:29Z",
+  "generatedAt": "2026-10-24T05:47:46Z",
   "date": "2026-10-23",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -90,9 +90,9 @@
       "dateUTC": "2026-10-24T02:00Z",
       "away": "Memphis Grizzlies",
       "home": "Golden State Warriors",
-      "status": "In Progress",
-      "awayScore": "108",
-      "homeScore": "106"
+      "status": "Final",
+      "awayScore": "111",
+      "homeScore": "108"
     },
     {
       "id": "401909851",

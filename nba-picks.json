@@ -627,7 +627,7 @@
       "pickType": "moneyline",
       "stake": 1,
       "locked": true,
-      "status": "pending",
+      "status": "win",
       "createdBy": "Root + user",
       "lockedOn": "2026-10-23",
       "projectedScore": {
@@ -636,7 +636,13 @@
       },
       "scoreProjectionRecordedOn": "2026-10-23",
       "analysis": "Memphis is projected to edge Golden State based on today's comparative offensive and roster matchup assessment.",
-      "risk": "Moderate confidence: judgment-based pregame selection; final lineups not fully confirmed when locked. Winner and forecast stay fixed unless substantial newly verified pregame developments require an explicitly documented exception. No sportsbook-odds-based selection."
+      "risk": "Moderate confidence: judgment-based pregame selection; final lineups not fully confirmed when locked. Winner and forecast stay fixed unless substantial newly verified pregame developments require an explicitly documented exception. No sportsbook-odds-based selection.",
+      "actualScore": {
+        "teamPoints": 111,
+        "opponentPoints": 108
+      },
+      "resultVerifiedOn": "2026-10-23",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-official-2026-10-23-401909852",
