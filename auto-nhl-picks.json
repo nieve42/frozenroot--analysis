@@ -2,7 +2,7 @@
   "sport": "NHL",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-10-24T04:40:12Z",
+  "lastUpdated": "2026-10-24T07:28:33Z",
   "picks": [
     {
       "id": "nhl-auto-401892539",
@@ -1101,6 +1101,126 @@
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
       "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Minnesota Wild 11, Seattle Kraken 11. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nhl-auto-401892578",
+      "sport": "NHL",
+      "gameId": "401892578",
+      "date": "2026-10-25",
+      "dateUTC": "2026-10-25T19:00Z",
+      "team": "Chicago Blackhawks",
+      "opponent": "Florida Panthers",
+      "away": "Florida Panthers",
+      "home": "Chicago Blackhawks",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-10-24T07:28:33Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamGoals": 4,
+        "opponentGoals": 3
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Florida Panthers 10, Chicago Blackhawks 9. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nhl-auto-401892579",
+      "sport": "NHL",
+      "gameId": "401892579",
+      "date": "2026-10-25",
+      "dateUTC": "2026-10-25T22:00Z",
+      "team": "Dallas Stars",
+      "opponent": "New York Islanders",
+      "away": "New York Islanders",
+      "home": "Dallas Stars",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-10-24T07:28:33Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamGoals": 4,
+        "opponentGoals": 3
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: New York Islanders 10, Dallas Stars 10. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nhl-auto-401891807",
+      "sport": "NHL",
+      "gameId": "401891807",
+      "date": "2026-10-25",
+      "dateUTC": "2026-10-25T23:00Z",
+      "team": "Winnipeg Jets",
+      "opponent": "Montreal Canadiens",
+      "away": "Montreal Canadiens",
+      "home": "Winnipeg Jets",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-10-24T07:28:33Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamGoals": 4,
+        "opponentGoals": 3
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Montreal Canadiens 9, Winnipeg Jets 10. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nhl-auto-401892580",
+      "sport": "NHL",
+      "gameId": "401892580",
+      "date": "2026-10-25",
+      "dateUTC": "2026-10-26T00:00Z",
+      "team": "Colorado Avalanche",
+      "opponent": "Nashville Predators",
+      "away": "Colorado Avalanche",
+      "home": "Nashville Predators",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-10-24T07:28:33Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamGoals": 4,
+        "opponentGoals": 3
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Colorado Avalanche 11, Nashville Predators 9. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nhl-auto-401892581",
+      "sport": "NHL",
+      "gameId": "401892581",
+      "date": "2026-10-25",
+      "dateUTC": "2026-10-26T02:00Z",
+      "team": "Minnesota Wild",
+      "opponent": "Vancouver Canucks",
+      "away": "Minnesota Wild",
+      "home": "Vancouver Canucks",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-10-24T07:28:33Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamGoals": 4,
+        "opponentGoals": 3
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Minnesota Wild 11, Vancouver Canucks 11. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
     }
   ]
 }
