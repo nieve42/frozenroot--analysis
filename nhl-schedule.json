@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-24T22:37:52Z",
+  "generatedAt": "2026-10-24T23:35:07Z",
   "date": "2026-10-24",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -27,63 +27,63 @@
       "dateUTC": "2026-10-24T23:00Z",
       "away": "San Jose Sharks",
       "home": "Boston Bruins",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "1",
+      "homeScore": "1"
     },
     {
       "id": "401892569",
       "dateUTC": "2026-10-24T23:00Z",
       "away": "New York Rangers",
       "home": "Ottawa Senators",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "0",
+      "homeScore": "2"
     },
     {
       "id": "401892570",
       "dateUTC": "2026-10-24T23:00Z",
       "away": "Nashville Predators",
       "home": "Pittsburgh Penguins",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "1",
+      "homeScore": "0"
     },
     {
       "id": "401892571",
       "dateUTC": "2026-10-24T23:00Z",
       "away": "Buffalo Sabres",
       "home": "Washington Capitals",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "2",
+      "homeScore": "0"
     },
     {
       "id": "401892572",
       "dateUTC": "2026-10-24T23:00Z",
       "away": "Vegas Golden Knights",
       "home": "Columbus Blue Jackets",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "0",
+      "homeScore": "1"
     },
     {
       "id": "401892573",
       "dateUTC": "2026-10-24T23:00Z",
       "away": "Carolina Hurricanes",
       "home": "St. Louis Blues",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "0",
+      "homeScore": "0"
     },
     {
       "id": "401892574",
       "dateUTC": "2026-10-24T23:00Z",
       "away": "Toronto Maple Leafs",
       "home": "Edmonton Oilers",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "0",
+      "homeScore": "0"
     },
     {
       "id": "401892575",
