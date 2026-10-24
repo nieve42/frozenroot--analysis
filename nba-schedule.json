@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-10-24T21:49:02Z",
+  "generatedAt": "2026-10-24T22:43:46Z",
   "date": "2026-10-24",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,9 +9,9 @@
       "dateUTC": "2026-10-24T22:00Z",
       "away": "Miami Heat",
       "home": "Charlotte Hornets",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Halftime",
+      "awayScore": "31",
+      "homeScore": "31"
     },
     {
       "id": "401909854",
