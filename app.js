@@ -87,8 +87,28 @@ function featured(){
   return state.picks.filter(p=>window.FrozenRootSeason.matches('mlb',p.date))
     .sort((a,b)=>b.date.localeCompare(a.date))[0];
 }
+function renderLatestMlbResult(){
+  const g=state && state.latestMlbResult;
+  if(!g || g.status!=='final') return;
+  const home=Number(g.homeRuns), away=Number(g.awayRuns);
+  if(!Number.isInteger(home)||!Number.isInteger(away)||home<0||away<0) return;
+  const winner=home>away?g.homeTeam:away>home?g.awayTeam:'Tie game';
+  const label='<div class="actual-final-heading"><span>✓ VERIFIED MLB FINAL · '+escapeHtml(g.series)+'</span><small>'+formatDate(g.date)+'</small></div>';
+  const score='<div class="actual-final-score"><span>'+escapeHtml(g.homeTeam)+'</span><strong>'+home+' – '+away+'</strong><span>'+escapeHtml(g.awayTeam)+'</span></div>';
+  const outcome='<div class="actual-final-winner">🏆 WINNER: '+escapeHtml(winner)+' · SERIES LEAD 1–0</div>';
+  const note='<p class="overview-help">Verified game result only. No World Series Game 1 official Root pick is on record, so the prediction win/loss totals are unchanged. <a href="'+escapeHtml(g.source)+'" target="_blank" rel="noopener noreferrer">Result source ↗</a></p>';
+  const markup=label+score+outcome+note;
+  for(const [id,selector] of [['mlbLatestResult','#page-dashboard .sectionhead'],['overviewLatestMlbResult','#page-overview .overview-games-heading']]){
+    const anchor=document.querySelector(selector);
+    if(!anchor)continue;
+    let el=document.getElementById(id);
+    if(!el){el=document.createElement('section');el.id=id;el.className='actual-final';el.setAttribute('aria-label','Latest verified MLB result');anchor.before(el);}
+    el.innerHTML=markup;
+  }
+}
 function render(){
   if(!state)return;
+  renderLatestMlbResult();
   const s=stats();
   $('wins').textContent=s.wins;$('losses').textContent=s.losses;$('rate').textContent=s.rate;$('pending').textContent=s.pending;
   if($('mlbSeasonLabel'))$('mlbSeasonLabel').textContent=s.season.label+' · CURRENT SEASON';
