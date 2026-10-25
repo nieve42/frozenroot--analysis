@@ -97,9 +97,32 @@
       "resultVerifiedOn": "2026-10-23",
       "resultSource": "https://apnews.com/article/world-series-rays-brewers-game-1-049d8efa7d3d7c8fc8a4e4b88d8dfe77",
       "settlementReason": "Brewers 3, Rays 2. Owner confirms having backed Brewers before game; recorded as win in main tracker with after-game confirmation explicitly disclosed."
+    },
+    {
+      "id": "2026-10-24-ws-g2",
+      "date": "2026-10-24",
+      "series": "World Series · Game 2",
+      "team": "Tampa Bay Rays",
+      "opponent": "Milwaukee Brewers",
+      "stake": 1,
+      "stakeIsHypothetical": true,
+      "status": "pending",
+      "locked": true,
+      "postStartLock": true,
+      "recordEligible": false,
+      "pickType": "post_start_owner_lock",
+      "projectedScore": {
+        "teamRuns": 4,
+        "opponentRuns": 3
+      },
+      "analysis": "Root predicted Tampa Bay Rays ML for World Series Game 2, projected Rays 4–Brewers 3 (7 runs); estimated 54% winner probability as an uncalibrated judgment, not sportsbook odds. Rasmussen's postseason form and the relative relief availability favored Tampa Bay; Milwaukee's offense and bullpen remain risks. The analysis was completed after the scheduled 5:00 PM Pacific first pitch, then the owner requested a lock. Clearly classified as a post-start lock, NOT an official pregame pick, with no verified in-game information used to select the winner.",
+      "risk": "Moderate-high risk. Owner requested lock after the scheduled first pitch; this selection is recorded transparently and excluded from official pregame accuracy, win/loss totals, and awaiting-results count. No switching.",
+      "createdBy": "Root + user",
+      "odds": null,
+      "lockTiming": "After scheduled 5:00 PM Pacific first pitch, at user request"
     }
   ],
-  "lastUpdated": "2026-10-23",
+  "lastUpdated": "2026-10-24",
   "latestMlbResult": {
     "id": "2026-10-23-ws-g1",
     "date": "2026-10-23",
