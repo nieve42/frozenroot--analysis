@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-25T00:49:23Z",
+  "generatedAt": "2026-10-25T01:38:49Z",
   "date": "2026-10-24",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -27,35 +27,35 @@
       "dateUTC": "2026-10-24T23:00Z",
       "away": "San Jose Sharks",
       "home": "Boston Bruins",
-      "status": "End of Period",
-      "awayScore": "2",
-      "homeScore": "2"
+      "status": "In Progress",
+      "awayScore": "4",
+      "homeScore": "5"
     },
     {
       "id": "401892569",
       "dateUTC": "2026-10-24T23:00Z",
       "away": "New York Rangers",
       "home": "Ottawa Senators",
-      "status": "End of Period",
-      "awayScore": "3",
-      "homeScore": "4"
+      "status": "In Progress",
+      "awayScore": "4",
+      "homeScore": "5"
     },
     {
       "id": "401892570",
       "dateUTC": "2026-10-24T23:00Z",
       "away": "Nashville Predators",
       "home": "Pittsburgh Penguins",
-      "status": "End of Period",
+      "status": "In Progress",
       "awayScore": "2",
-      "homeScore": "1"
+      "homeScore": "2"
     },
     {
       "id": "401892571",
       "dateUTC": "2026-10-24T23:00Z",
       "away": "Buffalo Sabres",
       "home": "Washington Capitals",
-      "status": "End of Period",
-      "awayScore": "2",
+      "status": "In Progress",
+      "awayScore": "3",
       "homeScore": "3"
     },
     {
@@ -63,7 +63,7 @@
       "dateUTC": "2026-10-24T23:00Z",
       "away": "Vegas Golden Knights",
       "home": "Columbus Blue Jackets",
-      "status": "End of Period",
+      "status": "In Progress",
       "awayScore": "1",
       "homeScore": "1"
     },
@@ -72,8 +72,8 @@
       "dateUTC": "2026-10-24T23:00Z",
       "away": "Carolina Hurricanes",
       "home": "St. Louis Blues",
-      "status": "End of Period",
-      "awayScore": "3",
+      "status": "Final",
+      "awayScore": "4",
       "homeScore": "0"
     },
     {
@@ -82,17 +82,17 @@
       "away": "Toronto Maple Leafs",
       "home": "Edmonton Oilers",
       "status": "In Progress",
-      "awayScore": "3",
-      "homeScore": "0"
+      "awayScore": "5",
+      "homeScore": "1"
     },
     {
       "id": "401892575",
       "dateUTC": "2026-10-25T01:00Z",
       "away": "Tampa Bay Lightning",
       "home": "Utah Mammoth",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "3",
+      "homeScore": "1"
     },
     {
       "id": "401892576",
