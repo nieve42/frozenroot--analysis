@@ -1,6 +1,6 @@
 {
   "source": "ESPN NFL public scoreboard",
-  "generatedAt": "2026-10-25T21:46:52Z",
+  "generatedAt": "2026-10-25T22:41:26Z",
   "startDate": "2026-10-20",
   "endDate": "2026-10-26",
   "weekReset": "Tuesday 12:01 AM America/Los_Angeles",
@@ -91,7 +91,7 @@
       "dateUTC": "2026-10-25T20:05Z",
       "away": "Denver Broncos",
       "home": "Arizona Cardinals",
-      "status": "Halftime",
+      "status": "In Progress",
       "awayScore": null,
       "homeScore": null
     },
@@ -100,7 +100,7 @@
       "dateUTC": "2026-10-25T20:25Z",
       "away": "Green Bay Packers",
       "home": "Detroit Lions",
-      "status": "Halftime",
+      "status": "In Progress",
       "awayScore": null,
       "homeScore": null
     },
