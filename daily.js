@@ -71,7 +71,7 @@
       const off = cancelled(g.status);
       let badge = '❄ PICK PENDING', badgeClass = 'await-pick';
       if (off) { badge = 'GAME CANCELED / POSTPONED — NO PENDING PICK'; badgeClass='off'; }
-      else if (existing) { badge='❄ OFFICIAL PICK LOCKED: ' + existing.team; badgeClass='official'; }
+      else if (existing) { badge=(existing.postStartLock?'◷ POST-START PICK LOCKED: ':'❄ OFFICIAL PICK LOCKED: ') + existing.team; badgeClass='official'; }
       else if (finished(g.status)) { badge='FINAL — NO OFFICIAL PICK'; badgeClass='final'; }
       else if (!Array.isArray(picks)) { badge='PICK STATUS UNAVAILABLE'; badgeClass='off'; }
       const label = safe(g.away) + ' <span class="game-versus">@</span> ' + safe(g.home);
@@ -81,7 +81,7 @@
         projected.teamRuns >= 0 && projected.opponentRuns >= 0;
       const forecast = valid ?
         '<div class="mlb-slate-score" aria-label="Projected final score">' +
-        '<div class="mlb-slate-score-heading">❄ PROJECTED FINAL SCORE <small>NOT THE ACTUAL RESULT</small></div>' +
+        '<div class="mlb-slate-score-heading">❄ PROJECTED FINAL SCORE <small>' + (existing.postStartLock?'POST-START · NOT PREGAME':'NOT THE ACTUAL RESULT') + '</small></div>' +
         '<div class="mlb-slate-score-matchup"><span>' + safe(existing.team) + '</span><strong>' +
         projected.teamRuns + ' – ' + projected.opponentRuns + '</strong><span>' +
         safe(existing.opponent) + '</span></div>' +
@@ -106,7 +106,7 @@
       return '<article class="schedule-game">' +
         '<div class="schedule-game-head"><span>GAME ' + safe(g.gamePk || 'TBD') + '</span><span>' + safe(gameTime(g.startUTC)) + '</span></div>' +
         '<h3>' + label + '</h3><p class="schedule-game-state">' + safe(g.status) + (series ? ' · ' + series : '') + '</p>' +
-        '<div class="schedule-status ' + badgeClass + '">' + safe(badge) + '</div>' + (existing ? '<div class="slate-reliability">'+window.FrozenRootReliability.badge(existing,'mlb',false)+'</div>' : '') + forecast + actual + '</article>';
+        '<div class="schedule-status ' + badgeClass + '">' + safe(badge) + '</div>' + (existing && !existing.postStartLock ? '<div class="slate-reliability">'+window.FrozenRootReliability.badge(existing,'mlb',false)+'</div>' : '') + forecast + actual + '</article>';
     }).join('');
   }
   let busy = false;
