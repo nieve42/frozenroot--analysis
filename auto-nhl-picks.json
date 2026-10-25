@@ -2,7 +2,7 @@
   "sport": "NHL",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-10-25T04:40:19Z",
+  "lastUpdated": "2026-10-25T07:29:17Z",
   "picks": [
     {
       "id": "nhl-auto-401892539",
@@ -1293,6 +1293,78 @@
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
       "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Minnesota Wild 11, Vancouver Canucks 11. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nhl-auto-401892582",
+      "sport": "NHL",
+      "gameId": "401892582",
+      "date": "2026-10-26",
+      "dateUTC": "2026-10-26T23:00Z",
+      "team": "New York Rangers",
+      "opponent": "Los Angeles Kings",
+      "away": "Los Angeles Kings",
+      "home": "New York Rangers",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-10-25T07:29:17Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamGoals": 4,
+        "opponentGoals": 3
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Los Angeles Kings 8, New York Rangers 12. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nhl-auto-401892583",
+      "sport": "NHL",
+      "gameId": "401892583",
+      "date": "2026-10-26",
+      "dateUTC": "2026-10-27T00:30Z",
+      "team": "Toronto Maple Leafs",
+      "opponent": "Calgary Flames",
+      "away": "Toronto Maple Leafs",
+      "home": "Calgary Flames",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-10-25T07:29:17Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamGoals": 4,
+        "opponentGoals": 3
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Toronto Maple Leafs 11, Calgary Flames 10. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nhl-auto-401892584",
+      "sport": "NHL",
+      "gameId": "401892584",
+      "date": "2026-10-26",
+      "dateUTC": "2026-10-27T01:30Z",
+      "team": "Edmonton Oilers",
+      "opponent": "Detroit Red Wings",
+      "away": "Detroit Red Wings",
+      "home": "Edmonton Oilers",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-10-25T07:29:17Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamGoals": 4,
+        "opponentGoals": 3
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Detroit Red Wings 11, Edmonton Oilers 10. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
     }
   ]
 }
