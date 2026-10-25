@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-25T21:39:00Z",
+  "generatedAt": "2026-10-25T21:49:08Z",
   "date": "2026-10-25",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,8 +9,8 @@
       "dateUTC": "2026-10-25T19:00Z",
       "away": "Florida Panthers",
       "home": "Chicago Blackhawks",
-      "status": "In Progress",
-      "awayScore": "2",
+      "status": "Final",
+      "awayScore": "3",
       "homeScore": "2"
     },
     {
