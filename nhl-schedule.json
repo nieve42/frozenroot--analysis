@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-24T23:35:07Z",
+  "generatedAt": "2026-10-25T00:49:23Z",
   "date": "2026-10-24",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -27,44 +27,44 @@
       "dateUTC": "2026-10-24T23:00Z",
       "away": "San Jose Sharks",
       "home": "Boston Bruins",
-      "status": "In Progress",
-      "awayScore": "1",
-      "homeScore": "1"
+      "status": "End of Period",
+      "awayScore": "2",
+      "homeScore": "2"
     },
     {
       "id": "401892569",
       "dateUTC": "2026-10-24T23:00Z",
       "away": "New York Rangers",
       "home": "Ottawa Senators",
-      "status": "In Progress",
-      "awayScore": "0",
-      "homeScore": "2"
+      "status": "End of Period",
+      "awayScore": "3",
+      "homeScore": "4"
     },
     {
       "id": "401892570",
       "dateUTC": "2026-10-24T23:00Z",
       "away": "Nashville Predators",
       "home": "Pittsburgh Penguins",
-      "status": "In Progress",
-      "awayScore": "1",
-      "homeScore": "0"
+      "status": "End of Period",
+      "awayScore": "2",
+      "homeScore": "1"
     },
     {
       "id": "401892571",
       "dateUTC": "2026-10-24T23:00Z",
       "away": "Buffalo Sabres",
       "home": "Washington Capitals",
-      "status": "In Progress",
+      "status": "End of Period",
       "awayScore": "2",
-      "homeScore": "0"
+      "homeScore": "3"
     },
     {
       "id": "401892572",
       "dateUTC": "2026-10-24T23:00Z",
       "away": "Vegas Golden Knights",
       "home": "Columbus Blue Jackets",
-      "status": "In Progress",
-      "awayScore": "0",
+      "status": "End of Period",
+      "awayScore": "1",
       "homeScore": "1"
     },
     {
@@ -72,8 +72,8 @@
       "dateUTC": "2026-10-24T23:00Z",
       "away": "Carolina Hurricanes",
       "home": "St. Louis Blues",
-      "status": "In Progress",
-      "awayScore": "0",
+      "status": "End of Period",
+      "awayScore": "3",
       "homeScore": "0"
     },
     {
@@ -82,7 +82,7 @@
       "away": "Toronto Maple Leafs",
       "home": "Edmonton Oilers",
       "status": "In Progress",
-      "awayScore": "0",
+      "awayScore": "3",
       "homeScore": "0"
     },
     {
