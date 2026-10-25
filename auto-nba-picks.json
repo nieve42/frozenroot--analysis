@@ -2,7 +2,7 @@
   "sport": "NBA",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-10-25T03:50:25Z",
+  "lastUpdated": "2026-10-25T04:49:05Z",
   "picks": [
     {
       "id": "nba-auto-401909088",
@@ -1039,14 +1039,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-24T07:29:51Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 118,
         "opponentPoints": 113
       },
       "modelVersion": "score-form-v1",
       "risk": "LOW DATA",
-      "analysis": "Limited current-season scoring data; baseline and home advantage play a larger role. Recent game samples: New Orleans Pelicans 2, Denver Nuggets 1. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Limited current-season scoring data; baseline and home advantage play a larger role. Recent game samples: New Orleans Pelicans 2, Denver Nuggets 1. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 141,
+        "opponentPoints": 135
+      },
+      "resultVerifiedOn": "2026-10-24",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-auto-401909860",
@@ -1063,14 +1069,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-24T07:29:51Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 114,
         "opponentPoints": 111
       },
       "modelVersion": "score-form-v1",
       "risk": "LOW DATA",
-      "analysis": "Limited current-season scoring data; baseline and home advantage play a larger role. Recent game samples: Golden State Warriors 2, Phoenix Suns 1. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Limited current-season scoring data; baseline and home advantage play a larger role. Recent game samples: Golden State Warriors 2, Phoenix Suns 1. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 131,
+        "opponentPoints": 122
+      },
+      "resultVerifiedOn": "2026-10-24",
+      "resultSource": "ESPN verified schedule"
     }
   ]
 }
