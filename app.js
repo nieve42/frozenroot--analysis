@@ -56,7 +56,7 @@ function projectionMarkup(p){
   const projected=projectedRuns(p);
   if(!projected) return '<div class="run-projection missing"><div class="run-projection-heading"><span>❄ PROJECTED FINAL SCORE</span><small>PREGAME FORECAST</small></div><p>No score forecast was saved for this older pick.</p></div>';
   return '<section class="run-projection" aria-label="Projected final score: '+escapeHtml(p.team)+' '+projected.teamRuns+', '+escapeHtml(p.opponent)+' '+projected.opponentRuns+'">'+
-    '<div class="run-projection-heading"><span>❄ PROJECTED FINAL SCORE</span><small>ROOT\'S PREGAME PREDICTION · NOT THE ACTUAL RESULT</small></div>'+
+    '<div class="run-projection-heading"><span>❄ PROJECTED FINAL SCORE</span><small>'+(p.postStartLock?'POST-START FORECAST · NOT A PREGAME PICK':'ROOT\'S PREGAME PREDICTION')+' · NOT THE ACTUAL RESULT</small></div>'+
     '<div class="run-projection-scores">'+
     '<div class="run-team"><span class="run-team-name">'+escapeHtml(p.team)+'</span><strong>'+projected.teamRuns+'</strong></div>'+
     '<div class="run-score-separator">–</div>'+
@@ -76,11 +76,11 @@ function stats(){
   const isCurrent=date=>window.FrozenRootSeason.matches('mlb',date);
   const baseline=state.baseline||{wins:0,losses:0,pushes:0,asOf:'0000-01-01'};
   const useBaseline=isCurrent(baseline.asOf);
-  const currentPicks=state.picks.filter(p=>isCurrent(p.date)&&(!useBaseline||p.date>baseline.asOf));
+  const currentPicks=state.picks.filter(p=>p.recordEligible!==false&&isCurrent(p.date)&&(!useBaseline||p.date>baseline.asOf));
   const wins=(useBaseline?(Number(baseline.wins)||0):0)+currentPicks.filter(p=>p.status==='win').length;
   const losses=(useBaseline?(Number(baseline.losses)||0):0)+currentPicks.filter(p=>p.status==='loss').length;
   const pushes=(useBaseline?(Number(baseline.pushes)||0):0)+currentPicks.filter(p=>p.status==='push').length;
-  const pending=state.picks.filter(p=>isCurrent(p.date)&&p.status==='pending').length;
+  const pending=state.picks.filter(p=>p.recordEligible!==false&&isCurrent(p.date)&&p.status==='pending').length;
   return {wins,losses,pushes,pending,season,rate:wins+losses?((wins/(wins+losses))*100).toFixed(1)+'%':'—'};
 }
 function featured(){
@@ -133,11 +133,11 @@ function render(){
   $('lastUpdated').textContent='DATA UPDATED '+formatDate(state.lastUpdated);
   const p=featured();
   if (!p) $('featuredPick').innerHTML='<div class="loading">No MLB pick has been locked for the '+s.season.label+' season yet. Past seasons are preserved in Season Archives.</div>';
-  if (p) $('featuredPick').innerHTML=`<div class="picktop"><span class="labelcyan">${p.locked===false?"✳ OWNER-CONFIRMED PREGAME BET":"✳ OFFICIAL ROOT SELECTION"}</span><span class="pickdate">${formatDate(p.date)} &nbsp; / &nbsp; ${escapeHtml(p.series)}</span></div><div class="pickbody"><span class="labelcyan">MONEYLINE WINNER</span><div class="picktitle">${escapeHtml(p.team.toUpperCase())}</div><div class="opp">VERSUS ${escapeHtml(p.opponent.toUpperCase())}</div>${projectionMarkup(p)}${actualScoreMarkup(p)}<div class="pickchips"><span class="chip locked">${p.locked===false?"✓ USER-CONFIRMED · NOT CHAT-LOCKED":"❄ OFFICIALLY LOCKED"}</span><span class="chip ${escapeHtml(p.status)}">${p.status.toUpperCase()}</span><span class="chip">HYPOTHETICAL ${p.stake} UNIT</span>${window.FrozenRootReliability.badge(p,"mlb",false)}</div><div class="opp">${escapeHtml(p.analysis)}</div></div><div class="feature-note"><strong>RISK / PROCESS</strong><span>${escapeHtml(p.risk)}</span></div>`;
+  if (p) $('featuredPick').innerHTML=`<div class="picktop"><span class="labelcyan">${p.postStartLock?"◷ POST-START OWNER LOCK":p.locked===false?"✳ OWNER-CONFIRMED PREGAME BET":"✳ OFFICIAL ROOT SELECTION"}</span><span class="pickdate">${formatDate(p.date)} &nbsp; / &nbsp; ${escapeHtml(p.series)}</span></div><div class="pickbody"><span class="labelcyan">MONEYLINE WINNER</span><div class="picktitle">${escapeHtml(p.team.toUpperCase())}</div><div class="opp">VERSUS ${escapeHtml(p.opponent.toUpperCase())}</div>${projectionMarkup(p)}${actualScoreMarkup(p)}<div class="pickchips"><span class="chip locked">${p.postStartLock?"◷ LOCKED AFTER FIRST PITCH · RECORD EXCLUDED":p.locked===false?"✓ USER-CONFIRMED · NOT CHAT-LOCKED":"❄ OFFICIALLY LOCKED"}</span><span class="chip ${escapeHtml(p.status)}">${p.status.toUpperCase()}</span><span class="chip">HYPOTHETICAL ${p.stake} UNIT</span>${p.postStartLock?"":window.FrozenRootReliability.badge(p,"mlb",false)}</div><div class="opp">${escapeHtml(p.analysis)}</div></div><div class="feature-note"><strong>RISK / PROCESS</strong><span>${escapeHtml(p.risk)}</span></div>`;
   const sorted=[...state.picks].sort((a,b)=>b.date.localeCompare(a.date));
-  $('historyRows').innerHTML=sorted.map(p=>`<tr><td>${formatDate(p.date)}</td><td><strong>${escapeHtml(p.team)}</strong><small>${p.locked===false?"OWNER CONFIRMED · REPORTED AFTER GAME":"OFFICIAL · LOCKED"}</small></td><td>${escapeHtml(p.opponent)}<br><small>${escapeHtml(p.series)}</small></td><td>${projectionHistory(p)}</td><td>${actualScoreHistory(p)}</td><td><span class="status ${escapeHtml(p.status)}">${escapeHtml(p.status)}</span></td><td>${p.stake}</td></tr>`).join('');
+  $('historyRows').innerHTML=sorted.map(p=>`<tr><td>${formatDate(p.date)}</td><td><strong>${escapeHtml(p.team)}</strong><small>${p.postStartLock?"POST-START LOCK · EXCLUDED FROM RECORD":p.locked===false?"OWNER CONFIRMED · REPORTED AFTER GAME":"OFFICIAL · LOCKED"}</small></td><td>${escapeHtml(p.opponent)}<br><small>${escapeHtml(p.series)}</small></td><td>${projectionHistory(p)}</td><td>${actualScoreHistory(p)}</td><td><span class="status ${escapeHtml(p.status)}">${escapeHtml(p.postStartLock&&p.status==="pending"?"post-start pending":p.status)}</span></td><td>${p.stake}</td></tr>`).join('');
   $('historyCount').textContent=sorted.length+' TRACKED PICKS';
-  $('historyFoot').textContent=`Current MLB ${s.season.label} record: ${s.wins} wins / ${s.losses} losses. The verified historical baseline ${state.baseline.wins}-${state.baseline.losses}-${state.baseline.pushes} through ${formatDate(state.baseline.asOf)} stays in the original MLB season record. Owner-confirmed pregame bets reported after the result are labeled in the history; pending results never increase wins or losses.`;
+  $('historyFoot').textContent=`Current MLB ${s.season.label} record: ${s.wins} wins / ${s.losses} losses. The verified historical baseline ${state.baseline.wins}-${state.baseline.losses}-${state.baseline.pushes} through ${formatDate(state.baseline.asOf)} stays in the original MLB season record. Owner-confirmed pregame bets reported after the result are labeled in the history; pending results never increase wins or losses. Post-start locked selections are preserved in history but excluded from the pregame performance record.`;
   const pending=sorted.filter(p=>p.status==='pending');
 }
 function showPage(page){
