@@ -31,7 +31,7 @@
     const picks=data.picks||[],baseline=data.baseline||{};
     const baselineYear=sys.seasonForDate('mlb',baseline.asOf);
     const baselineUsed=baselineYear===id;
-    const rows=bySeason('mlb',picks,id).filter(p=>!baselineUsed||p.date>baseline.asOf);
+    const rows=bySeason('mlb',picks,id).filter(p=>p.recordEligible!==false&&(!baselineUsed||p.date>baseline.asOf));
     const count=sys.totals(rows);
     if(baselineUsed){
       count.wins+=Number(baseline.wins)||0;
