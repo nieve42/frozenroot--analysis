@@ -32,7 +32,7 @@
     if(!picks)return null;
     const baseline=data.baseline||{wins:0,losses:0,asOf:''};
     const hasBase=window.FrozenRootSeason.matches('mlb',baseline.asOf);
-    const current=picks.filter(p=>window.FrozenRootSeason.matches('mlb',p.date));
+    const current=picks.filter(p=>p.recordEligible!==false&&window.FrozenRootSeason.matches('mlb',p.date));
     const additional=current.filter(p=>!hasBase||p.date>baseline.asOf);
     const wins=(hasBase?Number(baseline.wins)||0:0)+additional.filter(p=>p.status==='win').length;
     const losses=(hasBase?Number(baseline.losses)||0:0)+additional.filter(p=>p.status==='loss').length;
@@ -66,7 +66,7 @@
   const statusKind=(p,game,sport,schedule)=>{
     if(/cancel|postpon/i.test(String(game?.status||'')))return 'void';
     if(!p)return /final|complete|closed/i.test(String(game?.status||''))?'no-pick':'pick-pending';
-    if(sport==='mlb')return ['win','loss','push','void'].includes(p.status)?p.status:'pending';
+    if(sport==='mlb')return p.postStartLock&&p.status==='pending'?'post-start':(['win','loss','push','void'].includes(p.status)?p.status:'pending');
     return window.FrozenRootSportResult.get(p,schedule,sport==='nhl'?'Goals':'Points').status;
   };
   function findPick(s,game,files){
@@ -93,21 +93,21 @@
     const status=statusKind(p,game,s.key,slate);
     const off=['void','no-pick','pick-pending'].includes(status);
     const auto=!!p?.automated;
-    const tag=status==='pick-pending'?'PICK PENDING':status==='no-pick'?'FINAL · NO PICK':status==='void'?'VOID / CANCELED':
+    const tag=status==='post-start'?'POST-START LOCK':status==='pick-pending'?'PICK PENDING':status==='no-pick'?'FINAL · NO PICK':status==='void'?'VOID / CANCELED':
       status.toUpperCase();
     const team=p?.team||null;
     const forecast=p?getForecast(p,s):null;
     const date=game.dateUTC||game.startUTC;
     const time=date?fmtWhen(date):safe(prettyDay(slate.date||localDay()));
-    const reliability=p?window.FrozenRootReliability.badge(p,s.key,auto):'';
+    const reliability=p&&!p.postStartLock?window.FrozenRootReliability.badge(p,s.key,auto):'';
     return '<article class="overview-game">'+
       '<div class="overview-game-top"><span>'+s.icon+' '+s.label+'</span><span>'+safe(time)+'</span></div>'+
       '<h3>'+safe(game.away)+' <span>vs</span> '+safe(game.home)+'</h3>'+
       '<div class="overview-game-pick">'+(off?'No active winner selection':safe(team)+' to win')+
       ' <span class="overview-outcome overview-outcome-'+safe(status)+'">'+safe(tag)+'</span></div>'+
-      (p?'<p class="overview-pick-type">'+(auto?'🤖 AUTOMATIC STATISTICAL FORECAST':'❄ OFFICIAL ROOT SELECTION')+'</p>':
+      (p?'<p class="overview-pick-type">'+(auto?'🤖 AUTOMATIC STATISTICAL FORECAST':p.postStartLock?'◷ POST-START OWNER LOCK · RECORD EXCLUDED':'❄ OFFICIAL ROOT SELECTION')+'</p>':
         '<p class="overview-pick-type">No locked selection for this matchup</p>')+
-      (forecast?'<p class="overview-game-score">PREDICTED SCORE <strong>'+safe(forecast)+'</strong></p>':'')+
+      (forecast?'<p class="overview-game-score">'+(p.postStartLock?'POST-START PROJECTION':'PREDICTED SCORE')+' <strong>'+safe(forecast)+'</strong></p>':'')+
       (p?'<div class="overview-reliability">'+reliability+'</div>':'')+
       '<a href="#'+s.page+'" class="overview-game-link">View '+s.label+' details →</a></article>';
   }
