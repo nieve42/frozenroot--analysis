@@ -1,6 +1,6 @@
 {
   "source": "ESPN NFL public scoreboard",
-  "generatedAt": "2026-10-25T16:45:54Z",
+  "generatedAt": "2026-10-25T17:42:21Z",
   "startDate": "2026-10-20",
   "endDate": "2026-10-26",
   "weekReset": "Tuesday 12:01 AM America/Los_Angeles",
@@ -28,7 +28,7 @@
       "dateUTC": "2026-10-25T17:00Z",
       "away": "Cincinnati Bengals",
       "home": "Baltimore Ravens",
-      "status": "Scheduled",
+      "status": "In Progress",
       "awayScore": null,
       "homeScore": null
     },
@@ -37,7 +37,7 @@
       "dateUTC": "2026-10-25T17:00Z",
       "away": "Cleveland Browns",
       "home": "Tennessee Titans",
-      "status": "Scheduled",
+      "status": "In Progress",
       "awayScore": null,
       "homeScore": null
     },
@@ -46,7 +46,7 @@
       "dateUTC": "2026-10-25T17:00Z",
       "away": "Indianapolis Colts",
       "home": "Minnesota Vikings",
-      "status": "Scheduled",
+      "status": "In Progress",
       "awayScore": null,
       "homeScore": null
     },
@@ -55,7 +55,7 @@
       "dateUTC": "2026-10-25T17:00Z",
       "away": "Miami Dolphins",
       "home": "New York Jets",
-      "status": "Scheduled",
+      "status": "In Progress",
       "awayScore": null,
       "homeScore": null
     },
@@ -64,7 +64,7 @@
       "dateUTC": "2026-10-25T17:00Z",
       "away": "New York Giants",
       "home": "Houston Texans",
-      "status": "Scheduled",
+      "status": "In Progress",
       "awayScore": null,
       "homeScore": null
     },
@@ -73,7 +73,7 @@
       "dateUTC": "2026-10-25T17:00Z",
       "away": "San Francisco 49ers",
       "home": "Atlanta Falcons",
-      "status": "Scheduled",
+      "status": "In Progress",
       "awayScore": null,
       "homeScore": null
     },
@@ -82,7 +82,7 @@
       "dateUTC": "2026-10-25T17:00Z",
       "away": "Tampa Bay Buccaneers",
       "home": "Carolina Panthers",
-      "status": "Scheduled",
+      "status": "In Progress",
       "awayScore": null,
       "homeScore": null
     },
