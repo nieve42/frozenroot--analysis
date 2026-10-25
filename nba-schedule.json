@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-10-25T21:48:29Z",
+  "generatedAt": "2026-10-25T22:43:00Z",
   "date": "2026-10-25",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -10,17 +10,17 @@
       "away": "Los Angeles Lakers",
       "home": "Utah Jazz",
       "status": "In Progress",
-      "awayScore": "31",
-      "homeScore": "49"
+      "awayScore": "88",
+      "homeScore": "85"
     },
     {
       "id": "401909862",
       "dateUTC": "2026-10-25T22:00Z",
       "away": "Indiana Pacers",
       "home": "Brooklyn Nets",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "24",
+      "homeScore": "30"
     },
     {
       "id": "401909863",
