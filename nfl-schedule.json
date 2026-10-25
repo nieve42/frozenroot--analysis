@@ -1,6 +1,6 @@
 {
   "source": "ESPN NFL public scoreboard",
-  "generatedAt": "2026-10-25T15:45:07Z",
+  "generatedAt": "2026-10-25T16:45:54Z",
   "startDate": "2026-10-20",
   "endDate": "2026-10-26",
   "weekReset": "Tuesday 12:01 AM America/Los_Angeles",
@@ -19,9 +19,9 @@
       "dateUTC": "2026-10-25T13:30Z",
       "away": "Pittsburgh Steelers",
       "home": "New Orleans Saints",
-      "status": "In Progress",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Final",
+      "awayScore": "16",
+      "homeScore": "10"
     },
     {
       "id": "401873012",
