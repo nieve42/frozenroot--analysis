@@ -1,6 +1,6 @@
 {
   "source": "ESPN NFL public scoreboard",
-  "generatedAt": "2026-10-25T17:42:21Z",
+  "generatedAt": "2026-10-25T18:49:01Z",
   "startDate": "2026-10-20",
   "endDate": "2026-10-26",
   "weekReset": "Tuesday 12:01 AM America/Los_Angeles",
@@ -64,7 +64,7 @@
       "dateUTC": "2026-10-25T17:00Z",
       "away": "New York Giants",
       "home": "Houston Texans",
-      "status": "In Progress",
+      "status": "Halftime",
       "awayScore": null,
       "homeScore": null
     },
