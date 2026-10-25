@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-10-25T22:43:00Z",
+  "generatedAt": "2026-10-25T23:40:53Z",
   "date": "2026-10-25",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,9 +9,9 @@
       "dateUTC": "2026-10-25T21:00Z",
       "away": "Los Angeles Lakers",
       "home": "Utah Jazz",
-      "status": "In Progress",
-      "awayScore": "88",
-      "homeScore": "85"
+      "status": "Final",
+      "awayScore": "132",
+      "homeScore": "123"
     },
     {
       "id": "401909862",
@@ -19,44 +19,44 @@
       "away": "Indiana Pacers",
       "home": "Brooklyn Nets",
       "status": "In Progress",
-      "awayScore": "24",
-      "homeScore": "30"
+      "awayScore": "79",
+      "homeScore": "65"
     },
     {
       "id": "401909863",
       "dateUTC": "2026-10-25T23:00Z",
       "away": "Orlando Magic",
       "home": "New York Knicks",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "End of Period",
+      "awayScore": "21",
+      "homeScore": "28"
     },
     {
       "id": "401909864",
       "dateUTC": "2026-10-25T23:00Z",
       "away": "Toronto Raptors",
       "home": "Minnesota Timberwolves",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "19",
+      "homeScore": "28"
     },
     {
       "id": "401909865",
       "dateUTC": "2026-10-25T23:00Z",
       "away": "LA Clippers",
       "home": "Oklahoma City Thunder",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "26",
+      "homeScore": "25"
     },
     {
       "id": "401909866",
       "dateUTC": "2026-10-25T23:30Z",
       "away": "Detroit Pistons",
       "home": "Philadelphia 76ers",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "0",
+      "homeScore": "0"
     },
     {
       "id": "401909867",
