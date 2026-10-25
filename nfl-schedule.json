@@ -1,6 +1,6 @@
 {
   "source": "ESPN NFL public scoreboard",
-  "generatedAt": "2026-10-25T22:41:26Z",
+  "generatedAt": "2026-10-25T23:39:33Z",
   "startDate": "2026-10-20",
   "endDate": "2026-10-26",
   "weekReset": "Tuesday 12:01 AM America/Los_Angeles",
@@ -91,27 +91,27 @@
       "dateUTC": "2026-10-25T20:05Z",
       "away": "Denver Broncos",
       "home": "Arizona Cardinals",
-      "status": "In Progress",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Final",
+      "awayScore": "30",
+      "homeScore": "16"
     },
     {
       "id": "401873020",
       "dateUTC": "2026-10-25T20:25Z",
       "away": "Green Bay Packers",
       "home": "Detroit Lions",
-      "status": "In Progress",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Final",
+      "awayScore": "17",
+      "homeScore": "20"
     },
     {
       "id": "401873021",
       "dateUTC": "2026-10-25T20:25Z",
       "away": "Los Angeles Rams",
       "home": "Las Vegas Raiders",
-      "status": "In Progress",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Final",
+      "awayScore": "35",
+      "homeScore": "21"
     },
     {
       "id": "401873022",
