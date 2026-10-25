@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-25T03:41:41Z",
+  "generatedAt": "2026-10-25T04:40:19Z",
   "date": "2026-10-24",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -90,26 +90,26 @@
       "dateUTC": "2026-10-25T01:00Z",
       "away": "Tampa Bay Lightning",
       "home": "Utah Mammoth",
-      "status": "In Progress",
+      "status": "Final",
       "awayScore": "4",
-      "homeScore": "4"
+      "homeScore": "5"
     },
     {
       "id": "401892576",
       "dateUTC": "2026-10-25T02:00Z",
       "away": "Detroit Red Wings",
       "home": "Calgary Flames",
-      "status": "In Progress",
+      "status": "Final",
       "awayScore": "1",
-      "homeScore": "3"
+      "homeScore": "4"
     },
     {
       "id": "401892577",
       "dateUTC": "2026-10-25T02:00Z",
       "away": "Minnesota Wild",
       "home": "Seattle Kraken",
-      "status": "In Progress",
-      "awayScore": "4",
+      "status": "Final",
+      "awayScore": "5",
       "homeScore": "1"
     }
   ],
