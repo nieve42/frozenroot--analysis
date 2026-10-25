@@ -861,7 +861,7 @@
       "pickType": "moneyline",
       "stake": 1,
       "locked": true,
-      "status": "pending",
+      "status": "loss",
       "createdBy": "Root + user",
       "lockedOn": "2026-10-24",
       "projectedScore": {
@@ -872,7 +872,13 @@
       "analysis": "Root pregame selection: Atlanta's home advantage and potential for turnovers and transition scoring give it a narrow edge.",
       "risk": "Medium-low confidence; Houston's size and scoring can overturn the forecast.",
       "confidence": "Medium-low",
-      "sourceUrls": []
+      "sourceUrls": [],
+      "actualScore": {
+        "teamPoints": 114,
+        "opponentPoints": 121
+      },
+      "resultVerifiedOn": "2026-10-24",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-official-2026-10-24-401909859",
