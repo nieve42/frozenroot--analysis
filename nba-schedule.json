@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-10-24T23:40:05Z",
+  "generatedAt": "2026-10-25T00:57:09Z",
   "date": "2026-10-24",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,54 +9,54 @@
       "dateUTC": "2026-10-24T22:00Z",
       "away": "Miami Heat",
       "home": "Charlotte Hornets",
-      "status": "In Progress",
-      "awayScore": "63",
-      "homeScore": "83"
+      "status": "Final",
+      "awayScore": "110",
+      "homeScore": "115"
     },
     {
       "id": "401909854",
       "dateUTC": "2026-10-24T23:30Z",
       "away": "Brooklyn Nets",
       "home": "Cleveland Cavaliers",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Halftime",
+      "awayScore": "54",
+      "homeScore": "66"
     },
     {
       "id": "401909855",
       "dateUTC": "2026-10-24T23:30Z",
       "away": "Milwaukee Bucks",
       "home": "Philadelphia 76ers",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "60",
+      "homeScore": "64"
     },
     {
       "id": "401909857",
       "dateUTC": "2026-10-25T00:00Z",
       "away": "Washington Wizards",
       "home": "Chicago Bulls",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "43",
+      "homeScore": "41"
     },
     {
       "id": "401909858",
       "dateUTC": "2026-10-25T00:00Z",
       "away": "San Antonio Spurs",
       "home": "Dallas Mavericks",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "41",
+      "homeScore": "39"
     },
     {
       "id": "401909856",
       "dateUTC": "2026-10-25T00:30Z",
       "away": "Houston Rockets",
       "home": "Atlanta Hawks",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "18",
+      "homeScore": "15"
     },
     {
       "id": "401909859",

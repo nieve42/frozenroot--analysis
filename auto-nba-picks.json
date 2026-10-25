@@ -2,7 +2,7 @@
   "sport": "NBA",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-10-24T07:29:51Z",
+  "lastUpdated": "2026-10-25T00:57:09Z",
   "picks": [
     {
       "id": "nba-auto-401909088",
@@ -859,14 +859,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-24T07:29:51Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 117,
         "opponentPoints": 112
       },
       "modelVersion": "score-form-v1",
       "risk": "LOW DATA",
-      "analysis": "Limited current-season scoring data; baseline and home advantage play a larger role. Recent game samples: Miami Heat 2, Charlotte Hornets 2. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Limited current-season scoring data; baseline and home advantage play a larger role. Recent game samples: Miami Heat 2, Charlotte Hornets 2. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 115,
+        "opponentPoints": 110
+      },
+      "resultVerifiedOn": "2026-10-24",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-auto-401909854",

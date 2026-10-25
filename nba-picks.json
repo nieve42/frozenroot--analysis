@@ -711,7 +711,7 @@
       "pickType": "moneyline",
       "stake": 1,
       "locked": true,
-      "status": "pending",
+      "status": "loss",
       "createdBy": "Root + user",
       "lockedOn": "2026-10-24",
       "projectedScore": {
@@ -722,7 +722,13 @@
       "analysis": "Root pregame selection: Miami's scoring options and experience are projected to edge Charlotte in a competitive matchup.",
       "risk": "Medium confidence; Charlotte has home court and late injury or lineup changes may affect the forecast.",
       "confidence": "Medium",
-      "sourceUrls": []
+      "sourceUrls": [],
+      "actualScore": {
+        "teamPoints": 110,
+        "opponentPoints": 115
+      },
+      "resultVerifiedOn": "2026-10-24",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-official-2026-10-24-401909854",
