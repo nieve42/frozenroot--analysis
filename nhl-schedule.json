@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-25T21:49:08Z",
+  "generatedAt": "2026-10-25T22:37:05Z",
   "date": "2026-10-25",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -18,9 +18,9 @@
       "dateUTC": "2026-10-25T22:00Z",
       "away": "New York Islanders",
       "home": "Dallas Stars",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "1",
+      "homeScore": "2"
     },
     {
       "id": "401891807",
