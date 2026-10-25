@@ -2,7 +2,7 @@
   "sport": "NFL",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-10-25T16:45:55Z",
+  "lastUpdated": "2026-10-25T20:42:51Z",
   "picks": [
     {
       "id": "nfl-auto-401873010",
@@ -79,14 +79,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-20T07:01:51Z",
-      "status": "pending",
+      "status": "loss",
       "projectedScore": {
         "teamPoints": 24,
         "opponentPoints": 21
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Past result samples: Cincinnati Bengals 5, Baltimore Ravens 6. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Past result samples: Cincinnati Bengals 5, Baltimore Ravens 6. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 13,
+        "opponentPoints": 35
+      },
+      "resultVerifiedOn": "2026-10-25",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nfl-auto-401873013",
@@ -103,14 +109,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-20T07:01:51Z",
-      "status": "pending",
+      "status": "loss",
       "projectedScore": {
         "teamPoints": 21,
         "opponentPoints": 20
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Past result samples: Cleveland Browns 6, Tennessee Titans 6. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Past result samples: Cleveland Browns 6, Tennessee Titans 6. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 24,
+        "opponentPoints": 27
+      },
+      "resultVerifiedOn": "2026-10-25",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nfl-auto-401873014",
@@ -127,14 +139,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-20T07:01:51Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 24,
         "opponentPoints": 19
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Past result samples: Indianapolis Colts 6, Minnesota Vikings 5. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Past result samples: Indianapolis Colts 6, Minnesota Vikings 5. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 16,
+        "opponentPoints": 10
+      },
+      "resultVerifiedOn": "2026-10-25",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nfl-auto-401873015",
@@ -151,14 +169,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-20T07:01:51Z",
-      "status": "pending",
+      "status": "loss",
       "projectedScore": {
         "teamPoints": 23,
         "opponentPoints": 19
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Past result samples: Miami Dolphins 5, New York Jets 6. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Past result samples: Miami Dolphins 5, New York Jets 6. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 25,
+        "opponentPoints": 28
+      },
+      "resultVerifiedOn": "2026-10-25",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nfl-auto-401873016",
@@ -175,14 +199,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-20T07:01:51Z",
-      "status": "pending",
+      "status": "loss",
       "projectedScore": {
         "teamPoints": 24,
         "opponentPoints": 22
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Past result samples: New York Giants 6, Houston Texans 6. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Past result samples: New York Giants 6, Houston Texans 6. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 21,
+        "opponentPoints": 27
+      },
+      "resultVerifiedOn": "2026-10-25",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nfl-auto-401873017",
@@ -199,14 +229,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-20T07:01:51Z",
-      "status": "pending",
+      "status": "loss",
       "projectedScore": {
         "teamPoints": 24,
         "opponentPoints": 23
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Past result samples: San Francisco 49ers 6, Atlanta Falcons 6. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Past result samples: San Francisco 49ers 6, Atlanta Falcons 6. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 20,
+        "opponentPoints": 29
+      },
+      "resultVerifiedOn": "2026-10-25",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nfl-auto-401873018",
@@ -223,14 +259,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-20T07:01:51Z",
-      "status": "pending",
+      "status": "loss",
       "projectedScore": {
         "teamPoints": 24,
         "opponentPoints": 20
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Past result samples: Tampa Bay Buccaneers 6, Carolina Panthers 5. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Past result samples: Tampa Bay Buccaneers 6, Carolina Panthers 5. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 13,
+        "opponentPoints": 43
+      },
+      "resultVerifiedOn": "2026-10-25",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nfl-auto-401873019",
