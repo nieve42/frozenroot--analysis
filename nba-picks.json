@@ -741,7 +741,7 @@
       "pickType": "moneyline",
       "stake": 1,
       "locked": true,
-      "status": "pending",
+      "status": "win",
       "createdBy": "Root + user",
       "lockedOn": "2026-10-24",
       "projectedScore": {
@@ -752,7 +752,13 @@
       "analysis": "Root pregame selection: Cleveland's offensive creation and frontcourt quality are projected to outweigh Brooklyn's advantages.",
       "risk": "High relative confidence, but not a guaranteed outcome; final injury and rotation news still matters.",
       "confidence": "High",
-      "sourceUrls": []
+      "sourceUrls": [],
+      "actualScore": {
+        "teamPoints": 125,
+        "opponentPoints": 121
+      },
+      "resultVerifiedOn": "2026-10-24",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-official-2026-10-24-401909855",
@@ -765,7 +771,7 @@
       "pickType": "moneyline",
       "stake": 1,
       "locked": true,
-      "status": "pending",
+      "status": "win",
       "createdBy": "Root + user",
       "lockedOn": "2026-10-24",
       "projectedScore": {
@@ -776,7 +782,13 @@
       "analysis": "Root pregame selection: Philadelphia's scoring creation and favorable offensive matchup give it the projected edge over Milwaukee.",
       "risk": "High relative confidence; lineup and player-availability uncertainty may alter expected point totals.",
       "confidence": "High",
-      "sourceUrls": []
+      "sourceUrls": [],
+      "actualScore": {
+        "teamPoints": 127,
+        "opponentPoints": 116
+      },
+      "resultVerifiedOn": "2026-10-24",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-official-2026-10-24-401909857",
@@ -789,7 +801,7 @@
       "pickType": "moneyline",
       "stake": 1,
       "locked": true,
-      "status": "pending",
+      "status": "loss",
       "createdBy": "Root + user",
       "lockedOn": "2026-10-24",
       "projectedScore": {
@@ -800,7 +812,13 @@
       "analysis": "Root pregame selection: Chicago receives a narrow projection advantage at home in a potentially high-scoring contest.",
       "risk": "Medium-low confidence; very close projected margin and volatile offensive performance.",
       "confidence": "Medium-low",
-      "sourceUrls": []
+      "sourceUrls": [],
+      "actualScore": {
+        "teamPoints": 120,
+        "opponentPoints": 124
+      },
+      "resultVerifiedOn": "2026-10-24",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-official-2026-10-24-401909858",
@@ -813,7 +831,7 @@
       "pickType": "moneyline",
       "stake": 1,
       "locked": true,
-      "status": "pending",
+      "status": "win",
       "createdBy": "Root + user",
       "lockedOn": "2026-10-24",
       "projectedScore": {
@@ -824,7 +842,13 @@
       "analysis": "Root pregame selection: San Antonio's matchup balance and Dallas roster-availability uncertainty favor the Spurs.",
       "risk": "Medium-high confidence; Dallas player availability and early-season chemistry must be monitored.",
       "confidence": "Medium-high",
-      "sourceUrls": []
+      "sourceUrls": [],
+      "actualScore": {
+        "teamPoints": 122,
+        "opponentPoints": 106
+      },
+      "resultVerifiedOn": "2026-10-24",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-official-2026-10-24-401909856",

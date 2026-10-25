@@ -2,7 +2,7 @@
   "sport": "NBA",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-10-25T00:57:09Z",
+  "lastUpdated": "2026-10-25T02:48:46Z",
   "picks": [
     {
       "id": "nba-auto-401909088",
@@ -889,14 +889,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-24T07:29:51Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 116,
         "opponentPoints": 110
       },
       "modelVersion": "score-form-v1",
       "risk": "LOW DATA",
-      "analysis": "Limited current-season scoring data; baseline and home advantage play a larger role. Recent game samples: Brooklyn Nets 1, Cleveland Cavaliers 1. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Limited current-season scoring data; baseline and home advantage play a larger role. Recent game samples: Brooklyn Nets 1, Cleveland Cavaliers 1. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 125,
+        "opponentPoints": 121
+      },
+      "resultVerifiedOn": "2026-10-24",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-auto-401909855",
@@ -913,14 +919,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-24T07:29:51Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 117,
         "opponentPoints": 111
       },
       "modelVersion": "score-form-v1",
       "risk": "LOW DATA",
-      "analysis": "Limited current-season scoring data; baseline and home advantage play a larger role. Recent game samples: Milwaukee Bucks 2, Philadelphia 76ers 2. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Limited current-season scoring data; baseline and home advantage play a larger role. Recent game samples: Milwaukee Bucks 2, Philadelphia 76ers 2. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 127,
+        "opponentPoints": 116
+      },
+      "resultVerifiedOn": "2026-10-24",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-auto-401909857",
@@ -937,14 +949,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-24T07:29:51Z",
-      "status": "pending",
+      "status": "loss",
       "projectedScore": {
         "teamPoints": 118,
         "opponentPoints": 116
       },
       "modelVersion": "score-form-v1",
       "risk": "LOW DATA",
-      "analysis": "Limited current-season scoring data; baseline and home advantage play a larger role. Recent game samples: Washington Wizards 2, Chicago Bulls 2. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Limited current-season scoring data; baseline and home advantage play a larger role. Recent game samples: Washington Wizards 2, Chicago Bulls 2. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 120,
+        "opponentPoints": 124
+      },
+      "resultVerifiedOn": "2026-10-24",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-auto-401909858",
@@ -961,14 +979,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-24T07:29:51Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 116,
         "opponentPoints": 115
       },
       "modelVersion": "score-form-v1",
       "risk": "LOW DATA",
-      "analysis": "Limited current-season scoring data; baseline and home advantage play a larger role. Recent game samples: San Antonio Spurs 2, Dallas Mavericks 2. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Limited current-season scoring data; baseline and home advantage play a larger role. Recent game samples: San Antonio Spurs 2, Dallas Mavericks 2. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 122,
+        "opponentPoints": 106
+      },
+      "resultVerifiedOn": "2026-10-24",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-auto-401909856",
