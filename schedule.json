@@ -1,6 +1,19 @@
 {
-  "date": "2026-10-25",
-  "fetchedAt": "2026-10-25T21:47:17Z",
+  "date": "2026-10-26",
+  "fetchedAt": "2026-10-26T07:41:29Z",
   "source": "MLB Stats API",
-  "games": []
+  "games": [
+    {
+      "gamePk": 849804,
+      "away": "Milwaukee Brewers",
+      "home": "Tampa Bay Rays",
+      "startUTC": "2026-10-27T00:00:00Z",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null,
+      "series": "World Series",
+      "gameType": "W",
+      "gameNumber": 3
+    }
+  ]
 }
