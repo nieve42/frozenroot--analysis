@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-10-26T02:51:53Z",
+  "generatedAt": "2026-10-26T03:53:25Z",
   "date": "2026-10-25",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -63,9 +63,9 @@
       "dateUTC": "2026-10-26T01:00Z",
       "away": "Memphis Grizzlies",
       "home": "Sacramento Kings",
-      "status": "In Progress",
-      "awayScore": "91",
-      "homeScore": "84"
+      "status": "Final",
+      "awayScore": "123",
+      "homeScore": "112"
     }
   ]
 }
