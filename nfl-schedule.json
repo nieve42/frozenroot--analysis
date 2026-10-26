@@ -1,6 +1,6 @@
 {
   "source": "ESPN NFL public scoreboard",
-  "generatedAt": "2026-10-26T02:50:01Z",
+  "generatedAt": "2026-10-26T03:50:56Z",
   "startDate": "2026-10-20",
   "endDate": "2026-10-26",
   "weekReset": "Tuesday 12:01 AM America/Los_Angeles",
@@ -118,9 +118,9 @@
       "dateUTC": "2026-10-26T00:20Z",
       "away": "Kansas City Chiefs",
       "home": "Seattle Seahawks",
-      "status": "In Progress",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Final",
+      "awayScore": "3",
+      "homeScore": "20"
     },
     {
       "id": "401873009",
