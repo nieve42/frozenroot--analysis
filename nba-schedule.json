@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-10-26T01:12:03Z",
+  "generatedAt": "2026-10-26T01:58:10Z",
   "date": "2026-10-25",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -27,27 +27,27 @@
       "dateUTC": "2026-10-25T23:00Z",
       "away": "Orlando Magic",
       "home": "New York Knicks",
-      "status": "In Progress",
-      "awayScore": "91",
-      "homeScore": "89"
+      "status": "Final",
+      "awayScore": "111",
+      "homeScore": "102"
     },
     {
       "id": "401909864",
       "dateUTC": "2026-10-25T23:00Z",
       "away": "Toronto Raptors",
       "home": "Minnesota Timberwolves",
-      "status": "In Progress",
-      "awayScore": "69",
-      "homeScore": "90"
+      "status": "Final",
+      "awayScore": "94",
+      "homeScore": "117"
     },
     {
       "id": "401909865",
       "dateUTC": "2026-10-25T23:00Z",
       "away": "LA Clippers",
       "home": "Oklahoma City Thunder",
-      "status": "In Progress",
-      "awayScore": "96",
-      "homeScore": "99"
+      "status": "Final",
+      "awayScore": "101",
+      "homeScore": "108"
     },
     {
       "id": "401909866",
@@ -55,8 +55,8 @@
       "away": "Detroit Pistons",
       "home": "Philadelphia 76ers",
       "status": "In Progress",
-      "awayScore": "61",
-      "homeScore": "53"
+      "awayScore": "94",
+      "homeScore": "85"
     },
     {
       "id": "401909867",
@@ -64,8 +64,8 @@
       "away": "Memphis Grizzlies",
       "home": "Sacramento Kings",
       "status": "In Progress",
-      "awayScore": "2",
-      "homeScore": "2"
+      "awayScore": "54",
+      "homeScore": "47"
     }
   ]
 }
