@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-10-26T22:51:05Z",
+  "generatedAt": "2026-10-26T23:45:55Z",
   "date": "2026-10-26",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,36 +9,36 @@
       "dateUTC": "2026-10-26T23:00Z",
       "away": "Washington Wizards",
       "home": "Charlotte Hornets",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "24",
+      "homeScore": "23"
     },
     {
       "id": "401909869",
       "dateUTC": "2026-10-26T23:00Z",
       "away": "Minnesota Timberwolves",
       "home": "Cleveland Cavaliers",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "41",
+      "homeScore": "34"
     },
     {
       "id": "401909870",
       "dateUTC": "2026-10-26T23:30Z",
       "away": "Chicago Bulls",
       "home": "Boston Celtics",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "7",
+      "homeScore": "9"
     },
     {
       "id": "401909871",
       "dateUTC": "2026-10-26T23:30Z",
       "away": "Dallas Mavericks",
       "home": "Miami Heat",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "10",
+      "homeScore": "4"
     },
     {
       "id": "401909872",
