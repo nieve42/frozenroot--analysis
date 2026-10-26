@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-10-26T01:58:10Z",
+  "generatedAt": "2026-10-26T02:51:53Z",
   "date": "2026-10-25",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -54,9 +54,9 @@
       "dateUTC": "2026-10-25T23:30Z",
       "away": "Detroit Pistons",
       "home": "Philadelphia 76ers",
-      "status": "In Progress",
-      "awayScore": "94",
-      "homeScore": "85"
+      "status": "Final",
+      "awayScore": "106",
+      "homeScore": "93"
     },
     {
       "id": "401909867",
@@ -64,8 +64,8 @@
       "away": "Memphis Grizzlies",
       "home": "Sacramento Kings",
       "status": "In Progress",
-      "awayScore": "54",
-      "homeScore": "47"
+      "awayScore": "91",
+      "homeScore": "84"
     }
   ]
 }
