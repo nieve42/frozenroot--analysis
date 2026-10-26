@@ -120,9 +120,36 @@
       "createdBy": "Root + user",
       "odds": null,
       "lockTiming": "After scheduled 5:00 PM Pacific first pitch, at user request"
+    },
+    {
+      "id": "2026-10-26-ws-g3",
+      "date": "2026-10-26",
+      "series": "World Series · Game 3",
+      "gamePk": 849804,
+      "team": "Milwaukee Brewers",
+      "opponent": "Tampa Bay Rays",
+      "stake": 1,
+      "stakeIsHypothetical": true,
+      "status": "pending",
+      "locked": true,
+      "postStartLock": false,
+      "recordEligible": true,
+      "pickType": "official_pregame_lock",
+      "projectedScore": {
+        "teamRuns": 4,
+        "opponentRuns": 3
+      },
+      "estimatedWinProbabilityPct": 53,
+      "confidenceType": "Judgment-based estimate, not a calibrated model probability",
+      "analysis": "Root's official October 26 pregame moneyline selection, confirmed and locked by the owner before the 5:00 PM Pacific World Series Game 3 first pitch. Forecast Brewers 4, Rays 3 (7 total). Milwaukee leads the series 2–0; Brewers' productive lineup and postseason bullpen performance narrowly outweigh Freddy Peralta's strong form and Tampa Bay's home-field advantage. Robert Gasser starts for Milwaukee vs Freddy Peralta for Tampa Bay. Judgment-based estimated chance 53%, not a validated win probability. Preserve selection and score forecast as originally locked; odds were not used to choose the winner.",
+      "risk": "Moderate confidence; moderate-high risk and narrow estimated edge. Milwaukee bullpen workload and Peralta's pitching are major downside factors. No change based solely on odds or reconsideration; exceptional switches require substantial verified pregame evidence and a transparent explanation.",
+      "odds": null,
+      "createdBy": "Root + user",
+      "lockTiming": "Before scheduled 5:00 PM Pacific first pitch on October 26, 2026",
+      "matchupSource": "https://www.mlb.com/news/brewers-rays-world-series-game-3-starting-lineups-and-pitching-matchup"
     }
   ],
-  "lastUpdated": "2026-10-24",
+  "lastUpdated": "2026-10-26",
   "latestMlbResult": {
     "id": "2026-10-23-ws-g1",
     "date": "2026-10-23",
