@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-26T01:52:49Z",
+  "generatedAt": "2026-10-26T02:44:15Z",
   "date": "2026-10-25",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -27,7 +27,7 @@
       "dateUTC": "2026-10-25T23:00Z",
       "away": "Montreal Canadiens",
       "home": "Winnipeg Jets",
-      "status": "In Progress",
+      "status": "Final",
       "awayScore": "2",
       "homeScore": "1"
     },
@@ -36,18 +36,18 @@
       "dateUTC": "2026-10-26T00:00Z",
       "away": "Colorado Avalanche",
       "home": "Nashville Predators",
-      "status": "End of Period",
-      "awayScore": "1",
-      "homeScore": "5"
+      "status": "Final",
+      "awayScore": "2",
+      "homeScore": "6"
     },
     {
       "id": "401892581",
       "dateUTC": "2026-10-26T02:00Z",
       "away": "Minnesota Wild",
       "home": "Vancouver Canucks",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "1",
+      "homeScore": "0"
     }
   ],
   "nextDate": "2026-10-26",

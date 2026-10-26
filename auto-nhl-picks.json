@@ -2,7 +2,7 @@
   "sport": "NHL",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-10-26T01:04:02Z",
+  "lastUpdated": "2026-10-26T02:44:15Z",
   "picks": [
     {
       "id": "nhl-auto-401892539",
@@ -1249,14 +1249,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-24T07:28:33Z",
-      "status": "pending",
+      "status": "loss",
       "projectedScore": {
         "teamGoals": 4,
         "opponentGoals": 3
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Montreal Canadiens 9, Winnipeg Jets 10. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Montreal Canadiens 9, Winnipeg Jets 10. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamGoals": 1,
+        "opponentGoals": 2
+      },
+      "resultVerifiedOn": "2026-10-25",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nhl-auto-401892580",
@@ -1273,14 +1279,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-24T07:28:33Z",
-      "status": "pending",
+      "status": "loss",
       "projectedScore": {
         "teamGoals": 4,
         "opponentGoals": 3
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Colorado Avalanche 11, Nashville Predators 9. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Colorado Avalanche 11, Nashville Predators 9. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamGoals": 2,
+        "opponentGoals": 6
+      },
+      "resultVerifiedOn": "2026-10-25",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nhl-auto-401892581",
