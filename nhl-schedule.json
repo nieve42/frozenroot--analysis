@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-27T01:49:42Z",
+  "generatedAt": "2026-10-27T02:41:30Z",
   "date": "2026-10-26",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,7 +9,7 @@
       "dateUTC": "2026-10-26T23:00Z",
       "away": "Los Angeles Kings",
       "home": "New York Rangers",
-      "status": "In Progress",
+      "status": "Final",
       "awayScore": "6",
       "homeScore": "3"
     },
@@ -19,7 +19,7 @@
       "away": "Toronto Maple Leafs",
       "home": "Calgary Flames",
       "status": "In Progress",
-      "awayScore": "0",
+      "awayScore": "1",
       "homeScore": "3"
     },
     {
