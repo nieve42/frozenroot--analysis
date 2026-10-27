@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-10-27T03:51:21Z",
+  "generatedAt": "2026-10-27T04:49:50Z",
   "date": "2026-10-26",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -81,9 +81,9 @@
       "dateUTC": "2026-10-27T02:00Z",
       "away": "Golden State Warriors",
       "home": "Denver Nuggets",
-      "status": "In Progress",
-      "awayScore": "89",
-      "homeScore": "82"
+      "status": "Final",
+      "awayScore": "134",
+      "homeScore": "114"
     }
   ]
 }
