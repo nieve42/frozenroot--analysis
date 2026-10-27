@@ -1,6 +1,6 @@
 {
   "source": "ESPN NFL public scoreboard",
-  "generatedAt": "2026-10-27T01:02:56Z",
+  "generatedAt": "2026-10-27T01:54:02Z",
   "startDate": "2026-10-20",
   "endDate": "2026-10-26",
   "weekReset": "Tuesday 12:01 AM America/Los_Angeles",
@@ -127,7 +127,7 @@
       "dateUTC": "2026-10-27T00:15Z",
       "away": "Dallas Cowboys",
       "home": "Philadelphia Eagles",
-      "status": "In Progress",
+      "status": "Halftime",
       "awayScore": null,
       "homeScore": null
     }
