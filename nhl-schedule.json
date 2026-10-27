@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-27T00:55:54Z",
+  "generatedAt": "2026-10-27T01:49:42Z",
   "date": "2026-10-26",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,9 +9,9 @@
       "dateUTC": "2026-10-26T23:00Z",
       "away": "Los Angeles Kings",
       "home": "New York Rangers",
-      "status": "End of Period",
-      "awayScore": "5",
-      "homeScore": "2"
+      "status": "In Progress",
+      "awayScore": "6",
+      "homeScore": "3"
     },
     {
       "id": "401892583",
@@ -20,16 +20,16 @@
       "home": "Calgary Flames",
       "status": "In Progress",
       "awayScore": "0",
-      "homeScore": "0"
+      "homeScore": "3"
     },
     {
       "id": "401892584",
       "dateUTC": "2026-10-27T01:30Z",
       "away": "Detroit Red Wings",
       "home": "Edmonton Oilers",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "0",
+      "homeScore": "1"
     }
   ],
   "nextDate": "2026-10-27",
