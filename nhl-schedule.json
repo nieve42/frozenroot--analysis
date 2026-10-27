@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-27T22:43:04Z",
+  "generatedAt": "2026-10-27T23:40:17Z",
   "date": "2026-10-27",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,9 +9,9 @@
       "dateUTC": "2026-10-27T23:00Z",
       "away": "Columbus Blue Jackets",
       "home": "Philadelphia Flyers",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "3",
+      "homeScore": "0"
     },
     {
       "id": "401892586",
