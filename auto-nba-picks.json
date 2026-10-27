@@ -2,7 +2,7 @@
   "sport": "NBA",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-10-27T04:49:50Z",
+  "lastUpdated": "2026-10-27T07:04:19Z",
   "picks": [
     {
       "id": "nba-auto-401909088",
@@ -1563,6 +1563,102 @@
       },
       "resultVerifiedOn": "2026-10-26",
       "resultSource": "ESPN verified schedule"
+    },
+    {
+      "id": "nba-auto-401909877",
+      "sport": "NBA",
+      "gameId": "401909877",
+      "date": "2026-10-27",
+      "dateUTC": "2026-10-27T23:30Z",
+      "team": "Boston Celtics",
+      "opponent": "Brooklyn Nets",
+      "away": "Brooklyn Nets",
+      "home": "Boston Celtics",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-10-27T07:04:19Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamPoints": 118,
+        "opponentPoints": 108
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Brooklyn Nets 3, Boston Celtics 3. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nba-auto-401909878",
+      "sport": "NBA",
+      "gameId": "401909878",
+      "date": "2026-10-27",
+      "dateUTC": "2026-10-28T00:00Z",
+      "team": "Detroit Pistons",
+      "opponent": "New York Knicks",
+      "away": "Detroit Pistons",
+      "home": "New York Knicks",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-10-27T07:04:19Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamPoints": 112,
+        "opponentPoints": 111
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Detroit Pistons 3, New York Knicks 3. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nba-auto-401909879",
+      "sport": "NBA",
+      "gameId": "401909879",
+      "date": "2026-10-27",
+      "dateUTC": "2026-10-28T00:00Z",
+      "team": "San Antonio Spurs",
+      "opponent": "Sacramento Kings",
+      "away": "Sacramento Kings",
+      "home": "San Antonio Spurs",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-10-27T07:04:19Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamPoints": 119,
+        "opponentPoints": 110
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Sacramento Kings 3, San Antonio Spurs 3. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nba-auto-401909880",
+      "sport": "NBA",
+      "gameId": "401909880",
+      "date": "2026-10-27",
+      "dateUTC": "2026-10-28T03:00Z",
+      "team": "Los Angeles Lakers",
+      "opponent": "Portland Trail Blazers",
+      "away": "Portland Trail Blazers",
+      "home": "Los Angeles Lakers",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-10-27T07:04:19Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamPoints": 114,
+        "opponentPoints": 113
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "LOW DATA",
+      "analysis": "Limited current-season scoring data; baseline and home advantage play a larger role. Recent game samples: Portland Trail Blazers 2, Los Angeles Lakers 3. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
     }
   ]
 }
