@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-10-27T02:50:14Z",
+  "generatedAt": "2026-10-27T03:51:21Z",
   "date": "2026-10-26",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -63,18 +63,18 @@
       "dateUTC": "2026-10-27T00:30Z",
       "away": "Atlanta Hawks",
       "home": "Houston Rockets",
-      "status": "In Progress",
-      "awayScore": "103",
-      "homeScore": "117"
+      "status": "Final",
+      "awayScore": "110",
+      "homeScore": "120"
     },
     {
       "id": "401909875",
       "dateUTC": "2026-10-27T01:00Z",
       "away": "Memphis Grizzlies",
       "home": "Utah Jazz",
-      "status": "In Progress",
-      "awayScore": "76",
-      "homeScore": "68"
+      "status": "Final",
+      "awayScore": "110",
+      "homeScore": "105"
     },
     {
       "id": "401909876",
@@ -82,8 +82,8 @@
       "away": "Golden State Warriors",
       "home": "Denver Nuggets",
       "status": "In Progress",
-      "awayScore": "41",
-      "homeScore": "40"
+      "awayScore": "89",
+      "homeScore": "82"
     }
   ]
 }
