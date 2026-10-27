@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-27T03:43:29Z",
+  "generatedAt": "2026-10-27T04:41:59Z",
   "date": "2026-10-26",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -27,9 +27,9 @@
       "dateUTC": "2026-10-27T01:30Z",
       "away": "Detroit Red Wings",
       "home": "Edmonton Oilers",
-      "status": "In Progress",
-      "awayScore": "2",
-      "homeScore": "2"
+      "status": "Final",
+      "awayScore": "4",
+      "homeScore": "3"
     }
   ],
   "nextDate": "2026-10-27",
