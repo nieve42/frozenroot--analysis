@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-28T02:53:23Z",
+  "generatedAt": "2026-10-28T03:52:35Z",
   "date": "2026-10-27",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -73,7 +73,7 @@
       "away": "Minnesota Wild",
       "home": "Utah Mammoth",
       "status": "In Progress",
-      "awayScore": "1",
+      "awayScore": "3",
       "homeScore": "0"
     },
     {
@@ -83,7 +83,7 @@
       "home": "Vegas Golden Knights",
       "status": "End of Period",
       "awayScore": "0",
-      "homeScore": "0"
+      "homeScore": "1"
     },
     {
       "id": "401892594",
@@ -91,8 +91,8 @@
       "away": "Vancouver Canucks",
       "home": "Anaheim Ducks",
       "status": "End of Period",
-      "awayScore": "0",
-      "homeScore": "1"
+      "awayScore": "1",
+      "homeScore": "4"
     },
     {
       "id": "401892595",
@@ -100,7 +100,7 @@
       "away": "Buffalo Sabres",
       "home": "San Jose Sharks",
       "status": "In Progress",
-      "awayScore": "0",
+      "awayScore": "1",
       "homeScore": "0"
     }
   ],
