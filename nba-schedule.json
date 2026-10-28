@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-10-27T23:46:05Z",
+  "generatedAt": "2026-10-28T01:17:02Z",
   "date": "2026-10-27",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -10,26 +10,26 @@
       "away": "Brooklyn Nets",
       "home": "Boston Celtics",
       "status": "In Progress",
-      "awayScore": "10",
-      "homeScore": "6"
+      "awayScore": "79",
+      "homeScore": "78"
     },
     {
       "id": "401909878",
       "dateUTC": "2026-10-28T00:00Z",
       "away": "Detroit Pistons",
       "home": "New York Knicks",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "48",
+      "homeScore": "48"
     },
     {
       "id": "401909879",
       "dateUTC": "2026-10-28T00:00Z",
       "away": "Sacramento Kings",
       "home": "San Antonio Spurs",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Halftime",
+      "awayScore": "54",
+      "homeScore": "80"
     },
     {
       "id": "401909880",
