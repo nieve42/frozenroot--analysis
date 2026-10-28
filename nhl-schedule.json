@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-28T04:53:36Z",
+  "generatedAt": "2026-10-28T05:50:38Z",
   "date": "2026-10-27",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -99,8 +99,8 @@
       "dateUTC": "2026-10-28T02:30Z",
       "away": "Buffalo Sabres",
       "home": "San Jose Sharks",
-      "status": "In Progress",
-      "awayScore": "1",
+      "status": "Final",
+      "awayScore": "2",
       "homeScore": "0"
     }
   ],
