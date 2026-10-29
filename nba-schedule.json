@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-10-29T03:00:13Z",
+  "generatedAt": "2026-10-29T04:00:27Z",
   "date": "2026-10-28",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -90,18 +90,18 @@
       "dateUTC": "2026-10-29T01:00Z",
       "away": "San Antonio Spurs",
       "home": "Utah Jazz",
-      "status": "In Progress",
-      "awayScore": "89",
-      "homeScore": "87"
+      "status": "Final",
+      "awayScore": "117",
+      "homeScore": "111"
     },
     {
       "id": "401909891",
       "dateUTC": "2026-10-29T01:30Z",
       "away": "Oklahoma City Thunder",
       "home": "Dallas Mavericks",
-      "status": "Halftime",
-      "awayScore": "59",
-      "homeScore": "65"
+      "status": "In Progress",
+      "awayScore": "93",
+      "homeScore": "117"
     },
     {
       "id": "401909892",
@@ -109,8 +109,8 @@
       "away": "Los Angeles Lakers",
       "home": "LA Clippers",
       "status": "In Progress",
-      "awayScore": "14",
-      "homeScore": "19"
+      "awayScore": "56",
+      "homeScore": "41"
     }
   ]
 }
