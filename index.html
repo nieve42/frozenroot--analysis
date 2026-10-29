@@ -72,13 +72,29 @@
         </section>
       </section>
       <section class="page" id="page-dashboard">
-        <div class="eyebrow"><span class="line"></span> POSTSEASON / MONEYLINE ANALYSIS</div>
+        <section class="auto-record-panel" aria-label="MLB automatic prediction accuracy">
+          <div class="auto-record-top"><span>🤖 MLB AUTO-PREDICTION RECORD</span><span id="mlbAutoRecordSeason">2027 SEASON · WINNER ACCURACY</span></div>
+          <div class="auto-record-numbers">
+            <div class="auto-record-metric"><strong id="mlbAutoRecordWins" class="auto-record-wins">—</strong><span>CORRECT PICKS · WINS</span></div>
+            <div class="auto-record-divider" aria-hidden="true">/</div>
+            <div class="auto-record-metric"><strong id="mlbAutoRecordLosses" class="auto-record-losses">—</strong><span>INCORRECT PICKS · LOSSES</span></div>
+            <div class="auto-record-accuracy"><strong id="mlbAutoRecordAccuracy">—</strong><span>ACCURACY</span></div>
+          </div>
+          <p id="mlbAutoRecordNote" class="auto-record-note" aria-live="polite">2027 starts 0–0. Auto forecasts begin with eligible 2027 games.</p>
+        </section>
+        <div class="eyebrow"><span class="line"></span> MLB / MONEYLINE ANALYSIS</div>
         <div class="hero"><div><h1>FROZEN PICKS.<br><em>REAL RECORDS.</em></h1><p>Independent moneyline picks, projected team scores, and a transparent record. No changes after a lock.</p><div class="hero-tags"><span>❄ ROOT'S OFFICIAL PICKS</span><span>● MONEYLINE ONLY</span></div></div><div class="hero-glyph" aria-hidden="true">❄</div></div>
         <div class="sectionhead"><h2>Today's MLB schedule</h2><span id="scheduleDate">CHECKING SCHEDULE</span></div>
-        <p class="schedule-intro">Each day’s games are scheduled to appear at 12:01 AM Pacific as <strong>PICK PENDING</strong> until Root and the owner lock an official pick. These placeholders do not affect Awaiting Results or the win/loss record.</p>
+        <p class="schedule-intro">Every day at approximately <strong>12:01 AM Pacific</strong>, eligible upcoming MLB games receive automatic winner and predicted-run forecasts. Official Root + owner picks remain separate; the automated predictions are graded against final scores.</p>
         <div id="scheduleMeta" class="schedule-meta" aria-live="polite">Checking MLB schedule...</div>
         <div id="todayGames" class="schedule-grid" aria-live="polite"><div class="panel">Loading today's games...</div></div>
-        <div class="schedule-bottom"><a href="https://www.mlb.com/schedule" target="_blank" rel="noopener noreferrer">MLB schedule source ↗</a><span>Schedule entries are not official picks.</span></div>
+        <div class="schedule-bottom"><a href="https://www.mlb.com/schedule" target="_blank" rel="noopener noreferrer">MLB schedule source ↗</a><span>Automatic forecasts are separate from official Root picks.</span></div>
+        <div class="sectionhead"><h2>Automatic MLB predictions</h2><span>FROZEN PREGAME MODEL</span></div>
+        <p class="schedule-intro">Eligible regular-season and playoff games automatically receive a winner pick, both teams' projected runs and total runs before first pitch. Forecasts use historical MLB scoring, not confirmed lineups or pitching matchups; they are <strong>separate from official Root + owner picks</strong>. Final scores are graded automatically.</p>
+        <div id="mlbAutoSummary" class="schedule-meta" aria-live="polite">Checking automated MLB forecasts...</div>
+        <div class="feature auto-feature" id="mlbAutoLatest"><div class="loading">Loading automatic MLB forecasts...</div></div>
+        <div class="sectionhead"><h2>Automatic MLB pick history</h2><span id="mlbAutoHistoryCount">0 FORECASTS</span></div>
+        <div class="panel hpanel auto-history"><div class="table-wrap"><table><thead><tr><th>DATE</th><th>AUTO WINNER PICK</th><th>OPPONENT</th><th>PROJECTED RUNS</th><th>ACTUAL SCORE / WINNER</th><th>RESULT</th></tr></thead><tbody id="mlbAutoHistoryRows"><tr><td colspan="6">Loading automatic MLB prediction archive...</td></tr></tbody></table></div></div>
         <div class="sectionhead"><h2>Latest recorded MLB pick</h2><span id="lastUpdated">SYNCED —</span></div>
         <div class="feature" id="featuredPick"><div class="loading">Loading official selection...</div></div>
         <div class="sectionhead"><h2>Current MLB season record</h2><span id="mlbSeasonLabel">CURRENT SEASON · OFFICIAL PICKS</span></div>
@@ -105,7 +121,7 @@
   <div class="panel protocol"><h3>NFL score forecasts</h3><p>When Root locks a football moneyline pick, we can also publish the estimated final points for each team and projected combined total in <strong>nfl-picks.json</strong>. These are independent pregame forecasts, never automatic final scores.</p></div>
   <div class="panel protocol"><h3>NBA score forecasts</h3><p>Root’s official NBA moneyline picks and predicted scores are published separately in <strong>nba-picks.json</strong>. Each pick can show projected points for both teams and a projected total. Today’s basketball schedule is generated separately and never locks picks automatically.</p></div>
   <div class="panel protocol"><h3>NHL goal forecasts</h3><p>NHL winner picks and projected team goals are saved separately in <strong>nhl-picks.json</strong>. Today's hockey schedule is refreshed independently; it never creates or locks official predictions automatically. Final scores do not overwrite pregame forecasts.</p></div>
-  <div class="panel protocol"><h3>What's automatic today?</h3><p>For <strong>NFL, NBA, and NHL</strong>, new schedules trigger independent, automatic pregame winner and team-score predictions. Their score-based model uses verified past game results and is <strong>not a live ChatGPT analysis</strong>. The published predictions are frozen, and the system checks final scores to settle automatic picks. <strong>MLB</strong> and Root + owner official locks remain separate. Injuries, lineup changes and bookmaker odds are not inputs to this free model.</p></div>
+  <div class="panel protocol"><h3>What's automatic today?</h3><p>For <strong>MLB, NFL, NBA, and NHL</strong>, new schedules trigger independent, automatic pregame winner and team-score predictions. Their score-based model uses verified past game results and is <strong>not a live ChatGPT analysis</strong>. The published predictions are frozen, and the system checks final scores to settle automatic picks. MLB automatic picks and Root + owner official locks remain separate. Injuries, lineup changes and bookmaker odds are not inputs to this free model.</p></div>
 </section>
       <section class="page" id="page-football" aria-label="NFL football games">
         <div class="eyebrow"><span class="line"></span> NFL / FOOTBALL COMMAND CENTER</div>
@@ -246,22 +262,22 @@
           <article class="panel season-sport-panel" id="seasonArchiveNba"><div class="loading">Loading NBA season records...</div></article>
           <article class="panel season-sport-panel" id="seasonArchiveNhl"><div class="loading">Loading NHL season records...</div></article>
         </div>
-        <p class="season-archive-disclaimer">WIN and LOSS count only graded winner picks, not pending, void or tied games. The NFL, NBA and NHL automatic model records remain separate from manually locked Root predictions, preventing double counting. Individual game history stays accessible on its original sport page.</p>
+        <p class="season-archive-disclaimer">WIN and LOSS count only graded winner picks, not pending, void or tied games. The MLB, NFL, NBA and NHL automatic model records remain separate from manually locked Root predictions, preventing double counting. Individual game history stays accessible on its original sport page.</p>
       </section>
     </div>
     <footer><span>© 2026 FROZEN ROOT PREDICTION SYSTEM — THE CALL IS FINAL.</span><span>For entertainment; $1 units are hypothetical. No real-money transactions.</span></footer>
   </main>
 </div>
 <script src="./season-records.js?v=mlb-2027-reset-v1"></script>
-<script src="./reliability.js?v=all-sports-v1"></script>
+<script src="./reliability.js?v=mlb-auto-v1"></script>
 <script src="./app.js?v=mlb-2027-reset-v1"></script>
-<script src="./daily.js?v=ws2-poststart-v1"></script>
-<script src="./sport-results.js?v=final-results-v1"></script>
+<script src="./daily.js?v=mlb-auto-v1"></script>
+<script src="./sport-results.js?v=mlb-auto-v1"></script>
 <script src="./nfl.js?v=all-sports-v1"></script>
 <script src="./nba.js?v=all-sports-v1"></script>
 <script src="./nhl.js?v=all-sports-v1"></script>
-<script src="./auto-picks.js?v=all-sports-v1"></script>
-<script src="./season-archive.js?v=mlb-2027-reset-v1"></script>
-<script src="./overview.js?v=ws2-poststart-v1"></script>
+<script src="./auto-picks.js?v=mlb-auto-v1"></script>
+<script src="./season-archive.js?v=mlb-auto-v1"></script>
+<script src="./overview.js?v=mlb-auto-v1"></script>
 </body>
 </html>
