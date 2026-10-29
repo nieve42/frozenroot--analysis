@@ -1,48 +1,9 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-29T05:52:09Z",
-  "date": "2026-10-28",
+  "generatedAt": "2026-10-29T07:03:46Z",
+  "date": "2026-10-29",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
-    {
-      "id": "401892596",
-      "dateUTC": "2026-10-28T23:30Z",
-      "away": "Philadelphia Flyers",
-      "home": "Washington Capitals",
-      "status": "Final",
-      "awayScore": "2",
-      "homeScore": "5"
-    },
-    {
-      "id": "401892597",
-      "dateUTC": "2026-10-29T00:30Z",
-      "away": "Calgary Flames",
-      "home": "Edmonton Oilers",
-      "status": "Final",
-      "awayScore": "0",
-      "homeScore": "4"
-    },
-    {
-      "id": "401892598",
-      "dateUTC": "2026-10-29T01:00Z",
-      "away": "New Jersey Devils",
-      "home": "Colorado Avalanche",
-      "status": "Final",
-      "awayScore": "2",
-      "homeScore": "5"
-    },
-    {
-      "id": "401892599",
-      "dateUTC": "2026-10-29T02:00Z",
-      "away": "Toronto Maple Leafs",
-      "home": "Seattle Kraken",
-      "status": "Final",
-      "awayScore": "4",
-      "homeScore": "5"
-    }
-  ],
-  "nextDate": "2026-10-29",
-  "upcomingGames": [
     {
       "id": "401892601",
       "dateUTC": "2026-10-29T23:00Z",
@@ -138,6 +99,36 @@
       "dateUTC": "2026-10-30T02:00Z",
       "away": "Vancouver Canucks",
       "home": "San Jose Sharks",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    }
+  ],
+  "nextDate": "2026-10-30",
+  "upcomingGames": [
+    {
+      "id": "401892611",
+      "dateUTC": "2026-10-30T22:00Z",
+      "away": "New Jersey Devils",
+      "home": "Vegas Golden Knights",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401892612",
+      "dateUTC": "2026-10-30T23:00Z",
+      "away": "Winnipeg Jets",
+      "home": "Florida Panthers",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401892613",
+      "dateUTC": "2026-10-31T00:00Z",
+      "away": "Seattle Kraken",
+      "home": "Calgary Flames",
       "status": "Scheduled",
       "awayScore": null,
       "homeScore": null
