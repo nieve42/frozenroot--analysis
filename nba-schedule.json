@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-10-28T23:50:28Z",
+  "generatedAt": "2026-10-29T01:15:27Z",
   "date": "2026-10-28",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -10,8 +10,8 @@
       "away": "Miami Heat",
       "home": "Atlanta Hawks",
       "status": "In Progress",
-      "awayScore": "49",
-      "homeScore": "40"
+      "awayScore": "122",
+      "homeScore": "114"
     },
     {
       "id": "401909882",
@@ -19,8 +19,8 @@
       "away": "Washington Wizards",
       "home": "Cleveland Cavaliers",
       "status": "In Progress",
-      "awayScore": "50",
-      "homeScore": "43"
+      "awayScore": "105",
+      "homeScore": "108"
     },
     {
       "id": "401909883",
@@ -28,8 +28,8 @@
       "away": "Charlotte Hornets",
       "home": "Detroit Pistons",
       "status": "In Progress",
-      "awayScore": "28",
-      "homeScore": "22"
+      "awayScore": "77",
+      "homeScore": "82"
     },
     {
       "id": "401909884",
@@ -37,8 +37,8 @@
       "away": "Philadelphia 76ers",
       "home": "Indiana Pacers",
       "status": "In Progress",
-      "awayScore": "25",
-      "homeScore": "25"
+      "awayScore": "78",
+      "homeScore": "88"
     },
     {
       "id": "401909885",
@@ -46,53 +46,53 @@
       "away": "Orlando Magic",
       "home": "Toronto Raptors",
       "status": "In Progress",
-      "awayScore": "10",
-      "homeScore": "7"
+      "awayScore": "61",
+      "homeScore": "84"
     },
     {
       "id": "401909886",
       "dateUTC": "2026-10-29T00:00Z",
       "away": "New York Knicks",
       "home": "Chicago Bulls",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Halftime",
+      "awayScore": "56",
+      "homeScore": "62"
     },
     {
       "id": "401909887",
       "dateUTC": "2026-10-29T00:00Z",
       "away": "Houston Rockets",
       "home": "Milwaukee Bucks",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Halftime",
+      "awayScore": "57",
+      "homeScore": "35"
     },
     {
       "id": "401909888",
       "dateUTC": "2026-10-29T00:00Z",
       "away": "Golden State Warriors",
       "home": "Minnesota Timberwolves",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Halftime",
+      "awayScore": "64",
+      "homeScore": "48"
     },
     {
       "id": "401909889",
       "dateUTC": "2026-10-29T00:00Z",
       "away": "Denver Nuggets",
       "home": "New Orleans Pelicans",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Halftime",
+      "awayScore": "57",
+      "homeScore": "45"
     },
     {
       "id": "401909890",
       "dateUTC": "2026-10-29T01:00Z",
       "away": "San Antonio Spurs",
       "home": "Utah Jazz",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "7",
+      "homeScore": "9"
     },
     {
       "id": "401909891",
