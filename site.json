@@ -106,7 +106,7 @@
       "opponent": "Milwaukee Brewers",
       "stake": 1,
       "stakeIsHypothetical": true,
-      "status": "pending",
+      "status": "loss",
       "locked": true,
       "postStartLock": true,
       "recordEligible": false,
@@ -119,7 +119,15 @@
       "risk": "Moderate-high risk. Owner requested lock after the scheduled first pitch; this selection is recorded transparently and excluded from official pregame accuracy, win/loss totals, and awaiting-results count. No switching.",
       "createdBy": "Root + user",
       "odds": null,
-      "lockTiming": "After scheduled 5:00 PM Pacific first pitch, at user request"
+      "lockTiming": "After scheduled 5:00 PM Pacific first pitch, at user request",
+      "actualScore": {
+        "teamRuns": 4,
+        "opponentRuns": 5
+      },
+      "finalScore": "Tampa Bay Rays 4, Milwaukee Brewers 5",
+      "resultVerifiedOn": "2026-10-24",
+      "resultSource": "https://www.espn.com/mlb/game/_/gameId/401908043/rays-brewers",
+      "settlementReason": "Milwaukee Brewers 5, Tampa Bay Rays 4. The post-start Rays selection was incorrect and is preserved in history as a LOSS, but remains excluded from official pregame W/L records."
     },
     {
       "id": "2026-10-26-ws-g3",
@@ -130,7 +138,7 @@
       "opponent": "Tampa Bay Rays",
       "stake": 1,
       "stakeIsHypothetical": true,
-      "status": "pending",
+      "status": "win",
       "locked": true,
       "postStartLock": false,
       "recordEligible": true,
@@ -146,30 +154,30 @@
       "odds": null,
       "createdBy": "Root + user",
       "lockTiming": "Before scheduled 5:00 PM Pacific first pitch on October 26, 2026",
-      "matchupSource": "https://www.mlb.com/news/brewers-rays-world-series-game-3-starting-lineups-and-pitching-matchup"
+      "matchupSource": "https://www.mlb.com/news/brewers-rays-world-series-game-3-starting-lineups-and-pitching-matchup",
+      "actualScore": {
+        "teamRuns": 10,
+        "opponentRuns": 1
+      },
+      "finalScore": "Milwaukee Brewers 10, Tampa Bay Rays 1",
+      "resultVerifiedOn": "2026-10-26",
+      "resultSource": "https://www.mlb.com/news/brewers-win-world-series-game-3-2026",
+      "settlementReason": "Official pregame Brewers moneyline selection won Game 3 by 10–1. Original Brewers 4–3 score projection is unchanged."
     }
   ],
-  "lastUpdated": "2026-10-26",
+  "lastUpdated": "2026-10-28",
   "latestMlbResult": {
-    "id": "2026-10-23-ws-g1",
-    "date": "2026-10-23",
-    "series": "World Series · Game 1",
-    "homeTeam": "Milwaukee Brewers",
-    "awayTeam": "Tampa Bay Rays",
-    "homeRuns": 3,
-    "awayRuns": 2,
+    "id": "2026-10-28-ws-g5",
+    "date": "2026-10-28",
+    "series": "World Series · Game 5",
+    "homeTeam": "Tampa Bay Rays",
+    "awayTeam": "Milwaukee Brewers",
+    "homeRuns": 1,
+    "awayRuns": 4,
     "winner": "Milwaukee Brewers",
     "status": "final",
-    "source": "https://apnews.com/article/world-series-rays-brewers-game-1-049d8efa7d3d7c8fc8a4e4b88d8dfe77",
-    "resultVerifiedOn": "2026-10-23",
-    "rootPregameForecast": {
-      "team": "Milwaukee Brewers",
-      "madeBeforeGame": true,
-      "officiallyLocked": false,
-      "confidencePct": 65,
-      "projectedTotalRuns": 6,
-      "outcome": "correct",
-      "note": "Root predicted Brewers before the game. User later confirmed a pregame Brewers bet and requested inclusion in the main record. Recorded as a WIN after the game, transparently marked NOT LOCKED IN CHAT."
-    }
+    "seriesOutcome": "2026 WORLD SERIES CHAMPIONS · BREWERS WIN SERIES 4–1",
+    "source": "https://www.wpr.org/news/milwaukee-brewers-win-first-ever-world-series-title",
+    "resultVerifiedOn": "2026-10-28"
   }
 }
