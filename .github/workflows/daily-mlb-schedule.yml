@@ -6,11 +6,14 @@ on:
       timezone: 'America/Los_Angeles'
     - cron: '23 14 * * *'
       timezone: 'America/Los_Angeles'
+    - cron: '17 * * * *'
+      timezone: 'America/Los_Angeles'
   workflow_dispatch:
   push:
     paths:
       - '.github/workflows/daily-mlb-schedule.yml'
       - 'scripts/update_schedule.py'
+      - 'scripts/auto_mlb_picks.py'
 
 permissions:
   contents: write
@@ -31,14 +34,25 @@ jobs:
           python-version: '3.12'
       - name: Get today's MLB schedule
         run: python scripts/update_schedule.py
-      - name: Publish latest schedule
+      - name: Generate frozen automatic MLB pregame winners and projected run totals
+        run: python scripts/auto_mlb_picks.py
+      - name: Publish latest schedule and MLB automatic win/loss results
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add schedule.json
+          git add schedule.json auto-mlb-picks.json
           if git diff --cached --quiet; then
             echo "No schedule change"
             exit 0
           fi
-          git commit -m "Daily MLB games: pick pending (schedule feed only)"
-          git push
+          git commit -m "Refresh MLB schedule and frozen automatic game predictions"
+          for attempt in 1 2 3 4 5; do
+            git pull --rebase origin main
+            if git push origin main; then
+              echo "Published MLB schedule and forecasts"
+              exit 0
+            fi
+            sleep $((attempt * 4))
+          done
+          echo "Failed to publish MLB slate after retries" >&2
+          exit 1
