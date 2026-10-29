@@ -1,4 +1,4 @@
-/* Frozen Root Prediction System — published schedule, not automatic picks. */
+/* Frozen Root Prediction System — verified MLB slate plus frozen automatic and official picks. */
 (() => {
   'use strict';
   const box = document.getElementById('todayGames');
@@ -54,7 +54,7 @@
     if (isNaN(d.getTime())) return 'TIME TBD';
     return new Intl.DateTimeFormat('en-US', {timeZone:'America/Los_Angeles', hour:'numeric', minute:'2-digit', timeZoneName:'short'}).format(d);
   };
-  function render(data, picks) {
+  function render(data, picks, autoPicks) {
     if (data.date !== localDate()) return;
     const today = localDate();
     dateLabel.textContent = new Date(today + 'T12:00:00').toLocaleDateString('en-US', {month:'short',day:'numeric',year:'numeric'}).toUpperCase();
@@ -66,12 +66,14 @@
     }
     const ordered = [...data.games].sort((a,b) => (a.startUTC || '').localeCompare(b.startUTC || ''));
     box.innerHTML = ordered.map(g => {
-      const existing = Array.isArray(picks) && picks.find(p => p.locked && p.date === today &&
+      const official = Array.isArray(picks) && picks.find(p => p.locked && p.date === today &&
         [p.team, p.opponent].every(n => [g.away, g.home].some(t => t.toLowerCase() === String(n).toLowerCase())));
+      const auto = Array.isArray(autoPicks) && autoPicks.find(p => p.automated && String(p.gameId) === String(g.gamePk));
+      const existing = official || auto;
       const off = cancelled(g.status);
       let badge = '❄ PICK PENDING', badgeClass = 'await-pick';
       if (off) { badge = 'GAME CANCELED / POSTPONED — NO PENDING PICK'; badgeClass='off'; }
-      else if (existing) { badge=(existing.postStartLock?'◷ POST-START PICK LOCKED: ':'❄ OFFICIAL PICK LOCKED: ') + existing.team; badgeClass='official'; }
+      else if (existing) { badge=(auto && !official?'🤖 AUTOMATIC PREGAME PICK: ':existing.postStartLock?'◷ POST-START PICK LOCKED: ':'❄ OFFICIAL PICK LOCKED: ') + existing.team; badgeClass='official'; }
       else if (finished(g.status)) { badge='FINAL — NO OFFICIAL PICK'; badgeClass='final'; }
       else if (!Array.isArray(picks)) { badge='PICK STATUS UNAVAILABLE'; badgeClass='off'; }
       const label = safe(g.away) + ' <span class="game-versus">@</span> ' + safe(g.home);
@@ -106,7 +108,7 @@
       return '<article class="schedule-game">' +
         '<div class="schedule-game-head"><span>GAME ' + safe(g.gamePk || 'TBD') + '</span><span>' + safe(gameTime(g.startUTC)) + '</span></div>' +
         '<h3>' + label + '</h3><p class="schedule-game-state">' + safe(g.status) + (series ? ' · ' + series : '') + '</p>' +
-        '<div class="schedule-status ' + badgeClass + '">' + safe(badge) + '</div>' + (existing && !existing.postStartLock ? '<div class="slate-reliability">'+window.FrozenRootReliability.badge(existing,'mlb',false)+'</div>' : '') + forecast + actual + '</article>';
+        '<div class="schedule-status ' + badgeClass + '">' + safe(badge) + '</div>' + (existing && !existing.postStartLock ? '<div class="slate-reliability">'+window.FrozenRootReliability.badge(existing,'mlb',!!(auto && !official))+'</div>' : '') + forecast + actual + '</article>';
     }).join('');
   }
   let busy = false;
@@ -117,11 +119,13 @@
     try {
       const results = await Promise.allSettled([
         getSchedule(day),
-        fetch('./site.json?ts=' + Date.now(), {cache:'no-store'}).then(r => {if (!r.ok) throw Error('official picks not available');return r.json();})
+        fetch('./site.json?ts=' + Date.now(), {cache:'no-store'}).then(r => {if (!r.ok) throw Error('official picks not available');return r.json();}),
+        fetch('./auto-mlb-picks.json?ts=' + Date.now(), {cache:'no-store'}).then(r => {if (!r.ok) throw Error('automatic picks not available');return r.json();})
       ]);
       if (results[0].status !== 'fulfilled') throw results[0].reason;
       const picks = results[1].status === 'fulfilled' && Array.isArray(results[1].value?.picks) ? results[1].value.picks : null;
-      render(results[0].value, picks);
+      const autoPicks = results[2].status === 'fulfilled' && Array.isArray(results[2].value?.picks) ? results[2].value.picks : null;
+      render(results[0].value, picks, autoPicks);
     } catch (_) {
       dateLabel.textContent = day;
       meta.textContent = 'Schedule could not be verified right now.';
