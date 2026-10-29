@@ -3,6 +3,7 @@
 (() => {
   'use strict';
   const specs = [
+    {sport:'mlb', label:'MLB', page:'dashboard', unit:'RUNS', field:'Runs', icon:'⚾'},
     {sport:'nfl', label:'NFL', page:'football', unit:'POINTS', field:'Points', icon:'🏈'},
     {sport:'nba', label:'NBA', page:'basketball', unit:'POINTS', field:'Points', icon:'🏀'},
     {sport:'nhl', label:'NHL', page:'hockey', unit:'GOALS', field:'Goals', icon:'🏒'}
@@ -87,7 +88,7 @@
           if(!r.ok)throw Error('Automatic forecast unavailable');
           return r.json();
         }),
-        fetch('./'+s.sport+'-schedule.json?t='+Date.now(),{cache:'no-store'}).then(r=>{
+        fetch('./'+(s.sport==='mlb'?'schedule.json':s.sport+'-schedule.json')+'?t='+Date.now(),{cache:'no-store'}).then(r=>{
           if(!r.ok)throw Error('Schedule unavailable');
           return r.json();
         })
