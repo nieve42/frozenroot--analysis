@@ -5,7 +5,7 @@
   const byId=id=>document.getElementById(id);
   const safe=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const sports=[
-    {key:'mlb',label:'MLB',icon:'⚾',page:'dashboard',kind:'OFFICIAL ROOT PICKS'},
+    {key:'mlb',label:'MLB',icon:'⚾',page:'dashboard',kind:'AUTOMATIC MODEL PICKS'},
     {key:'nfl',label:'NFL',icon:'🏈',page:'football',kind:'AUTOMATIC MODEL PICKS'},
     {key:'nba',label:'NBA',icon:'🏀',page:'basketball',kind:'AUTOMATIC MODEL PICKS'},
     {key:'nhl',label:'NHL',icon:'🏒',page:'hockey',kind:'AUTOMATIC MODEL PICKS'}
@@ -42,7 +42,7 @@
   function autoTotals(key,data,schedule){
     const picks=validPicks(data);
     if(!picks)return null;
-    const suffix=key==='nhl'?'Goals':'Points';
+    const suffix=key==='nhl'?'Goals':key==='mlb'?'Runs':'Points';
     const current=picks.filter(p=>window.FrozenRootSeason.matches(key,p.date));
     const outcomes=current.map(p=>window.FrozenRootSportResult.get(p,schedule,suffix).status);
     const wins=outcomes.filter(s=>s==='win').length;
@@ -147,7 +147,7 @@
     if(stamp)stamp.textContent=prettyDay(today).toUpperCase()+' · PACIFIC';
     try {
       const names=[
-        'site.json','schedule.json',
+        'site.json','schedule.json','auto-mlb-picks.json',
         'auto-nfl-picks.json','nfl-schedule.json','nfl-picks.json',
         'auto-nba-picks.json','nba-schedule.json','nba-picks.json',
         'auto-nhl-picks.json','nhl-schedule.json','nhl-picks.json'
@@ -156,7 +156,7 @@
       const files={};
       for(let i=0;i<names.length;i++)if(values[i].status==='fulfilled')files[names[i]]=values[i].value;
       const stats={
-        mlb:mlbTotals(files['site.json']),
+        mlb:autoTotals('mlb',files['auto-mlb-picks.json'],files['schedule.json']),
         nfl:autoTotals('nfl',files['auto-nfl-picks.json'],files['nfl-schedule.json']),
         nba:autoTotals('nba',files['auto-nba-picks.json'],files['nba-schedule.json']),
         nhl:autoTotals('nhl',files['auto-nhl-picks.json'],files['nhl-schedule.json'])
