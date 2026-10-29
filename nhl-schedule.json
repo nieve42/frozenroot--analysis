@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-29T22:50:04Z",
+  "generatedAt": "2026-10-29T23:45:45Z",
   "date": "2026-10-29",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,36 +9,36 @@
       "dateUTC": "2026-10-29T23:00Z",
       "away": "Winnipeg Jets",
       "home": "Tampa Bay Lightning",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "1",
+      "homeScore": "1"
     },
     {
       "id": "401892602",
       "dateUTC": "2026-10-29T23:00Z",
       "away": "Utah Mammoth",
       "home": "Pittsburgh Penguins",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "2",
+      "homeScore": "0"
     },
     {
       "id": "401892603",
       "dateUTC": "2026-10-29T23:00Z",
       "away": "Columbus Blue Jackets",
       "home": "Carolina Hurricanes",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "0",
+      "homeScore": "1"
     },
     {
       "id": "401892600",
       "dateUTC": "2026-10-29T23:30Z",
       "away": "Chicago Blackhawks",
       "home": "Detroit Red Wings",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "0",
+      "homeScore": "0"
     },
     {
       "id": "401892604",
