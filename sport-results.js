@@ -1,4 +1,4 @@
-/* Fast UI settlement for NFL, NBA and NHL. Never guesses: only final ESPN scores.
+/* Fast UI settlement for MLB, NFL, NBA and NHL. Never guesses: only final source-published scores.
    Backend workflow persists the same result in each sport's JSON history. */
 (() => {
   'use strict';
@@ -18,7 +18,7 @@
     }
     if (raw === 'void') return {status:'void',actualScore:null};
     if (['win','loss','push'].includes(raw)) return {status:raw,actualScore:null};
-    const game = schedule?.games?.find(g => String(g.id) === String(p?.gameId));
+    const game = schedule?.games?.find(g => String(g.id ?? g.gamePk) === String(p?.gameId));
     if (!game) return {status:'pending',actualScore:null};
     const state = String(game.status||'').toLowerCase();
     if (/cancel|postpon/.test(state)) return {status:'void',actualScore:null};
