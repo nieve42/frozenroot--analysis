@@ -95,7 +95,7 @@ function renderLatestMlbResult(){
   const winner=home>away?g.homeTeam:away>home?g.awayTeam:'Tie game';
   const label='<div class="actual-final-heading"><span>✓ VERIFIED MLB FINAL · '+escapeHtml(g.series)+'</span><small>'+formatDate(g.date)+'</small></div>';
   const score='<div class="actual-final-score"><span>'+escapeHtml(g.homeTeam)+'</span><strong>'+home+' – '+away+'</strong><span>'+escapeHtml(g.awayTeam)+'</span></div>';
-  const outcome='<div class="actual-final-winner">🏆 WINNER: '+escapeHtml(winner)+' · SERIES LEAD 1–0</div>';
+  const outcome='<div class="actual-final-winner">🏆 WINNER: '+escapeHtml(winner)+(g.seriesOutcome?' · '+escapeHtml(g.seriesOutcome):'')+'</div>';
   // Owner-confirmed pregame bet may be graded in the main record by owner request.
   // Never silently count it twice or pretend it was locked in ChatGPT before first pitch.
   const forecast=g.rootPregameForecast;
@@ -129,7 +129,7 @@ function render(){
   $('wins').textContent=s.wins;$('losses').textContent=s.losses;$('rate').textContent=s.rate;$('pending').textContent=s.pending;
   if($('mlbSeasonLabel'))$('mlbSeasonLabel').textContent=s.season.label+' · CURRENT SEASON';
   if($('mlbSeasonNote'))$('mlbSeasonNote').textContent='Season '+s.season.label+
-    ' · record resets after the postseason on November 15. Historical results remain in Season Archives.';
+    ' · '+(s.season.id===2027?'reset following the Brewers’ 2026 World Series championship.':'the active season record is separate from prior years.')+' Historical results remain in Season Archives.';
   $('lastUpdated').textContent='DATA UPDATED '+formatDate(state.lastUpdated);
   const p=featured();
   if (!p) $('featuredPick').innerHTML='<div class="loading">No MLB pick has been locked for the '+s.season.label+' season yet. Past seasons are preserved in Season Archives.</div>';
