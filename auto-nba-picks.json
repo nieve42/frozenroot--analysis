@@ -2,7 +2,7 @@
   "sport": "NBA",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-10-29T04:00:27Z",
+  "lastUpdated": "2026-10-29T05:00:19Z",
   "picks": [
     {
       "id": "nba-auto-401909088",
@@ -1999,14 +1999,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-28T07:16:03Z",
-      "status": "pending",
+      "status": "loss",
       "projectedScore": {
         "teamPoints": 115,
         "opponentPoints": 113
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Oklahoma City Thunder 4, Dallas Mavericks 4. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Oklahoma City Thunder 4, Dallas Mavericks 4. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 96,
+        "opponentPoints": 120
+      },
+      "resultVerifiedOn": "2026-10-28",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-auto-401909892",
