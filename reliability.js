@@ -22,10 +22,10 @@
     };
   }
   function auto(p,sport) {
-    const suffix = sport==='nhl'?'Goals':'Points';
+    const suffix = sport==='nhl'?'Goals':sport==='mlb'?'Runs':'Points';
     const a=p?.projectedScore?.['team'+suffix], b=p?.projectedScore?.['opponent'+suffix];
     const margin = Number.isInteger(a)&&Number.isInteger(b) ? Math.abs(a-b) : null;
-    const match=String(p?.analysis||'').match(/Past result samples:\s*[^,\n]+?\s+(\d+)\s*,\s*[^.\n]+?\s+(\d+)\s*\./i);
+    const match=String(p?.analysis||'').match(/(?:Past result samples|recent game samples):\s*[^,\n]+?\s+(\d+)\s*,\s*[^.\n]+?\s+(\d+)\s*\./i);
     const minimum=match ? Math.min(Number(match[1]),Number(match[2])) : null;
     // A larger projected edge + both teams' historical samples can support a
     // stronger *model signal*, but never a claim of proven high reliability.
