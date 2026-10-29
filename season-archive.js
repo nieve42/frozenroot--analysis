@@ -18,10 +18,9 @@
     if(!response.ok)throw Error('Could not load '+path);
     return response.json();
   }
-  const scoreField=id=>id==='nhl'?'Goals':'Points';
+  const scoreField=id=>id==='nhl'?'Goals':id==='mlb'?'Runs':'Points';
   function gradedPicks(sport,picks,schedule){
     const list=Array.isArray(picks)?picks:[];
-    if(sport==='mlb')return list;
     return list.map(p=>({...p,...settle.get(p,schedule,scoreField(sport))}));
   }
   function bySeason(sport,picks,id){
@@ -47,7 +46,8 @@
       '<b>'+counts.wins+' W / '+counts.losses+' L <small>· '+counts.accuracy+'</small></b></div>';
   }
   function sportRows(sport,id,data,schedule){
-    if(sport==='mlb')return recordRow('Root + owner tracked picks',mlbTotals(data.official,id));
+    if(sport==='mlb')return recordRow('Automatic model',sys.totals(bySeason(sport,gradedPicks(sport,data.automatic.picks,schedule),id)))+
+      recordRow('Official Root + owner picks',mlbTotals(data.official,id));
     const auto=gradedPicks(sport,data.automatic.picks,schedule);
     const official=gradedPicks(sport,data.official.picks,schedule);
     return recordRow('Automatic model',sys.totals(bySeason(sport,auto,id)))+
@@ -83,7 +83,7 @@
     busy=true;
     try{
       const files=[
-        'site.json',
+        'site.json','auto-mlb-picks.json',
         'nfl-picks.json','auto-nfl-picks.json','nfl-schedule.json',
         'nba-picks.json','auto-nba-picks.json','nba-schedule.json',
         'nhl-picks.json','auto-nhl-picks.json','nhl-schedule.json'
@@ -99,7 +99,7 @@
         try{
           const id=spec.id;
           const official=file(id==='mlb'?'site.json':id+'-picks.json');
-          const automatic=id==='mlb'?null:file('auto-'+id+'-picks.json');
+          const automatic=file('auto-'+id+'-picks.json');
           if(!Array.isArray(official.picks)||id!=='mlb'&&!Array.isArray(automatic.picks))
             throw Error('Missing pick history');
           const schedule=id==='mlb'?null:byName[id+'-schedule.json']?.value;
