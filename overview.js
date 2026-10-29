@@ -66,16 +66,19 @@
   const statusKind=(p,game,sport,schedule)=>{
     if(/cancel|postpon/i.test(String(game?.status||'')))return 'void';
     if(!p)return /final|complete|closed/i.test(String(game?.status||''))?'no-pick':'pick-pending';
-    if(sport==='mlb')return p.postStartLock&&p.status==='pending'?'post-start':(['win','loss','push','void'].includes(p.status)?p.status:'pending');
+    if(sport==='mlb')return p.automated?window.FrozenRootSportResult.get(p,schedule,'Runs').status:(p.postStartLock&&p.status==='pending'?'post-start':(['win','loss','push','void'].includes(p.status)?p.status:'pending'));
     return window.FrozenRootSportResult.get(p,schedule,sport==='nhl'?'Goals':'Points').status;
   };
   function findPick(s,game,files){
     if(s.key==='mlb'){
       const picks=validPicks(files['site.json'])||[];
       const day=files['schedule.json']?.date;
-      return picks.find(p=>p.locked===true&&p.date===day&&
+      const official=picks.find(p=>p.locked===true&&p.date===day&&
         ((p.team===game.away&&p.opponent===game.home)||
-         (p.team===game.home&&p.opponent===game.away)))||null;
+         (p.team===game.home&&p.opponent===game.away)));
+      if(official)return official;
+      const auto=validPicks(files['auto-mlb-picks.json'])||[];
+      return auto.find(p=>p.automated===true&&String(p.gameId)===String(game.gamePk))||null;
     }
     const official=validPicks(files[s.key+'-picks.json'])||[];
     const auto=validPicks(files['auto-'+s.key+'-picks.json'])||[];
