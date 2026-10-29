@@ -74,8 +74,7 @@
       '<div class="season-sport-header"><h2>'+safe(spec.icon)+' '+safe(spec.title)+'</h2>'+
       '<span>INDEPENDENT HISTORY</span></div>'+
       '<div class="season-season-current"><strong>'+safe(current.label)+' SEASON · ACTIVE</strong>'+
-      curr+'<p class="season-archive-empty">Next reset: '+safe(current.resetName)+
-      ' after the usual postseason window.</p></div>'+
+      curr+'<p class="season-archive-empty">'+(sport==='mlb'?'Next reset: after the next World Series.':'Next reset: '+safe(current.resetName)+' after the usual postseason window.')+'</p></div>'+
       '<div class="season-archive-label">COMPLETED SEASONS · SAVED RECORDS</div>'+past;
   }
   let busy=false;
