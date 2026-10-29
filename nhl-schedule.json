@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-29T02:54:36Z",
+  "generatedAt": "2026-10-29T03:54:05Z",
   "date": "2026-10-28",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -18,7 +18,7 @@
       "dateUTC": "2026-10-29T00:30Z",
       "away": "Calgary Flames",
       "home": "Edmonton Oilers",
-      "status": "In Progress",
+      "status": "Final",
       "awayScore": "0",
       "homeScore": "4"
     },
@@ -27,9 +27,9 @@
       "dateUTC": "2026-10-29T01:00Z",
       "away": "New Jersey Devils",
       "home": "Colorado Avalanche",
-      "status": "End of Period",
-      "awayScore": "1",
-      "homeScore": "1"
+      "status": "Final",
+      "awayScore": "2",
+      "homeScore": "5"
     },
     {
       "id": "401892599",
@@ -37,8 +37,8 @@
       "away": "Toronto Maple Leafs",
       "home": "Seattle Kraken",
       "status": "End of Period",
-      "awayScore": "1",
-      "homeScore": "1"
+      "awayScore": "2",
+      "homeScore": "4"
     }
   ],
   "nextDate": "2026-10-29",
