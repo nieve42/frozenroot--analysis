@@ -1,0 +1,7 @@
+{
+  "sport": "MLB",
+  "source": "MLB Stats API",
+  "model": "Frozen Root independent automatic team-scoring model",
+  "picks": [],
+  "lastUpdated": "2026-10-28"
+}
