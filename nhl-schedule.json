@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-29T03:54:05Z",
+  "generatedAt": "2026-10-29T04:55:06Z",
   "date": "2026-10-28",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -36,9 +36,9 @@
       "dateUTC": "2026-10-29T02:00Z",
       "away": "Toronto Maple Leafs",
       "home": "Seattle Kraken",
-      "status": "End of Period",
-      "awayScore": "2",
-      "homeScore": "4"
+      "status": "Final",
+      "awayScore": "4",
+      "homeScore": "5"
     }
   ],
   "nextDate": "2026-10-29",
