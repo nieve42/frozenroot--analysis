@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-28T23:44:04Z",
+  "generatedAt": "2026-10-29T01:03:32Z",
   "date": "2026-10-28",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -10,17 +10,17 @@
       "away": "Philadelphia Flyers",
       "home": "Washington Capitals",
       "status": "In Progress",
-      "awayScore": "0",
-      "homeScore": "1"
+      "awayScore": "1",
+      "homeScore": "2"
     },
     {
       "id": "401892597",
       "dateUTC": "2026-10-29T00:30Z",
       "away": "Calgary Flames",
       "home": "Edmonton Oilers",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "0",
+      "homeScore": "1"
     },
     {
       "id": "401892598",
