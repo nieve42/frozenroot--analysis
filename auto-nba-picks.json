@@ -2,7 +2,7 @@
   "sport": "NBA",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-10-29T07:16:26Z",
+  "lastUpdated": "2026-10-30T03:02:08Z",
   "picks": [
     {
       "id": "nba-auto-401909088",
@@ -2059,14 +2059,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-29T07:16:26Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 118,
         "opponentPoints": 115
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Cleveland Cavaliers 4, Atlanta Hawks 5. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Cleveland Cavaliers 4, Atlanta Hawks 5. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 114,
+        "opponentPoints": 111
+      },
+      "resultVerifiedOn": "2026-10-29",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-auto-401909894",
@@ -2083,14 +2089,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-29T07:16:26Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 118,
         "opponentPoints": 113
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Sacramento Kings 4, New Orleans Pelicans 4. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Sacramento Kings 4, New Orleans Pelicans 4. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 132,
+        "opponentPoints": 120
+      },
+      "resultVerifiedOn": "2026-10-29",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-auto-401909895",

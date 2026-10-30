@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-10-30T01:18:35Z",
+  "generatedAt": "2026-10-30T03:02:08Z",
   "date": "2026-10-29",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,27 +9,27 @@
       "dateUTC": "2026-10-30T00:00Z",
       "away": "Cleveland Cavaliers",
       "home": "Atlanta Hawks",
-      "status": "Halftime",
-      "awayScore": "44",
-      "homeScore": "46"
+      "status": "Final",
+      "awayScore": "111",
+      "homeScore": "114"
     },
     {
       "id": "401909894",
       "dateUTC": "2026-10-30T00:00Z",
       "away": "Sacramento Kings",
       "home": "New Orleans Pelicans",
-      "status": "Halftime",
-      "awayScore": "61",
-      "homeScore": "63"
+      "status": "Final",
+      "awayScore": "120",
+      "homeScore": "132"
     },
     {
       "id": "401909895",
       "dateUTC": "2026-10-30T02:00Z",
       "away": "Memphis Grizzlies",
       "home": "Portland Trail Blazers",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "47",
+      "homeScore": "49"
     }
   ]
 }
