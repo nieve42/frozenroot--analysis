@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-30T01:06:16Z",
+  "generatedAt": "2026-10-30T02:03:46Z",
   "date": "2026-10-29",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,26 +9,26 @@
       "dateUTC": "2026-10-29T23:00Z",
       "away": "Winnipeg Jets",
       "home": "Tampa Bay Lightning",
-      "status": "End of Period",
-      "awayScore": "1",
-      "homeScore": "5"
+      "status": "Final",
+      "awayScore": "4",
+      "homeScore": "6"
     },
     {
       "id": "401892602",
       "dateUTC": "2026-10-29T23:00Z",
       "away": "Utah Mammoth",
       "home": "Pittsburgh Penguins",
-      "status": "In Progress",
-      "awayScore": "2",
-      "homeScore": "1"
+      "status": "Final",
+      "awayScore": "4",
+      "homeScore": "3"
     },
     {
       "id": "401892603",
       "dateUTC": "2026-10-29T23:00Z",
       "away": "Columbus Blue Jackets",
       "home": "Carolina Hurricanes",
-      "status": "In Progress",
-      "awayScore": "0",
+      "status": "Final",
+      "awayScore": "2",
       "homeScore": "3"
     },
     {
@@ -38,7 +38,7 @@
       "home": "Detroit Red Wings",
       "status": "In Progress",
       "awayScore": "1",
-      "homeScore": "1"
+      "homeScore": "4"
     },
     {
       "id": "401892604",
@@ -47,7 +47,7 @@
       "home": "St. Louis Blues",
       "status": "In Progress",
       "awayScore": "1",
-      "homeScore": "1"
+      "homeScore": "3"
     },
     {
       "id": "401892605",
@@ -55,8 +55,8 @@
       "away": "Washington Capitals",
       "home": "Nashville Predators",
       "status": "End of Period",
-      "awayScore": "1",
-      "homeScore": "1"
+      "awayScore": "3",
+      "homeScore": "2"
     },
     {
       "id": "401892606",
@@ -64,8 +64,8 @@
       "away": "Montreal Canadiens",
       "home": "Dallas Stars",
       "status": "In Progress",
-      "awayScore": "3",
-      "homeScore": "1"
+      "awayScore": "4",
+      "homeScore": "2"
     },
     {
       "id": "401892607",
@@ -73,8 +73,8 @@
       "away": "New York Islanders",
       "home": "Minnesota Wild",
       "status": "In Progress",
-      "awayScore": "1",
-      "homeScore": "1"
+      "awayScore": "2",
+      "homeScore": "2"
     },
     {
       "id": "401892608",

@@ -2,7 +2,7 @@
   "sport": "NHL",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-10-29T07:03:46Z",
+  "lastUpdated": "2026-10-30T02:03:46Z",
   "picks": [
     {
       "id": "nhl-auto-401892539",
@@ -1879,14 +1879,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-28T07:02:17Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamGoals": 4,
         "opponentGoals": 3
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Winnipeg Jets 11, Tampa Bay Lightning 9. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Winnipeg Jets 11, Tampa Bay Lightning 9. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamGoals": 6,
+        "opponentGoals": 4
+      },
+      "resultVerifiedOn": "2026-10-29",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nhl-auto-401892602",
@@ -1903,14 +1909,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-28T07:02:17Z",
-      "status": "pending",
+      "status": "loss",
       "projectedScore": {
         "teamGoals": 4,
         "opponentGoals": 3
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Utah Mammoth 11, Pittsburgh Penguins 10. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Utah Mammoth 11, Pittsburgh Penguins 10. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamGoals": 3,
+        "opponentGoals": 4
+      },
+      "resultVerifiedOn": "2026-10-29",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nhl-auto-401892603",
@@ -1927,14 +1939,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-28T07:02:17Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamGoals": 4,
         "opponentGoals": 3
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Columbus Blue Jackets 8, Carolina Hurricanes 11. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Columbus Blue Jackets 8, Carolina Hurricanes 11. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamGoals": 3,
+        "opponentGoals": 2
+      },
+      "resultVerifiedOn": "2026-10-29",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nhl-auto-401892600",
