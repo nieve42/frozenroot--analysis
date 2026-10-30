@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-30T03:54:51Z",
+  "generatedAt": "2026-10-30T04:54:25Z",
   "date": "2026-10-29",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -81,17 +81,17 @@
       "dateUTC": "2026-10-30T02:00Z",
       "away": "Buffalo Sabres",
       "home": "Anaheim Ducks",
-      "status": "End of Period",
-      "awayScore": "5",
-      "homeScore": "3"
+      "status": "Final",
+      "awayScore": "7",
+      "homeScore": "6"
     },
     {
       "id": "401892609",
       "dateUTC": "2026-10-30T02:00Z",
       "away": "Ottawa Senators",
       "home": "Los Angeles Kings",
-      "status": "End of Period",
-      "awayScore": "1",
+      "status": "In Progress",
+      "awayScore": "5",
       "homeScore": "5"
     },
     {
@@ -99,9 +99,9 @@
       "dateUTC": "2026-10-30T02:00Z",
       "away": "Vancouver Canucks",
       "home": "San Jose Sharks",
-      "status": "In Progress",
+      "status": "Final",
       "awayScore": "2",
-      "homeScore": "0"
+      "homeScore": "3"
     }
   ],
   "nextDate": "2026-10-30",

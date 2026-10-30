@@ -2,7 +2,7 @@
   "sport": "NHL",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-10-30T02:54:59Z",
+  "lastUpdated": "2026-10-30T04:54:26Z",
   "picks": [
     {
       "id": "nhl-auto-401892539",
@@ -2119,14 +2119,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-28T07:02:17Z",
-      "status": "pending",
+      "status": "loss",
       "projectedScore": {
         "teamGoals": 4,
         "opponentGoals": 3
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Buffalo Sabres 10, Anaheim Ducks 11. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Buffalo Sabres 10, Anaheim Ducks 11. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamGoals": 6,
+        "opponentGoals": 7
+      },
+      "resultVerifiedOn": "2026-10-29",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nhl-auto-401892609",
@@ -2167,14 +2173,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-28T07:02:17Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamGoals": 4,
         "opponentGoals": 3
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Vancouver Canucks 11, San Jose Sharks 11. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Vancouver Canucks 11, San Jose Sharks 11. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamGoals": 3,
+        "opponentGoals": 2
+      },
+      "resultVerifiedOn": "2026-10-29",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nhl-auto-401892611",
