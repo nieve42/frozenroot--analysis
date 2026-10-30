@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-30T02:03:46Z",
+  "generatedAt": "2026-10-30T02:54:58Z",
   "date": "2026-10-29",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -36,7 +36,7 @@
       "dateUTC": "2026-10-29T23:30Z",
       "away": "Chicago Blackhawks",
       "home": "Detroit Red Wings",
-      "status": "In Progress",
+      "status": "Final",
       "awayScore": "1",
       "homeScore": "4"
     },
@@ -45,26 +45,26 @@
       "dateUTC": "2026-10-30T00:00Z",
       "away": "Boston Bruins",
       "home": "St. Louis Blues",
-      "status": "In Progress",
+      "status": "Final",
       "awayScore": "1",
-      "homeScore": "3"
+      "homeScore": "4"
     },
     {
       "id": "401892605",
       "dateUTC": "2026-10-30T00:00Z",
       "away": "Washington Capitals",
       "home": "Nashville Predators",
-      "status": "End of Period",
-      "awayScore": "3",
-      "homeScore": "2"
+      "status": "Final",
+      "awayScore": "4",
+      "homeScore": "3"
     },
     {
       "id": "401892606",
       "dateUTC": "2026-10-30T00:00Z",
       "away": "Montreal Canadiens",
       "home": "Dallas Stars",
-      "status": "In Progress",
-      "awayScore": "4",
+      "status": "Final",
+      "awayScore": "5",
       "homeScore": "2"
     },
     {
@@ -72,36 +72,36 @@
       "dateUTC": "2026-10-30T00:00Z",
       "away": "New York Islanders",
       "home": "Minnesota Wild",
-      "status": "In Progress",
-      "awayScore": "2",
-      "homeScore": "2"
+      "status": "Final",
+      "awayScore": "4",
+      "homeScore": "3"
     },
     {
       "id": "401892608",
       "dateUTC": "2026-10-30T02:00Z",
       "away": "Buffalo Sabres",
       "home": "Anaheim Ducks",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "End of Period",
+      "awayScore": "3",
+      "homeScore": "3"
     },
     {
       "id": "401892609",
       "dateUTC": "2026-10-30T02:00Z",
       "away": "Ottawa Senators",
       "home": "Los Angeles Kings",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "End of Period",
+      "awayScore": "1",
+      "homeScore": "1"
     },
     {
       "id": "401892610",
       "dateUTC": "2026-10-30T02:00Z",
       "away": "Vancouver Canucks",
       "home": "San Jose Sharks",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "End of Period",
+      "awayScore": "1",
+      "homeScore": "0"
     }
   ],
   "nextDate": "2026-10-30",
