@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-30T04:54:25Z",
+  "generatedAt": "2026-10-30T05:52:47Z",
   "date": "2026-10-29",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -90,9 +90,9 @@
       "dateUTC": "2026-10-30T02:00Z",
       "away": "Ottawa Senators",
       "home": "Los Angeles Kings",
-      "status": "In Progress",
+      "status": "Final",
       "awayScore": "5",
-      "homeScore": "5"
+      "homeScore": "6"
     },
     {
       "id": "401892610",
