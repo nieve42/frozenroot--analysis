@@ -2,7 +2,7 @@
   "sport": "NFL",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-10-27T07:01:20Z",
+  "lastUpdated": "2026-10-30T03:59:29Z",
   "picks": [
     {
       "id": "nfl-auto-401873010",
@@ -439,14 +439,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-27T07:01:20Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 24,
         "opponentPoints": 21
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Carolina Panthers 6, Green Bay Packers 7. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Carolina Panthers 6, Green Bay Packers 7. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 27,
+        "opponentPoints": 19
+      },
+      "resultVerifiedOn": "2026-10-29",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nfl-auto-401873024",

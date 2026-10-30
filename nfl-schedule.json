@@ -1,6 +1,6 @@
 {
   "source": "ESPN NFL public scoreboard",
-  "generatedAt": "2026-10-30T03:00:03Z",
+  "generatedAt": "2026-10-30T03:59:29Z",
   "startDate": "2026-10-27",
   "endDate": "2026-11-02",
   "weekReset": "Tuesday 12:01 AM America/Los_Angeles",
@@ -10,9 +10,9 @@
       "dateUTC": "2026-10-30T00:15Z",
       "away": "Carolina Panthers",
       "home": "Green Bay Packers",
-      "status": "In Progress",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Final",
+      "awayScore": "19",
+      "homeScore": "27"
     },
     {
       "id": "401873024",
