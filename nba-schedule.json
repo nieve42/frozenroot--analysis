@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-10-30T04:02:02Z",
+  "generatedAt": "2026-10-30T05:00:06Z",
   "date": "2026-10-29",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -27,9 +27,9 @@
       "dateUTC": "2026-10-30T02:00Z",
       "away": "Memphis Grizzlies",
       "home": "Portland Trail Blazers",
-      "status": "In Progress",
-      "awayScore": "101",
-      "homeScore": "89"
+      "status": "Final",
+      "awayScore": "124",
+      "homeScore": "103"
     }
   ]
 }
