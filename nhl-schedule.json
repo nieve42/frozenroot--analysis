@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-31T16:43:59Z",
+  "generatedAt": "2026-10-31T17:40:08Z",
   "date": "2026-10-31",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,18 +9,18 @@
       "dateUTC": "2026-10-31T17:00Z",
       "away": "Chicago Blackhawks",
       "home": "Boston Bruins",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "1",
+      "homeScore": "1"
     },
     {
       "id": "401892615",
       "dateUTC": "2026-10-31T17:00Z",
       "away": "St. Louis Blues",
       "home": "Detroit Red Wings",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "End of Period",
+      "awayScore": "1",
+      "homeScore": "1"
     },
     {
       "id": "401892616",
