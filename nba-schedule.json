@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-10-31T22:48:56Z",
+  "generatedAt": "2026-10-31T23:47:34Z",
   "date": "2026-10-31",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -19,17 +19,17 @@
       "away": "Philadelphia 76ers",
       "home": "Charlotte Hornets",
       "status": "In Progress",
-      "awayScore": "35",
-      "homeScore": "42"
+      "awayScore": "71",
+      "homeScore": "75"
     },
     {
       "id": "401909898",
       "dateUTC": "2026-10-31T23:00Z",
       "away": "Atlanta Hawks",
       "home": "New Orleans Pelicans",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "28",
+      "homeScore": "41"
     },
     {
       "id": "401909899",
