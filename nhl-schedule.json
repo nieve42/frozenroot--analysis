@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-31T18:51:31Z",
+  "generatedAt": "2026-10-31T19:45:13Z",
   "date": "2026-10-31",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,18 +9,18 @@
       "dateUTC": "2026-10-31T17:00Z",
       "away": "Chicago Blackhawks",
       "home": "Boston Bruins",
-      "status": "End of Period",
-      "awayScore": "2",
-      "homeScore": "2"
+      "status": "In Progress",
+      "awayScore": "4",
+      "homeScore": "4"
     },
     {
       "id": "401892615",
       "dateUTC": "2026-10-31T17:00Z",
       "away": "St. Louis Blues",
       "home": "Detroit Red Wings",
-      "status": "End of Period",
-      "awayScore": "2",
-      "homeScore": "3"
+      "status": "Final",
+      "awayScore": "5",
+      "homeScore": "4"
     },
     {
       "id": "401892616",
@@ -28,8 +28,8 @@
       "away": "Tampa Bay Lightning",
       "home": "Nashville Predators",
       "status": "End of Period",
-      "awayScore": "1",
-      "homeScore": "1"
+      "awayScore": "3",
+      "homeScore": "3"
     },
     {
       "id": "401892617",
@@ -37,7 +37,7 @@
       "away": "Edmonton Oilers",
       "home": "New York Islanders",
       "status": "End of Period",
-      "awayScore": "0",
+      "awayScore": "3",
       "homeScore": "0"
     },
     {
