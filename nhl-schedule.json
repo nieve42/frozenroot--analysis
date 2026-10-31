@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-30T23:43:37Z",
+  "generatedAt": "2026-10-31T01:04:57Z",
   "date": "2026-10-30",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,8 +9,8 @@
       "dateUTC": "2026-10-30T22:00Z",
       "away": "New Jersey Devils",
       "home": "Vegas Golden Knights",
-      "status": "End of Period",
-      "awayScore": "4",
+      "status": "Final",
+      "awayScore": "5",
       "homeScore": "2"
     },
     {
@@ -19,17 +19,17 @@
       "away": "Winnipeg Jets",
       "home": "Florida Panthers",
       "status": "In Progress",
-      "awayScore": "0",
-      "homeScore": "1"
+      "awayScore": "1",
+      "homeScore": "3"
     },
     {
       "id": "401892613",
       "dateUTC": "2026-10-31T00:00Z",
       "away": "Seattle Kraken",
       "home": "Calgary Flames",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "1",
+      "homeScore": "1"
     }
   ],
   "nextDate": "2026-10-31",
