@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-31T20:43:22Z",
+  "generatedAt": "2026-10-31T21:42:00Z",
   "date": "2026-10-31",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -27,9 +27,9 @@
       "dateUTC": "2026-10-31T18:00Z",
       "away": "Tampa Bay Lightning",
       "home": "Nashville Predators",
-      "status": "In Progress",
+      "status": "Final",
       "awayScore": "4",
-      "homeScore": "4"
+      "homeScore": "5"
     },
     {
       "id": "401892617",
@@ -46,8 +46,8 @@
       "away": "Buffalo Sabres",
       "home": "Los Angeles Kings",
       "status": "In Progress",
-      "awayScore": "1",
-      "homeScore": "0"
+      "awayScore": "2",
+      "homeScore": "1"
     },
     {
       "id": "401892619",
@@ -55,7 +55,7 @@
       "away": "Ottawa Senators",
       "home": "San Jose Sharks",
       "status": "End of Period",
-      "awayScore": "1",
+      "awayScore": "4",
       "homeScore": "1"
     },
     {
