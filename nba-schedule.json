@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-10-31T19:50:05Z",
+  "generatedAt": "2026-10-31T20:50:41Z",
   "date": "2026-10-31",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -10,8 +10,8 @@
       "away": "Portland Trail Blazers",
       "home": "Utah Jazz",
       "status": "In Progress",
-      "awayScore": "41",
-      "homeScore": "25"
+      "awayScore": "77",
+      "homeScore": "52"
     },
     {
       "id": "401909897",
