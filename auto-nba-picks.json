@@ -2,7 +2,7 @@
   "sport": "NBA",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-10-31T07:11:20Z",
+  "lastUpdated": "2026-10-31T21:49:22Z",
   "picks": [
     {
       "id": "nba-auto-401909088",
@@ -2449,14 +2449,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-31T07:11:20Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 117,
         "opponentPoints": 114
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Portland Trail Blazers 4, Utah Jazz 5. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Portland Trail Blazers 4, Utah Jazz 5. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 112,
+        "opponentPoints": 90
+      },
+      "resultVerifiedOn": "2026-10-31",
+      "resultSource": "ESPN public scoreboard"
     },
     {
       "id": "nba-auto-401909897",
