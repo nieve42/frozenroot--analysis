@@ -2,7 +2,7 @@
   "sport": "NBA",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-10-31T02:10:46Z",
+  "lastUpdated": "2026-10-31T02:59:36Z",
   "picks": [
     {
       "id": "nba-auto-401909088",
@@ -2299,14 +2299,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-30T07:16:30Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 117,
         "opponentPoints": 116
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Indiana Pacers 5, Miami Heat 5. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Indiana Pacers 5, Miami Heat 5. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 145,
+        "opponentPoints": 125
+      },
+      "resultVerifiedOn": "2026-10-30",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-auto-401909283",
@@ -2323,14 +2329,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-30T07:16:30Z",
-      "status": "pending",
+      "status": "loss",
       "projectedScore": {
         "teamPoints": 116,
         "opponentPoints": 114
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Houston Rockets 5, Dallas Mavericks 5. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Houston Rockets 5, Dallas Mavericks 5. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 111,
+        "opponentPoints": 116
+      },
+      "resultVerifiedOn": "2026-10-30",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-auto-401909284",
@@ -2347,14 +2359,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-30T07:16:30Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 115,
         "opponentPoints": 110
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: LA Clippers 4, Minnesota Timberwolves 5. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: LA Clippers 4, Minnesota Timberwolves 5. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 127,
+        "opponentPoints": 101
+      },
+      "resultVerifiedOn": "2026-10-30",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-auto-401909285",
