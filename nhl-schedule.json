@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-31T21:42:00Z",
+  "generatedAt": "2026-10-31T21:54:42Z",
   "date": "2026-10-31",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -45,7 +45,7 @@
       "dateUTC": "2026-10-31T20:00Z",
       "away": "Buffalo Sabres",
       "home": "Los Angeles Kings",
-      "status": "In Progress",
+      "status": "End of Period",
       "awayScore": "2",
       "homeScore": "1"
     },
