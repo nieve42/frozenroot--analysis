@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-31T02:01:29Z",
+  "generatedAt": "2026-10-31T02:53:44Z",
   "date": "2026-10-30",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -27,9 +27,9 @@
       "dateUTC": "2026-10-31T00:00Z",
       "away": "Seattle Kraken",
       "home": "Calgary Flames",
-      "status": "End of Period",
+      "status": "Final",
       "awayScore": "2",
-      "homeScore": "4"
+      "homeScore": "6"
     }
   ],
   "nextDate": "2026-10-31",
