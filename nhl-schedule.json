@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-10-31T19:45:13Z",
+  "generatedAt": "2026-10-31T20:43:22Z",
   "date": "2026-10-31",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,9 +9,9 @@
       "dateUTC": "2026-10-31T17:00Z",
       "away": "Chicago Blackhawks",
       "home": "Boston Bruins",
-      "status": "In Progress",
+      "status": "Final",
       "awayScore": "4",
-      "homeScore": "4"
+      "homeScore": "5"
     },
     {
       "id": "401892615",
@@ -27,17 +27,17 @@
       "dateUTC": "2026-10-31T18:00Z",
       "away": "Tampa Bay Lightning",
       "home": "Nashville Predators",
-      "status": "End of Period",
-      "awayScore": "3",
-      "homeScore": "3"
+      "status": "In Progress",
+      "awayScore": "4",
+      "homeScore": "4"
     },
     {
       "id": "401892617",
       "dateUTC": "2026-10-31T18:00Z",
       "away": "Edmonton Oilers",
       "home": "New York Islanders",
-      "status": "End of Period",
-      "awayScore": "3",
+      "status": "Final",
+      "awayScore": "4",
       "homeScore": "0"
     },
     {
@@ -45,18 +45,18 @@
       "dateUTC": "2026-10-31T20:00Z",
       "away": "Buffalo Sabres",
       "home": "Los Angeles Kings",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "1",
+      "homeScore": "0"
     },
     {
       "id": "401892619",
       "dateUTC": "2026-10-31T20:00Z",
       "away": "Ottawa Senators",
       "home": "San Jose Sharks",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "End of Period",
+      "awayScore": "1",
+      "homeScore": "1"
     },
     {
       "id": "401892620",
