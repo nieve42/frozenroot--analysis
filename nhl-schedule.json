@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-01T02:11:36Z",
+  "generatedAt": "2026-11-01T02:55:11Z",
   "date": "2026-10-31",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -81,18 +81,18 @@
       "dateUTC": "2026-11-01T00:00Z",
       "away": "Columbus Blue Jackets",
       "home": "Dallas Stars",
-      "status": "In Progress",
-      "awayScore": "0",
-      "homeScore": "2"
+      "status": "Final",
+      "awayScore": "1",
+      "homeScore": "3"
     },
     {
       "id": "401892623",
       "dateUTC": "2026-11-01T02:00Z",
       "away": "Calgary Flames",
       "home": "Colorado Avalanche",
-      "status": "In Progress",
+      "status": "End of Period",
       "awayScore": "0",
-      "homeScore": "0"
+      "homeScore": "1"
     }
   ],
   "nextDate": "2026-11-01",
