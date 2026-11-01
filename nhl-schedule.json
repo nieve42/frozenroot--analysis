@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-01T22:55:38Z",
+  "generatedAt": "2026-11-01T23:40:57Z",
   "date": "2026-11-01",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -18,8 +18,8 @@
       "dateUTC": "2026-11-01T20:30Z",
       "away": "Minnesota Wild",
       "home": "Washington Capitals",
-      "status": "In Progress",
-      "awayScore": "2",
+      "status": "Final",
+      "awayScore": "5",
       "homeScore": "1"
     },
     {
@@ -27,18 +27,18 @@
       "dateUTC": "2026-11-01T21:00Z",
       "away": "Utah Mammoth",
       "home": "Philadelphia Flyers",
-      "status": "End of Period",
-      "awayScore": "1",
-      "homeScore": "3"
+      "status": "Final",
+      "awayScore": "3",
+      "homeScore": "6"
     },
     {
       "id": "401892627",
       "dateUTC": "2026-11-01T23:00Z",
       "away": "Edmonton Oilers",
       "home": "New York Rangers",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "2",
+      "homeScore": "0"
     },
     {
       "id": "401892628",
