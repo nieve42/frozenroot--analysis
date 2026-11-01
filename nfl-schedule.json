@@ -1,6 +1,6 @@
 {
   "source": "ESPN NFL public scoreboard",
-  "generatedAt": "2026-11-01T21:48:23Z",
+  "generatedAt": "2026-11-01T22:48:04Z",
   "startDate": "2026-10-27",
   "endDate": "2026-11-02",
   "weekReset": "Tuesday 12:01 AM America/Los_Angeles",
@@ -109,7 +109,7 @@
       "dateUTC": "2026-11-01T21:25Z",
       "away": "New England Patriots",
       "home": "Miami Dolphins",
-      "status": "In Progress",
+      "status": "Halftime",
       "awayScore": null,
       "homeScore": null
     },
