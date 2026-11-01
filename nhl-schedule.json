@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-01T03:57:07Z",
+  "generatedAt": "2026-11-01T04:56:31Z",
   "date": "2026-10-31",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -90,9 +90,9 @@
       "dateUTC": "2026-11-01T02:00Z",
       "away": "Calgary Flames",
       "home": "Colorado Avalanche",
-      "status": "End of Period",
-      "awayScore": "1",
-      "homeScore": "4"
+      "status": "Final",
+      "awayScore": "2",
+      "homeScore": "5"
     }
   ],
   "nextDate": "2026-11-01",
