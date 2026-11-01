@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-10-31T23:47:34Z",
+  "generatedAt": "2026-11-01T01:25:46Z",
   "date": "2026-10-31",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -18,9 +18,9 @@
       "dateUTC": "2026-10-31T22:00Z",
       "away": "Philadelphia 76ers",
       "home": "Charlotte Hornets",
-      "status": "In Progress",
-      "awayScore": "71",
-      "homeScore": "75"
+      "status": "Final",
+      "awayScore": "109",
+      "homeScore": "104"
     },
     {
       "id": "401909898",
@@ -28,44 +28,44 @@
       "away": "Atlanta Hawks",
       "home": "New Orleans Pelicans",
       "status": "In Progress",
-      "awayScore": "28",
-      "homeScore": "41"
+      "awayScore": "93",
+      "homeScore": "119"
     },
     {
       "id": "401909899",
       "dateUTC": "2026-11-01T00:00Z",
       "away": "Sacramento Kings",
       "home": "Memphis Grizzlies",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Halftime",
+      "awayScore": "55",
+      "homeScore": "66"
     },
     {
       "id": "401909900",
       "dateUTC": "2026-11-01T00:00Z",
       "away": "Cleveland Cavaliers",
       "home": "Milwaukee Bucks",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "76",
+      "homeScore": "49"
     },
     {
       "id": "401909901",
       "dateUTC": "2026-11-01T00:00Z",
       "away": "Minnesota Timberwolves",
       "home": "San Antonio Spurs",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "61",
+      "homeScore": "61"
     },
     {
       "id": "401909902",
       "dateUTC": "2026-11-01T00:30Z",
       "away": "Oklahoma City Thunder",
       "home": "Houston Rockets",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "36",
+      "homeScore": "55"
     }
   ]
 }

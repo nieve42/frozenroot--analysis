@@ -2,7 +2,7 @@
   "sport": "NBA",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-10-31T21:49:22Z",
+  "lastUpdated": "2026-11-01T01:25:46Z",
   "picks": [
     {
       "id": "nba-auto-401909088",
@@ -2479,14 +2479,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-31T07:11:20Z",
-      "status": "pending",
+      "status": "loss",
       "projectedScore": {
         "teamPoints": 110,
         "opponentPoints": 108
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Philadelphia 76ers 6, Charlotte Hornets 6. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Philadelphia 76ers 6, Charlotte Hornets 6. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 104,
+        "opponentPoints": 109
+      },
+      "resultVerifiedOn": "2026-10-31",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-auto-401909898",
