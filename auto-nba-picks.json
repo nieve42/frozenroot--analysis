@@ -2,7 +2,7 @@
   "sport": "NBA",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-11-01T03:01:29Z",
+  "lastUpdated": "2026-11-01T07:18:32Z",
   "picks": [
     {
       "id": "nba-auto-401909088",
@@ -2643,6 +2643,102 @@
       },
       "resultVerifiedOn": "2026-10-31",
       "resultSource": "ESPN verified schedule"
+    },
+    {
+      "id": "nba-auto-401909903",
+      "sport": "NBA",
+      "gameId": "401909903",
+      "date": "2026-11-01",
+      "dateUTC": "2026-11-01T20:30Z",
+      "team": "Boston Celtics",
+      "opponent": "Orlando Magic",
+      "away": "Boston Celtics",
+      "home": "Orlando Magic",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-11-01T07:18:32Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamPoints": 115,
+        "opponentPoints": 113
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Boston Celtics 5, Orlando Magic 5. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nba-auto-401909904",
+      "sport": "NBA",
+      "gameId": "401909904",
+      "date": "2026-11-01",
+      "dateUTC": "2026-11-01T22:00Z",
+      "team": "Indiana Pacers",
+      "opponent": "Brooklyn Nets",
+      "away": "Brooklyn Nets",
+      "home": "Indiana Pacers",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-11-01T07:18:32Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamPoints": 117,
+        "opponentPoints": 112
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Brooklyn Nets 5, Indiana Pacers 6. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nba-auto-401909905",
+      "sport": "NBA",
+      "gameId": "401909905",
+      "date": "2026-11-01",
+      "dateUTC": "2026-11-02T01:30Z",
+      "team": "Golden State Warriors",
+      "opponent": "LA Clippers",
+      "away": "LA Clippers",
+      "home": "Golden State Warriors",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-11-01T07:18:32Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamPoints": 114,
+        "opponentPoints": 111
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: LA Clippers 5, Golden State Warriors 6. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nba-auto-401909906",
+      "sport": "NBA",
+      "gameId": "401909906",
+      "date": "2026-11-01",
+      "dateUTC": "2026-11-02T02:00Z",
+      "team": "Los Angeles Lakers",
+      "opponent": "Toronto Raptors",
+      "away": "Toronto Raptors",
+      "home": "Los Angeles Lakers",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-11-01T07:18:32Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamPoints": 114,
+        "opponentPoints": 113
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Toronto Raptors 5, Los Angeles Lakers 6. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
     }
   ]
 }
