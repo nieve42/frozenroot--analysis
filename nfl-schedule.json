@@ -1,6 +1,6 @@
 {
   "source": "ESPN NFL public scoreboard",
-  "generatedAt": "2026-11-01T17:45:13Z",
+  "generatedAt": "2026-11-01T18:57:06Z",
   "startDate": "2026-10-27",
   "endDate": "2026-11-02",
   "weekReset": "Tuesday 12:01 AM America/Los_Angeles",
@@ -19,7 +19,7 @@
       "dateUTC": "2026-11-01T18:00Z",
       "away": "Arizona Cardinals",
       "home": "Dallas Cowboys",
-      "status": "Scheduled",
+      "status": "In Progress",
       "awayScore": null,
       "homeScore": null
     },
@@ -28,7 +28,7 @@
       "dateUTC": "2026-11-01T18:00Z",
       "away": "Atlanta Falcons",
       "home": "Tampa Bay Buccaneers",
-      "status": "Scheduled",
+      "status": "In Progress",
       "awayScore": null,
       "homeScore": null
     },
@@ -37,7 +37,7 @@
       "dateUTC": "2026-11-01T18:00Z",
       "away": "Baltimore Ravens",
       "home": "Buffalo Bills",
-      "status": "Scheduled",
+      "status": "In Progress",
       "awayScore": null,
       "homeScore": null
     },
@@ -46,7 +46,7 @@
       "dateUTC": "2026-11-01T18:00Z",
       "away": "Cleveland Browns",
       "home": "Pittsburgh Steelers",
-      "status": "Scheduled",
+      "status": "In Progress",
       "awayScore": null,
       "homeScore": null
     },
@@ -55,7 +55,7 @@
       "dateUTC": "2026-11-01T18:00Z",
       "away": "Indianapolis Colts",
       "home": "Jacksonville Jaguars",
-      "status": "Scheduled",
+      "status": "In Progress",
       "awayScore": null,
       "homeScore": null
     },
@@ -64,7 +64,7 @@
       "dateUTC": "2026-11-01T18:00Z",
       "away": "Las Vegas Raiders",
       "home": "New York Jets",
-      "status": "Scheduled",
+      "status": "In Progress",
       "awayScore": null,
       "homeScore": null
     },
@@ -73,7 +73,7 @@
       "dateUTC": "2026-11-01T18:00Z",
       "away": "Minnesota Vikings",
       "home": "Detroit Lions",
-      "status": "Scheduled",
+      "status": "In Progress",
       "awayScore": null,
       "homeScore": null
     },
@@ -82,7 +82,7 @@
       "dateUTC": "2026-11-01T18:00Z",
       "away": "Tennessee Titans",
       "home": "Cincinnati Bengals",
-      "status": "Scheduled",
+      "status": "In Progress",
       "awayScore": null,
       "homeScore": null
     },
