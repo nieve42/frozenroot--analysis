@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-11-01T19:50:56Z",
+  "generatedAt": "2026-11-01T20:51:01Z",
   "date": "2026-11-01",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,9 +9,9 @@
       "dateUTC": "2026-11-01T20:30Z",
       "away": "Boston Celtics",
       "home": "Orlando Magic",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "11",
+      "homeScore": "13"
     },
     {
       "id": "401909904",
