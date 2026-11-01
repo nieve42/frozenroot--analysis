@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-11-01T22:49:48Z",
+  "generatedAt": "2026-11-01T22:55:12Z",
   "date": "2026-11-01",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -10,8 +10,8 @@
       "away": "Boston Celtics",
       "home": "Orlando Magic",
       "status": "In Progress",
-      "awayScore": "97",
-      "homeScore": "91"
+      "awayScore": "103",
+      "homeScore": "95"
     },
     {
       "id": "401909904",
@@ -19,7 +19,7 @@
       "away": "Brooklyn Nets",
       "home": "Indiana Pacers",
       "status": "In Progress",
-      "awayScore": "24",
+      "awayScore": "26",
       "homeScore": "21"
     },
     {
