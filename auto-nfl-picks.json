@@ -2,7 +2,7 @@
   "sport": "NFL",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-10-30T03:59:29Z",
+  "lastUpdated": "2026-11-01T21:48:23Z",
   "picks": [
     {
       "id": "nfl-auto-401873010",
@@ -469,14 +469,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-27T07:01:20Z",
-      "status": "pending",
+      "status": "loss",
       "projectedScore": {
         "teamPoints": 26,
         "opponentPoints": 21
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Arizona Cardinals 7, Dallas Cowboys 7. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Arizona Cardinals 7, Dallas Cowboys 7. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 30,
+        "opponentPoints": 33
+      },
+      "resultVerifiedOn": "2026-11-01",
+      "resultSource": "ESPN public scoreboard"
     },
     {
       "id": "nfl-auto-401873025",
@@ -493,14 +499,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-27T07:01:20Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 24,
         "opponentPoints": 22
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Atlanta Falcons 7, Tampa Bay Buccaneers 7. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Atlanta Falcons 7, Tampa Bay Buccaneers 7. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 16,
+        "opponentPoints": 0
+      },
+      "resultVerifiedOn": "2026-11-01",
+      "resultSource": "ESPN public scoreboard"
     },
     {
       "id": "nfl-auto-401873026",
@@ -517,14 +529,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-27T07:01:20Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 26,
         "opponentPoints": 22
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Baltimore Ravens 7, Buffalo Bills 6. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Baltimore Ravens 7, Buffalo Bills 6. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 36,
+        "opponentPoints": 10
+      },
+      "resultVerifiedOn": "2026-11-01",
+      "resultSource": "ESPN public scoreboard"
     },
     {
       "id": "nfl-auto-401873027",
@@ -541,14 +559,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-27T07:01:20Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 23,
         "opponentPoints": 20
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Cleveland Browns 7, Pittsburgh Steelers 7. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Cleveland Browns 7, Pittsburgh Steelers 7. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 27,
+        "opponentPoints": 6
+      },
+      "resultVerifiedOn": "2026-11-01",
+      "resultSource": "ESPN public scoreboard"
     },
     {
       "id": "nfl-auto-401873028",
@@ -565,14 +589,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-27T07:01:20Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 24,
         "opponentPoints": 20
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Indianapolis Colts 7, Jacksonville Jaguars 6. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Indianapolis Colts 7, Jacksonville Jaguars 6. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 42,
+        "opponentPoints": 7
+      },
+      "resultVerifiedOn": "2026-11-01",
+      "resultSource": "ESPN public scoreboard"
     },
     {
       "id": "nfl-auto-401873029",
@@ -589,14 +619,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-27T07:01:20Z",
-      "status": "pending",
+      "status": "loss",
       "projectedScore": {
         "teamPoints": 25,
         "opponentPoints": 22
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Las Vegas Raiders 7, New York Jets 7. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Las Vegas Raiders 7, New York Jets 7. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 33,
+        "opponentPoints": 38
+      },
+      "resultVerifiedOn": "2026-11-01",
+      "resultSource": "ESPN public scoreboard"
     },
     {
       "id": "nfl-auto-401873030",
@@ -613,14 +649,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-27T07:01:20Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 22,
         "opponentPoints": 21
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Minnesota Vikings 6, Detroit Lions 6. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Minnesota Vikings 6, Detroit Lions 6. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 19,
+        "opponentPoints": 15
+      },
+      "resultVerifiedOn": "2026-11-01",
+      "resultSource": "ESPN public scoreboard"
     },
     {
       "id": "nfl-auto-401873031",
@@ -637,14 +679,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-27T07:01:20Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 25,
         "opponentPoints": 19
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Tennessee Titans 7, Cincinnati Bengals 6. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Tennessee Titans 7, Cincinnati Bengals 6. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 43,
+        "opponentPoints": 36
+      },
+      "resultVerifiedOn": "2026-11-01",
+      "resultSource": "ESPN public scoreboard"
     },
     {
       "id": "nfl-auto-401873032",
