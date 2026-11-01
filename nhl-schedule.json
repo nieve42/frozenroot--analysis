@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-01T19:45:39Z",
+  "generatedAt": "2026-11-01T20:44:22Z",
   "date": "2026-11-01",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,18 +9,18 @@
       "dateUTC": "2026-11-01T18:00Z",
       "away": "Winnipeg Jets",
       "home": "Carolina Hurricanes",
-      "status": "End of Period",
+      "status": "Final",
       "awayScore": "0",
-      "homeScore": "5"
+      "homeScore": "7"
     },
     {
       "id": "401892625",
       "dateUTC": "2026-11-01T20:30Z",
       "away": "Minnesota Wild",
       "home": "Washington Capitals",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "0",
+      "homeScore": "0"
     },
     {
       "id": "401892626",
