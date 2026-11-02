@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-11-01T23:47:37Z",
+  "generatedAt": "2026-11-02T01:24:55Z",
   "date": "2026-11-01",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -18,9 +18,9 @@
       "dateUTC": "2026-11-01T22:00Z",
       "away": "Brooklyn Nets",
       "home": "Indiana Pacers",
-      "status": "In Progress",
-      "awayScore": "59",
-      "homeScore": "51"
+      "status": "Final",
+      "awayScore": "98",
+      "homeScore": "90"
     },
     {
       "id": "401909905",
