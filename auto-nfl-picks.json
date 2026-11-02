@@ -2,7 +2,7 @@
   "sport": "NFL",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-11-01T21:48:23Z",
+  "lastUpdated": "2026-11-02T01:22:07Z",
   "picks": [
     {
       "id": "nfl-auto-401873010",
@@ -709,14 +709,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-27T07:01:20Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 25,
         "opponentPoints": 20
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Los Angeles Chargers 6, Los Angeles Rams 7. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Los Angeles Chargers 6, Los Angeles Rams 7. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 24,
+        "opponentPoints": 9
+      },
+      "resultVerifiedOn": "2026-11-01",
+      "resultSource": "ESPN public scoreboard"
     },
     {
       "id": "nfl-auto-401873033",
@@ -733,14 +739,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-27T07:01:20Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 22,
         "opponentPoints": 20
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Kansas City Chiefs 6, Denver Broncos 7. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Kansas City Chiefs 6, Denver Broncos 7. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 28,
+        "opponentPoints": 24
+      },
+      "resultVerifiedOn": "2026-11-01",
+      "resultSource": "ESPN public scoreboard"
     },
     {
       "id": "nfl-auto-401873034",
@@ -757,14 +769,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-10-27T07:01:20Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 23,
         "opponentPoints": 22
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: New England Patriots 7, Miami Dolphins 6. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: New England Patriots 7, Miami Dolphins 6. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 24,
+        "opponentPoints": 19
+      },
+      "resultVerifiedOn": "2026-11-01",
+      "resultSource": "ESPN public scoreboard"
     },
     {
       "id": "nfl-auto-401873035",
