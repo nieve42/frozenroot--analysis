@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-11-02T01:24:55Z",
+  "generatedAt": "2026-11-02T03:04:13Z",
   "date": "2026-11-01",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -27,18 +27,18 @@
       "dateUTC": "2026-11-02T01:30Z",
       "away": "LA Clippers",
       "home": "Golden State Warriors",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "63",
+      "homeScore": "75"
     },
     {
       "id": "401909906",
       "dateUTC": "2026-11-02T02:00Z",
       "away": "Toronto Raptors",
       "home": "Los Angeles Lakers",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "49",
+      "homeScore": "60"
     }
   ]
 }
