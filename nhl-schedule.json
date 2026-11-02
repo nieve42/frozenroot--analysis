@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-02T02:13:05Z",
+  "generatedAt": "2026-11-02T02:58:32Z",
   "date": "2026-11-01",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -45,9 +45,9 @@
       "dateUTC": "2026-11-02T01:00Z",
       "away": "Ottawa Senators",
       "home": "Anaheim Ducks",
-      "status": "In Progress",
+      "status": "End of Period",
       "awayScore": "3",
-      "homeScore": "2"
+      "homeScore": "3"
     }
   ],
   "nextDate": "2026-11-02",
