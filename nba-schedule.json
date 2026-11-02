@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-11-02T04:13:26Z",
+  "generatedAt": "2026-11-02T05:19:41Z",
   "date": "2026-11-01",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -36,9 +36,9 @@
       "dateUTC": "2026-11-02T02:00Z",
       "away": "Toronto Raptors",
       "home": "Los Angeles Lakers",
-      "status": "In Progress",
-      "awayScore": "101",
-      "homeScore": "116"
+      "status": "Final",
+      "awayScore": "125",
+      "homeScore": "131"
     }
   ]
 }
