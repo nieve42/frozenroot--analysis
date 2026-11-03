@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-03T02:57:45Z",
+  "generatedAt": "2026-11-03T03:58:05Z",
   "date": "2026-11-02",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -27,8 +27,8 @@
       "dateUTC": "2026-11-03T01:00Z",
       "away": "Colorado Avalanche",
       "home": "Chicago Blackhawks",
-      "status": "End of Period",
-      "awayScore": "4",
+      "status": "Final",
+      "awayScore": "5",
       "homeScore": "2"
     },
     {
