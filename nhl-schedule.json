@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-03T01:11:06Z",
+  "generatedAt": "2026-11-03T02:08:32Z",
   "date": "2026-11-02",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -10,8 +10,8 @@
       "away": "Vegas Golden Knights",
       "home": "Boston Bruins",
       "status": "In Progress",
-      "awayScore": "0",
-      "homeScore": "1"
+      "awayScore": "1",
+      "homeScore": "2"
     },
     {
       "id": "401892630",
@@ -19,17 +19,17 @@
       "away": "Detroit Red Wings",
       "home": "Florida Panthers",
       "status": "In Progress",
-      "awayScore": "2",
-      "homeScore": "1"
+      "awayScore": "4",
+      "homeScore": "2"
     },
     {
       "id": "401892631",
       "dateUTC": "2026-11-03T01:00Z",
       "away": "Colorado Avalanche",
       "home": "Chicago Blackhawks",
-      "status": "In Progress",
-      "awayScore": "0",
-      "homeScore": "1"
+      "status": "End of Period",
+      "awayScore": "2",
+      "homeScore": "2"
     },
     {
       "id": "401892632",
