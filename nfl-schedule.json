@@ -1,6 +1,6 @@
 {
   "source": "ESPN NFL public scoreboard",
-  "generatedAt": "2026-11-02T23:49:08Z",
+  "generatedAt": "2026-11-03T01:20:21Z",
   "startDate": "2026-10-27",
   "endDate": "2026-11-02",
   "weekReset": "Tuesday 12:01 AM America/Los_Angeles",
@@ -127,7 +127,7 @@
       "dateUTC": "2026-11-03T01:15Z",
       "away": "Chicago Bears",
       "home": "Seattle Seahawks",
-      "status": "Scheduled",
+      "status": "In Progress",
       "awayScore": null,
       "homeScore": null
     }
