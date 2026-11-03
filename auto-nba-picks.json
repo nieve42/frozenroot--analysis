@@ -2,7 +2,7 @@
   "sport": "NBA",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-11-03T05:09:29Z",
+  "lastUpdated": "2026-11-03T06:07:44Z",
   "picks": [
     {
       "id": "nba-auto-401909088",
@@ -3139,14 +3139,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-11-02T08:52:42Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 116,
         "opponentPoints": 112
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Phoenix Suns 4, Golden State Warriors 7. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Phoenix Suns 4, Golden State Warriors 7. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 116,
+        "opponentPoints": 113
+      },
+      "resultVerifiedOn": "2026-11-02",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-auto-401909920",
@@ -3163,14 +3169,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-11-02T08:52:42Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 114,
         "opponentPoints": 112
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Toronto Raptors 6, LA Clippers 6. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Toronto Raptors 6, LA Clippers 6. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 125,
+        "opponentPoints": 118
+      },
+      "resultVerifiedOn": "2026-11-02",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-auto-401909921",
@@ -3187,14 +3199,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-11-02T08:52:42Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 119,
         "opponentPoints": 115
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Miami Heat 6, Los Angeles Lakers 7. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Miami Heat 6, Los Angeles Lakers 7. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 138,
+        "opponentPoints": 117
+      },
+      "resultVerifiedOn": "2026-11-02",
+      "resultSource": "ESPN verified schedule"
     }
   ]
 }
