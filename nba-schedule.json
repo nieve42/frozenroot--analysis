@@ -1,7 +1,134 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-11-04T07:39:40Z",
-  "date": "2026-11-03",
+  "generatedAt": "2026-11-04T08:48:20Z",
+  "date": "2026-11-04",
   "dailyReset": "12:01 AM America/Los_Angeles",
-  "games": []
+  "games": [
+    {
+      "id": "401909922",
+      "dateUTC": "2026-11-05T00:00Z",
+      "away": "Philadelphia 76ers",
+      "home": "Detroit Pistons",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401909923",
+      "dateUTC": "2026-11-05T00:00Z",
+      "away": "Atlanta Hawks",
+      "home": "Washington Wizards",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401909924",
+      "dateUTC": "2026-11-05T00:30Z",
+      "away": "Milwaukee Bucks",
+      "home": "Boston Celtics",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401909925",
+      "dateUTC": "2026-11-05T00:30Z",
+      "away": "Charlotte Hornets",
+      "home": "Brooklyn Nets",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401909926",
+      "dateUTC": "2026-11-05T00:30Z",
+      "away": "Chicago Bulls",
+      "home": "New York Knicks",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401909927",
+      "dateUTC": "2026-11-05T01:00Z",
+      "away": "Indiana Pacers",
+      "home": "Memphis Grizzlies",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401909928",
+      "dateUTC": "2026-11-05T01:00Z",
+      "away": "Utah Jazz",
+      "home": "New Orleans Pelicans",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401909929",
+      "dateUTC": "2026-11-05T01:00Z",
+      "away": "Cleveland Cavaliers",
+      "home": "Oklahoma City Thunder",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401909930",
+      "dateUTC": "2026-11-05T01:30Z",
+      "away": "Minnesota Timberwolves",
+      "home": "Houston Rockets",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401909931",
+      "dateUTC": "2026-11-05T02:00Z",
+      "away": "Toronto Raptors",
+      "home": "Denver Nuggets",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401909932",
+      "dateUTC": "2026-11-05T02:00Z",
+      "away": "Portland Trail Blazers",
+      "home": "Phoenix Suns",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401909933",
+      "dateUTC": "2026-11-05T02:30Z",
+      "away": "Dallas Mavericks",
+      "home": "San Antonio Spurs",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401909934",
+      "dateUTC": "2026-11-05T03:00Z",
+      "away": "Los Angeles Lakers",
+      "home": "Sacramento Kings",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401909935",
+      "dateUTC": "2026-11-05T03:30Z",
+      "away": "Miami Heat",
+      "home": "LA Clippers",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    }
+  ]
 }
