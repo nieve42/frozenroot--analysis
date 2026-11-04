@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-04T03:59:33Z",
+  "generatedAt": "2026-11-04T05:05:21Z",
   "date": "2026-11-03",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -99,9 +99,9 @@
       "dateUTC": "2026-11-04T02:00Z",
       "away": "Anaheim Ducks",
       "home": "Vancouver Canucks",
-      "status": "End of Period",
-      "awayScore": "4",
-      "homeScore": "2"
+      "status": "Final",
+      "awayScore": "5",
+      "homeScore": "4"
     }
   ],
   "nextDate": "2026-11-04",
