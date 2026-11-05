@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-05T05:06:27Z",
+  "generatedAt": "2026-11-05T06:08:13Z",
   "date": "2026-11-04",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -27,18 +27,18 @@
       "dateUTC": "2026-11-05T03:00Z",
       "away": "San Jose Sharks",
       "home": "Los Angeles Kings",
-      "status": "End of Period",
-      "awayScore": "1",
-      "homeScore": "5"
+      "status": "Final",
+      "awayScore": "2",
+      "homeScore": "7"
     },
     {
       "id": "401892647",
       "dateUTC": "2026-11-05T03:00Z",
       "away": "Calgary Flames",
       "home": "Seattle Kraken",
-      "status": "In Progress",
+      "status": "Final",
       "awayScore": "1",
-      "homeScore": "1"
+      "homeScore": "2"
     }
   ],
   "nextDate": "2026-11-05",
