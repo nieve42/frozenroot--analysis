@@ -2,7 +2,7 @@
   "sport": "NBA",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-11-04T08:48:20Z",
+  "lastUpdated": "2026-11-05T03:04:45Z",
   "picks": [
     {
       "id": "nba-auto-401909088",
@@ -3229,14 +3229,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-11-04T08:48:20Z",
-      "status": "pending",
+      "status": "loss",
       "projectedScore": {
         "teamPoints": 113,
         "opponentPoints": 108
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Philadelphia 76ers 8, Detroit Pistons 7. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Philadelphia 76ers 8, Detroit Pistons 7. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 106,
+        "opponentPoints": 112
+      },
+      "resultVerifiedOn": "2026-11-04",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-auto-401909923",
@@ -3253,14 +3259,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-11-04T08:48:20Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 115,
         "opponentPoints": 114
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Atlanta Hawks 8, Washington Wizards 7. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Atlanta Hawks 8, Washington Wizards 7. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 120,
+        "opponentPoints": 105
+      },
+      "resultVerifiedOn": "2026-11-04",
+      "resultSource": "ESPN public scoreboard"
     },
     {
       "id": "nba-auto-401909924",
@@ -3277,14 +3289,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-11-04T08:48:20Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 118,
         "opponentPoints": 109
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Milwaukee Bucks 7, Boston Celtics 7. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Milwaukee Bucks 7, Boston Celtics 7. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 109,
+        "opponentPoints": 102
+      },
+      "resultVerifiedOn": "2026-11-04",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-auto-401909925",
@@ -3325,14 +3343,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-11-04T08:48:20Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 118,
         "opponentPoints": 110
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Chicago Bulls 7, New York Knicks 7. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Chicago Bulls 7, New York Knicks 7. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 135,
+        "opponentPoints": 105
+      },
+      "resultVerifiedOn": "2026-11-04",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-auto-401909927",
