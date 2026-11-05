@@ -1,48 +1,9 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-05T07:27:29Z",
-  "date": "2026-11-04",
+  "generatedAt": "2026-11-05T08:49:48Z",
+  "date": "2026-11-05",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
-    {
-      "id": "401892644",
-      "dateUTC": "2026-11-05T00:30Z",
-      "away": "Ottawa Senators",
-      "home": "Buffalo Sabres",
-      "status": "Final",
-      "awayScore": "2",
-      "homeScore": "1"
-    },
-    {
-      "id": "401892645",
-      "dateUTC": "2026-11-05T00:30Z",
-      "away": "Chicago Blackhawks",
-      "home": "Florida Panthers",
-      "status": "Final",
-      "awayScore": "3",
-      "homeScore": "5"
-    },
-    {
-      "id": "401892646",
-      "dateUTC": "2026-11-05T03:00Z",
-      "away": "San Jose Sharks",
-      "home": "Los Angeles Kings",
-      "status": "Final",
-      "awayScore": "2",
-      "homeScore": "7"
-    },
-    {
-      "id": "401892647",
-      "dateUTC": "2026-11-05T03:00Z",
-      "away": "Calgary Flames",
-      "home": "Seattle Kraken",
-      "status": "Final",
-      "awayScore": "1",
-      "homeScore": "2"
-    }
-  ],
-  "nextDate": "2026-11-05",
-  "upcomingGames": [
     {
       "id": "401892648",
       "dateUTC": "2026-11-06T00:00Z",
@@ -138,6 +99,36 @@
       "dateUTC": "2026-11-06T02:30Z",
       "away": "Nashville Predators",
       "home": "Colorado Avalanche",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    }
+  ],
+  "nextDate": "2026-11-06",
+  "upcomingGames": [
+    {
+      "id": "401892659",
+      "dateUTC": "2026-11-07T00:00Z",
+      "away": "Columbus Blue Jackets",
+      "home": "Buffalo Sabres",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401892660",
+      "dateUTC": "2026-11-07T01:00Z",
+      "away": "San Jose Sharks",
+      "home": "Minnesota Wild",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401892661",
+      "dateUTC": "2026-11-07T01:00Z",
+      "away": "Anaheim Ducks",
+      "home": "Calgary Flames",
       "status": "Scheduled",
       "awayScore": null,
       "homeScore": null
