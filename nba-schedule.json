@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-11-05T04:10:50Z",
+  "generatedAt": "2026-11-05T05:14:37Z",
   "date": "2026-11-04",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -90,27 +90,27 @@
       "dateUTC": "2026-11-05T02:00Z",
       "away": "Toronto Raptors",
       "home": "Denver Nuggets",
-      "status": "In Progress",
-      "awayScore": "100",
-      "homeScore": "124"
+      "status": "Final",
+      "awayScore": "109",
+      "homeScore": "128"
     },
     {
       "id": "401909932",
       "dateUTC": "2026-11-05T02:00Z",
       "away": "Portland Trail Blazers",
       "home": "Phoenix Suns",
-      "status": "In Progress",
-      "awayScore": "104",
-      "homeScore": "87"
+      "status": "Final",
+      "awayScore": "132",
+      "homeScore": "119"
     },
     {
       "id": "401909933",
       "dateUTC": "2026-11-05T02:30Z",
       "away": "Dallas Mavericks",
       "home": "San Antonio Spurs",
-      "status": "Halftime",
-      "awayScore": "51",
-      "homeScore": "68"
+      "status": "In Progress",
+      "awayScore": "104",
+      "homeScore": "105"
     },
     {
       "id": "401909934",
@@ -118,8 +118,8 @@
       "away": "Los Angeles Lakers",
       "home": "Sacramento Kings",
       "status": "In Progress",
-      "awayScore": "57",
-      "homeScore": "48"
+      "awayScore": "98",
+      "homeScore": "83"
     },
     {
       "id": "401909935",
@@ -127,8 +127,8 @@
       "away": "Miami Heat",
       "home": "LA Clippers",
       "status": "In Progress",
-      "awayScore": "33",
-      "homeScore": "26"
+      "awayScore": "74",
+      "homeScore": "85"
     }
   ]
 }
