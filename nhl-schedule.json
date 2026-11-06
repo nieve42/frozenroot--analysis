@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-06T05:04:34Z",
+  "generatedAt": "2026-11-06T06:06:01Z",
   "date": "2026-11-05",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -99,8 +99,8 @@
       "dateUTC": "2026-11-06T02:30Z",
       "away": "Nashville Predators",
       "home": "Colorado Avalanche",
-      "status": "In Progress",
-      "awayScore": "2",
+      "status": "Final",
+      "awayScore": "3",
       "homeScore": "2"
     }
   ],
