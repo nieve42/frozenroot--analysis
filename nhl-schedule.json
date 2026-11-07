@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-07T19:48:07Z",
+  "generatedAt": "2026-11-07T20:45:43Z",
   "date": "2026-11-07",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,8 +9,8 @@
       "dateUTC": "2026-11-07T17:30Z",
       "away": "Florida Panthers",
       "home": "Washington Capitals",
-      "status": "In Progress",
-      "awayScore": "2",
+      "status": "Final",
+      "awayScore": "3",
       "homeScore": "4"
     },
     {
@@ -18,9 +18,9 @@
       "dateUTC": "2026-11-07T18:00Z",
       "away": "St. Louis Blues",
       "home": "Nashville Predators",
-      "status": "End of Period",
+      "status": "Final",
       "awayScore": "1",
-      "homeScore": "2"
+      "homeScore": "3"
     },
     {
       "id": "401892664",
