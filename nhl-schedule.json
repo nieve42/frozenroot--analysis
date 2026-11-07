@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-07T02:55:42Z",
+  "generatedAt": "2026-11-07T03:56:10Z",
   "date": "2026-11-06",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -18,17 +18,17 @@
       "dateUTC": "2026-11-07T01:00Z",
       "away": "San Jose Sharks",
       "home": "Minnesota Wild",
-      "status": "End of Period",
+      "status": "Final",
       "awayScore": "1",
-      "homeScore": "2"
+      "homeScore": "4"
     },
     {
       "id": "401892661",
       "dateUTC": "2026-11-07T01:00Z",
       "away": "Anaheim Ducks",
       "home": "Calgary Flames",
-      "status": "End of Period",
-      "awayScore": "2",
+      "status": "Final",
+      "awayScore": "5",
       "homeScore": "3"
     }
   ],
