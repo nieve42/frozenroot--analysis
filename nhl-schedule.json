@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-07T21:44:22Z",
+  "generatedAt": "2026-11-07T22:44:25Z",
   "date": "2026-11-07",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -27,9 +27,9 @@
       "dateUTC": "2026-11-07T22:00Z",
       "away": "New York Rangers",
       "home": "Seattle Kraken",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "3",
+      "homeScore": "0"
     },
     {
       "id": "401892665",
