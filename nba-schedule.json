@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-11-07T03:03:06Z",
+  "generatedAt": "2026-11-07T04:04:32Z",
   "date": "2026-11-06",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -27,63 +27,63 @@
       "dateUTC": "2026-11-07T00:30Z",
       "away": "Philadelphia 76ers",
       "home": "Cleveland Cavaliers",
-      "status": "In Progress",
-      "awayScore": "85",
-      "homeScore": "105"
+      "status": "Final",
+      "awayScore": "95",
+      "homeScore": "119"
     },
     {
       "id": "401909290",
       "dateUTC": "2026-11-07T01:00Z",
       "away": "Utah Jazz",
       "home": "Dallas Mavericks",
-      "status": "In Progress",
-      "awayScore": "87",
-      "homeScore": "100"
+      "status": "Final",
+      "awayScore": "100",
+      "homeScore": "112"
     },
     {
       "id": "401909291",
       "dateUTC": "2026-11-07T01:00Z",
       "away": "Oklahoma City Thunder",
       "home": "Memphis Grizzlies",
-      "status": "In Progress",
-      "awayScore": "103",
-      "homeScore": "78"
+      "status": "Final",
+      "awayScore": "128",
+      "homeScore": "97"
     },
     {
       "id": "401909292",
       "dateUTC": "2026-11-07T01:00Z",
       "away": "Toronto Raptors",
       "home": "Milwaukee Bucks",
-      "status": "In Progress",
-      "awayScore": "91",
-      "homeScore": "87"
+      "status": "Final",
+      "awayScore": "121",
+      "homeScore": "107"
     },
     {
       "id": "401909293",
       "dateUTC": "2026-11-07T01:00Z",
       "away": "Minnesota Timberwolves",
       "home": "New Orleans Pelicans",
-      "status": "In Progress",
-      "awayScore": "77",
-      "homeScore": "79"
+      "status": "Final",
+      "awayScore": "115",
+      "homeScore": "109"
     },
     {
       "id": "401909294",
       "dateUTC": "2026-11-07T03:00Z",
       "away": "Portland Trail Blazers",
       "home": "Los Angeles Lakers",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "50",
+      "homeScore": "35"
     },
     {
       "id": "401909295",
       "dateUTC": "2026-11-07T03:00Z",
       "away": "San Antonio Spurs",
       "home": "Sacramento Kings",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "51",
+      "homeScore": "44"
     }
   ]
 }
