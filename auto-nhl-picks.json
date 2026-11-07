@@ -2,7 +2,7 @@
   "sport": "NHL",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-11-07T03:56:11Z",
+  "lastUpdated": "2026-11-07T08:07:58Z",
   "picks": [
     {
       "id": "nhl-auto-401892539",
@@ -4011,6 +4011,150 @@
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
       "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Vancouver Canucks 11, Edmonton Oilers 12. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nhl-auto-401892674",
+      "sport": "NHL",
+      "gameId": "401892674",
+      "date": "2026-11-08",
+      "dateUTC": "2026-11-08T18:00Z",
+      "team": "Boston Bruins",
+      "opponent": "Florida Panthers",
+      "away": "Florida Panthers",
+      "home": "Boston Bruins",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-11-07T08:07:58Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamGoals": 4,
+        "opponentGoals": 3
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Florida Panthers 9, Boston Bruins 10. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nhl-auto-401892675",
+      "sport": "NHL",
+      "gameId": "401892675",
+      "date": "2026-11-08",
+      "dateUTC": "2026-11-08T20:30Z",
+      "team": "Buffalo Sabres",
+      "opponent": "Vegas Golden Knights",
+      "away": "Vegas Golden Knights",
+      "home": "Buffalo Sabres",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-11-07T08:07:58Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamGoals": 4,
+        "opponentGoals": 3
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Vegas Golden Knights 10, Buffalo Sabres 9. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nhl-auto-401892677",
+      "sport": "NHL",
+      "gameId": "401892677",
+      "date": "2026-11-08",
+      "dateUTC": "2026-11-08T23:00Z",
+      "team": "Tampa Bay Lightning",
+      "opponent": "Winnipeg Jets",
+      "away": "Tampa Bay Lightning",
+      "home": "Winnipeg Jets",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-11-07T08:07:58Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamGoals": 4,
+        "opponentGoals": 3
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Tampa Bay Lightning 9, Winnipeg Jets 11. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nhl-auto-401892676",
+      "sport": "NHL",
+      "gameId": "401892676",
+      "date": "2026-11-08",
+      "dateUTC": "2026-11-09T00:00Z",
+      "team": "New Jersey Devils",
+      "opponent": "Toronto Maple Leafs",
+      "away": "New Jersey Devils",
+      "home": "Toronto Maple Leafs",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-11-07T08:07:58Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamGoals": 4,
+        "opponentGoals": 3
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: New Jersey Devils 10, Toronto Maple Leafs 10. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nhl-auto-401892678",
+      "sport": "NHL",
+      "gameId": "401892678",
+      "date": "2026-11-08",
+      "dateUTC": "2026-11-09T00:00Z",
+      "team": "Calgary Flames",
+      "opponent": "Philadelphia Flyers",
+      "away": "Philadelphia Flyers",
+      "home": "Calgary Flames",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-11-07T08:07:58Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamGoals": 4,
+        "opponentGoals": 3
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Philadelphia Flyers 10, Calgary Flames 11. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nhl-auto-401892679",
+      "sport": "NHL",
+      "gameId": "401892679",
+      "date": "2026-11-08",
+      "dateUTC": "2026-11-09T01:00Z",
+      "team": "Anaheim Ducks",
+      "opponent": "Pittsburgh Penguins",
+      "away": "Pittsburgh Penguins",
+      "home": "Anaheim Ducks",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-11-07T08:07:58Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamGoals": 4,
+        "opponentGoals": 3
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Pittsburgh Penguins 9, Anaheim Ducks 11. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
     }
   ]
 }
