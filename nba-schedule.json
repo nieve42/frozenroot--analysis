@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-11-07T22:51:40Z",
+  "generatedAt": "2026-11-07T22:56:10Z",
   "date": "2026-11-07",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -10,7 +10,7 @@
       "away": "Denver Nuggets",
       "home": "Indiana Pacers",
       "status": "In Progress",
-      "awayScore": "39",
+      "awayScore": "41",
       "homeScore": "28"
     },
     {
