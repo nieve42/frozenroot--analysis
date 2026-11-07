@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-07T18:52:08Z",
+  "generatedAt": "2026-11-07T19:48:07Z",
   "date": "2026-11-07",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -11,7 +11,7 @@
       "home": "Washington Capitals",
       "status": "In Progress",
       "awayScore": "2",
-      "homeScore": "2"
+      "homeScore": "4"
     },
     {
       "id": "401892663",
@@ -20,7 +20,7 @@
       "home": "Nashville Predators",
       "status": "End of Period",
       "awayScore": "1",
-      "homeScore": "1"
+      "homeScore": "2"
     },
     {
       "id": "401892664",
