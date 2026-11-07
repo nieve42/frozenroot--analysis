@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-11-07T05:59:19Z",
+  "generatedAt": "2026-11-07T07:18:57Z",
   "date": "2026-11-06",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -72,9 +72,9 @@
       "dateUTC": "2026-11-07T03:00Z",
       "away": "Portland Trail Blazers",
       "home": "Los Angeles Lakers",
-      "status": "In Progress",
-      "awayScore": "110",
-      "homeScore": "116"
+      "status": "Final",
+      "awayScore": "118",
+      "homeScore": "124"
     },
     {
       "id": "401909295",
