@@ -2,7 +2,7 @@
   "sport": "NBA",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-11-07T07:18:57Z",
+  "lastUpdated": "2026-11-07T08:41:57Z",
   "picks": [
     {
       "id": "nba-auto-401909088",
@@ -3963,6 +3963,174 @@
       },
       "resultVerifiedOn": "2026-11-06",
       "resultSource": "ESPN verified schedule"
+    },
+    {
+      "id": "nba-auto-401909938",
+      "sport": "NBA",
+      "gameId": "401909938",
+      "date": "2026-11-07",
+      "dateUTC": "2026-11-07T22:00Z",
+      "team": "Denver Nuggets",
+      "opponent": "Indiana Pacers",
+      "away": "Denver Nuggets",
+      "home": "Indiana Pacers",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-11-07T08:41:57Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamPoints": 116,
+        "opponentPoints": 115
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Denver Nuggets 7, Indiana Pacers 9. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nba-auto-401909939",
+      "sport": "NBA",
+      "gameId": "401909939",
+      "date": "2026-11-07",
+      "dateUTC": "2026-11-08T00:30Z",
+      "team": "Atlanta Hawks",
+      "opponent": "Brooklyn Nets",
+      "away": "Brooklyn Nets",
+      "home": "Atlanta Hawks",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-11-07T08:41:57Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamPoints": 117,
+        "opponentPoints": 109
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Brooklyn Nets 8, Atlanta Hawks 10. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nba-auto-401909940",
+      "sport": "NBA",
+      "gameId": "401909940",
+      "date": "2026-11-07",
+      "dateUTC": "2026-11-08T01:00Z",
+      "team": "Cleveland Cavaliers",
+      "opponent": "New York Knicks",
+      "away": "New York Knicks",
+      "home": "Cleveland Cavaliers",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-11-07T08:41:57Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamPoints": 114,
+        "opponentPoints": 112
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: New York Knicks 8, Cleveland Cavaliers 9. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nba-auto-401909941",
+      "sport": "NBA",
+      "gameId": "401909941",
+      "date": "2026-11-07",
+      "dateUTC": "2026-11-08T01:00Z",
+      "team": "Oklahoma City Thunder",
+      "opponent": "Washington Wizards",
+      "away": "Washington Wizards",
+      "home": "Oklahoma City Thunder",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-11-07T08:41:57Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamPoints": 118,
+        "opponentPoints": 110
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Washington Wizards 9, Oklahoma City Thunder 9. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nba-auto-401909942",
+      "sport": "NBA",
+      "gameId": "401909942",
+      "date": "2026-11-07",
+      "dateUTC": "2026-11-08T01:30Z",
+      "team": "Golden State Warriors",
+      "opponent": "Orlando Magic",
+      "away": "Orlando Magic",
+      "home": "Golden State Warriors",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-11-07T08:41:57Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamPoints": 116,
+        "opponentPoints": 111
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Orlando Magic 8, Golden State Warriors 9. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nba-auto-401909943",
+      "sport": "NBA",
+      "gameId": "401909943",
+      "date": "2026-11-07",
+      "dateUTC": "2026-11-08T02:00Z",
+      "team": "Houston Rockets",
+      "opponent": "Phoenix Suns",
+      "away": "Houston Rockets",
+      "home": "Phoenix Suns",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-11-07T08:41:57Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamPoints": 114,
+        "opponentPoints": 113
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Houston Rockets 9, Phoenix Suns 7. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nba-auto-401909944",
+      "sport": "NBA",
+      "gameId": "401909944",
+      "date": "2026-11-07",
+      "dateUTC": "2026-11-08T03:00Z",
+      "team": "Portland Trail Blazers",
+      "opponent": "San Antonio Spurs",
+      "away": "San Antonio Spurs",
+      "home": "Portland Trail Blazers",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-11-07T08:41:57Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamPoints": 115,
+        "opponentPoints": 114
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: San Antonio Spurs 9, Portland Trail Blazers 8. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
     }
   ]
 }
