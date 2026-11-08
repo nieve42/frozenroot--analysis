@@ -1,6 +1,6 @@
 {
   "source": "ESPN NFL public scoreboard",
-  "generatedAt": "2026-11-08T13:58:40Z",
+  "generatedAt": "2026-11-08T14:51:49Z",
   "startDate": "2026-11-03",
   "endDate": "2026-11-09",
   "weekReset": "Tuesday 12:01 AM America/Los_Angeles",
@@ -19,7 +19,7 @@
       "dateUTC": "2026-11-08T14:30Z",
       "away": "Cincinnati Bengals",
       "home": "Atlanta Falcons",
-      "status": "Scheduled",
+      "status": "In Progress",
       "awayScore": null,
       "homeScore": null
     },
