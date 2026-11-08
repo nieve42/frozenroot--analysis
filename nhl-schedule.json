@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-08T04:58:44Z",
+  "generatedAt": "2026-11-08T05:55:31Z",
   "date": "2026-11-07",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -108,9 +108,9 @@
       "dateUTC": "2026-11-08T03:00Z",
       "away": "Vancouver Canucks",
       "home": "Edmonton Oilers",
-      "status": "End of Period",
-      "awayScore": "1",
-      "homeScore": "1"
+      "status": "Final",
+      "awayScore": "2",
+      "homeScore": "4"
     }
   ],
   "nextDate": "2026-11-08",
