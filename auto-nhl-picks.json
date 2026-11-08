@@ -2,7 +2,7 @@
   "sport": "NHL",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-11-08T05:55:31Z",
+  "lastUpdated": "2026-11-08T08:09:22Z",
   "picks": [
     {
       "id": "nhl-auto-401892539",
@@ -4227,6 +4227,78 @@
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
       "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Pittsburgh Penguins 9, Anaheim Ducks 11. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nhl-auto-401892680",
+      "sport": "NHL",
+      "gameId": "401892680",
+      "date": "2026-11-09",
+      "dateUTC": "2026-11-10T01:00Z",
+      "team": "Edmonton Oilers",
+      "opponent": "New York Rangers",
+      "away": "New York Rangers",
+      "home": "Edmonton Oilers",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-11-08T08:09:22Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamGoals": 4,
+        "opponentGoals": 3
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: New York Rangers 10, Edmonton Oilers 12. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nhl-auto-401892681",
+      "sport": "NHL",
+      "gameId": "401892681",
+      "date": "2026-11-09",
+      "dateUTC": "2026-11-10T02:30Z",
+      "team": "Philadelphia Flyers",
+      "opponent": "Vancouver Canucks",
+      "away": "Philadelphia Flyers",
+      "home": "Vancouver Canucks",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-11-08T08:09:22Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamGoals": 4,
+        "opponentGoals": 3
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Philadelphia Flyers 10, Vancouver Canucks 11. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nhl-auto-401892682",
+      "sport": "NHL",
+      "gameId": "401892682",
+      "date": "2026-11-09",
+      "dateUTC": "2026-11-10T03:00Z",
+      "team": "New York Islanders",
+      "opponent": "San Jose Sharks",
+      "away": "New York Islanders",
+      "home": "San Jose Sharks",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-11-08T08:09:22Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamGoals": 4,
+        "opponentGoals": 3
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: New York Islanders 10, San Jose Sharks 13. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
     }
   ]
 }
