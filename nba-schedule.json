@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-11-08T22:55:40Z",
+  "generatedAt": "2026-11-08T23:50:02Z",
   "date": "2026-11-08",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -18,9 +18,9 @@
       "dateUTC": "2026-11-08T23:00Z",
       "away": "Los Angeles Lakers",
       "home": "Detroit Pistons",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "45",
+      "homeScore": "28"
     },
     {
       "id": "401909947",
