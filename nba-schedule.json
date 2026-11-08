@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-11-07T23:48:46Z",
+  "generatedAt": "2026-11-08T01:24:36Z",
   "date": "2026-11-07",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,36 +9,36 @@
       "dateUTC": "2026-11-07T22:00Z",
       "away": "Denver Nuggets",
       "home": "Indiana Pacers",
-      "status": "In Progress",
-      "awayScore": "81",
-      "homeScore": "67"
+      "status": "Final",
+      "awayScore": "114",
+      "homeScore": "102"
     },
     {
       "id": "401909939",
       "dateUTC": "2026-11-08T00:30Z",
       "away": "Brooklyn Nets",
       "home": "Atlanta Hawks",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "47",
+      "homeScore": "39"
     },
     {
       "id": "401909940",
       "dateUTC": "2026-11-08T01:00Z",
       "away": "New York Knicks",
       "home": "Cleveland Cavaliers",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "11",
+      "homeScore": "10"
     },
     {
       "id": "401909941",
       "dateUTC": "2026-11-08T01:00Z",
       "away": "Washington Wizards",
       "home": "Oklahoma City Thunder",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "9",
+      "homeScore": "9"
     },
     {
       "id": "401909942",
