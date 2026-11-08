@@ -1,6 +1,6 @@
 {
   "source": "ESPN NFL public scoreboard",
-  "generatedAt": "2026-11-08T21:49:28Z",
+  "generatedAt": "2026-11-08T22:49:46Z",
   "startDate": "2026-11-03",
   "endDate": "2026-11-09",
   "weekReset": "Tuesday 12:01 AM America/Los_Angeles",
@@ -91,7 +91,7 @@
       "dateUTC": "2026-11-08T21:05Z",
       "away": "Houston Texans",
       "home": "Los Angeles Chargers",
-      "status": "In Progress",
+      "status": "Halftime",
       "awayScore": null,
       "homeScore": null
     },
@@ -100,7 +100,7 @@
       "dateUTC": "2026-11-08T21:25Z",
       "away": "Las Vegas Raiders",
       "home": "San Francisco 49ers",
-      "status": "In Progress",
+      "status": "Halftime",
       "awayScore": null,
       "homeScore": null
     },
