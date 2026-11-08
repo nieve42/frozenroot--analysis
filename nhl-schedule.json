@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-08T03:58:48Z",
+  "generatedAt": "2026-11-08T04:58:44Z",
   "date": "2026-11-07",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -90,17 +90,17 @@
       "dateUTC": "2026-11-08T02:00Z",
       "away": "Detroit Red Wings",
       "home": "Colorado Avalanche",
-      "status": "End of Period",
+      "status": "Final",
       "awayScore": "0",
-      "homeScore": "2"
+      "homeScore": "4"
     },
     {
       "id": "401892672",
       "dateUTC": "2026-11-08T02:00Z",
       "away": "Pittsburgh Penguins",
       "home": "Los Angeles Kings",
-      "status": "End of Period",
-      "awayScore": "4",
+      "status": "Final",
+      "awayScore": "5",
       "homeScore": "2"
     },
     {
