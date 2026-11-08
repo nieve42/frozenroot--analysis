@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-08T19:50:46Z",
+  "generatedAt": "2026-11-08T20:45:15Z",
   "date": "2026-11-08",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -11,16 +11,16 @@
       "home": "Boston Bruins",
       "status": "In Progress",
       "awayScore": "1",
-      "homeScore": "3"
+      "homeScore": "4"
     },
     {
       "id": "401892675",
       "dateUTC": "2026-11-08T20:30Z",
       "away": "Vegas Golden Knights",
       "home": "Buffalo Sabres",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "0",
+      "homeScore": "0"
     },
     {
       "id": "401892677",
