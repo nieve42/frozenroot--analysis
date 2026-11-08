@@ -2,7 +2,7 @@
   "sport": "NBA",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-11-08T05:06:00Z",
+  "lastUpdated": "2026-11-08T06:00:10Z",
   "picks": [
     {
       "id": "nba-auto-401909088",
@@ -4159,14 +4159,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-11-07T08:41:57Z",
-      "status": "pending",
+      "status": "loss",
       "projectedScore": {
         "teamPoints": 115,
         "opponentPoints": 114
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: San Antonio Spurs 9, Portland Trail Blazers 8. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: San Antonio Spurs 9, Portland Trail Blazers 8. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 103,
+        "opponentPoints": 125
+      },
+      "resultVerifiedOn": "2026-11-07",
+      "resultSource": "ESPN verified schedule"
     }
   ]
 }

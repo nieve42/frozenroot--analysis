@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-11-08T05:06:00Z",
+  "generatedAt": "2026-11-08T06:00:10Z",
   "date": "2026-11-07",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -63,9 +63,9 @@
       "dateUTC": "2026-11-08T03:00Z",
       "away": "San Antonio Spurs",
       "home": "Portland Trail Blazers",
-      "status": "End of Period",
-      "awayScore": "109",
-      "homeScore": "76"
+      "status": "Final",
+      "awayScore": "125",
+      "homeScore": "103"
     }
   ]
 }
