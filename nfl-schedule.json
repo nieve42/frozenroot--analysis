@@ -1,6 +1,6 @@
 {
   "source": "ESPN NFL public scoreboard",
-  "generatedAt": "2026-11-08T23:47:40Z",
+  "generatedAt": "2026-11-09T01:25:11Z",
   "startDate": "2026-11-03",
   "endDate": "2026-11-09",
   "weekReset": "Tuesday 12:01 AM America/Los_Angeles",
@@ -91,43 +91,43 @@
       "dateUTC": "2026-11-08T21:05Z",
       "away": "Houston Texans",
       "home": "Los Angeles Chargers",
-      "status": "In Progress",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Final",
+      "awayScore": "44",
+      "homeScore": "22"
     },
     {
       "id": "401873047",
       "dateUTC": "2026-11-08T21:25Z",
       "away": "Las Vegas Raiders",
       "home": "San Francisco 49ers",
-      "status": "In Progress",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Final",
+      "awayScore": "17",
+      "homeScore": "38"
     },
     {
       "id": "401873048",
       "dateUTC": "2026-11-08T21:25Z",
       "away": "Arizona Cardinals",
       "home": "Seattle Seahawks",
-      "status": "In Progress",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Final",
+      "awayScore": "3",
+      "homeScore": "17"
     },
     {
       "id": "401873049",
       "dateUTC": "2026-11-08T21:25Z",
       "away": "Green Bay Packers",
       "home": "New England Patriots",
-      "status": "In Progress",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Final",
+      "awayScore": "45",
+      "homeScore": "27"
     },
     {
       "id": "401873050",
       "dateUTC": "2026-11-09T01:20Z",
       "away": "Tampa Bay Buccaneers",
       "home": "Chicago Bears",
-      "status": "Scheduled",
+      "status": "In Progress",
       "awayScore": null,
       "homeScore": null
     },
