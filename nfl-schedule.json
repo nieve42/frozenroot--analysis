@@ -1,6 +1,6 @@
 {
   "source": "ESPN NFL public scoreboard",
-  "generatedAt": "2026-11-09T01:25:11Z",
+  "generatedAt": "2026-11-09T03:00:12Z",
   "startDate": "2026-11-03",
   "endDate": "2026-11-09",
   "weekReset": "Tuesday 12:01 AM America/Los_Angeles",
@@ -127,7 +127,7 @@
       "dateUTC": "2026-11-09T01:20Z",
       "away": "Tampa Bay Buccaneers",
       "home": "Chicago Bears",
-      "status": "In Progress",
+      "status": "Halftime",
       "awayScore": null,
       "homeScore": null
     },
