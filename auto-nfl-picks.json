@@ -2,7 +2,7 @@
   "sport": "NFL",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-11-09T05:20:20Z",
+  "lastUpdated": "2026-11-10T05:06:09Z",
   "picks": [
     {
       "id": "nfl-auto-401873010",
@@ -1279,14 +1279,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-11-03T08:44:54Z",
-      "status": "pending",
+      "status": "loss",
       "projectedScore": {
         "teamPoints": 22,
         "opponentPoints": 21
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Buffalo Bills 6, Minnesota Vikings 6. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Buffalo Bills 6, Minnesota Vikings 6. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 6,
+        "opponentPoints": 23
+      },
+      "resultVerifiedOn": "2026-11-09",
+      "resultSource": "ESPN public scoreboard"
     }
   ]
 }
