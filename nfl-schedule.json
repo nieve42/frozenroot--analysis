@@ -1,144 +1,135 @@
 {
   "source": "ESPN NFL public scoreboard",
-  "generatedAt": "2026-11-10T07:26:43Z",
-  "startDate": "2026-11-03",
-  "endDate": "2026-11-09",
+  "generatedAt": "2026-11-10T08:45:04Z",
+  "startDate": "2026-11-10",
+  "endDate": "2026-11-16",
   "weekReset": "Tuesday 12:01 AM America/Los_Angeles",
   "games": [
     {
-      "id": "401873037",
-      "dateUTC": "2026-11-06T01:15Z",
-      "away": "Jacksonville Jaguars",
-      "home": "Baltimore Ravens",
-      "status": "Final",
-      "awayScore": "33",
-      "homeScore": "10"
+      "id": "401873052",
+      "dateUTC": "2026-11-13T01:15Z",
+      "away": "Washington Commanders",
+      "home": "New York Giants",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
     },
     {
-      "id": "401873038",
-      "dateUTC": "2026-11-08T14:30Z",
-      "away": "Cincinnati Bengals",
-      "home": "Atlanta Falcons",
-      "status": "Final",
-      "awayScore": "34",
-      "homeScore": "17"
+      "id": "401873053",
+      "dateUTC": "2026-11-15T14:30Z",
+      "away": "New England Patriots",
+      "home": "Detroit Lions",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
     },
     {
-      "id": "401873039",
-      "dateUTC": "2026-11-08T18:00Z",
-      "away": "Cleveland Browns",
-      "home": "New Orleans Saints",
-      "status": "Final",
-      "awayScore": "22",
-      "homeScore": "23"
-    },
-    {
-      "id": "401873040",
-      "dateUTC": "2026-11-08T18:00Z",
-      "away": "Dallas Cowboys",
-      "home": "Indianapolis Colts",
-      "status": "Final",
-      "awayScore": "27",
-      "homeScore": "23"
-    },
-    {
-      "id": "401873041",
-      "dateUTC": "2026-11-08T18:00Z",
-      "away": "Denver Broncos",
-      "home": "Carolina Panthers",
-      "status": "Final",
-      "awayScore": "26",
-      "homeScore": "21"
-    },
-    {
-      "id": "401873042",
-      "dateUTC": "2026-11-08T18:00Z",
-      "away": "Detroit Lions",
-      "home": "Miami Dolphins",
-      "status": "Final",
-      "awayScore": "19",
-      "homeScore": "9"
-    },
-    {
-      "id": "401873043",
-      "dateUTC": "2026-11-08T18:00Z",
-      "away": "Los Angeles Rams",
-      "home": "Washington Commanders",
-      "status": "Final",
-      "awayScore": "20",
-      "homeScore": "13"
-    },
-    {
-      "id": "401873044",
-      "dateUTC": "2026-11-08T18:00Z",
-      "away": "New York Giants",
-      "home": "Philadelphia Eagles",
-      "status": "Final",
-      "awayScore": "19",
-      "homeScore": "11"
-    },
-    {
-      "id": "401873045",
-      "dateUTC": "2026-11-08T18:00Z",
-      "away": "New York Jets",
-      "home": "Kansas City Chiefs",
-      "status": "Final",
-      "awayScore": "12",
-      "homeScore": "35"
-    },
-    {
-      "id": "401873046",
-      "dateUTC": "2026-11-08T21:05Z",
-      "away": "Houston Texans",
-      "home": "Los Angeles Chargers",
-      "status": "Final",
-      "awayScore": "44",
-      "homeScore": "22"
-    },
-    {
-      "id": "401873047",
-      "dateUTC": "2026-11-08T21:25Z",
-      "away": "Las Vegas Raiders",
-      "home": "San Francisco 49ers",
-      "status": "Final",
-      "awayScore": "17",
-      "homeScore": "38"
-    },
-    {
-      "id": "401873048",
-      "dateUTC": "2026-11-08T21:25Z",
-      "away": "Arizona Cardinals",
-      "home": "Seattle Seahawks",
-      "status": "Final",
-      "awayScore": "3",
-      "homeScore": "17"
-    },
-    {
-      "id": "401873049",
-      "dateUTC": "2026-11-08T21:25Z",
-      "away": "Green Bay Packers",
-      "home": "New England Patriots",
-      "status": "Final",
-      "awayScore": "45",
-      "homeScore": "27"
-    },
-    {
-      "id": "401873050",
-      "dateUTC": "2026-11-09T01:20Z",
-      "away": "Tampa Bay Buccaneers",
-      "home": "Chicago Bears",
-      "status": "Final",
-      "awayScore": "24",
-      "homeScore": "27"
-    },
-    {
-      "id": "401873051",
-      "dateUTC": "2026-11-10T01:15Z",
+      "id": "401873054",
+      "dateUTC": "2026-11-15T18:00Z",
       "away": "Buffalo Bills",
-      "home": "Minnesota Vikings",
-      "status": "Final",
-      "awayScore": "23",
-      "homeScore": "6"
+      "home": "New York Jets",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401873055",
+      "dateUTC": "2026-11-15T18:00Z",
+      "away": "Carolina Panthers",
+      "home": "New Orleans Saints",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401873056",
+      "dateUTC": "2026-11-15T18:00Z",
+      "away": "Houston Texans",
+      "home": "Cleveland Browns",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401873057",
+      "dateUTC": "2026-11-15T18:00Z",
+      "away": "Jacksonville Jaguars",
+      "home": "Tennessee Titans",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401873058",
+      "dateUTC": "2026-11-15T18:00Z",
+      "away": "Kansas City Chiefs",
+      "home": "Atlanta Falcons",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401873059",
+      "dateUTC": "2026-11-15T18:00Z",
+      "away": "Miami Dolphins",
+      "home": "Indianapolis Colts",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401873060",
+      "dateUTC": "2026-11-15T18:00Z",
+      "away": "Minnesota Vikings",
+      "home": "Green Bay Packers",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401873061",
+      "dateUTC": "2026-11-15T21:05Z",
+      "away": "Los Angeles Rams",
+      "home": "Arizona Cardinals",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401873062",
+      "dateUTC": "2026-11-15T21:05Z",
+      "away": "Seattle Seahawks",
+      "home": "Las Vegas Raiders",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401873063",
+      "dateUTC": "2026-11-15T21:25Z",
+      "away": "San Francisco 49ers",
+      "home": "Dallas Cowboys",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401873064",
+      "dateUTC": "2026-11-16T01:20Z",
+      "away": "Pittsburgh Steelers",
+      "home": "Cincinnati Bengals",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401873065",
+      "dateUTC": "2026-11-17T01:15Z",
+      "away": "Los Angeles Chargers",
+      "home": "Baltimore Ravens",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
     }
   ]
 }
