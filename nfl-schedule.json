@@ -1,6 +1,6 @@
 {
   "source": "ESPN NFL public scoreboard",
-  "generatedAt": "2026-11-10T01:18:18Z",
+  "generatedAt": "2026-11-10T03:00:01Z",
   "startDate": "2026-11-03",
   "endDate": "2026-11-09",
   "weekReset": "Tuesday 12:01 AM America/Los_Angeles",
@@ -136,7 +136,7 @@
       "dateUTC": "2026-11-10T01:15Z",
       "away": "Buffalo Bills",
       "home": "Minnesota Vikings",
-      "status": "In Progress",
+      "status": "Halftime",
       "awayScore": null,
       "homeScore": null
     }
