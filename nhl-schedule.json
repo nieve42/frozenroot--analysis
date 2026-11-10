@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-10T01:10:45Z",
+  "generatedAt": "2026-11-10T02:12:14Z",
   "date": "2026-11-09",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -11,7 +11,7 @@
       "home": "Edmonton Oilers",
       "status": "In Progress",
       "awayScore": "0",
-      "homeScore": "0"
+      "homeScore": "2"
     },
     {
       "id": "401892681",
