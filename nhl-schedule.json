@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-10T04:59:48Z",
+  "generatedAt": "2026-11-10T05:59:37Z",
   "date": "2026-11-09",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -18,8 +18,8 @@
       "dateUTC": "2026-11-10T02:30Z",
       "away": "Philadelphia Flyers",
       "home": "Vancouver Canucks",
-      "status": "In Progress",
-      "awayScore": "2",
+      "status": "Final",
+      "awayScore": "3",
       "homeScore": "1"
     },
     {
@@ -27,9 +27,9 @@
       "dateUTC": "2026-11-10T03:00Z",
       "away": "New York Islanders",
       "home": "San Jose Sharks",
-      "status": "In Progress",
+      "status": "Final",
       "awayScore": "2",
-      "homeScore": "2"
+      "homeScore": "3"
     }
   ],
   "nextDate": "2026-11-10",
