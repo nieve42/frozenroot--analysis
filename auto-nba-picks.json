@@ -2,7 +2,7 @@
   "sport": "NBA",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-11-09T08:58:14Z",
+  "lastUpdated": "2026-11-10T03:02:08Z",
   "picks": [
     {
       "id": "nba-auto-401909088",
@@ -4399,14 +4399,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-11-09T08:58:14Z",
-      "status": "pending",
+      "status": "loss",
       "projectedScore": {
         "teamPoints": 117,
         "opponentPoints": 115
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Los Angeles Lakers 11, Atlanta Hawks 11. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Los Angeles Lakers 11, Atlanta Hawks 11. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 114,
+        "opponentPoints": 124
+      },
+      "resultVerifiedOn": "2026-11-09",
+      "resultSource": "ESPN public scoreboard"
     },
     {
       "id": "nba-auto-401909953",
@@ -4423,14 +4429,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-11-09T08:58:14Z",
-      "status": "pending",
+      "status": "loss",
       "projectedScore": {
         "teamPoints": 112,
         "opponentPoints": 111
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Cleveland Cavaliers 10, Charlotte Hornets 10. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Cleveland Cavaliers 10, Charlotte Hornets 10. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 112,
+        "opponentPoints": 124
+      },
+      "resultVerifiedOn": "2026-11-09",
+      "resultSource": "ESPN public scoreboard"
     },
     {
       "id": "nba-auto-401909954",
@@ -4447,14 +4459,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-11-09T08:58:14Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 117,
         "opponentPoints": 108
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Washington Wizards 10, Detroit Pistons 9. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Washington Wizards 10, Detroit Pistons 9. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 122,
+        "opponentPoints": 111
+      },
+      "resultVerifiedOn": "2026-11-09",
+      "resultSource": "ESPN public scoreboard"
     },
     {
       "id": "nba-auto-401909955",
@@ -4471,14 +4489,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-11-09T08:58:14Z",
-      "status": "pending",
+      "status": "loss",
       "projectedScore": {
         "teamPoints": 119,
         "opponentPoints": 112
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Memphis Grizzlies 9, Toronto Raptors 9. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Memphis Grizzlies 9, Toronto Raptors 9. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 102,
+        "opponentPoints": 118
+      },
+      "resultVerifiedOn": "2026-11-09",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-auto-401909956",
