@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-11-10T04:06:05Z",
+  "generatedAt": "2026-11-10T05:08:28Z",
   "date": "2026-11-09",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -63,9 +63,9 @@
       "dateUTC": "2026-11-10T02:00Z",
       "away": "San Antonio Spurs",
       "home": "Phoenix Suns",
-      "status": "In Progress",
-      "awayScore": "107",
-      "homeScore": "77"
+      "status": "Final",
+      "awayScore": "122",
+      "homeScore": "96"
     },
     {
       "id": "401909959",
@@ -73,8 +73,8 @@
       "away": "New Orleans Pelicans",
       "home": "Golden State Warriors",
       "status": "In Progress",
-      "awayScore": "43",
-      "homeScore": "72"
+      "awayScore": "79",
+      "homeScore": "124"
     }
   ]
 }
