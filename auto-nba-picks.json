@@ -2,7 +2,7 @@
   "sport": "NBA",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-11-10T08:50:05Z",
+  "lastUpdated": "2026-11-11T03:04:20Z",
   "picks": [
     {
       "id": "nba-auto-401909088",
@@ -4639,14 +4639,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-11-10T08:50:05Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 116,
         "opponentPoints": 107
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Milwaukee Bucks 10, New York Knicks 9. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Milwaukee Bucks 10, New York Knicks 9. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 117,
+        "opponentPoints": 85
+      },
+      "resultVerifiedOn": "2026-11-10",
+      "resultSource": "ESPN public scoreboard"
     },
     {
       "id": "nba-auto-401909961",
