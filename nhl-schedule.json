@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-10T23:43:31Z",
+  "generatedAt": "2026-11-11T01:12:41Z",
   "date": "2026-11-10",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,54 +9,54 @@
       "dateUTC": "2026-11-11T00:00Z",
       "away": "Colorado Avalanche",
       "home": "Toronto Maple Leafs",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "3",
+      "homeScore": "1"
     },
     {
       "id": "401892684",
       "dateUTC": "2026-11-11T00:00Z",
       "away": "Minnesota Wild",
       "home": "Montreal Canadiens",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "End of Period",
+      "awayScore": "0",
+      "homeScore": "0"
     },
     {
       "id": "401892685",
       "dateUTC": "2026-11-11T00:00Z",
       "away": "Washington Capitals",
       "home": "Ottawa Senators",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "1",
+      "homeScore": "0"
     },
     {
       "id": "401892688",
       "dateUTC": "2026-11-11T00:00Z",
       "away": "New Jersey Devils",
       "home": "Winnipeg Jets",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "2",
+      "homeScore": "2"
     },
     {
       "id": "401892686",
       "dateUTC": "2026-11-11T00:30Z",
       "away": "Florida Panthers",
       "home": "Columbus Blue Jackets",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "End of Period",
+      "awayScore": "0",
+      "homeScore": "0"
     },
     {
       "id": "401892687",
       "dateUTC": "2026-11-11T01:00Z",
       "away": "Detroit Red Wings",
       "home": "St. Louis Blues",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "0",
+      "homeScore": "0"
     },
     {
       "id": "401892689",
