@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-11-10T23:48:58Z",
+  "generatedAt": "2026-11-11T01:22:45Z",
   "date": "2026-11-10",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,18 +9,18 @@
       "dateUTC": "2026-11-11T00:30Z",
       "away": "Milwaukee Bucks",
       "home": "New York Knicks",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "28",
+      "homeScore": "48"
     },
     {
       "id": "401909961",
       "dateUTC": "2026-11-11T01:00Z",
       "away": "Boston Celtics",
       "home": "Philadelphia 76ers",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "17",
+      "homeScore": "12"
     },
     {
       "id": "401909962",
