@@ -2,7 +2,7 @@
   "sport": "NHL",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-11-10T08:48:42Z",
+  "lastUpdated": "2026-11-11T02:57:47Z",
   "picks": [
     {
       "id": "nhl-auto-401892539",
@@ -4369,14 +4369,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-11-09T08:33:40Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamGoals": 4,
         "opponentGoals": 3
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Colorado Avalanche 11, Toronto Maple Leafs 11. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Colorado Avalanche 11, Toronto Maple Leafs 11. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamGoals": 6,
+        "opponentGoals": 3
+      },
+      "resultVerifiedOn": "2026-11-10",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nhl-auto-401892684",
@@ -4393,14 +4399,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-11-09T08:33:40Z",
-      "status": "pending",
+      "status": "loss",
       "projectedScore": {
         "teamGoals": 4,
         "opponentGoals": 3
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Minnesota Wild 11, Montreal Canadiens 10. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Minnesota Wild 11, Montreal Canadiens 10. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamGoals": 1,
+        "opponentGoals": 2
+      },
+      "resultVerifiedOn": "2026-11-10",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nhl-auto-401892685",
@@ -4417,14 +4429,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-11-09T08:33:40Z",
-      "status": "pending",
+      "status": "loss",
       "projectedScore": {
         "teamGoals": 4,
         "opponentGoals": 3
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Washington Capitals 8, Ottawa Senators 10. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Washington Capitals 8, Ottawa Senators 10. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamGoals": 2,
+        "opponentGoals": 3
+      },
+      "resultVerifiedOn": "2026-11-10",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nhl-auto-401892688",
@@ -4441,14 +4459,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-11-09T08:33:40Z",
-      "status": "pending",
+      "status": "loss",
       "projectedScore": {
         "teamGoals": 4,
         "opponentGoals": 3
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: New Jersey Devils 11, Winnipeg Jets 11. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: New Jersey Devils 11, Winnipeg Jets 11. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamGoals": 2,
+        "opponentGoals": 4
+      },
+      "resultVerifiedOn": "2026-11-10",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nhl-auto-401892686",

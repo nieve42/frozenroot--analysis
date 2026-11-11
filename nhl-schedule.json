@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-11T02:10:26Z",
+  "generatedAt": "2026-11-11T02:57:47Z",
   "date": "2026-11-10",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,8 +9,8 @@
       "dateUTC": "2026-11-11T00:00Z",
       "away": "Colorado Avalanche",
       "home": "Toronto Maple Leafs",
-      "status": "In Progress",
-      "awayScore": "4",
+      "status": "Final",
+      "awayScore": "6",
       "homeScore": "3"
     },
     {
@@ -18,17 +18,17 @@
       "dateUTC": "2026-11-11T00:00Z",
       "away": "Minnesota Wild",
       "home": "Montreal Canadiens",
-      "status": "End of Period",
-      "awayScore": "0",
-      "homeScore": "0"
+      "status": "Final",
+      "awayScore": "2",
+      "homeScore": "1"
     },
     {
       "id": "401892685",
       "dateUTC": "2026-11-11T00:00Z",
       "away": "Washington Capitals",
       "home": "Ottawa Senators",
-      "status": "In Progress",
-      "awayScore": "1",
+      "status": "Final",
+      "awayScore": "3",
       "homeScore": "2"
     },
     {
@@ -36,9 +36,9 @@
       "dateUTC": "2026-11-11T00:00Z",
       "away": "New Jersey Devils",
       "home": "Winnipeg Jets",
-      "status": "In Progress",
+      "status": "Final",
       "awayScore": "2",
-      "homeScore": "2"
+      "homeScore": "4"
     },
     {
       "id": "401892686",
@@ -47,16 +47,16 @@
       "home": "Columbus Blue Jackets",
       "status": "In Progress",
       "awayScore": "2",
-      "homeScore": "0"
+      "homeScore": "1"
     },
     {
       "id": "401892687",
       "dateUTC": "2026-11-11T01:00Z",
       "away": "Detroit Red Wings",
       "home": "St. Louis Blues",
-      "status": "In Progress",
+      "status": "End of Period",
       "awayScore": "1",
-      "homeScore": "1"
+      "homeScore": "2"
     },
     {
       "id": "401892689",
