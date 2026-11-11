@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-11-11T05:17:07Z",
+  "generatedAt": "2026-11-11T07:31:59Z",
   "date": "2026-11-10",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -45,18 +45,18 @@
       "dateUTC": "2026-11-11T03:00Z",
       "away": "Orlando Magic",
       "home": "Sacramento Kings",
-      "status": "In Progress",
-      "awayScore": "101",
-      "homeScore": "90"
+      "status": "Final",
+      "awayScore": "107",
+      "homeScore": "100"
     },
     {
       "id": "401909965",
       "dateUTC": "2026-11-11T04:00Z",
       "away": "Oklahoma City Thunder",
       "home": "Portland Trail Blazers",
-      "status": "Halftime",
-      "awayScore": "59",
-      "homeScore": "59"
+      "status": "Final",
+      "awayScore": "103",
+      "homeScore": "123"
     }
   ]
 }
