@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-12T05:08:30Z",
+  "generatedAt": "2026-11-12T06:11:04Z",
   "date": "2026-11-11",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -36,7 +36,7 @@
       "dateUTC": "2026-11-12T02:30Z",
       "away": "Utah Mammoth",
       "home": "Vegas Golden Knights",
-      "status": "In Progress",
+      "status": "Final",
       "awayScore": "3",
       "homeScore": "5"
     },
@@ -45,18 +45,18 @@
       "dateUTC": "2026-11-12T03:00Z",
       "away": "Nashville Predators",
       "home": "Anaheim Ducks",
-      "status": "In Progress",
-      "awayScore": "2",
-      "homeScore": "1"
+      "status": "Final",
+      "awayScore": "4",
+      "homeScore": "2"
     },
     {
       "id": "401892695",
       "dateUTC": "2026-11-12T03:00Z",
       "away": "Pittsburgh Penguins",
       "home": "San Jose Sharks",
-      "status": "In Progress",
-      "awayScore": "1",
-      "homeScore": "0"
+      "status": "Final",
+      "awayScore": "3",
+      "homeScore": "2"
     }
   ],
   "nextDate": "2026-11-12",
