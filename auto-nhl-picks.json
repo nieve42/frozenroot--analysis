@@ -2,7 +2,7 @@
   "sport": "NHL",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-11-12T06:11:04Z",
+  "lastUpdated": "2026-11-12T08:49:34Z",
   "picks": [
     {
       "id": "nhl-auto-401892539",
@@ -5007,6 +5007,54 @@
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
       "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: New York Islanders 9, Los Angeles Kings 10. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nhl-auto-401892706",
+      "sport": "NHL",
+      "gameId": "401892706",
+      "date": "2026-11-13",
+      "dateUTC": "2026-11-14T02:00Z",
+      "team": "New York Rangers",
+      "opponent": "Vancouver Canucks",
+      "away": "New York Rangers",
+      "home": "Vancouver Canucks",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-11-12T08:49:34Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamGoals": 4,
+        "opponentGoals": 3
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: New York Rangers 10, Vancouver Canucks 10. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nhl-auto-401892707",
+      "sport": "NHL",
+      "gameId": "401892707",
+      "date": "2026-11-13",
+      "dateUTC": "2026-11-14T03:00Z",
+      "team": "Nashville Predators",
+      "opponent": "Vegas Golden Knights",
+      "away": "Nashville Predators",
+      "home": "Vegas Golden Knights",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-11-12T08:49:34Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamGoals": 4,
+        "opponentGoals": 3
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Nashville Predators 11, Vegas Golden Knights 10. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
     }
   ]
 }
