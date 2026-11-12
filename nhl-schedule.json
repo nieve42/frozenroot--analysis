@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-12T17:11:20Z",
+  "generatedAt": "2026-11-12T17:59:16Z",
   "date": "2026-11-12",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,9 +9,9 @@
       "dateUTC": "2026-11-12T17:00Z",
       "away": "Carolina Hurricanes",
       "home": "Seattle Kraken",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "End of Period",
+      "awayScore": "2",
+      "homeScore": "0"
     },
     {
       "id": "401892696",
