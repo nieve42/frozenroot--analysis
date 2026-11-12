@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-11-12T05:16:40Z",
+  "generatedAt": "2026-11-12T06:22:11Z",
   "date": "2026-11-11",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -90,9 +90,9 @@
       "dateUTC": "2026-11-12T03:00Z",
       "away": "Oklahoma City Thunder",
       "home": "Portland Trail Blazers",
-      "status": "In Progress",
-      "awayScore": "99",
-      "homeScore": "102"
+      "status": "Final",
+      "awayScore": "108",
+      "homeScore": "118"
     }
   ]
 }
