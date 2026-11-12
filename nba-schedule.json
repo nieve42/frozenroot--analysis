@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-11-12T03:05:24Z",
+  "generatedAt": "2026-11-12T04:11:26Z",
   "date": "2026-11-11",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -36,36 +36,36 @@
       "dateUTC": "2026-11-12T01:00Z",
       "away": "San Antonio Spurs",
       "home": "Chicago Bulls",
-      "status": "In Progress",
-      "awayScore": "114",
-      "homeScore": "101"
+      "status": "Final",
+      "awayScore": "124",
+      "homeScore": "119"
     },
     {
       "id": "401909970",
       "dateUTC": "2026-11-12T01:00Z",
       "away": "Denver Nuggets",
       "home": "Memphis Grizzlies",
-      "status": "In Progress",
-      "awayScore": "106",
-      "homeScore": "99"
+      "status": "Final",
+      "awayScore": "123",
+      "homeScore": "118"
     },
     {
       "id": "401909971",
       "dateUTC": "2026-11-12T01:00Z",
       "away": "Los Angeles Lakers",
       "home": "Milwaukee Bucks",
-      "status": "In Progress",
-      "awayScore": "100",
-      "homeScore": "79"
+      "status": "Final",
+      "awayScore": "123",
+      "homeScore": "112"
     },
     {
       "id": "401909972",
       "dateUTC": "2026-11-12T01:00Z",
       "away": "Brooklyn Nets",
       "home": "New Orleans Pelicans",
-      "status": "In Progress",
-      "awayScore": "115",
-      "homeScore": "84"
+      "status": "Final",
+      "awayScore": "145",
+      "homeScore": "111"
     },
     {
       "id": "401909973",
@@ -73,8 +73,8 @@
       "away": "Orlando Magic",
       "home": "Utah Jazz",
       "status": "In Progress",
-      "awayScore": "55",
-      "homeScore": "49"
+      "awayScore": "95",
+      "homeScore": "93"
     },
     {
       "id": "401909974",
@@ -82,17 +82,17 @@
       "away": "Golden State Warriors",
       "home": "Houston Rockets",
       "status": "In Progress",
-      "awayScore": "18",
-      "homeScore": "32"
+      "awayScore": "65",
+      "homeScore": "73"
     },
     {
       "id": "401909975",
       "dateUTC": "2026-11-12T03:00Z",
       "away": "Oklahoma City Thunder",
       "home": "Portland Trail Blazers",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Halftime",
+      "awayScore": "50",
+      "homeScore": "56"
     }
   ]
 }
