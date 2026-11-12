@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-11T23:54:53Z",
+  "generatedAt": "2026-11-12T01:21:41Z",
   "date": "2026-11-11",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,18 +9,18 @@
       "dateUTC": "2026-11-12T00:00Z",
       "away": "Tampa Bay Lightning",
       "home": "Buffalo Sabres",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "3",
+      "homeScore": "0"
     },
     {
       "id": "401892691",
       "dateUTC": "2026-11-12T00:30Z",
       "away": "New York Rangers",
       "home": "Calgary Flames",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "0",
+      "homeScore": "0"
     },
     {
       "id": "401892692",
