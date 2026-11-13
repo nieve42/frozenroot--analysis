@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-13T05:07:00Z",
+  "generatedAt": "2026-11-13T06:08:14Z",
   "date": "2026-11-12",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -90,8 +90,8 @@
       "dateUTC": "2026-11-13T02:00Z",
       "away": "St. Louis Blues",
       "home": "Utah Mammoth",
-      "status": "In Progress",
-      "awayScore": "0",
+      "status": "Final",
+      "awayScore": "1",
       "homeScore": "0"
     },
     {
@@ -99,8 +99,8 @@
       "dateUTC": "2026-11-13T03:00Z",
       "away": "New York Islanders",
       "home": "Los Angeles Kings",
-      "status": "End of Period",
-      "awayScore": "3",
+      "status": "Final",
+      "awayScore": "5",
       "homeScore": "2"
     }
   ],
