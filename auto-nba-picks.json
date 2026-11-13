@@ -2,7 +2,7 @@
   "sport": "NBA",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-11-13T03:01:29Z",
+  "lastUpdated": "2026-11-13T04:11:42Z",
   "picks": [
     {
       "id": "nba-auto-401909088",
@@ -5149,14 +5149,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-11-12T08:28:42Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 115,
         "opponentPoints": 110
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Detroit Pistons 10, Washington Wizards 12. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Detroit Pistons 10, Washington Wizards 12. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 144,
+        "opponentPoints": 140
+      },
+      "resultVerifiedOn": "2026-11-12",
+      "resultSource": "ESPN public scoreboard"
     },
     {
       "id": "nba-auto-401909978",
@@ -5173,14 +5179,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-11-12T08:28:42Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 116,
         "opponentPoints": 112
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Dallas Mavericks 11, Minnesota Timberwolves 11. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Dallas Mavericks 11, Minnesota Timberwolves 11. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 133,
+        "opponentPoints": 94
+      },
+      "resultVerifiedOn": "2026-11-12",
+      "resultSource": "ESPN public scoreboard"
     },
     {
       "id": "nba-auto-401909979",
