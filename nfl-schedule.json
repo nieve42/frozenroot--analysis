@@ -1,6 +1,6 @@
 {
   "source": "ESPN NFL public scoreboard",
-  "generatedAt": "2026-11-13T04:08:27Z",
+  "generatedAt": "2026-11-13T05:13:27Z",
   "startDate": "2026-11-10",
   "endDate": "2026-11-16",
   "weekReset": "Tuesday 12:01 AM America/Los_Angeles",
@@ -10,9 +10,9 @@
       "dateUTC": "2026-11-13T01:15Z",
       "away": "Washington Commanders",
       "home": "New York Giants",
-      "status": "In Progress",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Final",
+      "awayScore": "24",
+      "homeScore": "21"
     },
     {
       "id": "401873053",
