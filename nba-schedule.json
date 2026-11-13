@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-11-13T01:26:35Z",
+  "generatedAt": "2026-11-13T03:01:29Z",
   "date": "2026-11-12",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,9 +9,9 @@
       "dateUTC": "2026-11-13T00:00Z",
       "away": "Toronto Raptors",
       "home": "Philadelphia 76ers",
-      "status": "In Progress",
-      "awayScore": "69",
-      "homeScore": "70"
+      "status": "Final",
+      "awayScore": "112",
+      "homeScore": "123"
     },
     {
       "id": "401909977",
@@ -19,8 +19,8 @@
       "away": "Detroit Pistons",
       "home": "Washington Wizards",
       "status": "In Progress",
-      "awayScore": "69",
-      "homeScore": "64"
+      "awayScore": "139",
+      "homeScore": "136"
     },
     {
       "id": "401909978",
@@ -28,17 +28,17 @@
       "away": "Dallas Mavericks",
       "home": "Minnesota Timberwolves",
       "status": "In Progress",
-      "awayScore": "18",
-      "homeScore": "16"
+      "awayScore": "74",
+      "homeScore": "110"
     },
     {
       "id": "401909979",
       "dateUTC": "2026-11-13T02:00Z",
       "away": "Charlotte Hornets",
       "home": "Phoenix Suns",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "43",
+      "homeScore": "50"
     }
   ]
 }
