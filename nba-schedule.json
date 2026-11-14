@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-11-14T01:22:22Z",
+  "generatedAt": "2026-11-14T03:03:30Z",
   "date": "2026-11-13",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,18 +9,18 @@
       "dateUTC": "2026-11-14T00:00Z",
       "away": "New York Knicks",
       "home": "Indiana Pacers",
-      "status": "Halftime",
-      "awayScore": "49",
-      "homeScore": "58"
+      "status": "Final",
+      "awayScore": "104",
+      "homeScore": "106"
     },
     {
       "id": "401909297",
       "dateUTC": "2026-11-14T00:00Z",
       "away": "Milwaukee Bucks",
       "home": "Orlando Magic",
-      "status": "In Progress",
-      "awayScore": "40",
-      "homeScore": "57"
+      "status": "Final",
+      "awayScore": "99",
+      "homeScore": "107"
     },
     {
       "id": "401909298",
@@ -28,8 +28,8 @@
       "away": "Cleveland Cavaliers",
       "home": "Miami Heat",
       "status": "In Progress",
-      "awayScore": "11",
-      "homeScore": "14"
+      "awayScore": "93",
+      "homeScore": "98"
     },
     {
       "id": "401909299",
@@ -37,35 +37,35 @@
       "away": "Atlanta Hawks",
       "home": "Chicago Bulls",
       "status": "In Progress",
-      "awayScore": "9",
-      "homeScore": "18"
+      "awayScore": "92",
+      "homeScore": "99"
     },
     {
       "id": "401909300",
       "dateUTC": "2026-11-14T01:00Z",
       "away": "Memphis Grizzlies",
       "home": "New Orleans Pelicans",
-      "status": "In Progress",
-      "awayScore": "14",
-      "homeScore": "13"
+      "status": "End of Period",
+      "awayScore": "105",
+      "homeScore": "86"
     },
     {
       "id": "401909301",
       "dateUTC": "2026-11-14T01:30Z",
       "away": "Utah Jazz",
       "home": "Houston Rockets",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "56",
+      "homeScore": "65"
     },
     {
       "id": "401909302",
       "dateUTC": "2026-11-14T02:30Z",
       "away": "Golden State Warriors",
       "home": "San Antonio Spurs",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "8",
+      "homeScore": "26"
     },
     {
       "id": "401909303",
