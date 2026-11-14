@@ -2,7 +2,7 @@
   "sport": "NBA",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-11-14T05:07:22Z",
+  "lastUpdated": "2026-11-14T06:02:10Z",
   "picks": [
     {
       "id": "nba-auto-401909088",
@@ -5449,14 +5449,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-11-13T08:26:40Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 116,
         "opponentPoints": 112
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Portland Trail Blazers 11, Sacramento Kings 11. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Portland Trail Blazers 11, Sacramento Kings 11. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 120,
+        "opponentPoints": 107
+      },
+      "resultVerifiedOn": "2026-11-13",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-auto-401909304",
@@ -5473,14 +5479,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-11-13T08:26:40Z",
-      "status": "pending",
+      "status": "loss",
       "projectedScore": {
         "teamPoints": 114,
         "opponentPoints": 113
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Oklahoma City Thunder 12, LA Clippers 10. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Oklahoma City Thunder 12, LA Clippers 10. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 112,
+        "opponentPoints": 113
+      },
+      "resultVerifiedOn": "2026-11-13",
+      "resultSource": "ESPN verified schedule"
     }
   ]
 }
