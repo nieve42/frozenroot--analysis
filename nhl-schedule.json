@@ -1,30 +1,9 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-14T07:09:44Z",
-  "date": "2026-11-13",
+  "generatedAt": "2026-11-14T08:10:12Z",
+  "date": "2026-11-14",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
-    {
-      "id": "401892706",
-      "dateUTC": "2026-11-14T02:00Z",
-      "away": "New York Rangers",
-      "home": "Vancouver Canucks",
-      "status": "Final",
-      "awayScore": "5",
-      "homeScore": "1"
-    },
-    {
-      "id": "401892707",
-      "dateUTC": "2026-11-14T03:00Z",
-      "away": "Nashville Predators",
-      "home": "Vegas Golden Knights",
-      "status": "Final",
-      "awayScore": "3",
-      "homeScore": "2"
-    }
-  ],
-  "nextDate": "2026-11-14",
-  "upcomingGames": [
     {
       "id": "401891809",
       "dateUTC": "2026-11-14T18:00Z",
@@ -147,6 +126,54 @@
       "dateUTC": "2026-11-15T03:00Z",
       "away": "Calgary Flames",
       "home": "Los Angeles Kings",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    }
+  ],
+  "nextDate": "2026-11-15",
+  "upcomingGames": [
+    {
+      "id": "401892721",
+      "dateUTC": "2026-11-16T00:30Z",
+      "away": "Edmonton Oilers",
+      "home": "Philadelphia Flyers",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401892722",
+      "dateUTC": "2026-11-16T01:00Z",
+      "away": "Florida Panthers",
+      "home": "Dallas Stars",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401892723",
+      "dateUTC": "2026-11-16T01:00Z",
+      "away": "Calgary Flames",
+      "home": "Anaheim Ducks",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401892724",
+      "dateUTC": "2026-11-16T02:00Z",
+      "away": "Vancouver Canucks",
+      "home": "Vegas Golden Knights",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401892725",
+      "dateUTC": "2026-11-16T02:00Z",
+      "away": "Nashville Predators",
+      "home": "San Jose Sharks",
       "status": "Scheduled",
       "awayScore": null,
       "homeScore": null
