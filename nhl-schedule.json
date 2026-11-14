@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-14T03:58:30Z",
+  "generatedAt": "2026-11-14T04:59:36Z",
   "date": "2026-11-13",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,7 +9,7 @@
       "dateUTC": "2026-11-14T02:00Z",
       "away": "New York Rangers",
       "home": "Vancouver Canucks",
-      "status": "In Progress",
+      "status": "Final",
       "awayScore": "5",
       "homeScore": "1"
     },
@@ -20,7 +20,7 @@
       "home": "Vegas Golden Knights",
       "status": "End of Period",
       "awayScore": "1",
-      "homeScore": "1"
+      "homeScore": "2"
     }
   ],
   "nextDate": "2026-11-14",

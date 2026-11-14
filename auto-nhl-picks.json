@@ -2,7 +2,7 @@
   "sport": "NHL",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-11-13T08:48:07Z",
+  "lastUpdated": "2026-11-14T04:59:36Z",
   "picks": [
     {
       "id": "nhl-auto-401892539",
@@ -5089,14 +5089,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-11-12T08:49:34Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamGoals": 4,
         "opponentGoals": 3
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: New York Rangers 10, Vancouver Canucks 10. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: New York Rangers 10, Vancouver Canucks 10. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamGoals": 5,
+        "opponentGoals": 1
+      },
+      "resultVerifiedOn": "2026-11-13",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nhl-auto-401892707",
