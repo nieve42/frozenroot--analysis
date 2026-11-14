@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-14T02:57:29Z",
+  "generatedAt": "2026-11-14T03:58:30Z",
   "date": "2026-11-13",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,8 +9,8 @@
       "dateUTC": "2026-11-14T02:00Z",
       "away": "New York Rangers",
       "home": "Vancouver Canucks",
-      "status": "End of Period",
-      "awayScore": "1",
+      "status": "In Progress",
+      "awayScore": "5",
       "homeScore": "1"
     },
     {
@@ -18,9 +18,9 @@
       "dateUTC": "2026-11-14T03:00Z",
       "away": "Nashville Predators",
       "home": "Vegas Golden Knights",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "End of Period",
+      "awayScore": "1",
+      "homeScore": "1"
     }
   ],
   "nextDate": "2026-11-14",
