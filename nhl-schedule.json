@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-14T20:46:31Z",
+  "generatedAt": "2026-11-14T21:45:04Z",
   "date": "2026-11-14",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -20,7 +20,7 @@
       "home": "Chicago Blackhawks",
       "status": "In Progress",
       "awayScore": "0",
-      "homeScore": "1"
+      "homeScore": "3"
     },
     {
       "id": "401892709",
