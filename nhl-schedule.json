@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-14T22:56:48Z",
+  "generatedAt": "2026-11-14T23:42:53Z",
   "date": "2026-11-14",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -18,8 +18,8 @@
       "dateUTC": "2026-11-14T20:30Z",
       "away": "Winnipeg Jets",
       "home": "Chicago Blackhawks",
-      "status": "In Progress",
-      "awayScore": "3",
+      "status": "Final",
+      "awayScore": "5",
       "homeScore": "4"
     },
     {
