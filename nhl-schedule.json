@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-14T05:56:38Z",
+  "generatedAt": "2026-11-14T07:09:44Z",
   "date": "2026-11-13",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -18,8 +18,8 @@
       "dateUTC": "2026-11-14T03:00Z",
       "away": "Nashville Predators",
       "home": "Vegas Golden Knights",
-      "status": "In Progress",
-      "awayScore": "2",
+      "status": "Final",
+      "awayScore": "3",
       "homeScore": "2"
     }
   ],
