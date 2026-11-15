@@ -1,6 +1,6 @@
 {
   "source": "ESPN NFL public scoreboard",
-  "generatedAt": "2026-11-15T17:49:13Z",
+  "generatedAt": "2026-11-15T18:59:24Z",
   "startDate": "2026-11-10",
   "endDate": "2026-11-16",
   "weekReset": "Tuesday 12:01 AM America/Los_Angeles",
@@ -28,7 +28,7 @@
       "dateUTC": "2026-11-15T18:00Z",
       "away": "Buffalo Bills",
       "home": "New York Jets",
-      "status": "Scheduled",
+      "status": "In Progress",
       "awayScore": null,
       "homeScore": null
     },
@@ -37,7 +37,7 @@
       "dateUTC": "2026-11-15T18:00Z",
       "away": "Carolina Panthers",
       "home": "New Orleans Saints",
-      "status": "Scheduled",
+      "status": "In Progress",
       "awayScore": null,
       "homeScore": null
     },
@@ -46,7 +46,7 @@
       "dateUTC": "2026-11-15T18:00Z",
       "away": "Houston Texans",
       "home": "Cleveland Browns",
-      "status": "Scheduled",
+      "status": "In Progress",
       "awayScore": null,
       "homeScore": null
     },
@@ -55,7 +55,7 @@
       "dateUTC": "2026-11-15T18:00Z",
       "away": "Jacksonville Jaguars",
       "home": "Tennessee Titans",
-      "status": "Scheduled",
+      "status": "In Progress",
       "awayScore": null,
       "homeScore": null
     },
@@ -64,7 +64,7 @@
       "dateUTC": "2026-11-15T18:00Z",
       "away": "Kansas City Chiefs",
       "home": "Atlanta Falcons",
-      "status": "Scheduled",
+      "status": "In Progress",
       "awayScore": null,
       "homeScore": null
     },
@@ -73,7 +73,7 @@
       "dateUTC": "2026-11-15T18:00Z",
       "away": "Miami Dolphins",
       "home": "Indianapolis Colts",
-      "status": "Scheduled",
+      "status": "In Progress",
       "awayScore": null,
       "homeScore": null
     },
@@ -82,7 +82,7 @@
       "dateUTC": "2026-11-15T18:00Z",
       "away": "Minnesota Vikings",
       "home": "Green Bay Packers",
-      "status": "Scheduled",
+      "status": "In Progress",
       "awayScore": null,
       "homeScore": null
     },
