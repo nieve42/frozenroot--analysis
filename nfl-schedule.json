@@ -1,6 +1,6 @@
 {
   "source": "ESPN NFL public scoreboard",
-  "generatedAt": "2026-11-15T16:54:18Z",
+  "generatedAt": "2026-11-15T17:49:13Z",
   "startDate": "2026-11-10",
   "endDate": "2026-11-16",
   "weekReset": "Tuesday 12:01 AM America/Los_Angeles",
@@ -19,9 +19,9 @@
       "dateUTC": "2026-11-15T14:30Z",
       "away": "New England Patriots",
       "home": "Detroit Lions",
-      "status": "In Progress",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Final",
+      "awayScore": "10",
+      "homeScore": "35"
     },
     {
       "id": "401873054",
