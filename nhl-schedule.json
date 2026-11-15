@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-15T03:58:49Z",
+  "generatedAt": "2026-11-15T05:01:36Z",
   "date": "2026-11-14",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -108,18 +108,18 @@
       "dateUTC": "2026-11-15T02:00Z",
       "away": "San Jose Sharks",
       "home": "Utah Mammoth",
-      "status": "End of Period",
-      "awayScore": "3",
-      "homeScore": "4"
+      "status": "In Progress",
+      "awayScore": "5",
+      "homeScore": "5"
     },
     {
       "id": "401892719",
       "dateUTC": "2026-11-15T03:00Z",
       "away": "New York Islanders",
       "home": "Anaheim Ducks",
-      "status": "End of Period",
-      "awayScore": "1",
-      "homeScore": "0"
+      "status": "In Progress",
+      "awayScore": "5",
+      "homeScore": "2"
     },
     {
       "id": "401892720",
@@ -127,7 +127,7 @@
       "away": "Calgary Flames",
       "home": "Los Angeles Kings",
       "status": "End of Period",
-      "awayScore": "0",
+      "awayScore": "1",
       "homeScore": "0"
     }
   ],
