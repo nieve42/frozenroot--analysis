@@ -1,6 +1,6 @@
 {
   "source": "ESPN NFL public scoreboard",
-  "generatedAt": "2026-11-15T22:51:30Z",
+  "generatedAt": "2026-11-15T22:54:45Z",
   "startDate": "2026-11-10",
   "endDate": "2026-11-16",
   "weekReset": "Tuesday 12:01 AM America/Los_Angeles",
@@ -109,7 +109,7 @@
       "dateUTC": "2026-11-15T21:25Z",
       "away": "San Francisco 49ers",
       "home": "Dallas Cowboys",
-      "status": "In Progress",
+      "status": "Halftime",
       "awayScore": null,
       "homeScore": null
     },
