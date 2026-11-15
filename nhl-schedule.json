@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-15T01:15:00Z",
+  "generatedAt": "2026-11-15T02:16:14Z",
   "date": "2026-11-14",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -28,8 +28,8 @@
       "away": "Minnesota Wild",
       "home": "Boston Bruins",
       "status": "In Progress",
-      "awayScore": "3",
-      "homeScore": "0"
+      "awayScore": "4",
+      "homeScore": "2"
     },
     {
       "id": "401892710",
@@ -37,7 +37,7 @@
       "away": "Edmonton Oilers",
       "home": "Toronto Maple Leafs",
       "status": "In Progress",
-      "awayScore": "0",
+      "awayScore": "1",
       "homeScore": "0"
     },
     {
@@ -47,7 +47,7 @@
       "home": "Montreal Canadiens",
       "status": "In Progress",
       "awayScore": "2",
-      "homeScore": "0"
+      "homeScore": "1"
     },
     {
       "id": "401892712",
@@ -55,7 +55,7 @@
       "away": "Detroit Red Wings",
       "home": "Tampa Bay Lightning",
       "status": "In Progress",
-      "awayScore": "0",
+      "awayScore": "1",
       "homeScore": "0"
     },
     {
@@ -63,8 +63,8 @@
       "dateUTC": "2026-11-15T00:00Z",
       "away": "Ottawa Senators",
       "home": "Pittsburgh Penguins",
-      "status": "End of Period",
-      "awayScore": "0",
+      "status": "In Progress",
+      "awayScore": "2",
       "homeScore": "1"
     },
     {
@@ -73,8 +73,8 @@
       "away": "New Jersey Devils",
       "home": "Washington Capitals",
       "status": "In Progress",
-      "awayScore": "2",
-      "homeScore": "3"
+      "awayScore": "6",
+      "homeScore": "4"
     },
     {
       "id": "401892715",
@@ -83,7 +83,7 @@
       "home": "Columbus Blue Jackets",
       "status": "In Progress",
       "awayScore": "3",
-      "homeScore": "2"
+      "homeScore": "3"
     },
     {
       "id": "401892716",
@@ -91,7 +91,7 @@
       "away": "Florida Panthers",
       "home": "St. Louis Blues",
       "status": "In Progress",
-      "awayScore": "3",
+      "awayScore": "4",
       "homeScore": "0"
     },
     {
@@ -108,9 +108,9 @@
       "dateUTC": "2026-11-15T02:00Z",
       "away": "San Jose Sharks",
       "home": "Utah Mammoth",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "0",
+      "homeScore": "1"
     },
     {
       "id": "401892719",
