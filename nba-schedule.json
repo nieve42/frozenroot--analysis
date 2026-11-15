@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-11-15T22:53:25Z",
+  "generatedAt": "2026-11-15T22:56:57Z",
   "date": "2026-11-15",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -19,17 +19,17 @@
       "away": "Los Angeles Lakers",
       "home": "Phoenix Suns",
       "status": "In Progress",
-      "awayScore": "88",
-      "homeScore": "67"
+      "awayScore": "95",
+      "homeScore": "70"
     },
     {
       "id": "401909987",
       "dateUTC": "2026-11-15T21:30Z",
       "away": "Charlotte Hornets",
       "home": "LA Clippers",
-      "status": "Halftime",
-      "awayScore": "52",
-      "homeScore": "51"
+      "status": "In Progress",
+      "awayScore": "54",
+      "homeScore": "52"
     },
     {
       "id": "401909988",
@@ -37,7 +37,7 @@
       "away": "San Antonio Spurs",
       "home": "Utah Jazz",
       "status": "In Progress",
-      "awayScore": "47",
+      "awayScore": "49",
       "homeScore": "49"
     },
     {
