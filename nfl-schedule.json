@@ -1,6 +1,6 @@
 {
   "source": "ESPN NFL public scoreboard",
-  "generatedAt": "2026-11-15T22:54:45Z",
+  "generatedAt": "2026-11-15T23:55:44Z",
   "startDate": "2026-11-10",
   "endDate": "2026-11-16",
   "weekReset": "Tuesday 12:01 AM America/Los_Angeles",
@@ -91,9 +91,9 @@
       "dateUTC": "2026-11-15T21:05Z",
       "away": "Los Angeles Rams",
       "home": "Arizona Cardinals",
-      "status": "In Progress",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Final",
+      "awayScore": "34",
+      "homeScore": "6"
     },
     {
       "id": "401873062",
@@ -109,7 +109,7 @@
       "dateUTC": "2026-11-15T21:25Z",
       "away": "San Francisco 49ers",
       "home": "Dallas Cowboys",
-      "status": "Halftime",
+      "status": "In Progress",
       "awayScore": null,
       "homeScore": null
     },
