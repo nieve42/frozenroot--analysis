@@ -2,7 +2,7 @@
   "sport": "NBA",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-11-15T20:54:06Z",
+  "lastUpdated": "2026-11-15T23:57:17Z",
   "picks": [
     {
       "id": "nba-auto-401909088",
@@ -5689,14 +5689,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-11-15T08:44:03Z",
-      "status": "pending",
+      "status": "loss",
       "projectedScore": {
         "teamPoints": 115,
         "opponentPoints": 114
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Los Angeles Lakers 12, Phoenix Suns 10. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Los Angeles Lakers 12, Phoenix Suns 10. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 123,
+        "opponentPoints": 131
+      },
+      "resultVerifiedOn": "2026-11-15",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-auto-401909987",
@@ -5713,14 +5719,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-11-15T08:44:03Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 113,
         "opponentPoints": 110
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Charlotte Hornets 11, LA Clippers 10. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Charlotte Hornets 11, LA Clippers 10. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 113,
+        "opponentPoints": 105
+      },
+      "resultVerifiedOn": "2026-11-15",
+      "resultSource": "ESPN verified schedule"
     },
     {
       "id": "nba-auto-401909988",
