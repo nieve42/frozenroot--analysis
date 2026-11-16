@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-11-16T03:14:53Z",
+  "generatedAt": "2026-11-16T04:54:38Z",
   "date": "2026-11-15",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -72,18 +72,18 @@
       "dateUTC": "2026-11-16T01:00Z",
       "away": "Atlanta Hawks",
       "home": "Milwaukee Bucks",
-      "status": "In Progress",
-      "awayScore": "106",
-      "homeScore": "100"
+      "status": "Final",
+      "awayScore": "113",
+      "homeScore": "106"
     },
     {
       "id": "401909993",
       "dateUTC": "2026-11-16T02:00Z",
       "away": "Oklahoma City Thunder",
       "home": "Sacramento Kings",
-      "status": "Halftime",
-      "awayScore": "62",
-      "homeScore": "50"
+      "status": "Final",
+      "awayScore": "125",
+      "homeScore": "103"
     }
   ]
 }
