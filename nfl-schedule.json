@@ -1,6 +1,6 @@
 {
   "source": "ESPN NFL public scoreboard",
-  "generatedAt": "2026-11-15T23:55:44Z",
+  "generatedAt": "2026-11-16T01:39:21Z",
   "startDate": "2026-11-10",
   "endDate": "2026-11-16",
   "weekReset": "Tuesday 12:01 AM America/Los_Angeles",
@@ -100,25 +100,25 @@
       "dateUTC": "2026-11-15T21:05Z",
       "away": "Seattle Seahawks",
       "home": "Las Vegas Raiders",
-      "status": "In Progress",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Final",
+      "awayScore": "21",
+      "homeScore": "13"
     },
     {
       "id": "401873063",
       "dateUTC": "2026-11-15T21:25Z",
       "away": "San Francisco 49ers",
       "home": "Dallas Cowboys",
-      "status": "In Progress",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Final",
+      "awayScore": "46",
+      "homeScore": "40"
     },
     {
       "id": "401873064",
       "dateUTC": "2026-11-16T01:20Z",
       "away": "Pittsburgh Steelers",
       "home": "Cincinnati Bengals",
-      "status": "Scheduled",
+      "status": "In Progress",
       "awayScore": null,
       "homeScore": null
     },
