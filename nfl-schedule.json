@@ -1,6 +1,6 @@
 {
   "source": "ESPN NFL public scoreboard",
-  "generatedAt": "2026-11-16T23:54:28Z",
+  "generatedAt": "2026-11-17T01:28:21Z",
   "startDate": "2026-11-10",
   "endDate": "2026-11-16",
   "weekReset": "Tuesday 12:01 AM America/Los_Angeles",
@@ -127,7 +127,7 @@
       "dateUTC": "2026-11-17T01:15Z",
       "away": "Los Angeles Chargers",
       "home": "Baltimore Ravens",
-      "status": "Scheduled",
+      "status": "In Progress",
       "awayScore": null,
       "homeScore": null
     }
