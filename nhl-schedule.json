@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-17T01:20:23Z",
+  "generatedAt": "2026-11-17T02:56:14Z",
   "date": "2026-11-16",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -10,17 +10,17 @@
       "away": "Montreal Canadiens",
       "home": "New York Rangers",
       "status": "In Progress",
-      "awayScore": "0",
-      "homeScore": "0"
+      "awayScore": "1",
+      "homeScore": "2"
     },
     {
       "id": "401892727",
       "dateUTC": "2026-11-17T02:30Z",
       "away": "Vancouver Canucks",
       "home": "Utah Mammoth",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "0",
+      "homeScore": "0"
     }
   ],
   "nextDate": "2026-11-17",
