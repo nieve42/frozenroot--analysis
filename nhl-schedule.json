@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-17T02:56:14Z",
+  "generatedAt": "2026-11-17T04:01:41Z",
   "date": "2026-11-16",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,9 +9,9 @@
       "dateUTC": "2026-11-17T00:30Z",
       "away": "Montreal Canadiens",
       "home": "New York Rangers",
-      "status": "In Progress",
+      "status": "Final",
       "awayScore": "1",
-      "homeScore": "2"
+      "homeScore": "3"
     },
     {
       "id": "401892727",
