@@ -2,7 +2,7 @@
   "sport": "NBA",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-11-17T05:14:01Z",
+  "lastUpdated": "2026-11-17T08:29:10Z",
   "picks": [
     {
       "id": "nba-auto-401909088",
@@ -6153,6 +6153,126 @@
       },
       "resultVerifiedOn": "2026-11-16",
       "resultSource": "ESPN public scoreboard"
+    },
+    {
+      "id": "nba-auto-401910002",
+      "sport": "NBA",
+      "gameId": "401910002",
+      "date": "2026-11-17",
+      "dateUTC": "2026-11-18T00:30Z",
+      "team": "Toronto Raptors",
+      "opponent": "New York Knicks",
+      "away": "New York Knicks",
+      "home": "Toronto Raptors",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-11-17T08:29:10Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamPoints": 112,
+        "opponentPoints": 111
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: New York Knicks 11, Toronto Raptors 11. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nba-auto-401910003",
+      "sport": "NBA",
+      "gameId": "401910003",
+      "date": "2026-11-17",
+      "dateUTC": "2026-11-18T01:00Z",
+      "team": "Minnesota Timberwolves",
+      "opponent": "Portland Trail Blazers",
+      "away": "Portland Trail Blazers",
+      "home": "Minnesota Timberwolves",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-11-17T08:29:10Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamPoints": 114,
+        "opponentPoints": 111
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Portland Trail Blazers 11, Minnesota Timberwolves 12. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nba-auto-401910004",
+      "sport": "NBA",
+      "gameId": "401910004",
+      "date": "2026-11-17",
+      "dateUTC": "2026-11-18T01:00Z",
+      "team": "San Antonio Spurs",
+      "opponent": "Detroit Pistons",
+      "away": "Detroit Pistons",
+      "home": "San Antonio Spurs",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-11-17T08:29:10Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamPoints": 117,
+        "opponentPoints": 111
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Detroit Pistons 10, San Antonio Spurs 12. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nba-auto-401910006",
+      "sport": "NBA",
+      "gameId": "401910006",
+      "date": "2026-11-17",
+      "dateUTC": "2026-11-18T03:30Z",
+      "team": "LA Clippers",
+      "opponent": "Utah Jazz",
+      "away": "Utah Jazz",
+      "home": "LA Clippers",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-11-17T08:29:10Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamPoints": 117,
+        "opponentPoints": 112
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Utah Jazz 12, LA Clippers 10. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nba-auto-401910005",
+      "sport": "NBA",
+      "gameId": "401910005",
+      "date": "2026-11-17",
+      "dateUTC": "2026-11-18T04:00Z",
+      "team": "Los Angeles Lakers",
+      "opponent": "Charlotte Hornets",
+      "away": "Charlotte Hornets",
+      "home": "Los Angeles Lakers",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-11-17T08:29:10Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamPoints": 115,
+        "opponentPoints": 110
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Charlotte Hornets 11, Los Angeles Lakers 12. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
     }
   ]
 }
