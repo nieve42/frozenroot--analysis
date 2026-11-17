@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-17T04:01:41Z",
+  "generatedAt": "2026-11-17T05:06:42Z",
   "date": "2026-11-16",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -19,8 +19,8 @@
       "away": "Vancouver Canucks",
       "home": "Utah Mammoth",
       "status": "In Progress",
-      "awayScore": "0",
-      "homeScore": "0"
+      "awayScore": "2",
+      "homeScore": "2"
     }
   ],
   "nextDate": "2026-11-17",
