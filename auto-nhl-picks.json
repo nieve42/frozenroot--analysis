@@ -2,7 +2,7 @@
   "sport": "NHL",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-11-17T06:08:33Z",
+  "lastUpdated": "2026-11-17T08:49:49Z",
   "picks": [
     {
       "id": "nhl-auto-401892539",
@@ -6027,6 +6027,78 @@
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
       "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Calgary Flames 12, San Jose Sharks 12. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nhl-auto-401892739",
+      "sport": "NHL",
+      "gameId": "401892739",
+      "date": "2026-11-18",
+      "dateUTC": "2026-11-19T00:30Z",
+      "team": "Detroit Red Wings",
+      "opponent": "Boston Bruins",
+      "away": "Boston Bruins",
+      "home": "Detroit Red Wings",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-11-17T08:49:49Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamGoals": 4,
+        "opponentGoals": 3
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Boston Bruins 9, Detroit Red Wings 11. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nhl-auto-401892740",
+      "sport": "NHL",
+      "gameId": "401892740",
+      "date": "2026-11-18",
+      "dateUTC": "2026-11-19T00:30Z",
+      "team": "New Jersey Devils",
+      "opponent": "Montreal Canadiens",
+      "away": "Montreal Canadiens",
+      "home": "New Jersey Devils",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-11-17T08:49:49Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamGoals": 4,
+        "opponentGoals": 3
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Montreal Canadiens 11, New Jersey Devils 11. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+    },
+    {
+      "id": "nhl-auto-401892741",
+      "sport": "NHL",
+      "gameId": "401892741",
+      "date": "2026-11-18",
+      "dateUTC": "2026-11-19T03:00Z",
+      "team": "Colorado Avalanche",
+      "opponent": "Utah Mammoth",
+      "away": "Colorado Avalanche",
+      "home": "Utah Mammoth",
+      "pickType": "moneyline",
+      "createdBy": "Frozen Root automated statistical model (not ChatGPT)",
+      "automated": true,
+      "locked": true,
+      "createdAt": "2026-11-17T08:49:49Z",
+      "status": "pending",
+      "projectedScore": {
+        "teamGoals": 4,
+        "opponentGoals": 3
+      },
+      "modelVersion": "score-form-v1",
+      "risk": "MODEL ESTIMATE",
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Colorado Avalanche 10, Utah Mammoth 11. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
     }
   ]
 }
