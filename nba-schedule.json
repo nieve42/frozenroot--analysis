@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-11-19T03:34:57Z",
+  "generatedAt": "2026-11-19T03:40:56Z",
   "date": "2026-11-18",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -91,17 +91,17 @@
       "away": "Boston Celtics",
       "home": "Denver Nuggets",
       "status": "In Progress",
-      "awayScore": "45",
-      "homeScore": "34"
+      "awayScore": "49",
+      "homeScore": "36"
     },
     {
       "id": "401910017",
       "dateUTC": "2026-11-19T03:00Z",
       "away": "Utah Jazz",
       "home": "Los Angeles Lakers",
-      "status": "In Progress",
-      "awayScore": "25",
-      "homeScore": "23"
+      "status": "End of Period",
+      "awayScore": "29",
+      "homeScore": "34"
     },
     {
       "id": "401910018",
@@ -109,8 +109,8 @@
       "away": "Phoenix Suns",
       "home": "Sacramento Kings",
       "status": "In Progress",
-      "awayScore": "33",
-      "homeScore": "31"
+      "awayScore": "39",
+      "homeScore": "33"
     }
   ]
 }
