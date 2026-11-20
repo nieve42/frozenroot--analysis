@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-20T03:12:12Z",
+  "generatedAt": "2026-11-20T03:34:31Z",
   "date": "2026-11-19",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -72,8 +72,8 @@
       "dateUTC": "2026-11-20T01:00Z",
       "away": "Columbus Blue Jackets",
       "home": "Chicago Blackhawks",
-      "status": "In Progress",
-      "awayScore": "3",
+      "status": "Final",
+      "awayScore": "4",
       "homeScore": "2"
     },
     {
@@ -92,15 +92,15 @@
       "home": "Colorado Avalanche",
       "status": "In Progress",
       "awayScore": "0",
-      "homeScore": "2"
+      "homeScore": "3"
     },
     {
       "id": "401892752",
       "dateUTC": "2026-11-20T02:40Z",
       "away": "Vancouver Canucks",
       "home": "Seattle Kraken",
-      "status": "In Progress",
-      "awayScore": "0",
+      "status": "End of Period",
+      "awayScore": "1",
       "homeScore": "1"
     },
     {
@@ -109,7 +109,7 @@
       "away": "Dallas Stars",
       "home": "Vegas Golden Knights",
       "status": "In Progress",
-      "awayScore": "0",
+      "awayScore": "2",
       "homeScore": "0"
     }
   ],
