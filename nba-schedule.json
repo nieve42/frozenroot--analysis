@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-11-19T22:12:01Z",
+  "generatedAt": "2026-11-20T03:25:07Z",
   "date": "2026-11-19",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,36 +9,36 @@
       "dateUTC": "2026-11-20T01:00Z",
       "away": "Golden State Warriors",
       "home": "Memphis Grizzlies",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "94",
+      "homeScore": "126"
     },
     {
       "id": "401910020",
       "dateUTC": "2026-11-20T01:00Z",
       "away": "Portland Trail Blazers",
       "home": "Milwaukee Bucks",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "119",
+      "homeScore": "114"
     },
     {
       "id": "401910021",
       "dateUTC": "2026-11-20T01:00Z",
       "away": "New York Knicks",
       "home": "Minnesota Timberwolves",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Final",
+      "awayScore": "102",
+      "homeScore": "99"
     },
     {
       "id": "401910022",
       "dateUTC": "2026-11-20T01:00Z",
       "away": "LA Clippers",
       "home": "San Antonio Spurs",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "109",
+      "homeScore": "120"
     }
   ]
 }
