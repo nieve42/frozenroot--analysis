@@ -1,6 +1,6 @@
 {
   "source": "ESPN NFL public scoreboard",
-  "generatedAt": "2026-11-19T21:39:22Z",
+  "generatedAt": "2026-11-20T03:20:58Z",
   "startDate": "2026-11-17",
   "endDate": "2026-11-23",
   "weekReset": "Tuesday 12:01 AM America/Los_Angeles",
@@ -10,7 +10,7 @@
       "dateUTC": "2026-11-20T01:15Z",
       "away": "Indianapolis Colts",
       "home": "Houston Texans",
-      "status": "Scheduled",
+      "status": "In Progress",
       "awayScore": null,
       "homeScore": null
     },
