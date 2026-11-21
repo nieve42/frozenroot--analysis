@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-11-20T21:11:54Z",
+  "generatedAt": "2026-11-21T02:23:19Z",
   "date": "2026-11-20",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,54 +9,54 @@
       "dateUTC": "2026-11-21T00:00Z",
       "away": "Charlotte Hornets",
       "home": "Atlanta Hawks",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Final",
+      "awayScore": "97",
+      "homeScore": "111"
     },
     {
       "id": "401909306",
       "dateUTC": "2026-11-21T00:30Z",
       "away": "Orlando Magic",
       "home": "Brooklyn Nets",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "83",
+      "homeScore": "76"
     },
     {
       "id": "401909307",
       "dateUTC": "2026-11-21T00:30Z",
       "away": "Indiana Pacers",
       "home": "Cleveland Cavaliers",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "End of Period",
+      "awayScore": "83",
+      "homeScore": "105"
     },
     {
       "id": "401909308",
       "dateUTC": "2026-11-21T00:30Z",
       "away": "Toronto Raptors",
       "home": "Detroit Pistons",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "73",
+      "homeScore": "70"
     },
     {
       "id": "401909309",
       "dateUTC": "2026-11-21T01:00Z",
       "away": "Washington Wizards",
       "home": "Chicago Bulls",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "56",
+      "homeScore": "60"
     },
     {
       "id": "401909310",
       "dateUTC": "2026-11-21T01:00Z",
       "away": "New Orleans Pelicans",
       "home": "Oklahoma City Thunder",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "67",
+      "homeScore": "63"
     },
     {
       "id": "401909311",
