@@ -1,11 +1,9 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-21T03:17:42Z",
-  "date": "2026-11-20",
+  "generatedAt": "2026-11-21T09:48:08Z",
+  "date": "2026-11-21",
   "dailyReset": "12:01 AM America/Los_Angeles",
-  "games": [],
-  "nextDate": "2026-11-21",
-  "upcomingGames": [
+  "games": [
     {
       "id": "401892754",
       "dateUTC": "2026-11-21T18:00Z",
@@ -128,6 +126,54 @@
       "dateUTC": "2026-11-22T03:00Z",
       "away": "Seattle Kraken",
       "home": "San Jose Sharks",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    }
+  ],
+  "nextDate": "2026-11-22",
+  "upcomingGames": [
+    {
+      "id": "401892768",
+      "dateUTC": "2026-11-22T17:30Z",
+      "away": "Carolina Hurricanes",
+      "home": "New York Rangers",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401892769",
+      "dateUTC": "2026-11-22T22:00Z",
+      "away": "Buffalo Sabres",
+      "home": "Tampa Bay Lightning",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401892770",
+      "dateUTC": "2026-11-23T00:00Z",
+      "away": "Edmonton Oilers",
+      "home": "St. Louis Blues",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401892771",
+      "dateUTC": "2026-11-23T00:00Z",
+      "away": "Pittsburgh Penguins",
+      "home": "Dallas Stars",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401892772",
+      "dateUTC": "2026-11-23T01:00Z",
+      "away": "Chicago Blackhawks",
+      "home": "Vancouver Canucks",
       "status": "Scheduled",
       "awayScore": null,
       "homeScore": null
