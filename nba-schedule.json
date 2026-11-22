@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-11-22T02:21:59Z",
+  "generatedAt": "2026-11-22T06:57:52Z",
   "date": "2026-11-21",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -18,45 +18,45 @@
       "dateUTC": "2026-11-22T00:30Z",
       "away": "Portland Trail Blazers",
       "home": "New York Knicks",
-      "status": "In Progress",
-      "awayScore": "77",
-      "homeScore": "86"
+      "status": "Final",
+      "awayScore": "96",
+      "homeScore": "97"
     },
     {
       "id": "401910025",
       "dateUTC": "2026-11-22T01:00Z",
       "away": "LA Clippers",
       "home": "Dallas Mavericks",
-      "status": "Halftime",
-      "awayScore": "44",
-      "homeScore": "52"
+      "status": "Final",
+      "awayScore": "100",
+      "homeScore": "110"
     },
     {
       "id": "401910026",
       "dateUTC": "2026-11-22T01:00Z",
       "away": "Memphis Grizzlies",
       "home": "Minnesota Timberwolves",
-      "status": "In Progress",
-      "awayScore": "50",
-      "homeScore": "58"
+      "status": "Final",
+      "awayScore": "95",
+      "homeScore": "104"
     },
     {
       "id": "401910027",
       "dateUTC": "2026-11-22T01:00Z",
       "away": "New Orleans Pelicans",
       "home": "San Antonio Spurs",
-      "status": "Halftime",
-      "awayScore": "45",
-      "homeScore": "61"
+      "status": "Final",
+      "awayScore": "91",
+      "homeScore": "114"
     },
     {
       "id": "401910028",
       "dateUTC": "2026-11-22T03:00Z",
       "away": "Boston Celtics",
       "home": "Sacramento Kings",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Final",
+      "awayScore": "96",
+      "homeScore": "97"
     }
   ]
 }
