@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-11-22T15:55:51Z",
+  "generatedAt": "2026-11-22T21:51:17Z",
   "date": "2026-11-22",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,9 +9,9 @@
       "dateUTC": "2026-11-22T20:30Z",
       "away": "Detroit Pistons",
       "home": "Atlanta Hawks",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Halftime",
+      "awayScore": "52",
+      "homeScore": "51"
     },
     {
       "id": "401910030",
