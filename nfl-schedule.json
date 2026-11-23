@@ -1,6 +1,6 @@
 {
   "source": "ESPN NFL public scoreboard",
-  "generatedAt": "2026-11-23T02:53:10Z",
+  "generatedAt": "2026-11-23T12:52:10Z",
   "startDate": "2026-11-17",
   "endDate": "2026-11-23",
   "weekReset": "Tuesday 12:01 AM America/Los_Angeles",
@@ -109,9 +109,9 @@
       "dateUTC": "2026-11-23T01:20Z",
       "away": "Minnesota Vikings",
       "home": "San Francisco 49ers",
-      "status": "In Progress",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Final",
+      "awayScore": "10",
+      "homeScore": "35"
     },
     {
       "id": "401873078",
