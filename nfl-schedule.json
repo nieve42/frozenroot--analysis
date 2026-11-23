@@ -1,6 +1,6 @@
 {
   "source": "ESPN NFL public scoreboard",
-  "generatedAt": "2026-11-22T21:48:26Z",
+  "generatedAt": "2026-11-23T02:49:10Z",
   "startDate": "2026-11-17",
   "endDate": "2026-11-23",
   "weekReset": "Tuesday 12:01 AM America/Los_Angeles",
@@ -82,34 +82,34 @@
       "dateUTC": "2026-11-22T21:05Z",
       "away": "New York Jets",
       "home": "Los Angeles Chargers",
-      "status": "In Progress",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Final",
+      "awayScore": "27",
+      "homeScore": "24"
     },
     {
       "id": "401873069",
       "dateUTC": "2026-11-22T21:25Z",
       "away": "Jacksonville Jaguars",
       "home": "New York Giants",
-      "status": "In Progress",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Final",
+      "awayScore": "18",
+      "homeScore": "23"
     },
     {
       "id": "401873075",
       "dateUTC": "2026-11-22T21:25Z",
       "away": "Las Vegas Raiders",
       "home": "Denver Broncos",
-      "status": "In Progress",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Final",
+      "awayScore": "24",
+      "homeScore": "38"
     },
     {
       "id": "401873077",
       "dateUTC": "2026-11-23T01:20Z",
       "away": "Minnesota Vikings",
       "home": "San Francisco 49ers",
-      "status": "Scheduled",
+      "status": "In Progress",
       "awayScore": null,
       "homeScore": null
     },

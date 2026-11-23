@@ -2,7 +2,7 @@
   "sport": "NFL",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-11-22T21:48:26Z",
+  "lastUpdated": "2026-11-23T02:49:10Z",
   "picks": [
     {
       "id": "nfl-auto-401873010",
@@ -1969,14 +1969,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-11-17T08:46:40Z",
-      "status": "pending",
+      "status": "loss",
       "projectedScore": {
         "teamPoints": 24,
         "opponentPoints": 21
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: New York Jets 7, Los Angeles Chargers 6. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: New York Jets 7, Los Angeles Chargers 6. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 24,
+        "opponentPoints": 27
+      },
+      "resultVerifiedOn": "2026-11-22",
+      "resultSource": "ESPN public scoreboard"
     },
     {
       "id": "nfl-auto-401873069",
@@ -1993,14 +1999,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-11-17T08:46:40Z",
-      "status": "pending",
+      "status": "loss",
       "projectedScore": {
         "teamPoints": 24,
         "opponentPoints": 23
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Jacksonville Jaguars 6, New York Giants 6. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Jacksonville Jaguars 6, New York Giants 6. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 18,
+        "opponentPoints": 23
+      },
+      "resultVerifiedOn": "2026-11-22",
+      "resultSource": "ESPN public scoreboard"
     },
     {
       "id": "nfl-auto-401873075",
@@ -2017,14 +2029,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-11-17T08:46:40Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamPoints": 26,
         "opponentPoints": 21
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Las Vegas Raiders 7, Denver Broncos 6. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Las Vegas Raiders 7, Denver Broncos 6. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamPoints": 38,
+        "opponentPoints": 24
+      },
+      "resultVerifiedOn": "2026-11-22",
+      "resultSource": "ESPN public scoreboard"
     },
     {
       "id": "nfl-auto-401873077",
