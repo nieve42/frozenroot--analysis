@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-23T00:51:13Z",
+  "generatedAt": "2026-11-23T02:54:50Z",
   "date": "2026-11-22",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -27,27 +27,27 @@
       "dateUTC": "2026-11-23T00:00Z",
       "away": "Edmonton Oilers",
       "home": "St. Louis Blues",
-      "status": "End of Period",
-      "awayScore": "1",
-      "homeScore": "0"
+      "status": "In Progress",
+      "awayScore": "4",
+      "homeScore": "4"
     },
     {
       "id": "401892771",
       "dateUTC": "2026-11-23T00:00Z",
       "away": "Pittsburgh Penguins",
       "home": "Dallas Stars",
-      "status": "End of Period",
+      "status": "Final",
       "awayScore": "0",
-      "homeScore": "0"
+      "homeScore": "1"
     },
     {
       "id": "401892772",
       "dateUTC": "2026-11-23T01:00Z",
       "away": "Chicago Blackhawks",
       "home": "Vancouver Canucks",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "End of Period",
+      "awayScore": "5",
+      "homeScore": "3"
     }
   ],
   "nextDate": "2026-11-23",
