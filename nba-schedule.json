@@ -1,6 +1,6 @@
 {
   "source": "ESPN NBA public scoreboard",
-  "generatedAt": "2026-11-22T21:51:17Z",
+  "generatedAt": "2026-11-23T02:51:05Z",
   "date": "2026-11-22",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,63 +9,63 @@
       "dateUTC": "2026-11-22T20:30Z",
       "away": "Detroit Pistons",
       "home": "Atlanta Hawks",
-      "status": "Halftime",
-      "awayScore": "52",
-      "homeScore": "51"
+      "status": "Final",
+      "awayScore": "97",
+      "homeScore": "107"
     },
     {
       "id": "401910030",
       "dateUTC": "2026-11-22T23:00Z",
       "away": "Oklahoma City Thunder",
       "home": "Miami Heat",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Final",
+      "awayScore": "113",
+      "homeScore": "123"
     },
     {
       "id": "401910031",
       "dateUTC": "2026-11-23T00:00Z",
       "away": "Orlando Magic",
       "home": "Washington Wizards",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Final",
+      "awayScore": "96",
+      "homeScore": "116"
     },
     {
       "id": "401910032",
       "dateUTC": "2026-11-23T00:00Z",
       "away": "Denver Nuggets",
       "home": "Chicago Bulls",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Final",
+      "awayScore": "151",
+      "homeScore": "145"
     },
     {
       "id": "401910033",
       "dateUTC": "2026-11-23T00:00Z",
       "away": "Dallas Mavericks",
       "home": "Utah Jazz",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Final",
+      "awayScore": "116",
+      "homeScore": "114"
     },
     {
       "id": "401910034",
       "dateUTC": "2026-11-23T01:00Z",
       "away": "Indiana Pacers",
       "home": "New York Knicks",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "69",
+      "homeScore": "74"
     },
     {
       "id": "401910035",
       "dateUTC": "2026-11-23T01:30Z",
       "away": "Boston Celtics",
       "home": "Golden State Warriors",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "In Progress",
+      "awayScore": "42",
+      "homeScore": "44"
     }
   ]
 }
