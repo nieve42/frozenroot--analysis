@@ -2,7 +2,7 @@
   "sport": "NHL",
   "source": "Frozen Root free statistical score-form-v1 model using ESPN historical final scores; no live ChatGPT analysis",
   "note": "Automatic pregame forecasts, permanently frozen after creation; official Root + user picks are kept separately and are never overwritten.",
-  "lastUpdated": "2026-11-22T11:21:00Z",
+  "lastUpdated": "2026-11-23T00:51:13Z",
   "picks": [
     {
       "id": "nhl-auto-401892539",
@@ -6979,14 +6979,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-11-21T09:48:08Z",
-      "status": "pending",
+      "status": "win",
       "projectedScore": {
         "teamGoals": 4,
         "opponentGoals": 3
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Carolina Hurricanes 8, New York Rangers 8. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Carolina Hurricanes 8, New York Rangers 8. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamGoals": 5,
+        "opponentGoals": 2
+      },
+      "resultVerifiedOn": "2026-11-22",
+      "resultSource": "ESPN public scoreboard"
     },
     {
       "id": "nhl-auto-401892769",
@@ -7003,14 +7009,20 @@
       "automated": true,
       "locked": true,
       "createdAt": "2026-11-21T09:48:08Z",
-      "status": "pending",
+      "status": "loss",
       "projectedScore": {
         "teamGoals": 4,
         "opponentGoals": 3
       },
       "modelVersion": "score-form-v1",
       "risk": "MODEL ESTIMATE",
-      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Buffalo Sabres 10, Tampa Bay Lightning 11. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds."
+      "analysis": "Recent verified scoring form, opponent defense and a modest home adjustment. Recent game samples: Buffalo Sabres 10, Tampa Bay Lightning 11. This is a simple automatic estimate, not a live ChatGPT analysis and does not account for confirmed injuries, lineups or betting odds.",
+      "actualScore": {
+        "teamGoals": 2,
+        "opponentGoals": 6
+      },
+      "resultVerifiedOn": "2026-11-22",
+      "resultSource": "ESPN public scoreboard"
     },
     {
       "id": "nhl-auto-401892770",
