@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-23T21:21:09Z",
+  "generatedAt": "2026-11-24T06:00:05Z",
   "date": "2026-11-23",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,63 +9,63 @@
       "dateUTC": "2026-11-24T00:00Z",
       "away": "Columbus Blue Jackets",
       "home": "New Jersey Devils",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Final",
+      "awayScore": "2",
+      "homeScore": "3"
     },
     {
       "id": "401892774",
       "dateUTC": "2026-11-24T00:30Z",
       "away": "Los Angeles Kings",
       "home": "Montreal Canadiens",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Final",
+      "awayScore": "2",
+      "homeScore": "1"
     },
     {
       "id": "401892775",
       "dateUTC": "2026-11-24T00:30Z",
       "away": "Calgary Flames",
       "home": "Ottawa Senators",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Final",
+      "awayScore": "1",
+      "homeScore": "2"
     },
     {
       "id": "401892776",
       "dateUTC": "2026-11-24T00:30Z",
       "away": "Toronto Maple Leafs",
       "home": "New York Islanders",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Final",
+      "awayScore": "4",
+      "homeScore": "2"
     },
     {
       "id": "401892777",
       "dateUTC": "2026-11-24T00:30Z",
       "away": "Utah Mammoth",
       "home": "Winnipeg Jets",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Final",
+      "awayScore": "2",
+      "homeScore": "4"
     },
     {
       "id": "401892778",
       "dateUTC": "2026-11-24T02:40Z",
       "away": "Anaheim Ducks",
       "home": "Seattle Kraken",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Final",
+      "awayScore": "2",
+      "homeScore": "3"
     },
     {
       "id": "401892779",
       "dateUTC": "2026-11-24T03:00Z",
       "away": "Minnesota Wild",
       "home": "San Jose Sharks",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Final",
+      "awayScore": "5",
+      "homeScore": "2"
     }
   ],
   "nextDate": "2026-11-24",
