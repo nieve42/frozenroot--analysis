@@ -1,21 +1,9 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-25T04:56:42Z",
-  "date": "2026-11-24",
+  "generatedAt": "2026-11-25T12:51:23Z",
+  "date": "2026-11-25",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
-    {
-      "id": "401892780",
-      "dateUTC": "2026-11-25T01:00Z",
-      "away": "Vegas Golden Knights",
-      "home": "Edmonton Oilers",
-      "status": "Final",
-      "awayScore": "5",
-      "homeScore": "3"
-    }
-  ],
-  "nextDate": "2026-11-25",
-  "upcomingGames": [
     {
       "id": "401892781",
       "dateUTC": "2026-11-26T00:00Z",
@@ -142,5 +130,7 @@
       "awayScore": null,
       "homeScore": null
     }
-  ]
+  ],
+  "nextDate": "2026-11-26",
+  "upcomingGames": []
 }
