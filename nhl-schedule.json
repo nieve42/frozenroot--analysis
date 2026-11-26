@@ -1,136 +1,145 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-26T05:01:23Z",
-  "date": "2026-11-25",
+  "generatedAt": "2026-11-26T15:12:31Z",
+  "date": "2026-11-26",
   "dailyReset": "12:01 AM America/Los_Angeles",
-  "games": [
+  "games": [],
+  "nextDate": "2026-11-27",
+  "upcomingGames": [
     {
-      "id": "401892781",
-      "dateUTC": "2026-11-26T00:00Z",
-      "away": "Winnipeg Jets",
+      "id": "401892795",
+      "dateUTC": "2026-11-27T18:00Z",
+      "away": "Toronto Maple Leafs",
       "home": "Boston Bruins",
-      "status": "Final",
-      "awayScore": "4",
-      "homeScore": "2"
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
     },
     {
-      "id": "401892782",
-      "dateUTC": "2026-11-26T00:00Z",
-      "away": "New York Rangers",
-      "home": "Buffalo Sabres",
-      "status": "Final",
-      "awayScore": "1",
-      "homeScore": "5"
-    },
-    {
-      "id": "401892783",
-      "dateUTC": "2026-11-26T00:00Z",
-      "away": "Carolina Hurricanes",
-      "home": "Tampa Bay Lightning",
-      "status": "Final",
-      "awayScore": "3",
-      "homeScore": "1"
-    },
-    {
-      "id": "401892784",
-      "dateUTC": "2026-11-26T00:00Z",
-      "away": "Ottawa Senators",
-      "home": "Florida Panthers",
-      "status": "Final",
-      "awayScore": "3",
-      "homeScore": "5"
-    },
-    {
-      "id": "401892785",
-      "dateUTC": "2026-11-26T00:00Z",
-      "away": "St. Louis Blues",
-      "home": "New York Islanders",
-      "status": "Final",
-      "awayScore": "2",
-      "homeScore": "3"
-    },
-    {
-      "id": "401892786",
-      "dateUTC": "2026-11-26T00:00Z",
+      "id": "401892796",
+      "dateUTC": "2026-11-27T18:00Z",
       "away": "Calgary Flames",
-      "home": "Pittsburgh Penguins",
-      "status": "Final",
-      "awayScore": "6",
-      "homeScore": "3"
+      "home": "New Jersey Devils",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
     },
     {
-      "id": "401892787",
-      "dateUTC": "2026-11-26T00:00Z",
-      "away": "Philadelphia Flyers",
-      "home": "Washington Capitals",
-      "status": "Final",
-      "awayScore": "3",
-      "homeScore": "7"
-    },
-    {
-      "id": "401892788",
-      "dateUTC": "2026-11-26T00:00Z",
-      "away": "New Jersey Devils",
-      "home": "Columbus Blue Jackets",
-      "status": "Final",
-      "awayScore": "3",
-      "homeScore": "2"
-    },
-    {
-      "id": "401892789",
-      "dateUTC": "2026-11-26T00:30Z",
-      "away": "Vancouver Canucks",
-      "home": "Detroit Red Wings",
-      "status": "Final",
-      "awayScore": "1",
-      "homeScore": "5"
-    },
-    {
-      "id": "401892790",
-      "dateUTC": "2026-11-26T01:00Z",
-      "away": "Nashville Predators",
-      "home": "Dallas Stars",
-      "status": "Final",
-      "awayScore": "3",
-      "homeScore": "1"
-    },
-    {
-      "id": "401892791",
-      "dateUTC": "2026-11-26T01:00Z",
+      "id": "401892797",
+      "dateUTC": "2026-11-27T18:00Z",
       "away": "Utah Mammoth",
+      "home": "Nashville Predators",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401892798",
+      "dateUTC": "2026-11-27T19:00Z",
+      "away": "Dallas Stars",
+      "home": "St. Louis Blues",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401892799",
+      "dateUTC": "2026-11-27T20:00Z",
+      "away": "Ottawa Senators",
+      "home": "Tampa Bay Lightning",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401892800",
+      "dateUTC": "2026-11-27T20:00Z",
+      "away": "Vancouver Canucks",
+      "home": "Philadelphia Flyers",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401892801",
+      "dateUTC": "2026-11-27T20:00Z",
+      "away": "Florida Panthers",
+      "home": "Washington Capitals",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401892802",
+      "dateUTC": "2026-11-27T20:00Z",
+      "away": "Detroit Red Wings",
+      "home": "Columbus Blue Jackets",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401892803",
+      "dateUTC": "2026-11-27T21:00Z",
+      "away": "Colorado Avalanche",
       "home": "Minnesota Wild",
-      "status": "Final",
-      "awayScore": "4",
-      "homeScore": "3"
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
     },
     {
-      "id": "401892792",
-      "dateUTC": "2026-11-26T02:30Z",
-      "away": "Montreal Canadiens",
-      "home": "Colorado Avalanche",
-      "status": "In Progress",
-      "awayScore": "0",
-      "homeScore": "5"
-    },
-    {
-      "id": "401892794",
-      "dateUTC": "2026-11-26T02:40Z",
-      "away": "Chicago Blackhawks",
-      "home": "Seattle Kraken",
-      "status": "In Progress",
-      "awayScore": "2",
-      "homeScore": "0"
-    },
-    {
-      "id": "401892793",
-      "dateUTC": "2026-11-26T03:00Z",
-      "away": "San Jose Sharks",
+      "id": "401892804",
+      "dateUTC": "2026-11-27T21:00Z",
+      "away": "Los Angeles Kings",
       "home": "Anaheim Ducks",
-      "status": "In Progress",
-      "awayScore": "0",
-      "homeScore": "5"
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401892805",
+      "dateUTC": "2026-11-27T21:00Z",
+      "away": "Vegas Golden Knights",
+      "home": "San Jose Sharks",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401892806",
+      "dateUTC": "2026-11-27T22:30Z",
+      "away": "New York Rangers",
+      "home": "Chicago Blackhawks",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401892807",
+      "dateUTC": "2026-11-28T00:30Z",
+      "away": "Winnipeg Jets",
+      "home": "New York Islanders",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401892808",
+      "dateUTC": "2026-11-28T01:00Z",
+      "away": "Pittsburgh Penguins",
+      "home": "Buffalo Sabres",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
+    },
+    {
+      "id": "401892809",
+      "dateUTC": "2026-11-28T01:00Z",
+      "away": "Seattle Kraken",
+      "home": "Edmonton Oilers",
+      "status": "Scheduled",
+      "awayScore": null,
+      "homeScore": null
     }
-  ],
-  "nextDate": "2026-11-26",
-  "upcomingGames": []
+  ]
 }
