@@ -1,6 +1,6 @@
 {
   "source": "ESPN NFL public scoreboard",
-  "generatedAt": "2026-11-26T19:39:08Z",
+  "generatedAt": "2026-11-27T02:52:51Z",
   "startDate": "2026-11-24",
   "endDate": "2026-11-30",
   "weekReset": "Tuesday 12:01 AM America/Los_Angeles",
@@ -19,25 +19,25 @@
       "dateUTC": "2026-11-26T18:00Z",
       "away": "Chicago Bears",
       "home": "Detroit Lions",
-      "status": "Halftime",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Final",
+      "awayScore": "39",
+      "homeScore": "35"
     },
     {
       "id": "401873080",
       "dateUTC": "2026-11-26T21:30Z",
       "away": "Philadelphia Eagles",
       "home": "Dallas Cowboys",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "Final",
+      "awayScore": "39",
+      "homeScore": "38"
     },
     {
       "id": "401873082",
       "dateUTC": "2026-11-27T01:20Z",
       "away": "Kansas City Chiefs",
       "home": "Buffalo Bills",
-      "status": "Scheduled",
+      "status": "Halftime",
       "awayScore": null,
       "homeScore": null
     },
