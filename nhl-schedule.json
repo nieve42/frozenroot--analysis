@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-27T18:03:41Z",
+  "generatedAt": "2026-11-27T18:57:25Z",
   "date": "2026-11-27",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -9,27 +9,27 @@
       "dateUTC": "2026-11-27T18:00Z",
       "away": "Toronto Maple Leafs",
       "home": "Boston Bruins",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "End of Period",
+      "awayScore": "1",
+      "homeScore": "1"
     },
     {
       "id": "401892796",
       "dateUTC": "2026-11-27T18:00Z",
       "away": "Calgary Flames",
       "home": "New Jersey Devils",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "End of Period",
+      "awayScore": "1",
+      "homeScore": "0"
     },
     {
       "id": "401892797",
       "dateUTC": "2026-11-27T18:00Z",
       "away": "Utah Mammoth",
       "home": "Nashville Predators",
-      "status": "Scheduled",
-      "awayScore": null,
-      "homeScore": null
+      "status": "End of Period",
+      "awayScore": "2",
+      "homeScore": "2"
     },
     {
       "id": "401892798",
