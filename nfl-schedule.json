@@ -1,6 +1,6 @@
 {
   "source": "ESPN NFL public scoreboard",
-  "generatedAt": "2026-11-27T02:52:51Z",
+  "generatedAt": "2026-11-27T04:18:49Z",
   "startDate": "2026-11-24",
   "endDate": "2026-11-30",
   "weekReset": "Tuesday 12:01 AM America/Los_Angeles",
@@ -37,7 +37,7 @@
       "dateUTC": "2026-11-27T01:20Z",
       "away": "Kansas City Chiefs",
       "home": "Buffalo Bills",
-      "status": "Halftime",
+      "status": "In Progress",
       "awayScore": null,
       "homeScore": null
     },
