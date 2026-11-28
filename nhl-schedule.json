@@ -1,6 +1,6 @@
 {
   "source": "ESPN NHL public scoreboard",
-  "generatedAt": "2026-11-28T01:57:59Z",
+  "generatedAt": "2026-11-28T04:01:21Z",
   "date": "2026-11-27",
   "dailyReset": "12:01 AM America/Los_Angeles",
   "games": [
@@ -117,27 +117,27 @@
       "dateUTC": "2026-11-28T00:30Z",
       "away": "Winnipeg Jets",
       "home": "New York Islanders",
-      "status": "In Progress",
-      "awayScore": "2",
-      "homeScore": "0"
+      "status": "Final",
+      "awayScore": "3",
+      "homeScore": "1"
     },
     {
       "id": "401892808",
       "dateUTC": "2026-11-28T01:00Z",
       "away": "Pittsburgh Penguins",
       "home": "Buffalo Sabres",
-      "status": "End of Period",
-      "awayScore": "2",
-      "homeScore": "2"
+      "status": "Final",
+      "awayScore": "6",
+      "homeScore": "3"
     },
     {
       "id": "401892809",
       "dateUTC": "2026-11-28T01:00Z",
       "away": "Seattle Kraken",
       "home": "Edmonton Oilers",
-      "status": "End of Period",
-      "awayScore": "1",
-      "homeScore": "0"
+      "status": "Final",
+      "awayScore": "4",
+      "homeScore": "2"
     }
   ],
   "nextDate": "2026-11-28",
